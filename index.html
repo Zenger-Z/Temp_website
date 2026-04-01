@@ -3,1892 +3,934 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>滚筒调味机投资可行性分析报告</title>
+    <title>Interzoo 2026 参展价值评估报告</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
-            font-family: "Microsoft YaHei", "SimSun", Arial, sans-serif;
-            line-height: 1.8;
-            color: #333;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            font-family: 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
             padding: 20px;
         }
-
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            background: white;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-            border-radius: 10px;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
             overflow: hidden;
         }
-
-        /* 头部 */
+        /* 头部标题区 */
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 40px 30px;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #fff;
+            padding: 40px 50px;
             text-align: center;
         }
-
         .header h1 {
-            font-size: 32px;
+            font-size: 2.2em;
+            font-weight: 700;
             margin-bottom: 15px;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            letter-spacing: 2px;
         }
-
-        .header-info {
+        .header .subtitle {
+            font-size: 1.1em;
+            color: #b8c5d6;
+            margin-bottom: 20px;
+        }
+        .header .meta {
             display: flex;
             justify-content: center;
             gap: 40px;
-            flex-wrap: wrap;
-            margin-top: 20px;
+            font-size: 0.95em;
+            color: #a0aec0;
         }
-
-        .header-info p {
-            font-size: 14px;
-            opacity: 0.95;
+        .header .meta span {
+            background: rgba(255,255,255,0.1);
+            padding: 8px 20px;
+            border-radius: 20px;
         }
-
-        /* 内容区域 */
+        /* 主内容区 */
         .content {
-            padding: 40px 30px;
+            padding: 40px 50px;
         }
-
-        /* 核心信息前置 */
-        .core-info {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 30px;
-            border-radius: 10px;
-            margin-bottom: 40px;
-            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+        /* 核心结论卡片 */
+        .conclusion-card {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            border-radius: 16px;
+            padding: 35px;
+            color: #fff;
+            margin-bottom: 30px;
         }
-
-        .core-info h2 {
-            font-size: 22px;
+        .conclusion-card h2 {
+            font-size: 1.4em;
             margin-bottom: 20px;
-            border-bottom: 2px solid rgba(255,255,255,0.3);
-            padding-bottom: 10px;
-            color: white;
+            padding-bottom: 15px;
+            border-bottom: 2px solid rgba(255,255,255,0.2);
         }
-
-        .core-info h3 {
-            color: white;
+        .score-display {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 20px;
         }
-
-        .core-info h4 {
-            color: white;
+        .score-circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #e94560 0%, #ff6b6b 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
         }
-
-        .core-info p {
-            color: white;
+        .score-circle .number {
+            font-size: 2em;
         }
-
-        .core-info li {
-            color: white;
+        .score-circle .total {
+            font-size: 0.9em;
+            opacity: 0.8;
         }
-
-        /* 表格样式 */
+        .score-info {
+            flex: 1;
+        }
+        .score-info .recommendation {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #e94560;
+            margin-bottom: 8px;
+        }
+        .score-info .stars {
+            font-size: 1.5em;
+            color: #ffd93d;
+            margin-bottom: 5px;
+        }
+        .score-info .label {
+            color: #a0aec0;
+            font-size: 0.95em;
+        }
+        .core-judgment {
+            background: rgba(233, 69, 96, 0.2);
+            border-left: 4px solid #e94560;
+            padding: 15px 20px;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+        /* 分隔线 */
+        .divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
+            margin: 30px 0;
+        }
+        /* 章节标题 */
+        .section {
+            margin-bottom: 35px;
+        }
+        .section-title {
+            font-size: 1.3em;
+            color: #1a1a2e;
+            padding: 12px 20px;
+            background: linear-gradient(90deg, #f8f9fc, #eef1f7);
+            border-left: 4px solid #667eea;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        /* 会议信息 */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .info-item {
+            background: #f8f9fc;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 3px solid #667eea;
+        }
+        .info-item .label {
+            font-size: 0.85em;
+            color: #718096;
+            margin-bottom: 5px;
+        }
+        .info-item .value {
+            font-size: 1em;
+            color: #1a1a2e;
+            font-weight: 500;
+        }
+        .info-item.highlight {
+            background: linear-gradient(135deg, #667eea22, #764ba222);
+            border-left-color: #764ba2;
+        }
+        /* 通用表格样式 */
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
-            background: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+            font-size: 0.9em;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
             border-radius: 8px;
             overflow: hidden;
         }
-
-        table thead {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-
-        table th, table td {
+        th {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: #fff;
             padding: 12px 15px;
             text-align: left;
-            border-bottom: 1px solid #f0f0f0;
+            font-weight: 600;
         }
-
-        table tbody tr:hover {
-            background-color: #f8f9ff;
+        td {
+            padding: 10px 15px;
+            border-bottom: 1px solid #e2e8f0;
         }
-
-        table tbody tr:last-child td {
-            border-bottom: none;
+        tr:nth-child(even) {
+            background: #f8f9fc;
         }
-
-        .core-info table {
-            color: #333;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        tr:hover {
+            background: #eef1f7;
         }
-
-        .core-info table thead {
-            background: rgba(255,255,255,0.2);
-            color: white;
+        /* 评估维度卡片 */
+        .dimension-card {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
-
-        /* 结论摘要 */
-        .conclusion {
-            background: #fff3cd;
-            border-left: 5px solid #ffc107;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 5px;
-        }
-
-        .conclusion h3 {
-            color: #856404;
+        .dimension-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             margin-bottom: 15px;
-            font-size: 18px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #eef1f7;
         }
-
-        .conclusion p, .conclusion li {
-            color: #856404;
+        .dimension-title {
+            font-size: 1.15em;
+            color: #1a1a2e;
+            font-weight: 600;
         }
-
-        .conclusion ul {
-            margin-left: 20px;
-            margin-top: 10px;
+        .dimension-title .weight {
+            font-size: 0.85em;
+            color: #718096;
+            font-weight: 400;
         }
-
-        .conclusion li {
-            margin: 8px 0;
+        .dimension-score {
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
-
-        /* 风险提示 */
-        .risk-warning {
-            background: #f8d7da;
-            border-left: 5px solid #dc3545;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 5px;
+        .score-bar {
+            width: 120px;
+            height: 8px;
+            background: #e2e8f0;
+            border-radius: 4px;
+            overflow: hidden;
         }
-
-        .risk-warning h4 {
-            color: #721c24;
-            margin-bottom: 10px;
+        .score-bar-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.3s ease;
         }
-
-        .risk-warning ul {
-            margin-left: 20px;
-            margin-top: 10px;
+        .score-text {
+            font-weight: 700;
+            font-size: 1.1em;
+            min-width: 50px;
         }
-
-        .risk-warning li {
-            color: #721c24;
-            margin: 8px 0;
+        .low { color: #e94560; }
+        .medium { color: #f39c12; }
+        .high { color: #27ae60; }
+        .score-bar-fill.low { background: linear-gradient(90deg, #e94560, #ff6b6b); }
+        .score-bar-fill.medium { background: linear-gradient(90deg, #f39c12, #f1c40f); }
+        .score-bar-fill.high { background: linear-gradient(90deg, #27ae60, #2ecc71); }
+        /* 统计标签 */
+        .stat-tags {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
         }
-
-        /* 章节标题 */
-        h2 {
+        .stat-tag {
+            background: #f8f9fc;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        .stat-tag .num {
+            font-weight: 700;
             color: #667eea;
-            font-size: 26px;
-            margin: 35px 0 20px 0;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #667eea;
         }
-
-        h3 {
-            color: #764ba2;
-            font-size: 20px;
-            margin: 25px 0 15px 0;
-        }
-
-        h4 {
-            color: #555;
-            font-size: 18px;
-            margin: 20px 0 15px 0;
-            font-weight: bold;
-        }
-
-        /* 信息提示框 */
-        .info-box {
-            background: #e7f3ff;
-            border-left: 5px solid #2196F3;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 5px;
-            color: #0c5460;
-        }
-
-        .warning-box {
-            background: #fff3cd;
-            border-left: 5px solid #ffc107;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 5px;
-            color: #856404;
-        }
-
-        /* 指标标识 */
-        .success-badge {
-            background: #28a745;
-            color: white;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: bold;
-        }
-
-        .warning-badge {
-            background: #ffc107;
-            color: #333;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: bold;
-        }
-
-        .risk-high {
-            background: #dc3545;
-            color: white;
-            padding: 6px 16px;
-            border-radius: 12px;
-            font-size: 13px;
-            font-weight: bold;
-            display: inline-block;
-            min-width: 80px;
-            text-align: center;
-        }
-
-        .risk-medium {
-            background: #fd7e14;
-            color: white;
-            padding: 6px 16px;
-            border-radius: 12px;
-            font-size: 13px;
-            font-weight: bold;
-            display: inline-block;
-            min-width: 80px;
-            text-align: center;
-        }
-
-        .risk-low {
-            background: #28a745;
-            color: white;
-            padding: 6px 16px;
-            border-radius: 12px;
-            font-size: 13px;
-            font-weight: bold;
-            display: inline-block;
-            min-width: 80px;
-            text-align: center;
-        }
-
-        /* 分隔线 */
-        hr {
-            border: none;
-            border-top: 2px solid #f0f0f0;
-            margin: 30px 0;
-        }
-
-        /* 重点数据 */
-        .highlight-data {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+        /* 评价文字 */
+        .evaluation-text {
+            background: #f8f9fc;
             padding: 15px 20px;
             border-radius: 8px;
-            display: inline-block;
-            margin: 5px;
-            font-weight: bold;
+            line-height: 1.7;
+            color: #4a5568;
+            font-size: 0.92em;
         }
-
-        /* 列表样式 */
-        ul, ol {
-            margin: 15px 0;
-            margin-left: 30px;
+        /* 表格内匹配标识 */
+        .match-yes {
+            color: #27ae60;
+            font-weight: 600;
         }
-
-        li {
-            margin: 8px 0;
+        .match-no {
+            color: #e94560;
         }
-
-        /* SWOT分析 */
-        .swot-section {
-            background: #f8f9ff;
+        /* 竞品表格 */
+        .competitor-table td:first-child {
+            font-weight: 600;
+            color: #1a1a2e;
+        }
+        /* 策略建议卡片 */
+        .strategy-card {
+            background: linear-gradient(135deg, #fff5f5, #fff0f0);
+            border: 1px solid #feb2b2;
+            border-radius: 12px;
             padding: 25px;
-            border-radius: 10px;
-            margin: 20px 0;
-        }
-
-        /* 投资建议 */
-        .investment-advice {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 30px;
-            border-radius: 10px;
-            margin: 30px 0;
-        }
-
-        .investment-advice h3 {
-            color: white;
-            font-size: 22px;
             margin-bottom: 20px;
         }
-
-        .investment-advice ul {
-            margin-left: 20px;
-        }
-
-        /* 数据来源 */
-        .data-source {
-            background: #f8f9ff;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-        }
-
-        .data-source h3 {
-            color: #667eea;
-        }
-
-        /* 双列布局 */
-        .two-column {
+        .strategy-card h3 {
+            color: #c53030;
+            font-size: 1.2em;
+            margin-bottom: 15px;
             display: flex;
-            gap: 20px;
+            align-items: center;
+            gap: 10px;
+        }
+        .strategy-card h3::before {
+            content: "⚠️";
+        }
+        .plan-block {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid #fc8181;
+        }
+        .plan-block h4 {
+            color: #e53e3e;
+            font-size: 1em;
+            margin-bottom: 12px;
+        }
+        .plan-block h4::before {
+            content: "📋 ";
+        }
+        .cost-table {
+            background: #f8f9fc;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .cost-table td {
+            padding: 8px 12px;
+        }
+        .cost-table td:first-child {
+            font-weight: 500;
+            color: #4a5568;
+        }
+        .cost-total {
+            background: #fed7d7 !important;
+            font-weight: 700;
+            color: #c53030 !important;
+        }
+        /* 总结建议 */
+        .summary-section {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            border-radius: 16px;
+            padding: 30px;
+            color: #fff;
+            margin-top: 30px;
+        }
+        .summary-section h2 {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid rgba(255,255,255,0.2);
+        }
+        .summary-section h3 {
+            font-size: 1.1em;
+            color: #e94560;
+            margin: 20px 0 15px;
+        }
+        .summary-section h4 {
+            font-size: 1em;
+            color: #ffd93d;
+            margin: 15px 0 10px;
+        }
+        .summary-section p, .summary-section li {
+            line-height: 1.8;
+            color: #cbd5e0;
+            font-size: 0.92em;
+        }
+        .summary-section ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+        .summary-section li {
+            margin-bottom: 8px;
+        }
+        .final-recommendation {
+            background: rgba(233, 69, 96, 0.2);
+            border: 2px solid #e94560;
+            border-radius: 12px;
+            padding: 20px;
             margin: 20px 0;
+            text-align: center;
         }
-
-        .two-column > div {
-            flex: 1;
+        .final-recommendation strong {
+            font-size: 1.3em;
+            color: #e94560;
         }
-
-        .two-column table {
-            font-size: 13px;
+        .alternative-list {
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 15px;
         }
-
-        .two-column table th, 
-        .two-column table td {
-            padding: 8px 10px;
+        .alternative-list li {
+            margin-bottom: 12px;
         }
-
-        /* 三列均分布局 */
-        .three-column-table table {
-            table-layout: fixed;
+        /* 评估机构信息 */
+        .evaluation-meta {
+            text-align: right;
+            padding: 15px 20px;
+            color: #718096;
+            font-size: 0.85em;
+            border-top: 1px solid #e2e8f0;
+            margin-top: 20px;
         }
-
-        .three-column-table table th:nth-child(1),
-        .three-column-table table td:nth-child(1) {
-            width: 33.33%;
-        }
-
-        .three-column-table table th:nth-child(2),
-        .three-column-table table td:nth-child(2) {
-            width: 33.33%;
-        }
-
-        .three-column-table table th:nth-child(3),
-        .three-column-table table td:nth-child(3) {
-            width: 33.33%;
-        }
-
         /* 响应式 */
         @media (max-width: 768px) {
-            .header h1 {
-                font-size: 24px;
+            .header {
+                padding: 30px 25px;
             }
-            
-            .header-info {
+            .header h1 {
+                font-size: 1.6em;
+            }
+            .header .meta {
                 flex-direction: column;
                 gap: 10px;
             }
-            
             .content {
-                padding: 20px 15px;
+                padding: 25px 20px;
             }
-            
-            table {
-                font-size: 14px;
-            }
-            
-            table th, table td {
-                padding: 8px 10px;
-            }
-
-            .two-column {
+            .score-display {
                 flex-direction: column;
+                text-align: center;
             }
-        }
-
-        /* 滚动条美化 */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 4px;
+            .dimension-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- 头部 -->
+        <!-- 头部标题区 -->
         <div class="header">
-            <h1>📊 滚筒调味机（Coating Drums）投资可行性分析报告</h1>
-            <div class="header-info">
-                <p><strong>📅 报告日期：</strong>2026年3月20日</p>
-                <p><strong>🎯 分析对象：</strong>膨化食品·坚果类食品调味料混合设备</p>
-                <p><strong>📊 数据基准：</strong>截至2026年3月的公开市场信息</p>
+            <h1>🐾 Interzoo 2026 参展价值评估报告</h1>
+            <p class="subtitle">全球宠物用品贸易博览会参展可行性分析</p>
+            <div class="meta">
+                <span>📅 评估日期: 2026年4月1日</span>
+                <span>🏢 评估企业: 江苏仅一联合智造有限公司</span>
             </div>
         </div>
 
-        <!-- 内容区域 -->
         <div class="content">
-            <!-- 核心信息与结论前置 -->
-            <div class="core-info">
-                <h2>📋 核心信息与结论前置</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>决策维度</th>
-                            <th>核心指标</th>
-                            <th>评估结论</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>终端市场规模</strong></td>
-                            <td>膨化零食约1,155亿元（2024年）+ 坚果炒货约3,003亿元（2024年）</td>
-                            <td><span class="success-badge">✅ 下游市场空间巨大</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>终端市场增速</strong></td>
-                            <td>膨化零食CAGR 5%；坚果炒货CAGR 7%。（2025-2030预测）</td>
-                            <td><span class="success-badge">✅ 稳健增长</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>设备市场空间</strong></td>
-                            <td>全球食品调味设备市场2023年约12亿美元，CAGR 7.1%</td>
-                            <td><span class="success-badge">✅ 持续扩容</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>竞争强度（国外）</strong></td>
-                            <td>PPM、AXIS、Heat and Control、tna、GEA等巨头主导高端市场</td>
-                            <td><span class="warning-badge">⚠️ 高端壁垒高</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>竞争强度（国内）</strong></td>
-                            <td>集中在山东中小型企业，价格竞争激烈，缺乏高端品牌</td>
-                            <td><span class="success-badge">✅ 差异化机会明显</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>技术门槛</strong></td>
-                            <td>滚筒机械结构基础门槛中等，但智能化/高精度控制壁垒较高</td>
-                            <td><span class="warning-badge">⚠️ 中等偏上</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>投资回报预期</strong></td>
-                            <td>国产设备价格约2~8万元/台，进口设备约30~100万元/台，存在较大价差利润空间</td>
-                            <td><span class="success-badge">✅ 利润空间可观</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>风险等级</strong></td>
-                            <td>中等（技术追赶风险、市场竞争风险、品牌建设风险）</td>
-                            <td><span class="warning-badge">⚠️ 需制定应对策略</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <div class="conclusion" style="margin-top: 30px; background: rgba(255,255,255,0.95);">
-                    <h3>💡 核心结论摘要</h3>
-                    <p><strong style="color: #667eea; font-size: 18px;">建议"谨慎立项"</strong>，理由如下：</p>
-                    <ol>
-                        <li><strong>终端需求旺盛</strong>：膨化食品和坚果市场规模大、增速稳定（5%~7% CAGR），带动调味设备持续需求；</li>
-                        <li><strong>竞争空白明显</strong>：国内滚筒调味机市场以山东地区中小型企业为主，产品同质化严重，低价竞争为主，缺乏中高端定位的系统性品牌。国际品牌价格昂贵且售后服务响应慢，存在明确的"国产替代+品牌升级"市场空间；</li>
-                        <li><strong>竞争风险显著</strong>：国际龙头（PPM、AXIS等）技术积累深厚（40~130年），国内同质化竞争激烈，仅靠价格难以突围；</li>
-                        <li><strong>利润空间可观</strong>：进口设备价格约为国产设备的5~15倍，若仅一能定位国产中高端（价格约进口1/3~1/2），单台毛利率有望达到较高水平。</li>
-                        <li><strong>技术壁垒需突破</strong>：高精度调味料计量（误差±1%以内）、快速换色（食品多品种需求）、CIP（原位清洗）能力是核心竞争力，也是江苏仅一需重点突破的技术方向；</li>
-                        <li><strong>市场切入点建议</strong>：建议以<strong style="color: #667eea;">中高端定制化调味线</strong>（产能≥1,000 kg/h，精度≤±1%）为切入点，避开低价竞争红海。</li>
-                    </ol>
+            <!-- 核心结论卡片 -->
+            <div class="conclusion-card">
+                <h2>📊 综合评估结论</h2>
+                <div class="score-display">
+                    <div class="score-circle">
+                        <span class="number">30</span>
+                        <span class="total">/100分</span>
+                    </div>
+                    <div class="score-info">
+                        <div class="recommendation">不推荐参展</div>
+                        <div class="stars">⭐⭐</div>
+                        <div class="label">推荐指数</div>
+                    </div>
                 </div>
-
-                <h4 style="margin-top: 30px;">⚠️ 主要风险及应对措施</h4>
-                <table style="background: white;">
-                    <thead>
-                        <tr>
-                            <th style="width: 35%;">风险点</th>
-                            <th style="width: 15%;">风险等级</th>
-                            <th style="width: 50%;">应对措施</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>技术壁垒突破周期长，研发投入超预期</td>
-                            <td><span class="risk-high">🔴 高风险</span></td>
-                            <td>① 建议前期与高校/科研机构合作，采用"引进消化+自主研发"路径；② 聚焦核心技术突破（精准计量、智能控制）</td>
-                        </tr>
-                        <tr>
-                            <td>市场竞争激烈，新进入者难以获得头部客户信任</td>
-                            <td><span class="risk-high">🔴 高风险</span></td>
-                            <td>① 先以标杆客户案例建立行业口碑；② 参加国内食品加工展会提高知名度</td>
-                        </tr>
-                        <tr>
-                            <td>竞争压力大（进口品牌降价竞争，国产品牌价格很低）</td>
-                            <td><span class="risk-medium">🟠 中风险</span></td>
-                            <td>① 聚焦非价格竞争维度（定制化、快速服务、灵活交期），避免进入低价恶性竞争；② 差异化定位中高端，避免直接参与低端价格战；③ 突出智能化和精准调味的技术优势；④ 提供整线解决方案而非单机销售</td>
-                        </tr>
-                        <tr>
-                            <td>食品设备认证（CE/FDA）周期长，影响出口市场</td>
-                            <td><span class="risk-medium">🟠 中风险</span></td>
-                            <td>初期聚焦国内市场，认证工作与产品研发同步推进</td>
-                        </tr>
-                        <tr>
-                            <td>终端市场需求增速放缓、不及预期</td>
-                            <td><span class="risk-low">🟢 低风险</span></td>
-                            <td>① 保持柔性产线能力，支持多品种小批量生产以应对需求波动；② 关注宠物食品、烘焙食品等调味设备拓展机会</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="core-judgment">
+                    <strong>核心判断:</strong> Interzoo聚焦宠物用品行业,演讲嘉宾中无终端宠物食品生产商,客户匹配度极低,行业匹配度有限,不建议参展。
+                </div>
             </div>
 
-            <!-- 一、产品定义 -->
-            <h2>一、产品定义</h2>
-
-            <h3>1.1 终端产品定义</h3>
-            <p><strong>终端产品：</strong>膨化食品 & 坚果类食品（调味料喷涂对象）</p>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>维度</th>
-                        <th>膨化食品</th>
-                        <th>坚果类食品</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>产品品类</strong></td>
-                        <td>薯片、玉米片、锅巴、米饼、爆米花、虾条等</td>
-                        <td>瓜子、花生、腰果、开心果、杏仁、核桃、混合坚果等</td>
-                    </tr>
-                    <tr>
-                        <td><strong>核心特征</strong></td>
-                        <td>经挤压/高温膨化工艺制成，质地酥脆，调味料是差异化核心</td>
-                        <td>经烘烤/油炸/盐焗/调味等工艺处理，口味多样性是竞争关键</td>
-                    </tr>
-                    <tr>
-                        <td><strong>目标消费群体</strong></td>
-                        <td>青少年、年轻消费群体为主</td>
-                        <td>全年龄段，以25~45岁健康消费人群为主</td>
-                    </tr>
-                    <tr>
-                        <td><strong>行业归属</strong></td>
-                        <td>休闲食品—膨化食品细分</td>
-                        <td>休闲食品—坚果炒货细分</td>
-                    </tr>
-                    <tr>
-                        <td><strong>调味工序</strong></td>
-                        <td>必须在油炸/烘烤后立即喷涂调味料，属于产线关键工序之一</td>
-                        <td>在烘烤/油炸后进行裹粉、喷油或撒料调味</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="info-box">
-                <strong>📌 注：</strong>宠物食品也是滚筒调味机的重要应用领域（PPM、AXIS均覆盖该行业）。
+            <!-- 一、会议介绍 -->
+            <div class="section">
+                <div class="section-title">一、会议介绍</div>
+                <div class="info-grid">
+                    <div class="info-item highlight">
+                        <div class="label">会议名称</div>
+                        <div class="value">Interzoo 2026</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">会议时间</div>
+                        <div class="value">2026年5月12日至15日 (共4天)</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">会议地点</div>
+                        <div class="value">🇩🇪 德国纽伦堡展览中心</div>
+                    </div>
+                    <div class="info-item highlight">
+                        <div class="label">官方主办方</div>
+                        <div class="value">WZF + ZZF + NürnbergMesse GmbH</div>
+                    </div>
+                </div>
+                <div class="evaluation-text">
+                    <strong>会议简介:</strong> Interzoo是全球领先的宠物用品贸易博览会,每两年在德国纽伦堡举办一次。作为专业B2B贸易展,Interzoo仅对行业专业人士开放。2024年展会创下历史新高,吸引<strong>2,146家展商</strong>(来自68个国家)和约<strong>37,000名专业观众</strong>(来自140个国家),展览面积达140,000平方米。展品范围涵盖宠物食品及生产技术、宠物配件、马术用品、包装技术、店铺陈设等全产业链。2026年展会预计规模将进一步扩大。
+                </div>
             </div>
 
-            <h3>1.2 设备定义</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>维度</th>
-                        <th>内容</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>设备类型</strong></td>
-                        <td>调味料混合涂布设备（食品加工机械—调味工段）</td>
-                    </tr>
-                    <tr>
-                        <td><strong>中文别名</strong></td>
-                        <td>滚筒调味机、滚筒撒粉机、调味滚筒、裹粉机、涂布机、八角调味桶</td>
-                    </tr>
-                    <tr>
-                        <td><strong>英文别名</strong></td>
-                        <td>Coating Drum、Seasoning Drum、Tumble Coater、Rotary Coater、Tumbling Drum</td>
-                    </tr>
-                    <tr>
-                        <td><strong>核心功能</strong></td>
-                        <td>通过旋转滚筒使产品在筒内翻滚，同时将粉末调味料、液态油脂或二者混合物均匀喷涂/撒布至产品表面</td>
-                    </tr>
-                    <tr>
-                        <td><strong>工艺原理</strong></td>
-                        <td>滚筒旋转（可调转速）+ 螺旋导流片推进产品 + 喷油/撒粉联动，实现均匀调味；可同时施加液态和粉末调味</td>
-                    </tr>
-                    <tr>
-                        <td><strong>关键技术参数</strong></td>
-                        <td>滚筒直径/长度、转速范围、倾斜角度（可调）、产能（kg/h）、调味料添加精度（%）、换色时间、清洗方式</td>
-                    </tr>
-                    <tr>
-                        <td><strong>在产线中的位置</strong></td>
-                        <td>位于油炸/烘烤工序之后 → 冷却工序之后 → 包装工序之前</td>
-                    </tr>
-                    <tr>
-                        <td><strong>配套系统</strong></td>
-                        <td>通常与螺旋上料机、喷油机、拌粉机、输送带、计量系统集成，形成完整的调味生产线（调味线）</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="divider"></div>
 
-            <hr>
+            <!-- 二、六大维度详细评估 -->
+            <div class="section">
+                <div class="section-title">二、六大维度详细评估</div>
 
-            <!-- 二、终端产品市场规模分析 -->
-            <h2>二、终端产品市场规模分析</h2>
-
-            <h3>2.1 中国市场规模与增速（2021~2030）</h3>
-
-            <div class="info-box">
-                <strong>📊 数据说明：</strong>以下数据来源于艾媒咨询、中国食品工业协会、头豹研究院、智研咨询等机构公开报告及行业统计，部分2026~2030年数据为基于CAGR的测算值。数据存在一定估算区间，仅供参考。
-            </div>
-
-            <div class="two-column three-column-table">
-                <div>
-                    <h4>膨化食品市场规模</h4>
+                <!-- 维度1: 行业匹配度 -->
+                <div class="dimension-card">
+                    <div class="dimension-header">
+                        <div class="dimension-title">1. 行业匹配度 <span class="weight">(权重: 20分)</span></div>
+                        <div class="dimension-score">
+                            <div class="score-bar"><div class="score-bar-fill medium" style="width: 40%"></div></div>
+                            <span class="score-text medium">8/20分</span>
+                        </div>
+                    </div>
+                    <div class="stat-tags">
+                        <span class="stat-tag">总议题数: <span class="num">5个</span></span>
+                        <span class="stat-tag">匹配议题数: <span class="num">2个</span></span>
+                        <span class="stat-tag">匹配占比: <span class="num">40%</span></span>
+                    </div>
                     <table>
                         <thead>
                             <tr>
-                                <th>年份</th>
-                                <th>市场规模（亿元）</th>
-                                <th>增速</th>
+                                <th style="width:8%">序号</th>
+                                <th style="width:32%">议题名称</th>
+                                <th style="width:12%">匹配</th>
+                                <th style="width:48%">匹配理由</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>2024</td>
-                                <td><strong>~1,155</strong></td>
-                                <td>-</td>
+                                <td>1</td>
+                                <td>宠物食品可持续发展的整体方法</td>
+                                <td><span class="match-no">❌</span></td>
+                                <td>聚焦可持续发展理念,与包装产线关联度低</td>
                             </tr>
                             <tr>
-                                <td>2025E</td>
-                                <td>~1,204</td>
-                                <td>+4.2%</td>
+                                <td>2</td>
+                                <td>再生配料与新型配料比较</td>
+                                <td><span class="match-no">❌</span></td>
+                                <td>聚焦原料配比,与包装产线关联度低</td>
                             </tr>
                             <tr>
-                                <td>2026E</td>
-                                <td>~1,246</td>
-                                <td>+3.5%</td>
+                                <td>3</td>
+                                <td>AI辅助供应商审核</td>
+                                <td><span class="match-no">❌</span></td>
+                                <td>聚焦供应链审核,与包装产线关联度低</td>
                             </tr>
                             <tr>
-                                <td>2027E</td>
-                                <td>~1,287</td>
-                                <td>+3.3%</td>
+                                <td>4</td>
+                                <td>酶在伴侣动物营养中的应用</td>
+                                <td><span class="match-no">❌</span></td>
+                                <td>聚焦营养配方,与包装产线关联度低</td>
                             </tr>
                             <tr>
-                                <td>2028E</td>
-                                <td>~1,360</td>
-                                <td>+5.6%</td>
+                                <td>5</td>
+                                <td>优化宠物食品冷冻干燥工艺</td>
+                                <td><span class="match-yes">✅</span></td>
+                                <td>涉及食品加工工艺,与仅一包装产线有一定关联</td>
                             </tr>
                             <tr>
-                                <td>2029E</td>
-                                <td>~1,435</td>
-                                <td>+5.5%</td>
-                            </tr>
-                            <tr>
-                                <td>2030E</td>
-                                <td>~1,518</td>
-                                <td>+5.8%</td>
+                                <td>6</td>
+                                <td>宠物食品包装解决方案</td>
+                                <td><span class="match-yes">✅</span></td>
+                                <td>直接涉及包装设备和材料,与仅一业务高度匹配</td>
                             </tr>
                         </tbody>
                     </table>
+                    <div class="evaluation-text">
+                        <strong>评价:</strong> Interzoo核心聚焦宠物用品行业,会议议题主要围绕宠物食品营养、配料创新、可持续发展等方向。虽然展会包含宠物食品生产技术和包装技术板块,但整体议题与仅一的乳品/药品/食品包装产线业务匹配度中等偏低。Petfood Forum Europe的议题更偏向原料和营养研究,仅冷冻干燥工艺和包装解决方案与仅一业务相关。
+                    </div>
                 </div>
-                <div>
-                    <h4>坚果炒货市场规模</h4>
-                    <table>
+
+                <!-- 维度2: 客户匹配度 -->
+                <div class="dimension-card">
+                    <div class="dimension-header">
+                        <div class="dimension-title">2. 客户匹配度 <span class="weight">(权重: 40分)</span></div>
+                        <div class="dimension-score">
+                            <div class="score-bar"><div class="score-bar-fill low" style="width: 12.5%"></div></div>
+                            <span class="score-text low">5/40分</span>
+                        </div>
+                    </div>
+                    <div class="stat-tags">
+                        <span class="stat-tag">演讲嘉宾总数: <span class="num">5人</span></span>
+                        <span class="stat-tag">匹配终端客户: <span class="num">0人</span></span>
+                        <span class="stat-tag">客户匹配占比: <span class="num">0%</span></span>
+                    </div>
+
+                    <h4 style="color:#1a1a2e;margin:15px 0 10px;font-size:1em;">A. 终端客户 (宠物食品生产商)</h4>
+                    <div class="evaluation-text" style="background:#fff5f5;border-left-color:#e94560;">
+                        目前Petfood Forum Europe已公布的演讲嘉宾中,暂未发现终端宠物食品生产商(如Mars Petcare、Nestlé Purina、Hill's、Royal Canin等)。
+                    </div>
+
+                    <h4 style="color:#1a1a2e;margin:20px 0 10px;font-size:1em;">B. 同行/竞争对手 (设备供应商)</h4>
+                    <table class="competitor-table">
                         <thead>
                             <tr>
-                                <th>年份</th>
-                                <th>市场规模（亿元）</th>
-                                <th>增速</th>
+                                <th>姓名</th>
+                                <th>职位</th>
+                                <th>公司/机构</th>
+                                <th>议题</th>
+                                <th>竞争关系</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>2023</td>
-                                <td>~2,755</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td>2024</td>
-                                <td><strong>~3,003</strong></td>
-                                <td>+9%</td>
-                            </tr>
-                            <tr>
-                                <td>2025E</td>
-                                <td>~3,246</td>
-                                <td>+8.1%</td>
-                            </tr>
-                            <tr>
-                                <td>2026E</td>
-                                <td>~3,497</td>
-                                <td>+7.7%</td>
-                            </tr>
-                            <tr>
-                                <td>2027E</td>
-                                <td>~3,750</td>
-                                <td>+7.3%</td>
-                            </tr>
-                            <tr>
-                                <td>2028E</td>
-                                <td>~4,035</td>
-                                <td>+7.6%</td>
-                            </tr>
-                            <tr>
-                                <td>2029E</td>
-                                <td>~4,283</td>
-                                <td>+6.1%</td>
+                                <td>Magnus Jochumsen</td>
+                                <td>高级项目与销售经理</td>
+                                <td>GEA Process Engineering</td>
+                                <td>优化宠物食品冷冻干燥工艺</td>
+                                <td><span style="color:#e94560;font-weight:700;">⭐⭐⭐⭐⭐</span></td>
                             </tr>
                         </tbody>
                     </table>
+
+                    <h4 style="color:#1a1a2e;margin:20px 0 10px;font-size:1em;">C. 供应商/服务商</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>姓名</th>
+                                <th>职位</th>
+                                <th>公司/机构</th>
+                                <th>议题</th>
+                                <th>相关性</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dan Lorenzen-Schmidt</td>
+                                <td>业务发展与创新高级副总裁</td>
+                                <td>BHJ公司</td>
+                                <td>宠物食品可持续发展</td>
+                                <td><span class="match-no">⭐</span></td>
+                            </tr>
+                            <tr>
+                                <td>Deni Kostelac, Ph.D.</td>
+                                <td>高级科学家</td>
+                                <td>International Flavors & Fragrances</td>
+                                <td>酶在伴侣动物营养中的应用</td>
+                                <td><span class="match-no">⭐</span></td>
+                            </tr>
+                            <tr>
+                                <td>Anne Gaasbeek</td>
+                                <td>团队负责人兼高级顾问</td>
+                                <td>Mérieux NutriSciences</td>
+                                <td>再生配料与新型配料比较</td>
+                                <td><span class="match-no">⭐</span></td>
+                            </tr>
+                            <tr>
+                                <td>David Rosenblatt, DVM</td>
+                                <td>学习与学术服务负责人</td>
+                                <td>Sher Consulting and Training</td>
+                                <td>AI辅助供应商审核</td>
+                                <td><span class="match-no">⭐</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4 style="color:#e94560;margin:20px 0 10px;font-size:1em;">⚠️ 重点关注同行: GEA Process Engineering</h4>
+                    <div class="info-grid" style="grid-template-columns:1fr 1fr;">
+                        <div class="info-item">
+                            <div class="label">公司背景</div>
+                            <div class="value">全球领先食品饮料设备供应商,总部德国,18,000+员工,2023年营收约51亿欧元</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="label">市场地位</div>
+                            <div class="value">食品加工设备领域重要地位,提供完整加工生产线和包装解决方案</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="label">业务动态</div>
+                            <div class="value">宠物食品加工设备持续投入研发,提供冷冻干燥、挤压成型、包装等环节</div>
+                        </div>
+                        <div class="info-item" style="background:#fff5f5;border-left-color:#e94560;">
+                            <div class="label">关注理由</div>
+                            <div class="value" style="color:#e94560;font-weight:600;">仅一在宠物食品包装领域的直接竞争对手</div>
+                        </div>
+                    </div>
+
+                    <div class="evaluation-text">
+                        <strong>评价:</strong> Petfood Forum Europe演讲嘉宾主要为配料供应商、技术服务商和设备供应商,终端宠物食品生产商(如Mars Petcare、Nestlé Purina等)未见在演讲名单中。GEA作为设备供应商是仅一的同行/竞争对手,不是仅一的客户。从已公布议程来看,仅一的终端客户匹配度低。展会的实际观众群体可能包含宠物食品制造商,但需要进一步验证。
+                    </div>
+                </div>
+
+                <!-- 维度3: 主办方与背书 -->
+                <div class="dimension-card">
+                    <div class="dimension-header">
+                        <div class="dimension-title">3. 主办方与背书 <span class="weight">(权重: 15分)</span></div>
+                        <div class="dimension-score">
+                            <div class="score-bar"><div class="score-bar-fill high" style="width: 93%"></div></div>
+                            <span class="score-text high">14/15分</span>
+                        </div>
+                    </div>
+                    <div class="info-grid" style="grid-template-columns:1fr 1fr;">
+                        <div class="info-item" style="background:linear-gradient(135deg,#667eea22,#764ba222);">
+                            <div class="label">官方主办方</div>
+                            <div class="value" style="font-weight:600;">WZF GmbH</div>
+                            <div style="font-size:0.85em;color:#4a5568;margin-top:5px;">成立:1966年 | 德国威斯巴登 | 宠物行业服务和展会组织</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="label">荣誉赞助方</div>
+                            <div class="value">ZZF (德国宠物贸易和工业协会)</div>
+                            <div style="font-size:0.85em;color:#4a5568;margin-top:5px;">创立于1947年,代表德国宠物行业利益</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="label">执行承办方</div>
+                            <div class="value">NürnbergMesse GmbH</div>
+                            <div style="font-size:0.85em;color:#4a5568;margin-top:5px;">全球知名展览公司</div>
+                        </div>
+                        <div class="info-item highlight">
+                            <div class="label">往届口碑</div>
+                            <div class="value">成功举办37届 | 满意度超95%</div>
+                            <div style="font-size:0.85em;color:#4a5568;margin-top:5px;">国际化程度高:85%展商来自德国以外</div>
+                        </div>
+                    </div>
+                    <div class="evaluation-text">
+                        <strong>评价:</strong> Interzoo由德国宠物行业协会下属的WZF主办,拥有强大的行业背书和超过50年的举办历史,主办方资质权威,往届口碑优秀,国际化程度高(85%展商来自德国以外)。主办方评分为最高档。
+                    </div>
+                </div>
+
+                <!-- 维度4: 商务对接与曝光机会 -->
+                <div class="dimension-card">
+                    <div class="dimension-header">
+                        <div class="dimension-title">4. 商务对接与曝光机会 <span class="weight">(权重: 15分)</span></div>
+                        <div class="dimension-score">
+                            <div class="score-bar"><div class="score-bar-fill high" style="width: 87%"></div></div>
+                            <span class="score-text high">13/15分</span>
+                        </div>
+                    </div>
+                    <div class="info-grid" style="grid-template-columns:1fr 1fr 1fr;">
+                        <div class="info-item">
+                            <div class="label">展位形式</div>
+                            <div class="value">标准展位 + 光地展位</div>
+                            <div style="font-size:0.85em;color:#4a5568;margin-top:5px;">多国家馆和产品细分展区</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="label">演讲机会</div>
+                            <div class="value">Petfood Forum Europe</div>
+                            <div style="font-size:0.85em;color:#4a5568;margin-top:5px;">产品展示 + 创意舞台</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="label">对接服务</div>
+                            <div class="value">一对一商务洽谈</div>
+                            <div style="font-size:0.85em;color:#4a5568;margin-top:5px;">买家预约 + Interzoo Party</div>
+                        </div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>展商数量</th>
+                                <th>观众数量</th>
+                                <th>展览面积</th>
+                                <th>国际展商</th>
+                                <th>国际观众</th>
+                                <th>决策层观众</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="text-align:center;">
+                                <td><strong>2,146家</strong><br><span style="font-size:0.85em;color:#718096;">(2024年)</span></td>
+                                <td><strong>37,000名</strong><br><span style="font-size:0.85em;color:#718096;">专业观众</span></td>
+                                <td><strong>140,000m²</strong></td>
+                                <td><strong>85%</strong></td>
+                                <td><strong>74%</strong></td>
+                                <td><strong>91%</strong><br><span style="font-size:0.85em;color:#718096;">管理职位</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="evaluation-text">
+                        <strong>评价:</strong> Interzoo提供全方位的商务对接机会,包括展位展示、演讲平台、一对一洽谈、社交活动等。会议规模宏大,国际化程度高,观众决策权强(91%具有管理职位)。商务对接机会评分为最高档。
+                    </div>
+                </div>
+
+                <!-- 维度5: 品牌价值与行业地位 -->
+                <div class="dimension-card">
+                    <div class="dimension-header">
+                        <div class="dimension-title">5. 品牌价值与行业地位 <span class="weight">(权重: 10分)</span></div>
+                        <div class="dimension-score">
+                            <div class="score-bar"><div class="score-bar-fill low" style="width: 40%"></div></div>
+                            <span class="score-text low">4/10分</span>
+                        </div>
+                    </div>
+                    <div class="info-grid" style="grid-template-columns:1fr 1fr;">
+                        <div class="info-item">
+                            <div class="label">品牌价值</div>
+                            <div class="value">全球宠物用品行业最具影响力展会</div>
+                            <div style="font-size:0.85em;color:#718096;margin-top:5px;">但与仅一核心乳品/药品/食品行业存在差异</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="label">国际竞品</div>
+                            <div class="value">Tetra Pak、SIG等参与度未知</div>
+                            <div style="font-size:0.85em;color:#718096;margin-top:5px;">宠物食品包装供应商(tbs-pack等)已确认参展</div>
+                        </div>
+                    </div>
+                    <div class="evaluation-text">
+                        <strong>评价:</strong> Interzoo在宠物用品行业地位崇高,但对于仅一而言,展会聚焦的宠物行业与仅一核心业务存在差异,国际包装巨头参与度未知,品牌价值的直接提升有限。品牌价值评分偏低。
+                    </div>
+                </div>
+
+                <!-- 维度6: 商业转化潜力 -->
+                <div class="dimension-card">
+                    <div class="dimension-header">
+                        <div class="dimension-title">6. 商业转化潜力 <span class="weight">(权重: 10分)</span></div>
+                        <div class="dimension-score">
+                            <div class="score-bar"><div class="score-bar-fill medium" style="width: 60%"></div></div>
+                            <span class="score-text medium">6/10分</span>
+                        </div>
+                    </div>
+                    <div class="info-grid" style="grid-template-columns:1fr 1fr;">
+                        <div class="info-item" style="background:#fff5f5;">
+                            <div class="label">历史数据</div>
+                            <div class="value">暂无公开转化率数据</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="label">对接服务</div>
+                            <div class="value">买家预约 + 一对一洽谈 + 社交活动</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="label">竞争环境</div>
+                            <div class="value">tbs-pack、alpha-pack、Middleby等已参展</div>
+                        </div>
+                        <div class="info-item" style="background:#fff5f5;">
+                            <div class="label">仅一定位</div>
+                            <div class="value" style="color:#e94560;font-weight:600;">宠物食品包装领域新进入者</div>
+                        </div>
+                    </div>
+                    <div class="evaluation-text">
+                        <strong>评价:</strong> 展会提供较完善的对接服务,但暂无历史转化数据。对于仅一而言,宠物食品包装领域属于新市场,竞争环境中等偏激烈,转化潜力存在不确定性。
+                    </div>
                 </div>
             </div>
 
-            <div class="warning-box">
-                <strong>⚠️ 数据说明：</strong>上述"合计"仅为膨化食品+坚果炒货两大直接相关细分，未包含宠物食品。若将宠物食品纳入（2024年中国宠物食品市场约1,500亿元，且增速达15%~20%），则调味设备的目标终端市场总量更大。
+            <div class="divider"></div>
+
+            <!-- 四、参展策略建议 -->
+            <div class="section">
+                <div class="section-title">三、参展策略建议</div>
+
+                <div class="strategy-card">
+                    <h3>结论: 不建议参展</h3>
+                    <p style="color:#4a5568;margin-bottom:15px;font-size:0.92em;">由于Petfood Forum Europe已公布的演讲嘉宾中无终端宠物食品生产商(仅一的客户),客户匹配度为0%,不建议投入资源参展。以下是理论上的参展方案仅供参考:</p>
+
+                    <div class="plan-block">
+                        <h4>方案一: 展台参展 (不推荐)</h4>
+                        <table class="cost-table">
+                            <tr>
+                                <td>展位费</td>
+                                <td>约15-25万元 (标准展位9-18㎡)</td>
+                            </tr>
+                            <tr>
+                                <td>差旅费</td>
+                                <td>约4万元 (2人,含机票、酒店、餐饮)</td>
+                            </tr>
+                            <tr>
+                                <td>物料费</td>
+                                <td>约3-5万元 (展台搭建、宣传资料、样品运输)</td>
+                            </tr>
+                            <tr class="cost-total">
+                                <td>总投入</td>
+                                <td>约22-34万元</td>
+                            </tr>
+                        </table>
+                        <div style="margin-top:10px;font-size:0.9em;color:#718096;">
+                            <strong>预期效果:</strong> 接触决策人:未知 | 获得线索:极少 | 转化商机:极低
+                        </div>
+                    </div>
+
+                    <div class="plan-block">
+                        <h4>方案二: 听众参会 (不推荐)</h4>
+                        <table class="cost-table">
+                            <tr>
+                                <td>参会费</td>
+                                <td>约2,000-3,000元 (Petfood Forum Europe注册费)</td>
+                            </tr>
+                            <tr>
+                                <td>差旅费</td>
+                                <td>约4万元 (2人,含机票、酒店、餐饮)</td>
+                            </tr>
+                            <tr class="cost-total">
+                                <td>总投入</td>
+                                <td>约4.2-4.3万元</td>
+                            </tr>
+                        </table>
+                        <div style="margin-top:10px;font-size:0.9em;color:#718096;">
+                            <strong>预期效果:</strong> 接触决策人:未知 | 获得线索:极少 | 转化商机:极低
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <h3>2.2 价格分布</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>价格档次</th>
-                        <th>单包售价区间</th>
-                        <th>市场占比（估算）</th>
-                        <th>主要消费场景</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>低端</strong></td>
-                        <td>¥3~¥8/100g</td>
-                        <td>约40%</td>
-                        <td>传统批发市场、便利店、校园渠道</td>
-                    </tr>
-                    <tr>
-                        <td><strong>中端</strong></td>
-                        <td>¥8~¥20/100g</td>
-                        <td>约35%</td>
-                        <td>超市、电商平台、礼品市场</td>
-                    </tr>
-                    <tr>
-                        <td><strong>高端/超高端</strong></td>
-                        <td>¥20+/100g</td>
-                        <td>约25%</td>
-                        <td>健康坚果、有机膨化食品、进口品牌</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="divider"></div>
 
-            <div class="info-box">
-                <strong>📈 趋势：</strong>消费升级推动中高端市场快速增长，消费者对健康化、功能性（低盐、低糖、高蛋白）、多口味的需求持续提升，带动品牌商对调味精度和产品差异化的要求提高。
-            </div>
+            <!-- 五、总结与建议 -->
+            <div class="summary-section">
+                <h2>📋 总结与建议</h2>
 
-            <h3>2.3 品牌竞争格局</h3>
+                <h3>综合判断</h3>
+                <p>Interzoo 2026作为全球领先的宠物用品贸易展,主办方资质权威,展会规模宏大,国际化程度高。但对于江苏仅一联合智造有限公司而言,展会不具备参展价值:</p>
 
-            <h4>膨化食品主要品牌（中国市场）</h4>
-            <table>
-                <thead>
-                    <tr>
-                        <th>品牌/企业</th>
-                        <th>主要产品</th>
-                        <th>核心优势</th>
-                        <th>价格定位</th>
-                        <th>市场地位</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>乐事（百事）</td>
-                        <td>薯片</td>
-                        <td>品牌力强、渠道覆盖广、新品迭代快</td>
-                        <td>中高端</td>
-                        <td>龙头</td>
-                    </tr>
-                    <tr>
-                        <td>良品铺子</td>
-                        <td>膨化+坚果</td>
-                        <td>全品类、高端化</td>
-                        <td>中高端</td>
-                        <td>第一梯队</td>
-                    </tr>
-                    <tr>
-                        <td>三只松鼠</td>
-                        <td>坚果+膨化</td>
-                        <td>电商渠道、年轻用户</td>
-                        <td>中端</td>
-                        <td>第一梯队</td>
-                    </tr>
-                    <tr>
-                        <td>百草味</td>
-                        <td>坚果+膨化</td>
-                        <td>电商渠道</td>
-                        <td>中端</td>
-                        <td>第一梯队</td>
-                    </tr>
-                    <tr>
-                        <td>可比克（达利）</td>
-                        <td>薯片、锅巴</td>
-                        <td>性价比、渠道下沉</td>
-                        <td>中端</td>
-                        <td>第二梯队</td>
-                    </tr>
-                    <tr>
-                        <td>盼盼</td>
-                        <td>薯片、膨化食品</td>
-                        <td>性价比</td>
-                        <td>中端</td>
-                        <td>第二梯队</td>
-                    </tr>
-                    <tr>
-                        <td>上好佳</td>
-                        <td>虾条、薯片</td>
-                        <td>渠道深耕</td>
-                        <td>中端</td>
-                        <td>第二梯队</td>
-                    </tr>
-                    <tr>
-                        <td>进口品牌（多力多滋等）</td>
-                        <td>薯片</td>
-                        <td>高端进口</td>
-                        <td>高端</td>
-                        <td>细分</td>
-                    </tr>
-                </tbody>
-            </table>
+                <h4>1. 客户匹配度极低 (致命缺陷)</h4>
+                <p>Petfood Forum Europe已公布的演讲嘉宾中,无终端宠物食品生产商(仅一的客户),全部为配料供应商、技术服务商和设备供应商。GEA作为设备供应商是仅一的同行/竞争对手,不是仅一的客户。客户匹配度为0%,这是决定性缺陷。</p>
 
-            <h4>坚果炒货主要品牌</h4>
-            <table>
-                <thead>
-                    <tr>
-                        <th>品牌/企业</th>
-                        <th>主要产品</th>
-                        <th>核心优势</th>
-                        <th>价格定位</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>三只松鼠</td>
-                        <td>混合坚果、每日坚果</td>
-                        <td>电商渠道、大单品策略</td>
-                        <td>中高端</td>
-                    </tr>
-                    <tr>
-                        <td>良品铺子</td>
-                        <td>坚果礼盒、高端坚果</td>
-                        <td>高端化、全品类</td>
-                        <td>中高端</td>
-                    </tr>
-                    <tr>
-                        <td>百草味</td>
-                        <td>坚果</td>
-                        <td>电商渠道</td>
-                        <td>中端</td>
-                    </tr>
-                    <tr>
-                        <td>洽洽食品</td>
-                        <td>瓜子、坚果</td>
-                        <td>瓜子品类绝对领先、渠道深</td>
-                        <td>中端</td>
-                    </tr>
-                    <tr>
-                        <td>沃隆</td>
-                        <td>每日坚果</td>
-                        <td>开创每日坚果品类</td>
-                        <td>中高端</td>
-                    </tr>
-                    <tr>
-                        <td>来伊份</td>
-                        <td>坚果+零食</td>
-                        <td>线下连锁渠道</td>
-                        <td>中端</td>
-                    </tr>
-                </tbody>
-            </table>
+                <h4>2. 行业匹配度有限</h4>
+                <p>Interzoo聚焦宠物用品行业,会议议题主要围绕宠物食品营养、配料创新、可持续发展等方向,与仅一的乳品/药品/食品包装产线业务匹配度中等偏低(匹配议题占比40%)。</p>
 
-            <div class="info-box">
-                <h4 style="color: #0c5460; margin-bottom: 10px;">📊 行业竞争特点</h4>
-                <ul style="color: #0c5460;">
-                    <li>行业集中度（CR3）：约28%~32%，整体较为分散；</li>
-                    <li>竞争焦点从"价格"转向"口味创新 + 健康化 + 包装体验"；</li>
-                    <li>口味差异化是核心竞争手段——新口味研发周期缩短至3~6个月，对调味设备的灵活性要求提升；</li>
-                    <li>头部品牌（三只松鼠、良品铺子等）持续扩产，存在设备更新和新增需求。</li>
-                </ul>
-            </div>
+                <h4>3. 投入产出比不佳</h4>
+                <p>展台参展投入约22-34万元,听众参会投入约4.2-4.3万元,但由于无法接触到终端客户,难以获得有效的商业线索和转化机会,投入产出比极低。</p>
 
-            <h3>2.4 发展驱动因素</h3>
+                <h4>4. 市场竞争激烈</h4>
+                <p>宠物食品包装设备领域已有多家竞争对手参展(如GEA、tbs-pack、alpha-pack、Middleby等),仅一作为新进入者缺乏竞争优势。</p>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>驱动因素类别</th>
-                        <th>具体内容</th>
-                        <th>对设备需求的影响</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>政策因素</strong></td>
-                        <td>《食品安全国家标准》持续完善，对食品添加剂使用规范化要求提高</td>
-                        <td>设备需满足更高的计量精度和可追溯性要求</td>
-                    </tr>
-                    <tr>
-                        <td><strong>消费者习惯变化</strong></td>
-                        <td>
-                            • 健康化转型：53.38%消费者"偶尔选择"低糖/低盐/低油产品<br>
-                            • 消费频次提升：超80%消费者月均花费20~100元<br>
-                            • 口味多元化：地方特色口味催生频繁换产需求<br>
-                            • 礼品化需求：39.58%坚果消费者购买目的是"送礼"
-                        </td>
-                        <td>推动高端调味设备（精准喷涂、减少油脂用量）需求</td>
-                    </tr>
-                    <tr>
-                        <td><strong>技术创新</strong></td>
-                        <td>
-                            • 食品加工智能化升级：2023年市场规模突破800亿元，CAGR超15%<br>
-                            • 柔性生产需求：口味快速迭代需要设备支持快速换产、快速清洗<br>
-                            • 精准调味技术：健康化趋势推动低脂、低钠精准喷涂技术需求<br>
-                            • 数字化追溯：食品安全要求推动设备数据采集和追溯能力
-                        </td>
-                        <td>推动设备智能化、数字化升级</td>
-                    </tr>
-                    <tr>
-                        <td><strong>销售渠道变革</strong></td>
-                        <td>
-                            • 电商/直播电商：抖音电商快速崛起，膨化零食线上份额持续增长<br>
-                            • 零食量贩店：2024年市场规模1,045.9亿元，门店超4万家<br>
-                            • 传统商超：份额从75%降至58%（2024年）<br>
-                            • 海外出口：坚果炒货跨境拓展
-                        </td>
-                        <td>
-                            • 小批量、多SKU生产需求增加<br>
-                            • 白牌和新品牌扩产需求旺盛<br>
-                            • 传统大品牌设备更新需求趋于稳定<br>
-                            • 合规标准要求设备品质提升
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                <div class="final-recommendation">
+                    <strong>最终建议: 不建议参展 Interzoo 2026</strong>
+                </div>
 
-            <hr>
-
-            <!-- 三、设备需求潜力分析 -->
-            <h2>三、设备需求潜力分析</h2>
-
-            <h3>3.1 设备市场现状</h3>
-
-            <h4>3.1.1 国际市场竞争格局</h4>
-            <table>
-                <thead>
-                    <tr>
-                        <th>品牌</th>
-                        <th>产地</th>
-                        <th>成立时间/历史</th>
-                        <th>核心产品与技术</th>
-                        <th>主要客户</th>
-                        <th>价格区间</th>
-                        <th>核心优势</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>PPM Technologies</strong></td>
-                        <td>美国（Duravant集团）</td>
-                        <td>1892年成立<br>120年历史</td>
-                        <td>
-                            • Coating Drums调味滚筒<br>
-                            • 粉液同步喷涂系统<br>
-                            • 干调料/浆料涂覆系统<br>
-                            • 输送系统集成
-                        </td>
-                        <td>百事、玛氏、通用磨坊等国际巨头</td>
-                        <td>$10万-$25万美元/套</td>
-                        <td>产品线最完整，系统集成能力强，全球服务网络完善</td>
-                    </tr>
-                    <tr>
-                        <td><strong>AXIS Automation</strong></td>
-                        <td>美国（威斯康星州）</td>
-                        <td>1984年成立<br>40年历史</td>
-                        <td>
-                            • 可拆卸FDA认证PP内衬滚筒<br>
-                            • 双向无缝导流片<br>
-                            • 容积式/称重式计量<br>
-                            • 振动给料器<br>
-                            • 油喷雾/真空上料系统
-                        </td>
-                        <td>北美烘焙/零食厂商</td>
-                        <td>$8万-$20万美元/套</td>
-                        <td>快速换色（15~30分钟），产品破损少，适合小批量多品种生产</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Heat and Control</strong></td>
-                        <td>美国</td>
-                        <td>全球最大零食设备集成商之一</td>
-                        <td>
-                            • Seasoning调味系统<br>
-                            • Coating & Seasoning涂覆与调味<br>
-                            • 整线集成解决方案
-                        </td>
-                        <td>全球各大零食品牌</td>
-                        <td>$10万-$30万美元/套</td>
-                        <td>整线交钥匙能力，系统集成度高</td>
-                    </tr>
-                    <tr>
-                        <td><strong>JBT（Marel）</strong></td>
-                        <td>美国/欧洲</td>
-                        <td>工业级食品加工设备覆盖广</td>
-                        <td>系统集成能力强</td>
-                        <td>工业化大型食品厂</td>
-                        <td>较高</td>
-                        <td>工业级设备覆盖广，系统集成能力强</td>
-                    </tr>
-                    <tr>
-                        <td><strong>tna solutions</strong></td>
-                        <td>澳大利亚</td>
-                        <td>全球食品加工设备集成</td>
-                        <td>调味、输送、包装全套</td>
-                        <td>国际大厂</td>
-                        <td>中高</td>
-                        <td>提供完整调味、输送、包装全套解决方案</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Buhler</strong></td>
-                        <td>瑞士</td>
-                        <td>百年食品设备品牌，技术领先</td>
-                        <td>高精度、高卫生标准</td>
-                        <td>高端食品加工</td>
-                        <td>较高</td>
-                        <td>百年品牌，高精度、高卫生标准</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="info-box">
-                <h4 style="color: #0c5460; margin-bottom: 10px;">🌍 国外市场竞争特点</h4>
-                <ul style="color: #0c5460;">
-                    <li><strong>集中</strong>：Heat and Control、tna、GEA、Bühler等少数巨头占据全球高端市场主导地位</li>
-                    <li><strong>技术壁垒高</strong>：高端设备在调味精度（误差<1%）、自动化程度（PLC+HMI+数据采集）、卫生设计（CIP在线清洗）等方面有深厚积累</li>
-                    <li><strong>系统化销售</strong>：国外厂商倾向于提供从调味到包装的整线解决方案，而非单一设备</li>
-                    <li><strong>价格高昂</strong>：进口设备价格高，且售后服务费用高</li>
-                </ul>
-            </div>
-
-            <div class="warning-box">
-                <strong>📊 数据来源：</strong>各厂商官网公开信息，截至2026年3月。
-            </div>
-
-            <h4>3.1.2 国内市场竞争格局</h4>
-            <table>
-                <thead>
-                    <tr>
-                        <th>品牌/厂商</th>
-                        <th>产地</th>
-                        <th>成立时间/历史</th>
-                        <th>核心产品与技术</th>
-                        <th>主要客户</th>
-                        <th>价格区间</th>
-                        <th>核心优势</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>诸城市亚中食品机械有限公司</td>
-                        <td>山东诸城</td>
-                        <td>多年食品机械制造经验</td>
-                        <td>
-                            • 不锈钢滚筒调味机<br>
-                            • 基础调味设备
-                        </td>
-                        <td>中小零食加工厂</td>
-                        <td>¥2,528~¥30,000/台</td>
-                        <td>价格低廉，适用于薯片、油炸食品等基础调味</td>
-                    </tr>
-                    <tr>
-                        <td>山东鸿超机械设备有限公司</td>
-                        <td>山东曲阜</td>
-                        <td>多年食品机械制造经验</td>
-                        <td>
-                            • 八角桶、裹料机为主<br>
-                            • 基础调味混合设备
-                        </td>
-                        <td>中小食品厂</td>
-                        <td>¥3万~¥10万/台</td>
-                        <td>价格较低，基础调味设备</td>
-                    </tr>
-                    <tr>
-                        <td>美腾机械</td>
-                        <td>国内</td>
-                        <td>膨化食品调味线专业厂商</td>
-                        <td>
-                            • 双滚筒调味设备<br>
-                            • 喷油机<br>
-                            • 螺旋上料机<br>
-                            • 整套调味线方案
-                        </td>
-                        <td>膨化食品厂</td>
-                        <td>¥5万~¥20万/套</td>
-                        <td>专业膨化食品调味线，提供整套解决方案</td>
-                    </tr>
-                    <tr>
-                        <td>其他中小厂商（诸城、廊坊、温州等地）</td>
-                        <td>国内</td>
-                        <td>价格低，灵活定制</td>
-                        <td>基础调味设备</td>
-                        <td>小型食品作坊</td>
-                        <td>¥1万~¥5万/台</td>
-                        <td>价格低，灵活定制</td>
-                    </tr>
-                    <tr>
-                        <td>健达干燥设备等</td>
-                        <td>江苏/浙江</td>
-                        <td>部分覆盖调味干燥联动线</td>
-                        <td>调味干燥联动线</td>
-                        <td>食品加工厂</td>
-                        <td>¥8万~¥25万/套</td>
-                        <td>部分覆盖调味干燥联动线</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="info-box">
-                <h4 style="color: #0c5460; margin-bottom: 10px;">🇨🇳 国内市场竞争特点</h4>
-                <ul style="color: #0c5460;">
-                    <li>低端市场（¥5万以内）高度竞争，厂商众多，产品同质化严重；</li>
-                    <li>中端市场（¥5万~¥20万）有一定的技术和产品差异，但总体技术壁垒不高；</li>
-                    <li>高端市场（¥20万+）主要由进口品牌厂商占据；</li>
-                    <li>国产设备在售后服务（响应快、成本低）和定制灵活性上有优势。</li>
-                </ul>
-            </div>
-
-            <hr>
-
-            <h3>3.2 设备需求测算</h3>
-
-            <h4>3.2.1 数据来源与关键假设</h4>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>市场类型</th>
-                        <th>指标</th>
-                        <th>2024年</th>
-                        <th>2025年</th>
-                        <th>未来预测</th>
-                        <th>数据来源</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td rowspan="2"><strong>坚果炒货市场</strong></td>
-                        <td>市场规模</td>
-                        <td>3,003亿元</td>
-                        <td>约3,200亿元</td>
-                        <td>2029年：4,283亿元</td>
-                        <td>艾媒咨询、华经产业研究院</td>
-                    </tr>
-                    <tr>
-                        <td>CAGR</td>
-                        <td>-</td>
-                        <td>6.5%</td>
-                        <td>5%-7%</td>
-                        <td>行业预测</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2"><strong>膨化食品市场</strong></td>
-                        <td>市场规模</td>
-                        <td>1,155亿元</td>
-                        <td>1,204亿元</td>
-                        <td>2030年：1,518亿元</td>
-                        <td>艾媒咨询</td>
-                    </tr>
-                    <tr>
-                        <td>CAGR</td>
-                        <td>-</td>
-                        <td>4.2%</td>
-                        <td>约5%</td>
-                        <td>行业预测</td>
-                    </tr>
-                    <tr>
-                        <td colspan="6" style="background-color: #f0f0f0;"><strong>产量估算</strong></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><strong>坚果炒货年产量</strong></td>
-                        <td colspan="4">2024年市场规模3,003亿元，按平均单价约15元/kg估算，年产量约 <strong>2,000万吨</strong></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><strong>膨化食品年产量</strong></td>
-                        <td colspan="4">2024年市场规模1,155亿元，按平均单价约20元/kg估算，年产量约 <strong>580万吨</strong></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><strong>合计产量</strong></td>
-                        <td colspan="4">2024年膨化食品+坚果炒货产量约 <strong>2,580万吨</strong>，2025年预计约 <strong>2,700万吨</strong></td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h5>企业数量估算</h5>
-            <p>根据行业调研和公开数据：</p>
-            <ul>
-                <li><strong>全国休闲食品相关企业总数</strong>：约<strong>15万家</strong>（含小作坊）</li>
-                <li><strong>规模以上食品工业企业总数</strong>：约<strong>43,000家</strong>（年营业收入≥2,000万元）</li>
-                <li><strong>膨化/坚果加工企业估算</strong>：
-                    <ul>
-                        <li>规模化企业（年产值≥5,000万元）：约<strong>800-1,000家</strong></li>
-                        <li>中小型企业：约<strong>3,000-4,000家</strong></li>
-                        <li>小作坊/微型企业：约<strong>8,000-10,000家</strong></li>
+                <h3>替代建议</h3>
+                <div class="alternative-list">
+                    <ul style="list-style:none;padding:0;">
+                        <li style="margin-bottom:15px;">
+                            <strong style="color:#ffd93d;">1. 直接拜访客户</strong><br>
+                            <span style="color:#cbd5e0;">直接联系Mars Petcare、Nestlé Purina、Hill's、Royal Canin等终端宠物食品生产商,安排技术交流和工厂考察,投入产出比更高。</span>
+                        </li>
+                        <li style="margin-bottom:15px;">
+                            <strong style="color:#ffd93d;">2. 参加食品/乳品行业展会</strong><br>
+                            <span style="color:#cbd5e0;">优先参加聚焦乳品、药品、食品行业的展会(如乳品展会、食品加工展会等),这些展会的终端客户匹配度更高,投入产出比更好。</span>
+                        </li>
+                        <li>
+                            <strong style="color:#ffd93d;">3. 关注宠物食品行业活动</strong><br>
+                            <span style="color:#cbd5e0;">关注宠物食品行业的创新大会、技术论坛等活动,寻找能够接触到终端生产商的机会。</span>
+                        </li>
                     </ul>
-                </li>
-            </ul>
+                </div>
 
-            <h5>设备参数设定</h5>
-            <table>
-                <thead>
-                    <tr>
-                        <th>参数</th>
-                        <th>数值</th>
-                        <th>说明</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>单台设备产能</td>
-                        <td>500-1,500 kg/h</td>
-                        <td>根据市场调研</td>
-                    </tr>
-                    <tr>
-                        <td>日运行时间</td>
-                        <td>16小时</td>
-                        <td>行业常规</td>
-                    </tr>
-                    <tr>
-                        <td>年运行天数</td>
-                        <td>300天</td>
-                        <td>行业常规</td>
-                    </tr>
-                    <tr>
-                        <td>单台设备年产能</td>
-                        <td>2,400-7,200吨</td>
-                        <td>计算：产能×16h×300天</td>
-                    </tr>
-                    <tr>
-                        <td>设备平均使用寿命</td>
-                        <td>8-12年</td>
-                        <td>行业经验，取10年为更新周期</td>
-                    </tr>
-                    <tr>
-                        <td>国产设备市场占有率</td>
-                        <td>2024年约60%，2030年预计约70%</td>
-                        <td>行业趋势</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <hr>
-
-            <h4>3.2.2 需求测算方法</h4>
-
-            <h5>测算公式</h5>
-            <div class="info-box">
-                <p style="font-size: 16px; font-weight: bold; color: #667eea;">
-                    年新增设备需求 = 新增产能需求 + 设备更新需求
-                </p>
-                <p style="margin-top: 10px;">其中：</p>
-                <ol>
-                    <li><strong>新增产能需求</strong> = 当年食品产量增量 ÷ 单台设备平均年产能</li>
-                    <li><strong>设备更新需求</strong> = 存量设备数量 ÷ 设备使用年限（10年）</li>
-                </ol>
-            </div>
-
-            <h5>存量设备估算</h5>
-            <div class="info-box">
-                <h6 style="color: #0c5460; margin-bottom: 10px;">当前市场存量设备估算</h6>
-                <ul style="color: #0c5460;">
-                    <li>2024年膨化+坚果产量约2,580万吨</li>
-                    <li>按单台设备平均年产能4,800吨（取中间值）</li>
-                    <li>需要设备数量 = 2,580万吨 ÷ 4,800吨 ≈ <strong>5,375台</strong></li>
-                    <li>考虑产能利用率（约70%），实际存量设备约 <strong>7,600-8,000台</strong></li>
-                </ul>
-            </div>
-
-            <hr>
-
-            <h4>3.2.3 分场景需求预测（2026-2030年）</h4>
-
-            <h5>保守场景（终端CAGR=5%）</h5>
-            <div class="info-box">
-                <p><strong>假设条件：</strong></p>
-                <ul>
-                    <li>膨化食品+坚果炒货产量年均增长5%</li>
-                    <li>设备更新需求较低（仅基本更新）</li>
-                    <li>新建产能需求保守</li>
-                </ul>
-            </div>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>年份</th>
-                        <th>终端产量（万吨）</th>
-                        <th>产量增量（万吨）</th>
-                        <th>新增产能设备需求（台）</th>
-                        <th>设备更新需求（台）</th>
-                        <th>年度总需求（台）</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2026</td>
-                        <td>2,835</td>
-                        <td>135</td>
-                        <td>281</td>
-                        <td>760</td>
-                        <td><strong>1,041</strong></td>
-                    </tr>
-                    <tr>
-                        <td>2027</td>
-                        <td>2,977</td>
-                        <td>142</td>
-                        <td>296</td>
-                        <td>780</td>
-                        <td><strong>1,076</strong></td>
-                    </tr>
-                    <tr>
-                        <td>2028</td>
-                        <td>3,126</td>
-                        <td>149</td>
-                        <td>310</td>
-                        <td>800</td>
-                        <td><strong>1,110</strong></td>
-                    </tr>
-                    <tr>
-                        <td>2029</td>
-                        <td>3,282</td>
-                        <td>156</td>
-                        <td>325</td>
-                        <td>820</td>
-                        <td><strong>1,145</strong></td>
-                    </tr>
-                    <tr>
-                        <td>2030</td>
-                        <td>3,446</td>
-                        <td>164</td>
-                        <td>342</td>
-                        <td>840</td>
-                        <td><strong>1,182</strong></td>
-                    </tr>
-                    <tr style="background-color: #f0f0f0; font-weight: bold;">
-                        <td>合计</td>
-                        <td>-</td>
-                        <td>746</td>
-                        <td>1,554</td>
-                        <td>4,000</td>
-                        <td><strong style="color: #667eea; font-size: 18px;">5,554</strong></td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="info-box">
-                <p><strong>计算说明：</strong></p>
-                <ul style="color: #0c5460;">
-                    <li>2026年产量 = 2,700万吨 × (1+5%) = 2,835万吨</li>
-                    <li>2026年产量增量 = 2,835 - 2,700 = 135万吨</li>
-                    <li>新增产能设备需求 = 135万吨 ÷ 4,800吨/台 = 281台</li>
-                    <li>设备更新需求 = 存量设备约7,600台 ÷ 10年 = 760台</li>
-                </ul>
-            </div>
-
-            <h5>中性场景（终端CAGR=8%）</h5>
-            <div class="info-box">
-                <p><strong>假设条件：</strong></p>
-                <ul>
-                    <li>膨化食品+坚果炒货产量年均增长8%</li>
-                    <li>设备更新需求中等</li>
-                    <li>适度的新建产能投资</li>
-                </ul>
-            </div>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>年份</th>
-                        <th>终端产量（万吨）</th>
-                        <th>产量增量（万吨）</th>
-                        <th>新增产能设备需求（台）</th>
-                        <th>设备更新需求（台）</th>
-                        <th>年度总需求（台）</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2026</td>
-                        <td>2,916</td>
-                        <td>216</td>
-                        <td>450</td>
-                        <td>800</td>
-                        <td><strong>1,250</strong></td>
-                    </tr>
-                    <tr>
-                        <td>2027</td>
-                        <td>3,149</td>
-                        <td>233</td>
-                        <td>485</td>
-                        <td>850</td>
-                        <td><strong>1,335</strong></td>
-                    </tr>
-                    <tr>
-                        <td>2028</td>
-                        <td>3,401</td>
-                        <td>252</td>
-                        <td>525</td>
-                        <td>900</td>
-                        <td><strong>1,425</strong></td>
-                    </tr>
-                    <tr>
-                        <td>2029</td>
-                        <td>3,673</td>
-                        <td>272</td>
-                        <td>567</td>
-                        <td>950</td>
-                        <td><strong>1,517</strong></td>
-                    </tr>
-                    <tr>
-                        <td>2030</td>
-                        <td>3,967</td>
-                        <td>294</td>
-                        <td>613</td>
-                        <td>1,000</td>
-                        <td><strong>1,613</strong></td>
-                    </tr>
-                    <tr style="background-color: #f0f0f0; font-weight: bold;">
-                        <td>合计</td>
-                        <td>-</td>
-                        <td>1,267</td>
-                        <td>2,640</td>
-                        <td>4,500</td>
-                        <td><strong style="color: #667eea; font-size: 18px;">7,140</strong></td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="info-box">
-                <p><strong>计算说明：</strong></p>
-                <ul style="color: #0c5460;">
-                    <li>2026年产量 = 2,700万吨 × (1+8%) = 2,916万吨</li>
-                    <li>随着市场扩大，存量设备基数也在增长，更新需求相应增加</li>
-                </ul>
-            </div>
-
-            <h5>乐观场景（终端CAGR=12%）</h5>
-            <div class="info-box">
-                <p><strong>假设条件：</strong></p>
-                <ul>
-                    <li>膨化食品+坚果炒货产量年均增长12%</li>
-                    <li>设备更新需求旺盛（老设备淘汰加快）</li>
-                    <li>大量新建产能投资</li>
-                </ul>
-            </div>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>年份</th>
-                        <th>终端产量（万吨）</th>
-                        <th>产量增量（万吨）</th>
-                        <th>新增产能设备需求（台）</th>
-                        <th>设备更新需求（台）</th>
-                        <th>年度总需求（台）</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2026</td>
-                        <td>3,024</td>
-                        <td>324</td>
-                        <td>675</td>
-                        <td>850</td>
-                        <td><strong>1,525</strong></td>
-                    </tr>
-                    <tr>
-                        <td>2027</td>
-                        <td>3,387</td>
-                        <td>363</td>
-                        <td>756</td>
-                        <td>950</td>
-                        <td><strong>1,706</strong></td>
-                    </tr>
-                    <tr>
-                        <td>2028</td>
-                        <td>3,793</td>
-                        <td>406</td>
-                        <td>846</td>
-                        <td>1,050</td>
-                        <td><strong>1,896</strong></td>
-                    </tr>
-                    <tr>
-                        <td>2029</td>
-                        <td>4,249</td>
-                        <td>456</td>
-                        <td>950</td>
-                        <td>1,150</td>
-                        <td><strong>2,100</strong></td>
-                    </tr>
-                    <tr>
-                        <td>2030</td>
-                        <td>4,758</td>
-                        <td>509</td>
-                        <td>1,060</td>
-                        <td>1,250</td>
-                        <td><strong>2,310</strong></td>
-                    </tr>
-                    <tr style="background-color: #f0f0f0; font-weight: bold;">
-                        <td>合计</td>
-                        <td>-</td>
-                        <td>2,058</td>
-                        <td>4,287</td>
-                        <td>5,250</td>
-                        <td><strong style="color: #667eea; font-size: 18px;">9,537</strong></td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <hr>
-
-            <h4>3.2.4 三场景需求预测汇总</h4>
-            <table>
-                <thead>
-                    <tr>
-                        <th>场景</th>
-                        <th>假设条件</th>
-                        <th>2026年</th>
-                        <th>2027年</th>
-                        <th>2028年</th>
-                        <th>2029年</th>
-                        <th>2030年</th>
-                        <th>5年合计</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>保守场景</strong></td>
-                        <td>终端CAGR=5%，更新需求低</td>
-                        <td>1,041台</td>
-                        <td>1,076台</td>
-                        <td>1,110台</td>
-                        <td>1,145台</td>
-                        <td>1,182台</td>
-                        <td><strong style="color: #28a745;">5,554台</strong></td>
-                    </tr>
-                    <tr>
-                        <td><strong>中性场景</strong></td>
-                        <td>终端CAGR=8%，更新需求中等</td>
-                        <td>1,250台</td>
-                        <td>1,335台</td>
-                        <td>1,425台</td>
-                        <td>1,517台</td>
-                        <td>1,613台</td>
-                        <td><strong style="color: #667eea;">7,140台</strong></td>
-                    </tr>
-                    <tr>
-                        <td><strong>乐观场景</strong></td>
-                        <td>终端CAGR=12%，更新需求旺盛</td>
-                        <td>1,525台</td>
-                        <td>1,706台</td>
-                        <td>1,896台</td>
-                        <td>2,100台</td>
-                        <td>2,310台</td>
-                        <td><strong style="color: #764ba2;">9,537台</strong></td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <hr>
-
-            <h4>3.2.5 按价格区间细分市场容量（中性场景）</h4>
-
-            <h5>市场细分假设</h5>
-            <table>
-                <thead>
-                    <tr>
-                        <th>价格区间</th>
-                        <th>目标客户</th>
-                        <th>单套价格（万元）</th>
-                        <th>市场占比</th>
-                        <th>年均需求量（台）</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>低端（≤5万）</td>
-                        <td>小型作坊、中低端食品厂</td>
-                        <td>2-5</td>
-                        <td>50%</td>
-                        <td>714</td>
-                    </tr>
-                    <tr>
-                        <td>中端（5-20万）</td>
-                        <td>中型食品厂、成长型品牌</td>
-                        <td>5-20</td>
-                        <td>35%</td>
-                        <td>500</td>
-                    </tr>
-                    <tr>
-                        <td>高端（≥20万）</td>
-                        <td>大型零食品牌、出口型工厂</td>
-                        <td>20-100</td>
-                        <td>15%</td>
-                        <td>214</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h5>市场容量计算</h5>
-            <table>
-                <thead>
-                    <tr>
-                        <th>价格区间</th>
-                        <th>单套均价（万元）</th>
-                        <th>2026-2030年需求量（台）</th>
-                        <th>市场容量（亿元）</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>低端（≤5万）</td>
-                        <td>3.5</td>
-                        <td>3,570</td>
-                        <td>1.25</td>
-                    </tr>
-                    <tr>
-                        <td>中端（5-20万）</td>
-                        <td>12</td>
-                        <td>2,499</td>
-                        <td>3.00</td>
-                    </tr>
-                    <tr>
-                        <td>高端（≥20万）</td>
-                        <td>50</td>
-                        <td>1,071</td>
-                        <td>5.36</td>
-                    </tr>
-                    <tr style="background-color: #f0f0f0; font-weight: bold;">
-                        <td>合计</td>
-                        <td>-</td>
-                        <td><strong style="color: #667eea; font-size: 18px;">7,140</strong></td>
-                        <td><strong style="color: #667eea; font-size: 18px;">9.61</strong></td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h5>国产设备市场机会</h5>
-            <div class="info-box">
-                <p>考虑国产设备市场占有率从60%提升至70%：</p>
-                <ul style="color: #0c5460;">
-                    <li>2026-2030年国产设备市场容量 = 9.61亿元 × 65%（平均占有率） ≈ <strong style="color: #667eea; font-size: 18px;">6.25亿元</strong></li>
-                    <li>年均国产设备市场规模约 <strong style="color: #667eea; font-size: 18px;">1.25亿元</strong></li>
-                </ul>
-            </div>
-
-            <hr>
-
-            <h4>3.2.6 结论与建议</h4>
-            <div class="info-box">
-                <ol style="color: #0c5460;">
-                    <li><strong>市场需求稳定增长</strong>：2026-2030年中国滚筒调味线设备需求预计在5,554-9,537台之间，中性预测约7,140台。</li>
-                    <li><strong>市场容量可观</strong>：中性场景下，2026-2030年市场总容量约9.61亿元，国产设备机会约6.25亿元。</li>
-                    <li><strong>市场结构分化明显</strong>：
-                        <ul>
-                            <li>低端市场容量大但单价低（约1.25亿元）</li>
-                            <li>高端市场容量占比最高（约5.36亿元），竞争壁垒较高</li>
-                            <li>中端市场是主要竞争战场（约3.00亿元）</li>
-                        </ul>
-                    </li>
-                </ol>
-            </div>
-
-            <hr>
-
-            <!-- 四、SWOT综合评估 -->
-            <h2>四、SWOT综合评估</h2>
-
-            <div class="swot-section">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>维度</th>
-                            <th>核心内容</th>
-                            <th>关键支撑数据/分析</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr style="background-color: #d4edda;">
-                            <td><strong>优势（Strengths）</strong></td>
-                            <td>
-                                ① 江苏仅一联合智造在食品包装/加工设备领域有积累，具备精密机械加工和自动化控制的技术；<br>
-                                ② 国内供应链完整，制造成本低于进口品牌；<br>
-                                ③ 售后服务响应快，可提供本土化定制；<br>
-                                ④ 国内食品设备市场渠道熟悉
-                            </td>
-                            <td>国产设备价格比PPM/AXIS低约60%~80%</td>
-                        </tr>
-                        <tr style="background-color: #f8d7da;">
-                            <td><strong>劣势（Weaknesses）</strong></td>
-                            <td>
-                                ① 仅一此前未涉足食品调味设备领域，缺乏行业经验，需要从零建立客户资源和行业口碑；<br>
-                                ② 高精度计量技术（±1%以内）、快速换色内衬技术（类似AXIS的FDA认证PP内衬）等尚待验证
-                            </td>
-                            <td>国外龙头在调味精度（<1%误差）、自动化程度、卫生设计等方面有深厚壁垒；食品行业客户对设备供应商的认证和信任周期较长</td>
-                        </tr>
-                        <tr style="background-color: #fff3cd;">
-                            <td><strong>机会（Opportunities）</strong></td>
-                            <td>
-                                ① 国产替代空间大：进口品牌价格高（$8万~$25万），国内多数厂商集中于低端，中高端存在空白；<br>
-                                ② 东南亚零食市场快速增长（中国品牌出海建厂），带动设备出口需求；<br>
-                                ③ 智能调味（PLC+传感器+称重反馈）是升级方向，存在弯道超车机会；<br>
-                                ④ 食品安全监管趋严，推动设备升级换代
-                            </td>
-                            <td>膨化食品、坚果炒货终端市场巨大；消费者倾向低糖/低盐/低油产品；设备更新周期8~10年，设备需求潜力高</td>
-                        </tr>
-                        <tr style="background-color: #cce5ff;">
-                            <td><strong>威胁（Threats）</strong></td>
-                            <td>
-                                ① 国际龙头（PPM、AXIS、Heat and Control）技术积累深厚，品牌壁垒高；<br>
-                                ② 国内山东诸城等地中小厂商已深耕多年，价格战激烈；<br>
-                                ③ 食品设备认证周期长（CE、FDA、UL等），出口门槛高；<br>
-                                ④ 下游食品行业虽有增速但预计未来增速放缓
-                            </td>
-                            <td>PPM公司已有60年调味设备制造历史</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <hr>
-
-            <!-- 五、报告说明 -->
-            <h2>五、报告说明</h2>
-
-            <div class="data-source">
-                <h3>数据来源</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>数据类型</th>
-                            <th>来源机构</th>
-                            <th>报告/文献名称</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>膨化零食市场规模</td>
-                            <td>艾媒咨询（iiMedia Research）</td>
-                            <td>《2025年中国休闲食品行业发展状况与消费行为调查数据》（2026年1月）</td>
-                        </tr>
-                        <tr>
-                            <td>膨化零食市场规模</td>
-                            <td>华经产业研究院</td>
-                            <td>《2025年中国膨化零食行业发展现状及趋势分析》（2025年9月）</td>
-                        </tr>
-                        <tr>
-                            <td>膨化零食市场规模</td>
-                            <td>头豹研究院</td>
-                            <td>《膨化零食行业报告：健康化转型与场景多元化推动下的市场格局重塑》（2025年8月29日原始报告）</td>
-                        </tr>
-                        <tr>
-                            <td>膨化零食行业深度分析</td>
-                            <td>头豹研究院</td>
-                            <td>同上（华经产业研究院、远瞻慧库二次引用）</td>
-                        </tr>
-                        <tr>
-                            <td>坚果炒货市场规模</td>
-                            <td>艾媒咨询（iiMedia Research）</td>
-                            <td>《2025-2026年中国坚果炒货市场发展现状及消费趋势洞察报告》（2025年10月）</td>
-                        </tr>
-                        <tr>
-                            <td>坚果炒货行业现状</td>
-                            <td>华经产业研究院</td>
-                            <td>《2025年中国坚果炒货行业现状及展望》（2025年10月）</td>
-                        </tr>
-                        <tr>
-                            <td>膨化食品CR5数据</td>
-                            <td>Frost & Sullivan（前瞻产业研究院引用）</td>
-                            <td>《中国休闲食品行业消费需求与投资战略规划分析报告》</td>
-                        </tr>
-                        <tr>
-                            <td>消费趋势数据</td>
-                            <td>艾媒咨询（iiMedia Research）</td>
-                            <td>《2026年饼干和膨化食品消费趋势洞察研究》（2026年1月，注：消费者偏好数据来源可靠，但该报告的膨化食品规模数据因可能含饼干，本报告未予采用）</td>
-                        </tr>
-                        <tr>
-                            <td>全球调味设备市场</td>
-                            <td>DataIntelo</td>
-                            <td>Seasoning Machine Market Report（2025）</td>
-                        </tr>
-                        <tr>
-                            <td>区域市场分布</td>
-                            <td>Verified Market Reports</td>
-                            <td>Seasoning Machine Market Size, Competitive Dynamics（2025）</td>
-                        </tr>
-                        <tr>
-                            <td>食品加工自动化设备</td>
-                            <td>贝哲斯咨询/行业公开数据</td>
-                            <td>《2025年食品加工自动化设备五年发展报告》</td>
-                        </tr>
-                        <tr>
-                            <td>行业政策</td>
-                            <td>中商产业研究院</td>
-                            <td>2025年中国休闲食品行业最新政策汇总（2025年4月）</td>
-                        </tr>
-                        <tr>
-                            <td>PPM产品信息</td>
-                            <td>PPM Technologies官网</td>
-                            <td>https://ppmtech.com/products/seasoning-and-coating/coating-drums/</td>
-                        </tr>
-                        <tr>
-                            <td>Axis Automation产品信息</td>
-                            <td>Axis Automation官网</td>
-                            <td>https://axisautomation.com/products/coating-drums/</td>
-                        </tr>
-                        <tr>
-                            <td>Heat and Control产品信息</td>
-                            <td>Heat and Control官网</td>
-                            <td>https://www.heatandcontrol.com/products/seasoning-application</td>
-                        </tr>
-                        <tr>
-                            <td>GEA产品信息</td>
-                            <td>GEA官网</td>
-                            <td>https://www.gea.com/en/products/further-food-processing/coaters/</td>
-                        </tr>
-                        <tr>
-                            <td>国内厂家信息</td>
-                            <td>阿里巴巴1688/食品机械设备网</td>
-                            <td>各厂家公开产品信息和报价</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="warning-box">
-                <h4 style="color: #856404; margin-bottom: 10px;">分析局限性说明</h4>
-                <ol style="color: #856404;">
-                    <li>市场规模数据部分基于CAGR推算，存在不确定性；</li>
-                    <li>设备价格数据来源于公开信息，实际成交价格因配置、客户关系等因素差异较大；</li>
-                    <li>国内设备厂商信息主要来源于B2B平台展示，完整度和准确性存在局限；</li>
-                    <li>本报告不构成正式的投资决策依据，建议结合江苏仅一联合智造自身的战略规划、技术储备和财务状况做进一步论证。</li>
-                </ol>
+                <div class="evaluation-meta">
+                    评估完成日期: 2026年4月1日 | 评估机构: 江苏仅一联合智造有限公司市场部
+                </div>
             </div>
         </div>
     </div>
