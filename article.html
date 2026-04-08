@@ -741,317 +741,99 @@
     }
 
     /* ================================================================
-       [CONTENT] 文章数据 — 在此区域增删文章正文
+       [FRAMEWORK] 文章数据加载器 — 按需 fetch JSON
+       新增/删除文章：在 data/ 目录中增删 JSON 文件即可
        ================================================================ */
-    var ARTICLES = {
+    var _articleCache = {};
 
-      "coating-drums": {
-        title: "滚筒调味机（Coating Drums）投资可行性分析报告",
-        category: "市场调研", date: "2026-03-20", readTime: 25,
-        prevId: null, nextId: "interzoo-2026",
-        content: [
-          {type:"h2", text:"核心信息与结论前置"},
-          {type:"html", html:'<div class="data-card"><h4>决策维度概览</h4><table><thead><tr><th>决策维度</th><th>核心指标</th><th>评估结论</th></tr></thead><tbody><tr><td><strong>终端市场规模</strong></td><td>膨化零食约1,155亿元（2024年）+ 坚果炒货约3,003亿元（2024年）</td><td>✅ 下游市场空间巨大</td></tr><tr><td><strong>终端市场增速</strong></td><td>膨化零食CAGR 5%；坚果炒货CAGR 7%。（2025-2030预测）</td><td>✅ 稳健增长</td></tr><tr><td><strong>设备市场空间</strong></td><td>全球食品调味设备市场2023年约12亿美元，CAGR 7.1%</td><td>✅ 持续扩容</td></tr><tr><td><strong>竞争强度（国外）</strong></td><td>PPM、AXIS、Heat and Control、tna、GEA等巨头主导高端市场</td><td>⚠️ 高端壁垒高</td></tr><tr><td><strong>竞争强度（国内）</strong></td><td>集中在山东中小型企业，价格竞争激烈，缺乏高端品牌</td><td>✅ 差异化机会明显</td></tr><tr><td><strong>技术门槛</strong></td><td>滚筒机械结构基础门槛中等，但智能化/高精度控制壁垒较高</td><td>⚠️ 中等偏上</td></tr><tr><td><strong>投资回报预期</strong></td><td>国产设备价格约2~8万元/台，进口设备约30~100万元/台，存在较大价差利润空间</td><td>✅ 利润空间可观</td></tr><tr><td><strong>风险等级</strong></td><td>中等（技术追赶风险、市场竞争风险、品牌建设风险）</td><td>⚠️ 需制定应对策略</td></tr></tbody></table></div>'},
-          {type:"html", html:'<blockquote><strong>核心结论：</strong>建议"谨慎立项"，理由如下：<br><br>1. <strong>终端需求旺盛</strong>：膨化食品和坚果市场规模大、增速稳定（5%~7% CAGR），带动调味设备持续需求；<br>2. <strong>竞争空白明显</strong>：国内滚筒调味机市场以山东地区中小型企业为主，产品同质化严重，低价竞争为主，缺乏中高端定位的系统性品牌。国际品牌价格昂贵且售后服务响应慢，存在明确的"国产替代+品牌升级"市场空间；<br>3. <strong>竞争风险显著</strong>：国际龙头（PPM、AXIS等）技术积累深厚（40~130年），国内同质化竞争激烈，仅靠价格难以突围；<br>4. <strong>利润空间可观</strong>：进口设备价格约为国产设备的5~15倍，若仅一能定位国产中高端（价格约进口1/3~1/2），单台毛利率有望达到较高水平。<br>5. <strong>技术壁垒需突破</strong>：高精度调味料计量（误差±1%以内）、快速换色（食品多品种需求）、CIP（原位清洗）能力是核心竞争力，也是江苏仅一需重点突破的技术方向；<br>6. <strong>市场切入点建议</strong>：建议以<strong>中高端定制化调味线</strong>（产能≥1,000 kg/h，精度≤±1%）为切入点，避开低价竞争红海。</blockquote>'},
-          {type:"html", html:'<div class="data-card"><h4>⚠️ 主要风险及应对措施</h4><table><thead><tr><th>风险点</th><th>风险等级</th><th>应对措施</th></tr></thead><tbody><tr><td>技术壁垒突破周期长，研发投入超预期</td><td>🔴 高风险</td><td>① 建议前期与高校/科研机构合作，采用"引进消化+自主研发"路径；② 聚焦核心技术突破（精准计量、智能控制）</td></tr><tr><td>市场竞争激烈，新进入者难以获得头部客户信任</td><td>🔴 高风险</td><td>① 先以标杆客户案例建立行业口碑；② 参加国内食品加工展会提高知名度</td></tr><tr><td>竞争压力大（进口品牌降价竞争，国产品牌价格很低）</td><td>🟠 中风险</td><td>① 聚焦非价格竞争维度（定制化、快速服务、灵活交期）；② 差异化定位中高端；③ 突出智能化和精准调味的技术优势；④ 提供整线解决方案而非单机销售</td></tr><tr><td>食品设备认证（CE/FDA）周期长，影响出口市场</td><td>🟠 中风险</td><td>初期聚焦国内市场，认证工作与产品研发同步推进</td></tr><tr><td>终端市场需求增速放缓、不及预期</td><td>🟢 低风险</td><td>① 保持柔性产线能力，支持多品种小批量生产以应对需求波动；② 关注宠物食品、烘焙食品等调味设备拓展机会</td></tr></tbody></table></div>'},
+    function loadArticle(id, callback) {
+      if (_articleCache[id]) { callback(_articleCache[id]); return; }
+      fetch('data/' + id + '.json')
+        .then(function(r) {
+          if (!r.ok) throw new Error('Article not found');
+          return r.json();
+        })
+        .then(function(data) {
+          _articleCache[id] = data;
+          callback(data);
+        })
+        .catch(function(err) {
+          console.error('Failed to load article:', id, err);
+          callback(null);
+        });
+    }
 
-          {type:"h2", text:"一、产品定义"},
-          {type:"h3", text:"1.1 终端产品定义"},
-          {type:"p", text:"<strong>终端产品：</strong>膨化食品 & 坚果类食品（调味料喷涂对象）"},
-          {type:"html", html:'<table><thead><tr><th>维度</th><th>膨化食品</th><th>坚果类食品</th></tr></thead><tbody><tr><td><strong>产品品类</strong></td><td>薯片、玉米片、锅巴、米饼、爆米花、虾条等</td><td>瓜子、花生、腰果、开心果、杏仁、核桃、混合坚果等</td></tr><tr><td><strong>核心特征</strong></td><td>经挤压/高温膨化工艺制成，质地酥脆，调味料是差异化核心</td><td>经烘烤/油炸/盐焗/调味等工艺处理，口味多样性是竞争关键</td></tr><tr><td><strong>目标消费群体</strong></td><td>青少年、年轻消费群体为主</td><td>全年龄段，以25~45岁健康消费人群为主</td></tr><tr><td><strong>行业归属</strong></td><td>休闲食品—膨化食品细分</td><td>休闲食品—坚果炒货细分</td></tr><tr><td><strong>调味工序</strong></td><td>必须在油炸/烘烤后立即喷涂调味料，属于产线关键工序之一</td><td>在烘烤/油炸后进行裹粉、喷油或撒料调味</td></tr></tbody></table>'},
-          {type:"p", text:"📌 注：宠物食品也是滚筒调味机的重要应用领域（PPM、AXIS均覆盖该行业）。"},
-          {type:"h3", text:"1.2 设备定义"},
-          {type:"html", html:'<table><thead><tr><th>维度</th><th>内容</th></tr></thead><tbody><tr><td><strong>设备类型</strong></td><td>调味料混合涂布设备（食品加工机械—调味工段）</td></tr><tr><td><strong>中文别名</strong></td><td>滚筒调味机、滚筒撒粉机、调味滚筒、裹粉机、涂布机、八角调味桶</td></tr><tr><td><strong>英文别名</strong></td><td>Coating Drum、Seasoning Drum、Tumble Coater、Rotary Coater、Tumbling Drum</td></tr><tr><td><strong>核心功能</strong></td><td>通过旋转滚筒使产品在筒内翻滚，同时将粉末调味料、液态油脂或二者混合物均匀喷涂/撒布至产品表面</td></tr><tr><td><strong>工艺原理</strong></td><td>滚筒旋转（可调转速）+ 螺旋导流片推进产品 + 喷油/撒粉联动，实现均匀调味；可同时施加液态和粉末调味</td></tr><tr><td><strong>关键技术参数</strong></td><td>滚筒直径/长度、转速范围、倾斜角度（可调）、产能（kg/h）、调味料添加精度（%）、换色时间、清洗方式</td></tr><tr><td><strong>在产线中的位置</strong></td><td>位于油炸/烘烤工序之后 → 冷却工序之后 → 包装工序之前</td></tr><tr><td><strong>配套系统</strong></td><td>通常与螺旋上料机、喷油机、拌粉机、输送带、计量系统集成，形成完整的调味生产线（调味线）</td></tr></tbody></table>'},
-
-          {type:"h2", text:"二、终端产品市场规模分析"},
-          {type:"h3", text:"2.1 中国市场规模与增速（2021~2030）"},
-          {type:"html", html:'<div class="data-card"><h4>📊 数据说明</h4><p>以下数据来源于艾媒咨询、中国食品工业协会、头豹研究院、智研咨询等机构公开报告及行业统计，部分2026~2030年数据为基于CAGR的测算值。数据存在一定估算区间，仅供参考。</p></div>'},
-          {type:"html", html:'<table><thead><tr><th>年份</th><th>膨化食品市场规模（亿元）</th><th>坚果炒货市场规模（亿元）</th></tr></thead><tbody><tr><td>2024</td><td><strong>~1,155</strong></td><td><strong>~3,003</strong></td></tr><tr><td>2025E</td><td>~1,204</td><td>~3,246</td></tr><tr><td>2026E</td><td>~1,246</td><td>~3,497</td></tr><tr><td>2027E</td><td>~1,287</td><td>~3,750</td></tr><tr><td>2028E</td><td>~1,360</td><td>~4,035</td></tr><tr><td>2029E</td><td>~1,435</td><td>~4,283</td></tr><tr><td>2030E</td><td>~1,518</td><td>—</td></tr></tbody></table>'},
-          {type:"p", text:`⚠️ 上述"合计"仅为膨化食品+坚果炒货两大直接相关细分，未包含宠物食品。若将宠物食品纳入（2024年中国宠物食品市场约1,500亿元，且增速达15%~20%），则调味设备的目标终端市场总量更大。`},
-          {type:"h3", text:"2.2 价格分布"},
-          {type:"html", html:'<table><thead><tr><th>价格档次</th><th>单包售价区间</th><th>市场占比（估算）</th><th>主要消费场景</th></tr></thead><tbody><tr><td><strong>低端</strong></td><td>¥3~¥8/100g</td><td>约40%</td><td>传统批发市场、便利店、校园渠道</td></tr><tr><td><strong>中端</strong></td><td>¥8~¥20/100g</td><td>约35%</td><td>超市、电商平台、礼品市场</td></tr><tr><td><strong>高端/超高端</strong></td><td>¥20+/100g</td><td>约25%</td><td>健康坚果、有机膨化食品、进口品牌</td></tr></tbody></table>'},
-          {type:"h3", text:"2.3 品牌竞争格局"},
-          {type:"p", text:"膨化食品主要品牌（中国市场）：乐事（百事）、良品铺子、三只松鼠、百草味、可比克（达利）、盼盼、上好佳、进口品牌（多力多滋等）。坚果炒货主要品牌：三只松鼠、良品铺子、百草味、洽洽食品、沃隆、来伊份。"},
-          {type:"html", html:'<div class="data-card"><h4>📊 行业竞争特点</h4><ul><li>行业集中度（CR3）：约28%~32%，整体较为分散；</li><li>竞争焦点从"价格"转向"口味创新 + 健康化 + 包装体验"；</li><li>口味差异化是核心竞争手段——新口味研发周期缩短至3~6个月，对调味设备的灵活性要求提升；</li><li>头部品牌（三只松鼠、良品铺子等）持续扩产，存在设备更新和新增需求。</li></ul></div>'},
-          {type:"h3", text:"2.4 发展驱动因素"},
-          {type:"html", html:'<table><thead><tr><th>驱动因素类别</th><th>具体内容</th><th>对设备需求的影响</th></tr></thead><tbody><tr><td><strong>政策因素</strong></td><td>《食品安全国家标准》持续完善，对食品添加剂使用规范化要求提高</td><td>设备需满足更高的计量精度和可追溯性要求</td></tr><tr><td><strong>消费者习惯变化</strong></td><td>健康化转型：53.38%消费者"偶尔选择"低糖/低盐/低油产品；消费频次提升：超80%消费者月均花费20~100元；口味多元化：地方特色口味催生频繁换产需求；礼品化需求：39.58%坚果消费者购买目的是"送礼"</td><td>推动高端调味设备（精准喷涂、减少油脂用量）需求</td></tr><tr><td><strong>技术创新</strong></td><td>食品加工智能化升级：2023年市场规模突破800亿元，CAGR超15%；柔性生产需求；精准调味技术；数字化追溯</td><td>推动设备智能化、数字化升级</td></tr><tr><td><strong>销售渠道变革</strong></td><td>电商/直播电商；零食量贩店（2024年市场规模1,045.9亿元，门店超4万家）；传统商超份额下降；海外出口</td><td>小批量、多SKU生产需求增加；白牌和新品牌扩产需求旺盛</td></tr></tbody></table>'},
-
-          {type:"h2", text:"三、设备需求潜力分析"},
-          {type:"h3", text:"3.1 国际市场竞争格局"},
-          {type:"html", html:'<table><thead><tr><th>品牌</th><th>产地</th><th>核心产品与技术</th><th>价格区间</th><th>核心优势</th></tr></thead><tbody><tr><td><strong>PPM Technologies</strong></td><td>美国（Duravant集团）</td><td>Coating Drums调味滚筒、粉液同步喷涂系统、干调料/浆料涂覆系统、输送系统集成</td><td>$10万-$25万美元/套</td><td>产品线最完整，系统集成能力强，全球服务网络完善</td></tr><tr><td><strong>AXIS Automation</strong></td><td>美国（威斯康星州）</td><td>可拆卸FDA认证PP内衬滚筒、双向无缝导流片、容积式/称重式计量、振动给料器、油喷雾/真空上料系统</td><td>$8万-$20万美元/套</td><td>快速换色（15~30分钟），产品破损少，适合小批量多品种生产</td></tr><tr><td><strong>Heat and Control</strong></td><td>美国</td><td>Seasoning调味系统、Coating & Seasoning涂覆与调味、整线集成解决方案</td><td>$10万-$30万美元/套</td><td>整线交钥匙能力，系统集成度高</td></tr><tr><td><strong>tna solutions</strong></td><td>澳大利亚</td><td>调味、输送、包装全套</td><td>中高</td><td>提供完整调味、输送、包装全套解决方案</td></tr><tr><td><strong>Buhler</strong></td><td>瑞士</td><td>高精度、高卫生标准</td><td>较高</td><td>百年品牌，高精度、高卫生标准</td></tr></tbody></table>'},
-          {type:"h3", text:"3.2 国内市场竞争格局"},
-          {type:"html", html:'<table><thead><tr><th>品牌/厂商</th><th>产地</th><th>核心产品</th><th>价格区间</th><th>核心优势</th></tr></thead><tbody><tr><td>诸城市亚中食品机械有限公司</td><td>山东诸城</td><td>不锈钢滚筒调味机、基础调味设备</td><td>¥2,528~¥30,000/台</td><td>价格低廉，适用于薯片、油炸食品等基础调味</td></tr><tr><td>山东鸿超机械设备有限公司</td><td>山东曲阜</td><td>八角桶、裹料机、基础调味混合设备</td><td>¥3万~¥10万/台</td><td>价格较低，基础调味设备</td></tr><tr><td>美腾机械</td><td>国内</td><td>双滚筒调味设备、喷油机、螺旋上料机、整套调味线方案</td><td>¥5万~¥20万/套</td><td>专业膨化食品调味线，提供整套解决方案</td></tr><tr><td>其他中小厂商</td><td>国内</td><td>基础调味设备</td><td>¥1万~¥5万/台</td><td>价格低，灵活定制</td></tr><tr><td>健达干燥设备等</td><td>江苏/浙江</td><td>调味干燥联动线</td><td>¥8万~¥25万/套</td><td>部分覆盖调味干燥联动线</td></tr></tbody></table>'},
-          {type:"html", html:'<div class="data-card"><h4>🇨🇳 国内市场竞争特点</h4><ul><li>低端市场（¥5万以内）高度竞争，厂商众多，产品同质化严重；</li><li>中端市场（¥5万~¥20万）有一定的技术和产品差异，但总体技术壁垒不高；</li><li>高端市场（¥20万+）主要由进口品牌厂商占据；</li><li>国产设备在售后服务（响应快、成本低）和定制灵活性上有优势。</li></ul></div>'},
-
-          {type:"h3", text:"3.3 设备需求测算"},
-          {type:"p", text:"根据市场数据，2024年膨化+坚果产量约2,580万吨，按单台设备平均年产能4,800吨（取中间值），考虑产能利用率（约70%），实际存量设备约7,600-8,000台。"},
-          {type:"html", html:'<table><thead><tr><th>场景</th><th>假设条件</th><th>2026年</th><th>2027年</th><th>2028年</th><th>2029年</th><th>2030年</th><th>5年合计</th></tr></thead><tbody><tr><td><strong>保守场景</strong></td><td>终端CAGR=5%，更新需求低</td><td>1,041台</td><td>1,076台</td><td>1,110台</td><td>1,145台</td><td>1,182台</td><td><strong>5,554台</strong></td></tr><tr><td><strong>中性场景</strong></td><td>终端CAGR=8%，更新需求中等</td><td>1,250台</td><td>1,335台</td><td>1,425台</td><td>1,517台</td><td>1,613台</td><td><strong>7,140台</strong></td></tr><tr><td><strong>乐观场景</strong></td><td>终端CAGR=12%，更新需求旺盛</td><td>1,525台</td><td>1,706台</td><td>1,896台</td><td>2,100台</td><td>2,310台</td><td><strong>9,537台</strong></td></tr></tbody></table>'},
-          {type:"p", text:"中性场景下，2026-2030年市场总容量约9.61亿元，国产设备机会约6.25亿元，年均国产设备市场规模约1.25亿元。"},
-
-          {type:"h2", text:"四、SWOT综合评估"},
-          {type:"html", html:'<table><thead><tr><th>维度</th><th>核心内容</th><th>关键支撑数据</th></tr></thead><tbody><tr style="background-color:#e8f5e9;"><td><strong>优势（S）</strong></td><td>① 江苏仅一联合智造在食品包装/加工设备领域有积累；② 国内供应链完整，制造成本低于进口品牌；③ 售后服务响应快，可提供本土化定制；④ 国内食品设备市场渠道熟悉</td><td>国产设备价格比PPM/AXIS低约60%~80%</td></tr><tr style="background-color:#fce4ec;"><td><strong>劣势（W）</strong></td><td>① 仅一此前未涉足食品调味设备领域，缺乏行业经验；② 高精度计量技术（±1%以内）、快速换色内衬技术等尚待验证</td><td>国外龙头在调味精度（<1%误差）、自动化程度、卫生设计等方面有深厚壁垒</td></tr><tr style="background-color:#fff9c4;"><td><strong>机会（O）</strong></td><td>① 国产替代空间大：进口品牌价格高，国内多数厂商集中于低端，中高端存在空白；② 东南亚零食市场快速增长；③ 智能调味（PLC+传感器+称重反馈）是升级方向；④ 食品安全监管趋严，推动设备升级换代</td><td>膨化食品、坚果炒货终端市场巨大；消费者倾向低糖/低盐/低油产品</td></tr><tr style="background-color:#e3f2fd;"><td><strong>威胁（T）</strong></td><td>① 国际龙头（PPM、AXIS等）技术积累深厚；② 国内山东诸城等地中小厂商已深耕多年，价格战激烈；③ 食品设备认证周期长；④ 下游食品行业增速放缓</td><td>PPM公司已有60年调味设备制造历史</td></tr></tbody></table>'},
-
-          {type:"h2", text:"五、数据来源"},
-          {type:"html", html:'<div class="data-card"><h4>数据来源</h4><table><thead><tr><th>数据类型</th><th>来源机构</th><th>报告名称</th></tr></thead><tbody><tr><td>膨化零食市场规模</td><td>艾媒咨询</td><td>《2025年中国休闲食品行业发展状况与消费行为调查数据》</td></tr><tr><td>膨化零食市场规模</td><td>华经产业研究院</td><td>《2025年中国膨化零食行业发展现状及趋势分析》</td></tr><tr><td>膨化零食行业深度分析</td><td>头豹研究院</td><td>《膨化零食行业报告：健康化转型与场景多元化推动下的市场格局重塑》</td></tr><tr><td>坚果炒货市场规模</td><td>艾媒咨询</td><td>《2025-2026年中国坚果炒货市场发展现状及消费趋势洞察报告》</td></tr><tr><td>坚果炒货行业现状</td><td>华经产业研究院</td><td>《2025年中国坚果炒货行业现状及展望》</td></tr><tr><td>全球调味设备市场</td><td>DataIntelo</td><td>Seasoning Machine Market Report（2025）</td></tr><tr><td>区域市场分布</td><td>Verified Market Reports</td><td>Seasoning Machine Market Size, Competitive Dynamics（2025）</td></tr><tr><td>PPM产品信息</td><td>PPM Technologies官网</td><td>ppmtech.com</td></tr><tr><td>Axis产品信息</td><td>Axis Automation官网</td><td>axisautomation.com</td></tr><tr><td>国内厂家信息</td><td>阿里巴巴1688/食品机械设备网</td><td>各厂家公开产品信息和报价</td></tr></tbody></table></div>'},
-          {type:"html", html:'<blockquote><strong>分析局限性说明：</strong><br>1. 市场规模数据部分基于CAGR推算，存在不确定性；<br>2. 设备价格数据来源于公开信息，实际成交价格因配置、客户关系等因素差异较大；<br>3. 国内设备厂商信息主要来源于B2B平台展示，完整度和准确性存在局限；<br>4. 本报告不构成正式的投资决策依据，建议结合江苏仅一联合智造自身的战略规划、技术储备和财务状况做进一步论证。</blockquote>'}
-        ]
-      },
-
-      "interzoo-2026": {
-        title: "2026年德国纽伦堡宠物用品展（Interzoo 2026）评估报告",
-        category: "展会评估", date: "2026-04-01", readTime: 15,
-        prevId: "coating-drums", nextId: "gdic-asia-2026",
-        content: [
-          {type:"h2", text:"综合评估结论"},
-          {type:"html", html:'<div class="data-card" style="text-align:center;"><div style="font-size:48px;font-weight:700;color:#e94560;line-height:1;">30</div><div style="font-size:18px;color:var(--text-tertiary);margin-bottom:16px;">/100分</div><div style="font-size:24px;font-weight:700;color:#e94560;">不推荐参展</div><div style="font-size:18px;margin-top:8px;">推荐指数: ⭐⭐</div></div>'},
-          {type:"blockquote", text:"核心判断: Interzoo聚焦宠物用品行业，演讲嘉宾中无终端宠物食品生产商，客户匹配度极低，行业匹配度有限，不建议参展。"},
-
-          {type:"h2", text:"一、会议介绍"},
-          {type:"html", html:'<div class="data-card"><h4>会议信息</h4><table><thead><tr><th>项目</th><th>内容</th></tr></thead><tbody><tr><td><strong>会议名称</strong></td><td>Interzoo 2026</td></tr><tr><td><strong>会议时间</strong></td><td>2026年5月12日至15日（共4天）</td></tr><tr><td><strong>会议地点</strong></td><td>🇩🇪 德国纽伦堡展览中心</td></tr><tr><td><strong>官方主办方</strong></td><td>WZF + ZZF + NürnbergMesse GmbH</td></tr></tbody></table></div>'},
-          {type:"p", text:"Interzoo是全球领先的宠物用品贸易博览会，每两年在德国纽伦堡举办一次。作为专业B2B贸易展，Interzoo仅对行业专业人士开放。2024年展会创下历史新高，吸引<strong>2,146家展商</strong>（来自68个国家）和约<strong>37,000名专业观众</strong>（来自140个国家），展览面积达140,000平方米。展品范围涵盖宠物食品及生产技术、宠物配件、马术用品、包装技术、店铺陈设等全产业链。"},
-
-          {type:"h2", text:"二、六大维度详细评估"},
-          {type:"h3", text:"1. 行业匹配度（8/20分）"},
-          {type:"p", text:"匹配议题占比40%（2/5个议题匹配）。匹配议题：优化宠物食品冷冻干燥工艺、宠物食品包装解决方案。Interzoo核心聚焦宠物用品行业，会议议题主要围绕宠物食品营养、配料创新、可持续发展等方向。虽然展会包含宠物食品生产技术和包装技术板块，但整体议题与仅一的乳品/药品/食品包装产线业务匹配度中等偏低。"},
-          {type:"h3", text:"2. 客户匹配度（5/40分）"},
-          {type:"p", text:"Petfood Forum Europe已公布的演讲嘉宾中，<strong>暂未发现终端宠物食品生产商</strong>（如Mars Petcare、Nestlé Purina、Hill's、Royal Canin等）。全部为配料供应商、技术服务商和设备供应商。GEA作为设备供应商是仅一的同行/竞争对手，不是仅一的客户。<strong>客户匹配度为0%，这是决定性缺陷。</strong>"},
-          {type:"h3", text:"3. 主办方与背书（14/15分）"},
-          {type:"p", text:"Interzoo由德国宠物行业协会下属的WZF主办，拥有强大的行业背书和超过50年的举办历史，主办方资质权威，往届口碑优秀，国际化程度高（85%展商来自德国以外）。"},
-          {type:"h3", text:"4. 商务对接与曝光机会（13/15分）"},
-          {type:"p", text:"Interzoo提供全方位的商务对接机会，包括展位展示、演讲平台、一对一洽谈、社交活动等。会议规模宏大，国际化程度高，观众决策权强（91%具有管理职位）。"},
-          {type:"h3", text:"5. 品牌价值与行业地位（4/10分）"},
-          {type:"p", text:"Interzoo在宠物用品行业地位崇高，但对于仅一而言，展会聚焦的宠物行业与仅一核心业务存在差异，国际包装巨头参与度未知，品牌价值的直接提升有限。"},
-          {type:"h3", text:"6. 商业转化潜力（6/10分）"},
-          {type:"p", text:"展会提供较完善的对接服务，但暂无历史转化数据。对于仅一而言，宠物食品包装领域属于新市场，竞争环境中等偏激烈，转化潜力存在不确定性。"},
-
-          {type:"h2", text:"三、参展策略建议"},
-          {type:"html", html:'<div class="data-card" style="border-left:4px solid #e94560;"><h4>结论: 不建议参展</h4><p style="margin-bottom:12px;">由于Petfood Forum Europe已公布的演讲嘉宾中无终端宠物食品生产商（仅一的客户），客户匹配度为0%，不建议投入资源参展。以下是理论上的参展方案仅供参考：</p><table><thead><tr><th>方案</th><th>展位费</th><th>差旅费</th><th>物料费</th><th>总投入</th><th>预期效果</th></tr></thead><tbody><tr><td><strong>展台参展（不推荐）</strong></td><td>约15-25万元</td><td>约4万元</td><td>约3-5万元</td><td>约22-34万元</td><td>接触决策人:未知 | 线索:极少 | 转化:极低</td></tr><tr><td><strong>听众参会（不推荐）</strong></td><td>约2,000-3,000元</td><td>约4万元</td><td>—</td><td>约4.2-4.3万元</td><td>接触决策人:未知 | 线索:极少 | 转化:极低</td></tr></tbody></table></div>'},
-
-          {type:"h2", text:"四、总结与建议"},
-          {type:"html", html:'<div class="data-card" style="background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);color:#fff;border:none;"><h4 style="color:#e94560;">📋 综合判断</h4><p style="color:#cbd5e0;">Interzoo 2026作为全球领先的宠物用品贸易展，主办方资质权威，展会规模宏大，国际化程度高。但对于江苏仅一联合智造有限公司而言，展会不具备参展价值：</p><ul style="color:#cbd5e0;"><li style="margin:10px 0;"><strong style="color:#ffd93d;">1. 客户匹配度极低（致命缺陷）</strong> — 终端宠物食品生产商0%，这是决定性缺陷。</li><li style="margin:10px 0;"><strong style="color:#ffd93d;">2. 行业匹配度有限</strong> — 仅30%议题与仅一业务直接相关。</li><li style="margin:10px 0;"><strong style="color:#ffd93d;">3. 投入产出比不佳</strong> — 展台参展投入约22-34万元，难以获得有效商业线索。</li><li style="margin:10px 0;"><strong style="color:#ffd93d;">4. 市场竞争激烈</strong> — 宠物食品包装设备领域已有多家竞争对手参展。</li></ul><p style="text-align:center;margin-top:16px;"><strong style="font-size:18px;color:#e94560;">最终建议: 不建议参展 Interzoo 2026</strong></p></div>'},
-          {type:"h3", text:"替代建议"},
-          {type:"ol", items:[
-            "直接拜访客户 — 直接联系Mars Petcare、Nestlé Purina、Hill's、Royal Canin等终端宠物食品生产商，安排技术交流和工厂考察，投入产出比更高。",
-            "参加食品/乳品行业展会 — 优先参加聚焦乳品、药品、食品行业的展会，终端客户匹配度更高。",
-            "关注宠物食品行业活动 — 寻找能够接触到终端生产商的机会。"
-          ]},
-          {type:"p", text:"评估完成日期: 2026年4月1日 | 评估机构: 江苏仅一联合智造有限公司市场部"}
-        ]
-      },
-
-      "gdic-asia-2026": {
-        title: "第9届亚洲乳业创新峰会（9th GDIC Asia）评估报告",
-        category: "展会评估", date: "2026-03-19", readTime: 20,
-        prevId: "interzoo-2026", nextId: "tdd-audit",
-        content: [
-          {type:"h2", text:"综合评估结论"},
-          {type:"html", html:'<div class="data-card" style="text-align:center;"><div style="font-size:48px;font-weight:700;color:#27ae60;line-height:1;">62</div><div style="font-size:18px;color:var(--text-tertiary);margin-bottom:16px;">/100分</div><div style="font-size:24px;font-weight:700;color:#27ae60;">推荐参展</div><div style="font-size:18px;margin-top:8px;">推荐指数: ⭐⭐⭐⭐</div></div>'},
-          {type:"blockquote", text:"核心判断: 会议客户匹配度较高（匹配客户占比46.3%），参会者包含8家以上大型跨国非仅一客户（Vinamilk、Fonterra、Arla Foods、Meiji、FrieslandCampina等），潜在商机较大。但行业匹配度较低（仅30%议题匹配），会议议题主要聚焦营养创新、市场营销等方向，与仅一核心业务相关性有限。"},
-
-          {type:"h2", text:"一、会议介绍"},
-          {type:"html", html:'<div class="data-card"><h4>会议核心数据</h4><table><thead><tr><th>项目</th><th>内容</th></tr></thead><tbody><tr><td><strong>会议名称</strong></td><td>第9届全球乳业创新峰会亚洲站（9th Global Dairy Innovation Congress Asia）</td></tr><tr><td><strong>会议时间</strong></td><td>2026年10月13-15日</td></tr><tr><td><strong>会议地点</strong></td><td>新加坡</td></tr><tr><td><strong>参会人数</strong></td><td>500+</td></tr><tr><td><strong>演讲嘉宾</strong></td><td>80+</td></tr><tr><td><strong>展商数量</strong></td><td>50+</td></tr><tr><td><strong>主办方</strong></td><td>SZ&W Group</td></tr></tbody></table></div>'},
-          {type:"p", text:"GDIC Asia是亚洲地区专注于乳制品行业的创新峰会，已连续举办9届。会议汇聚全球乳制品行业领军企业、技术专家和行业决策者，探讨乳制品营养创新、加工技术、包装解决方案、智能制造等前沿议题。参会企业包括Nestlé、Danone、Fonterra、Arla Foods、伊利、蒙牛、Vinamilk等国际知名乳企，是了解行业趋势、接触潜在客户、拓展商业合作的重要平台。"},
-
-          {type:"h2", text:"二、六大维度详细评估"},
-          {type:"h3", text:"1. 行业匹配度（8/20分）"},
-          {type:"p", text:"匹配议题占比30%（6/20个议题匹配）。匹配议题：乳制品加工技术创新、乳制品包装创新、乳制品智能制造与数字化、新一代乳制品加工技术、可持续包装解决方案、乳制品工厂设计与规划、智能包装技术与应用、柔性生产与产线升级。"},
-          {type:"h3", text:"2. 客户匹配度（27/40分）"},
-          {type:"p", text:"参会人群质量较高，匹配客户占比达<strong>46.3%</strong>（19/41），包含8家以上大型跨国非仅一客户。"},
-          {type:"html", html:'<div class="data-card"><h4>重点关注客户</h4><table><thead><tr><th>客户</th><th>参会嘉宾</th><th>关注理由</th></tr></thead><tbody><tr><td><strong>Vinamilk</strong>（越南乳业）⭐⭐⭐⭐⭐</td><td>Tri Nguyen, 首席营销官</td><td>越南最大乳企，新建2座奶粉工厂，投资1.5亿美元升级智能包装产线</td></tr><tr><td><strong>Fonterra</strong>（恒天然）⭐⭐⭐⭐⭐</td><td>Aamir Mehdi, 供应链副总裁</td><td>全球大型奶粉出口商，投资3亿新西兰元升级中国工厂包装产线</td></tr><tr><td><strong>Arla Foods</strong>（丹麦乳业）⭐⭐⭐⭐⭐</td><td>Tim Østergaard, 研发总监</td><td>全球第七大乳企，投资2亿欧元在德国新建奶粉工厂</td></tr><tr><td><strong>Meiji</strong>（明治乳业）⭐⭐⭐⭐⭐</td><td>Taro Yamamoto, 生产总监</td><td>日本大型乳企之一，投资1.5亿美元升级奶粉产线</td></tr><tr><td><strong>FrieslandCampina</strong>（荷兰乳业）⭐⭐⭐⭐⭐</td><td>Jan-Willem, 技术总监</td><td>全球前五大乳企，投资2.5亿欧元在荷兰新建奶粉工厂</td></tr></tbody></table></div>'},
-          {type:"h3", text:"3. 主办方与背书（11/15分）"},
-          {type:"p", text:"主办方SZ&W Group（成立于2008年，注册地新加坡），已连续举办9届全球乳业创新峰会。指导单位/背书：国际乳联（IDF）官方支持、新加坡企业发展局支持。往届口碑稳定。"},
-          {type:"h3", text:"4. 商务对接与曝光机会（10/15分）"},
-          {type:"p", text:"标准展位（9㎡）$10,800；演讲赞助$15,000。对接服务：一对一商务洽谈预约系统、展商与买家匹配服务、咖啡交流时间、VIP晚宴。"},
-          {type:"h3", text:"5. 品牌价值与行业地位（7/10分）"},
-          {type:"p", text:"国际竞品Tetra Pak（利乐，市场份额约33%）、SIG（瑞士包装，市场份额约22.7%）参会，说明会议行业影响力较大。国内同行：久煜包装、楚天科技、珐玛珈等。"},
-          {type:"h3", text:"6. 商业转化潜力（6/10分）"},
-          {type:"p", text:"官方未提供往届ROI数据。同类设备展商包括Tetra Pak、SIG、GEA、SPX FLOW等国际企业，竞争较为激烈。"},
-
-          {type:"h2", text:"三、参展策略建议"},
-          {type:"html", html:'<table><thead><tr><th>方案</th><th>费用明细</th><th>总投入</th><th>预期效果</th></tr></thead><tbody><tr><td><strong>方案一: 展台参展</strong></td><td>展位费(6㎡) 58,000元 + 差旅费 18,000元 + 住宿费 9,000元 + 物料费 7,500元</td><td><strong>约92,500元</strong></td><td>接触决策人30-50位，获得线索10-15个，转化商机3-5个</td></tr><tr><td><strong>方案二: 听众参会（推荐）</strong></td><td>参会费 约5,000元 + 差旅费 9,000元 + 住宿费 4,500元</td><td><strong>约18,500元</strong></td><td>接触决策人10-20位，获得线索3-5个，转化商机1-2个</td></tr></tbody></table>'},
-          {type:"html", html:'<div class="data-card" style="border-left:4px solid #27ae60;"><h4 style="color:#27ae60;">✅ 最终建议: 推荐参展，建议首选方案二（听众参会）</h4><ul><li><strong>性价比高</strong> — 总投入仅18,500元，可接触10-20位决策人</li><li><strong>专注重点客户</strong> — 不需要展位值守，专注接触Vinamilk、Fonterra等重点非仅一客户</li><li><strong>ROI预期较好</strong> — 假设转化1个大客户（如Vinamilk奶粉产线项目），订单金额约500-1000万元</li></ul><p style="margin-top:12px;"><strong>核心策略：</strong>重点接触非仅一客户 → 差异化竞争（定制化、柔性生产、性价比） → 主动预约目标客户 → 参会后3个月内持续跟进</p></div>'},
-          {type:"p", text:"评估完成日期: 2026年3月19日 | 报告版本: v5.0 | © 2026 江苏仅一联合智造有限公司"}
-        ]
-      },
-
-      "tdd-audit": {
-        title: "跨国企业设备供应商审核体系",
-        category: "其他报告", date: "2026-04-01", readTime: 18,
-        prevId: "gdic-asia-2026", nextId: null,
-        content: [
-          {type:"h2", text:"一、八大企业审核体系核心对比"},
-          {type:"html", html:'<table><thead><tr><th>企业名称</th><th>审核体系全称</th><th>核心定位</th><th>关键标准</th><th>审核特点</th></tr></thead><tbody><tr><td>雀巢</td><td>Technical Due Diligence (TDD)</td><td>技术准入+合规风控</td><td>FSSC 22000、EHEDG/3A、SMETA 4-Pillar</td><td>全球统一标准、年度复审+飞行检查、零容忍原则</td></tr><tr><td>达能</td><td>TDD + RESPECT技术模块</td><td>技术合规+ESG可持续双轨审核</td><td>FDA QSR 820、RESPECT可持续标准</td><td>技术与ESG深度融合、乳品/饮料无菌工艺严控</td></tr><tr><td>百事</td><td>Technical Assessment + 全球饮料食安标准</td><td>技术能力+饮料食安双轨强制审核</td><td>AIB饮料标准、CIP/SIP强制参数、OEE≥行业基准</td><td>75%现场检查、灌注阀/泵专项审核、能耗管控</td></tr><tr><td>玛氏</td><td>Technical Audit + GMI</td><td>技术合规+包装印刷专项认证</td><td>GMI包装认证、套印误差≤0.08mm、ΔE≤2.0</td><td>包装供应商一票否决、GMI独立强制认证</td></tr><tr><td>宝洁</td><td>Technical Qualification (TQ) + QAKE</td><td>技术确认+19项质量关键要素</td><td>QAKE 19 KE、ISO 13485、六西格玛标准</td><td>内部认证专家审核、全流程质量量化管控</td></tr><tr><td>亿滋</td><td>Technical Audit + ColabTech</td><td>技术合规+开放技术创新</td><td>FSSC 22000、数字孪生、可持续包装创新</td><td>ColabTech创新平台、包装兼容性严控</td></tr><tr><td>科赴</td><td>Technical Due Diligence (TDD)</td><td>医疗级技术准入+全链条合规</td><td>ISO 13485、工业4.0/灯塔工厂标准</td><td>审核最严、严重问题直接否决、医疗级材质合规</td></tr><tr><td>雅培</td><td>Technical Audit + QSR 820</td><td>医疗级技术+FDA强制质量体系</td><td>QSR 820 (21 CFR Part 820)、UDI全覆盖、Cpk≥1.33</td><td>FDA飞行检查重点、全生命周期追溯、24小时投诉响应</td></tr></tbody></table>'},
-
-          {type:"h2", text:"二、各企业审核体系详细介绍"},
-          {type:"h3", text:"雀巢 TDD"},
-          {type:"p", text:"全球供应链技术准入与合规的强制性审核，是设备/产线/工艺进入雀巢供应链的核心门槛，无豁免项。"},
-          {type:"ul", items:[
-            "设备卫生设计（EHEDG/3A认证、无清洁死角、316L不锈钢材质）",
-            "工艺验证（IQ/OQ/PQ全流程、FAT/SAT测试、偏差闭环）",
-            "产能稳定性（OEE≥88%、故障停机率≤2%）",
-            "食品安全追溯（批次追溯精度≤4小时、召回体系）",
-            "ESG合规（SMETA 4-Pillar、碳足迹、劳工权益）"
-          ]},
-          {type:"blockquote", text:"核心特点：全球统一标准，无区域豁免 | 零容忍原则（卫生设计缺陷直接否决） | 年度复审+不定期飞行检查 | 高风险品类审核加倍严格"},
-          {type:"p", text:"审核流程：文件预审 → 现场审核 → 验证测试 → 整改闭环 → 准入认证 → 年度复评"},
-
-          {type:"h3", text:"达能 TDD + RESPECT技术模块"},
-          {type:"p", text:"技术尽职调查+可持续ESG技术合规双轨审核，强制嵌入供应链准入，ESG占审核权重30%。"},
-          {type:"ul", items:[
-            "产线卫生设计（无菌工艺、EHEDG认证）",
-            "工艺验证（IQ/OQ/PQ、清洁验证）",
-            "ESG模块（能源效率、碳足迹、劳工权益）",
-            "特殊营养品类（FDA QSR 820合规）",
-            "供应链韧性（原料溯源、应急保障）"
-          ]},
-          {type:"blockquote", text:"核心特点：技术与ESG深度融合，ESG不达标直接否决 | 乳品/饮料无菌工艺严控（微生物≤10 CFU/100ml） | 第三方（SGS/BV）执行审核 | 可持续包装占比≥50%为加分项"},
-
-          {type:"h3", text:"百事 Technical Assessment"},
-          {type:"p", text:"设备技术能力+饮料行业食品安全双轨强制审核，未通过无法承接任何订单。"},
-          {type:"ul", items:[
-            "CIP/SIP参数（85℃热水15min、碱洗浓度2%）",
-            "灌注阀密封（泄漏率≤0.1ml/min）",
-            "异物控制（金属探测灵敏度≥0.8mm、X光检测）",
-            "OEE（≥85%）、能耗/水耗（≤行业基准10%）",
-            "卫生设计（防交叉污染、易清洁）"
-          ]},
-          {type:"blockquote", text:"核心特点：75%审核权重为现场检查（行业最高） | 灌注阀/泵专项审核 | 能耗/水耗量化管控 | 柔性产线要求"},
-
-          {type:"h3", text:"玛氏 Technical Audit + GMI"},
-          {type:"p", text:"通用技术审核+包装印刷GMI专项认证，包装供应商GMI不通过一票否决。"},
-          {type:"ul", items:[
-            "设备卫生设计（食品接触部分316L不锈钢）",
-            "GMI印刷标准（套印误差≤0.08mm、色差ΔE≤2.0）",
-            "工艺稳定性（连续生产8小时无停机）",
-            "包装完整性（密封强度≥20N/15mm）"
-          ]},
-          {type:"blockquote", text:"核心特点：GMI官方独立审核 | 包装供应商GMI为一票否决项 | 糖果/宠物食品包装完整性专项检测 | 印刷耗材环保要求（VOCs≤50mg/m³）"},
-
-          {type:"h3", text:"宝洁 TQ + QAKE"},
-          {type:"p", text:"技术确认（TQ）+ 19项质量保证关键要素（QAKE），技术与质量双轨互锁，缺一不可。"},
-          {type:"ul", items:[
-            "TQ维度（IQ/OQ/PQ、FAT/SAT、设备可靠性）",
-            "QAKE 19 KE（领导、培训、设计、生产、供应链等）",
-            "变更控制（所有变更需重新验证）",
-            "CAPA闭环（整改完成率100%、有效性验证）",
-            "实验室校准（所有量具溯源至国家基准）"
-          ]},
-          {type:"blockquote", text:"核心特点：内部认证专家审核，无第三方外包 | 19 KE全流程标准化，可量化评分 | 设备MTBF≥行业基准，年停机率≤1.5% | 质量计分卡季度回顾"},
-
-          {type:"h3", text:"亿滋 Technical Audit + ColabTech"},
-          {type:"p", text:"技术合规审核+开放创新平台，合规为基础，创新为加分项。"},
-          {type:"ul", items:[
-            "设备卫生设计（EHEDG/3A认证）",
-            "工艺验证（IQ/OQ/PQ、清洁验证）",
-            "可持续包装（可回收/可降解材料兼容性）",
-            "AI质检（缺陷识别率≥99.5%）",
-            "数字孪生（产线虚拟调试）"
-          ]},
-          {type:"blockquote", text:"核心特点：ColabTech创新平台对接 | 包装新材料兼容性强制验证 | 年度复审+飞行检查 | 数字化转型（MES系统对接）"},
-
-          {type:"h3", text:"科赴 TDD"},
-          {type:"p", text:"医疗级技术准入审核，行业最严苛标准，覆盖设备/产线/材料全链条合规。"},
-          {type:"ul", items:[
-            "医疗级卫生设计（ISO 13485、GMP）",
-            "工业4.0适配（AR运维、3D打印、大数据分析）",
-            "知识产权合规（专利权属、FTO分析）",
-            "设备可靠性（MTBF≥行业基准20%）",
-            "数字化追溯（全程可追溯、电子记录合规）"
-          ]},
-          {type:"blockquote", text:"核心特点：审核标准为医疗级，高于食品级2个等级 | 严重问题直接否决，无整改机会 | 工业4.0/灯塔工厂标准强制适配 | 知识产权专项审核"},
-
-          {type:"h3", text:"雅培 Technical Audit + QSR 820"},
-          {type:"p", text:"医疗级技术审核+FDA强制质量体系，美国市场准入法定要求。"},
-          {type:"ul", items:[
-            "设计控制（DHF/DMR/DHR完整、设计转移验证）",
-            "UDI全覆盖（器械唯一标识、全程追溯）",
-            "CAPA（整改完成率100%、有效性验证）",
-            "21 CFR Part 11（电子记录/签名合规）",
-            "成品100%性能测试（无抽样豁免）"
-          ]},
-          {type:"blockquote", text:"核心特点：FDA飞行检查重点关注对象，审核记录需留存5年 | 全生命周期追溯，追溯精度≤4小时 | 24小时投诉响应 | Cpk≥1.33"},
-
-          {type:"h2", text:"三、设备供应商准入全流程准备"},
-          {type:"html", html:'<div class="data-card"><h4>1. 基础体系资质</h4><ul><li><strong>质量体系：</strong>ISO 9001（基础通用）、FSSC 22000（食品接触类产线强制）、ISO 13485（医疗级设备/产线强制）</li><li><strong>卫生设计：</strong>EHEDG/3A认证、FDA 21 CFR Part 177</li><li><strong>合规证明：</strong>EU 1935/2004、CE/UL、FCM全项检测报告</li><li><strong>社会责任：</strong>SMETA 4-Pillar（雀巢/达能等强制）、ISO 14001、ISO 45001</li></ul></div>'},
-          {type:"html", html:'<div class="data-card"><h4>2. 设备技术与设计</h4><ul><li><strong>卫生设计：</strong>食品/医疗接触区域优先316L不锈钢；无缝焊接、Ra≤0.8μm（接触区）；CIP/SIP兼容</li><li><strong>验证体系：</strong>IQ/OQ/PQ（关键设备强制）、FAT/SAT、FMEA、偏差闭环率100%</li><li><strong>过程控制：</strong>Cpk≥1.33、OEE≥85%、SPC、CPP/CCP</li><li><strong>数字化追溯：</strong>21 CFR Part 11、UDI、OPC UA接口</li></ul></div>'},
-          {type:"html", html:'<div class="data-card"><h4>3. 文档与现场准备</h4><ul><li><strong>技术文件：</strong>设备手册（多语言版）、CAD图纸（含材质标注）、材质证明、验证报告</li><li><strong>质量文件：</strong>体系证书、HACCP计划、CAPA记录（近12个月）、不合格品处理流程</li><li><strong>现场准备：</strong>CIP/SIP运行演示、清洁验证取样记录、关键岗位人员资质考核</li></ul></div>'},
-          {type:"html", html:'<div class="data-card"><h4>4. 分步骤实施计划（6-12个月）</h4><ul><li><strong>1-2月：</strong>体系认证补全、SEDEX对接、SMETA审核</li><li><strong>3-4月：</strong>设备局部升级（接触区材质/焊接工艺）、验证体系标准化搭建</li><li><strong>5-6月：</strong>文件编制（多语言适配）、数字化系统升级</li><li><strong>7-9月：</strong>目标客户标准适配、第三方预审核（SGS/BV）</li><li><strong>10-12月：</strong>正式审核、整改闭环（一般整改周期≤30天）</li></ul></div>'},
-          {type:"html", html:'<div class="data-card" style="border-left:4px solid #e53935;"><h4 style="color:#e53935;">5. 核心风控要点</h4><ul><li style="color:#e53935;font-weight:600;">食品/医疗接触区材质不合规 → 直接否决</li><li style="color:#e53935;font-weight:600;">IQ/OQ/PQ报告缺失（关键设备） → 审核不通过</li><li style="color:#e53935;font-weight:600;">电子记录不合规（医疗线） → 限期整改（≤45天）</li><li style="color:#e53935;font-weight:600;">SMETA不合格（雀巢/达能） → 暂停合作直至整改完成</li><li style="color:#e53935;font-weight:600;">关键变更未验证 → 准入资格临时失效</li></ul></div>'},
-
-          {type:"h2", text:"四、核心总结"},
-          {type:"ul", items:[
-            "八大企业审核核心统一：<strong>医疗级卫生设计+全流程验证+数字化追溯+ESG合规</strong>，差异仅在细分标准与侧重点。",
-            "供应商准备关键：<strong>通用标准打底（EHEDG/3A/FSSC 22000）+ 客户差异化适配（如玛氏GMI、雅培QSR 820）</strong>。",
-            "审核红线：卫生设计、验证完整性、数据追溯、社会责任四类问题为一票否决项，需重点管控。",
-            "实施节奏建议：先完成通用体系认证，再针对目标客户做差异化适配，6-12个月为合理周期。"
-          ]}
-        ]
-      }
-    };
-
-    /* [CONTENT END] 文章数据区域结束 */
+    /* [CONTENT END] 文章数据加载区域结束 */
 
     /* ================================================================
        [FRAMEWORK] 渲染引擎 — 勿动
        ================================================================ */
     function renderArticle(id, animate) {
-      var art = ARTICLES[id];
-      if (!art) { document.getElementById("articleContent").innerHTML = "<p>文章未找到</p>"; return; }
+      // Show loading state
+      var contentEl = document.getElementById("articleContent");
+      contentEl.innerHTML = '<div style="text-align:center;padding:60px 0;color:var(--text-tertiary);font-size:15px;">加载中...</div>';
 
-      document.getElementById("artCategoryTag").textContent = art.category;
-      document.getElementById("artCategoryTag").style.display = "inline-block";
-      document.getElementById("artTitleMain").textContent = art.title;
-      document.getElementById("artDate").textContent = art.date;
-      document.getElementById("artReadTime").textContent = art.readTime;
-      document.title = art.title + " - Zenger's Temp Pages";
-
-      var mobileTitle = document.getElementById('mobileHeaderTitle');
-      if (mobileTitle) mobileTitle.textContent = art.title;
-
-      var html = ""; var tocItems = [];
-      art.content.forEach(function(block, i) {
-        if (block.type === "h2") {
-          html += '<h2 id="heading-'+i+'">'+block.text+'</h2>';
-          tocItems.push({level:1, text:block.text, anchor:"heading-"+i});
-        } else if (block.type === "h3") {
-          html += '<h3 id="heading-'+i+'">'+block.text+'</h3>';
-          tocItems.push({level:2, text:block.text, anchor:"heading-"+i});
-        } else if (block.type === "p") {
-          html += '<p>'+block.text+'</p>';
-        } else if (block.type === "ul") {
-          html += '<ul>'; block.items.forEach(function(it){ html += '<li>'+it+'</li>'; }); html += '</ul>';
-        } else if (block.type === "ol") {
-          html += '<ol>'; block.items.forEach(function(it){ html += '<li>'+it+'</li>'; }); html += '</ol>';
-        } else if (block.type === "blockquote") {
-          html += '<blockquote>'+block.text+'</blockquote>';
-        } else if (block.type === "html") {
-          html += block.html;
+      loadArticle(id, function(art) {
+        if (!art) {
+          contentEl.innerHTML = '<p>文章未找到</p>';
+          return;
         }
+
+        document.getElementById("artCategoryTag").textContent = art.category;
+        document.getElementById("artCategoryTag").style.display = "inline-block";
+        document.getElementById("artTitleMain").textContent = art.title;
+        document.getElementById("artDate").textContent = art.date;
+        document.getElementById("artReadTime").textContent = art.readTime;
+        document.title = art.title + " - Zenger's Temp Pages";
+
+        var mobileTitle = document.getElementById('mobileHeaderTitle');
+        if (mobileTitle) mobileTitle.textContent = art.title;
+
+        var html = ""; var tocItems = [];
+        art.content.forEach(function(block, i) {
+          if (block.type === "h2") {
+            html += '<h2 id="heading-'+i+'">'+block.text+'</h2>';
+            tocItems.push({level:1, text:block.text, anchor:"heading-"+i});
+          } else if (block.type === "h3") {
+            html += '<h3 id="heading-'+i+'">'+block.text+'</h3>';
+            tocItems.push({level:2, text:block.text, anchor:"heading-"+i});
+          } else if (block.type === "p") {
+            html += '<p>'+block.text+'</p>';
+          } else if (block.type === "ul") {
+            html += '<ul>'; block.items.forEach(function(it){ html += '<li>'+it+'</li>'; }); html += '</ul>';
+          } else if (block.type === "ol") {
+            html += '<ol>'; block.items.forEach(function(it){ html += '<li>'+it+'</li>'; }); html += '</ol>';
+          } else if (block.type === "blockquote") {
+            html += '<blockquote>'+block.text+'</blockquote>';
+          } else if (block.type === "html") {
+            html += block.html;
+          }
+        });
+        contentEl.innerHTML = html;
+
+        var tocHtml = "";
+        tocItems.forEach(function(item) {
+          var cls = item.level===2 ? "toc-item toc-sub" : "toc-item";
+          if (item.level===1 && tocItems.indexOf(item)===0) cls += " active-toc";
+          tocHtml += '<a class="'+cls+'" href="#'+item.anchor+'" onclick="scrollToHeading(\''+item.anchor+'\',this)">'+item.text+'</a>';
+        });
+        document.getElementById("tocItems").innerHTML = tocHtml;
+
+        document.querySelectorAll("#homeNavPanel .article-nav-item").forEach(function(el){
+          el.classList.remove("active-article");
+        });
+        var activeNav = document.querySelector("#homeNavPanel .article-nav-item[href$='id="+id+"']");
+        if (activeNav) activeNav.classList.add("active-article");
+
+        if (animate) {
+          var wrapper = document.getElementById('contentWrapper');
+          wrapper.classList.remove('content-enter');
+          void wrapper.offsetWidth;
+          wrapper.classList.add('content-enter');
+        }
+
+        window.scrollTo({ top: 0, behavior: "smooth" });
       });
-      document.getElementById("articleContent").innerHTML = html;
-
-      var tocHtml = "";
-      tocItems.forEach(function(item) {
-        var cls = item.level===2 ? "toc-item toc-sub" : "toc-item";
-        if (item.level===1 && tocItems.indexOf(item)===0) cls += " active-toc";
-        tocHtml += '<a class="'+cls+'" href="#'+item.anchor+'" onclick="scrollToHeading(\''+item.anchor+'\',this)">'+item.text+'</a>';
-      });
-      document.getElementById("tocItems").innerHTML = tocHtml;
-
-      document.querySelectorAll("#homeNavPanel .article-nav-item").forEach(function(el){
-        el.classList.remove("active-article");
-      });
-      var activeNav = document.querySelector("#homeNavPanel .article-nav-item[href$='id="+id+"']");
-      if (activeNav) activeNav.classList.add("active-article");
-
-      if (animate) {
-        var wrapper = document.getElementById('contentWrapper');
-        wrapper.classList.remove('content-enter');
-        void wrapper.offsetWidth;
-        wrapper.classList.add('content-enter');
-      }
-
-      window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
     /* ================================================================
@@ -1111,8 +893,11 @@
       setTimeout(function() {
         renderArticle(id, true);
         history.replaceState(null,"","?id="+id);
-        content.style.opacity = '';
-        content.style.transform = '';
+        // Reset opacity after renderArticle triggers its own animation
+        setTimeout(function() {
+          content.style.opacity = '';
+          content.style.transform = '';
+        }, 100);
         closeMobileSidebar();
       }, 200);
     }
