@@ -1,938 +1,726 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interzoo 2026 参展价值评估报告</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Microsoft YaHei', 'PingFang SC', 'Hiragino Sans GB', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: #fff;
-            border-radius: 16px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            overflow: hidden;
-        }
-        /* 头部标题区 */
-        .header {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-            color: #fff;
-            padding: 40px 50px;
-            text-align: center;
-        }
-        .header h1 {
-            font-size: 2.2em;
-            font-weight: 700;
-            margin-bottom: 15px;
-            letter-spacing: 2px;
-        }
-        .header .subtitle {
-            font-size: 1.1em;
-            color: #b8c5d6;
-            margin-bottom: 20px;
-        }
-        .header .meta {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            font-size: 0.95em;
-            color: #a0aec0;
-        }
-        .header .meta span {
-            background: rgba(255,255,255,0.1);
-            padding: 8px 20px;
-            border-radius: 20px;
-        }
-        /* 主内容区 */
-        .content {
-            padding: 40px 50px;
-        }
-        /* 核心结论卡片 */
-        .conclusion-card {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-            border-radius: 16px;
-            padding: 35px;
-            color: #fff;
-            margin-bottom: 30px;
-        }
-        .conclusion-card h2 {
-            font-size: 1.4em;
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 2px solid rgba(255,255,255,0.2);
-        }
-        .score-display {
-            display: flex;
-            align-items: center;
-            gap: 30px;
-            margin-bottom: 20px;
-        }
-        .score-circle {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #e94560 0%, #ff6b6b 100%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            flex-shrink: 0;
-        }
-        .score-circle .number {
-            font-size: 2em;
-        }
-        .score-circle .total {
-            font-size: 0.9em;
-            opacity: 0.8;
-        }
-        .score-info {
-            flex: 1;
-        }
-        .score-info .recommendation {
-            font-size: 1.8em;
-            font-weight: 700;
-            color: #e94560;
-            margin-bottom: 8px;
-        }
-        .score-info .stars {
-            font-size: 1.5em;
-            color: #ffd93d;
-            margin-bottom: 5px;
-        }
-        .score-info .label {
-            color: #a0aec0;
-            font-size: 0.95em;
-        }
-        .core-judgment {
-            background: rgba(233, 69, 96, 0.2);
-            border-left: 4px solid #e94560;
-            padding: 15px 20px;
-            border-radius: 0 8px 8px 0;
-            font-size: 0.95em;
-            line-height: 1.6;
-        }
-        /* 分隔线 */
-        .divider {
-            height: 2px;
-            background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
-            margin: 30px 0;
-        }
-        /* 章节标题 */
-        .section {
-            margin-bottom: 35px;
-        }
-        .section-title {
-            font-size: 1.3em;
-            color: #1a1a2e;
-            padding: 12px 20px;
-            background: linear-gradient(90deg, #f8f9fc, #eef1f7);
-            border-left: 4px solid #667eea;
-            border-radius: 0 8px 8px 0;
-            margin-bottom: 20px;
-            font-weight: 600;
-        }
-        /* 会议信息 */
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 15px;
-            margin-bottom: 20px;
-        }
-        .info-item {
-            background: #f8f9fc;
-            padding: 15px 20px;
-            border-radius: 8px;
-            border-left: 3px solid #667eea;
-        }
-        .info-item .label {
-            font-size: 0.85em;
-            color: #718096;
-            margin-bottom: 5px;
-        }
-        .info-item .value {
-            font-size: 1em;
-            color: #1a1a2e;
-            font-weight: 500;
-        }
-        .info-item.highlight {
-            background: linear-gradient(135deg, #667eea22, #764ba222);
-            border-left-color: #764ba2;
-        }
-        /* 通用表格样式 */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-            font-size: 0.9em;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        th {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: #fff;
-            padding: 12px 15px;
-            text-align: left;
-            font-weight: 600;
-        }
-        td {
-            padding: 10px 15px;
-            border-bottom: 1px solid #e2e8f0;
-        }
-        tr:nth-child(even) {
-            background: #f8f9fc;
-        }
-        tr:hover {
-            background: #eef1f7;
-        }
-        /* 评估维度卡片 */
-        .dimension-card {
-            background: #fff;
-            border: 1px solid #e2e8f0;
-            border-radius: 12px;
-            padding: 25px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-        }
-        .dimension-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 15px;
-            padding-bottom: 15px;
-            border-bottom: 2px solid #eef1f7;
-        }
-        .dimension-title {
-            font-size: 1.15em;
-            color: #1a1a2e;
-            font-weight: 600;
-        }
-        .dimension-title .weight {
-            font-size: 0.85em;
-            color: #718096;
-            font-weight: 400;
-        }
-        .dimension-score {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .score-bar {
-            width: 120px;
-            height: 8px;
-            background: #e2e8f0;
-            border-radius: 4px;
-            overflow: hidden;
-        }
-        .score-bar-fill {
-            height: 100%;
-            border-radius: 4px;
-            transition: width 0.3s ease;
-        }
-        .score-text {
-            font-weight: 700;
-            font-size: 1.1em;
-            min-width: 50px;
-        }
-        .low { color: #e94560; }
-        .medium { color: #f39c12; }
-        .high { color: #27ae60; }
-        .score-bar-fill.low { background: linear-gradient(90deg, #e94560, #ff6b6b); }
-        .score-bar-fill.medium { background: linear-gradient(90deg, #f39c12, #f1c40f); }
-        .score-bar-fill.high { background: linear-gradient(90deg, #27ae60, #2ecc71); }
-        /* 统计标签 */
-        .stat-tags {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 15px;
-            flex-wrap: wrap;
-        }
-        .stat-tag {
-            background: #f8f9fc;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-size: 0.9em;
-        }
-        .stat-tag .num {
-            font-weight: 700;
-            color: #667eea;
-        }
-        /* 评价文字 */
-        .evaluation-text {
-            background: #f8f9fc;
-            padding: 15px 20px;
-            border-radius: 8px;
-            line-height: 1.7;
-            color: #4a5568;
-            font-size: 0.92em;
-        }
-        /* 表格内匹配标识 */
-        .match-yes {
-            color: #27ae60;
-            font-weight: 600;
-        }
-        .match-no {
-            color: #e94560;
-        }
-        /* 竞品表格 */
-        .competitor-table td:first-child {
-            font-weight: 600;
-            color: #1a1a2e;
-        }
-        /* 策略建议卡片 */
-        .strategy-card {
-            background: linear-gradient(135deg, #fff5f5, #fff0f0);
-            border: 1px solid #feb2b2;
-            border-radius: 12px;
-            padding: 25px;
-            margin-bottom: 20px;
-        }
-        .strategy-card h3 {
-            color: #c53030;
-            font-size: 1.2em;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .strategy-card h3::before {
-            content: "⚠️";
-        }
-        .plan-block {
-            background: #fff;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 15px;
-            border-left: 4px solid #fc8181;
-        }
-        .plan-block h4 {
-            color: #e53e3e;
-            font-size: 1em;
-            margin-bottom: 12px;
-        }
-        .plan-block h4::before {
-            content: "📋 ";
-        }
-        .cost-table {
-            background: #f8f9fc;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        .cost-table td {
-            padding: 8px 12px;
-        }
-        .cost-table td:first-child {
-            font-weight: 500;
-            color: #4a5568;
-        }
-        .cost-total {
-            background: #fed7d7 !important;
-            font-weight: 700;
-            color: #c53030 !important;
-        }
-        /* 总结建议 */
-        .summary-section {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            border-radius: 16px;
-            padding: 30px;
-            color: #fff;
-            margin-top: 30px;
-        }
-        .summary-section h2 {
-            font-size: 1.3em;
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 2px solid rgba(255,255,255,0.2);
-        }
-        .summary-section h3 {
-            font-size: 1.1em;
-            color: #e94560;
-            margin: 20px 0 15px;
-        }
-        .summary-section h4 {
-            font-size: 1em;
-            color: #ffd93d;
-            margin: 15px 0 10px;
-        }
-        .summary-section p, .summary-section li {
-            line-height: 1.8;
-            color: #cbd5e0;
-            font-size: 0.92em;
-        }
-        .summary-section ul {
-            padding-left: 20px;
-            margin: 10px 0;
-        }
-        .summary-section li {
-            margin-bottom: 8px;
-        }
-        .final-recommendation {
-            background: rgba(233, 69, 96, 0.2);
-            border: 2px solid #e94560;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 20px 0;
-            text-align: center;
-        }
-        .final-recommendation strong {
-            font-size: 1.3em;
-            color: #e94560;
-        }
-        .alternative-list {
-            background: rgba(255,255,255,0.05);
-            border-radius: 10px;
-            padding: 20px;
-            margin-top: 15px;
-        }
-        .alternative-list li {
-            margin-bottom: 12px;
-        }
-        /* 评估机构信息 */
-        .evaluation-meta {
-            text-align: right;
-            padding: 15px 20px;
-            color: #718096;
-            font-size: 0.85em;
-            border-top: 1px solid #e2e8f0;
-            margin-top: 20px;
-        }
-        /* 响应式 */
-        @media (max-width: 768px) {
-            .header {
-                padding: 30px 25px;
-            }
-            .header h1 {
-                font-size: 1.6em;
-            }
-            .header .meta {
-                flex-direction: column;
-                gap: 10px;
-            }
-            .content {
-                padding: 25px 20px;
-            }
-            .score-display {
-                flex-direction: column;
-                text-align: center;
-            }
-            .dimension-header {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 10px;
-            }
-            .info-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zenger's Temp Pages</title>
+
+  <!-- 字体加载 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!--
+  ╔══════════════════════════════════════════════════════════════════╗
+  ║  Zenger's Temp Pages — 首页                                     ║
+  ║  命名: GitHub Pages 标准 (index.html)                            ║
+  ║                                                                  ║
+  ║  ⛔ 框架区域说明：                                               ║
+  ║  以下标注为 [FRAMEWORK] 的区域是页面框架代码，请勿修改！         ║
+  ║  只能在标注为 [CONTENT] 的区域增删文章内容。                     ║
+  ╚══════════════════════════════════════════════════════════════════╝
+  -->
+
+  <style>
+    /* ================================================================
+       [FRAMEWORK] CSS 变量 — 全局设计令牌，修改需谨慎
+       ================================================================ */
+    :root {
+      --primary-blue: #1677ff;
+      --primary-blue-light: #e8f1ff;
+      --primary-blue-hover: #4096ff;
+      --primary-blue-active: #0958d9;
+
+      --bg-page: #f5f7fa;
+      --bg-sidebar: #ffffff;
+      --bg-card: rgba(255, 255, 255, 0.72);
+
+      --text-primary: #1d1d1f;
+      --text-secondary: #424245;
+      --text-tertiary: #6e6e73;
+      --text-placeholder: #86868b;
+
+      --border-color: rgba(0, 0, 0, 0.06);
+      --divider-color: rgba(0, 0, 0, 0.04);
+
+      --glass-bg: rgba(255, 255, 255, 0.80);
+      --glass-blur: 16px;
+
+      --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+      --card-shadow-hover: 0 6px 16px rgba(22, 119, 255, 0.08);
+      --sidebar-right-shadow: 6px 0 24px rgba(0, 0, 0, 0.08), 2px 0 8px rgba(0, 0, 0, 0.04);
+
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+
+      --sidebar-width: 300px;
+
+      --transition-fast: 150ms ease;
+      --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* ================================================================
+       [FRAMEWORK] 基础重置与全局样式 — 勿动
+       ================================================================ */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+
+    body {
+      font-family: 'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--text-primary);
+      background: var(--bg-page);
+      line-height: 1.6;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    a { text-decoration: none; color: inherit; cursor: pointer; }
+    *:focus-visible { outline: 2px solid var(--primary-blue); outline-offset: 2px; border-radius: 4px; }
+    .skip-link {
+      position: absolute; top: -100%; left: 16px; z-index: 10000;
+      padding: 12px 20px; background: var(--primary-blue); color: white;
+      border-radius: var(--radius-sm); font-weight: 500; transition: top 200ms ease;
+    }
+    .skip-link:focus-visible { top: 16px; }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    /* ================================================================
+       [FRAMEWORK] 页面布局骨架 — 勿动
+       ================================================================ */
+    .app-layout { display: flex; min-height: 100vh; }
+
+    /* ================================================================
+       [FRAMEWORK] 移动端顶栏（汉堡包菜单）— 勿动
+       ================================================================ */
+    .mobile-header {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: 56px;
+      background: var(--glass-bg);
+      backdrop-filter: blur(var(--glass-blur));
+      -webkit-backdrop-filter: blur(var(--glass-blur));
+      border-bottom: 1px solid var(--border-color);
+      z-index: 300;
+      align-items: center;
+      padding: 0 16px;
+      gap: 12px;
+    }
+
+    .hamburger-btn {
+      width: 40px; height: 40px;
+      display: flex; align-items: center; justify-content: center;
+      background: none; border: none; cursor: pointer;
+      border-radius: var(--radius-sm);
+      transition: background var(--transition-fast);
+      -webkit-tap-highlight-color: transparent;
+    }
+    .hamburger-btn:hover { background: rgba(0,0,0,0.04); }
+    .hamburger-btn:active { background: rgba(0,0,0,0.08); }
+    .hamburger-btn svg {
+      width: 24px; height: 24px;
+      stroke: var(--text-primary); fill: none;
+      stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+    }
+
+    .mobile-header-title {
+      font-size: 17px; font-weight: 600; color: var(--text-primary);
+      letter-spacing: -0.3px; flex: 1;
+    }
+
+    .mobile-header-avatar {
+      width: 32px; height: 32px; border-radius: 50%;
+      background: url('image/头像.png') center center / cover no-repeat;
+      box-shadow: 0 2px 8px rgba(22, 119, 255, 0.2);
+    }
+
+    /* ================================================================
+       [FRAMEWORK] 侧边栏遮罩层 — 勿动
+       ================================================================ */
+    .sidebar-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 399;
+      opacity: 0;
+      transition: opacity 300ms ease;
+    }
+    .sidebar-overlay.active { display: block; opacity: 1; }
+
+    /* ================================================================
+       [FRAMEWORK] 侧边栏容器 — 勿动
+       ================================================================ */
+    .sidebar {
+      width: var(--sidebar-width); min-width: var(--sidebar-width);
+      height: 100vh; position: sticky; top: 0;
+      display: flex; flex-direction: column;
+      background: var(--glass-bg);
+      backdrop-filter: blur(var(--glass-blur));
+      -webkit-backdrop-filter: blur(var(--glass-blur));
+      border-right: 1px solid var(--border-color);
+      box-shadow: var(--sidebar-right-shadow);
+      overflow-y: auto; overflow-x: hidden;
+      z-index: 200;
+    }
+    .sidebar::-webkit-scrollbar { width: 4px; }
+    .sidebar::-webkit-scrollbar-track { background: transparent; }
+    .sidebar::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.12); border-radius: 4px; }
+
+    /* ================================================================
+       [FRAMEWORK] 个人资料区域 — 勿动
+       ================================================================ */
+    .profile-section {
+      padding: 28px 24px 16px;
+      display: flex; align-items: center;
+      gap: 14px; flex-shrink: 0;
+      margin-top: 10px;
+    }
+    .avatar-wrapper { position: relative; width: 52px; height: 52px; flex-shrink: 0; }
+    .avatar {
+      width: 52px; height: 52px; border-radius: 50%;
+      background: url('image/头像.png') center center / cover no-repeat;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 3px 12px rgba(22, 119, 255, 0.28);
+      flex-shrink: 0;
+    }
+    .profile-info {
+      text-align: left; display: flex; flex-direction: column;
+      gap: 2px; min-width: 0;
+    }
+    .profile-name {
+      font-size: 17px; font-weight: 650; color: var(--text-primary);
+      letter-spacing: -0.3px; line-height: 1.25;
+    }
+    .profile-subtitle {
+      font-size: 12.5px; color: var(--text-tertiary);
+      font-weight: 400; letter-spacing: 0.01em;
+    }
+    .sidebar-divider {
+      height: 1px; margin: 10px 12px;
+      background: var(--divider-color); flex-shrink: 0;
+    }
+
+    /* ================================================================
+       [FRAMEWORK] 侧边栏目录动效系统 — 勿动
+       ================================================================ */
+    .nav-container { position: relative; flex: 1; min-height: 200px; overflow: hidden; }
+    .nav-panel {
+      position: absolute; top: 0; left: 0; right: 0;
+      padding: 8px 12px;
+      transition: all 380ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .nav-panel.panel-exit-to-left { opacity: 0; transform: translateX(-30px); }
+    .nav-panel.panel-enter-from-right { opacity: 0; transform: translateX(30px); }
+    .nav-panel.panel-active { opacity: 1; transform: translateX(0); position: relative; }
+
+    .nav-label {
+      font-size: 11px; font-weight: 600; color: var(--text-placeholder);
+      text-transform: uppercase; letter-spacing: 0.08em;
+      padding: 12px 12px 8px; user-select: none;
+    }
+
+    /* ================================================================
+       [FRAMEWORK] 分类与导航项样式 — 勿动
+       ================================================================ */
+    .category-item { margin-bottom: 4px; }
+
+    .category-header {
+      display: flex; align-items: center; gap: 9px;
+      padding: 11px 13px;
+      border-radius: var(--radius-sm); cursor: pointer;
+      transition: all var(--transition-fast);
+      user-select: none; -webkit-user-select: none;
+      color: #1d1d1f; font-size: 16px; font-weight: 600;
+      position: relative;
+    }
+    .category-header:hover { background: var(--primary-blue-light); color: var(--primary-blue); }
+    .category-header.active-category { background: var(--primary-blue-light); color: var(--primary-blue); }
+
+    .category-icon {
+      width: 19px; height: 19px; flex-shrink: 0; opacity: 0.7;
+      transition: transform var(--transition-fast); stroke-width: 1.8;
+    }
+    .category-header:hover .category-icon,
+    .category-header.active-category .category-icon { opacity: 1; }
+
+    .chevron-icon {
+      margin-left: auto; width: 17px; height: 17px;
+      transition: transform var(--transition-normal);
+      color: var(--text-tertiary); flex-shrink: 0;
+    }
+    .category-item.open > .category-header .chevron-icon { transform: rotate(90deg); }
+    .category-title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+    .article-list {
+      max-height: 0; overflow: hidden;
+      transition: max-height var(--transition-slow);
+      padding-left: 30px; padding-top: 4px;
+    }
+    .category-item.open > .article-list {
+      max-height: 500px;
+      transition: max-height 420ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .article-nav-item {
+      display: block; padding: 9px 13px; border-radius: 6px;
+      font-size: 15px; color: #424245;
+      transition: all var(--transition-fast);
+      cursor: pointer; position: relative;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+      margin-bottom: 4px;
+    }
+    .article-nav-item::before {
+      content: ''; position: absolute;
+      left: 0; top: 50%; transform: translateY(-50%);
+      width: 3px; height: 0; background: var(--primary-blue);
+      border-radius: 0 2px 2px 0;
+      transition: height var(--transition-fast);
+    }
+    .article-nav-item:hover { color: var(--primary-blue); background: rgba(22, 119, 255, 0.04); }
+    .article-nav-item.active-article {
+      color: var(--primary-blue); font-weight: 550;
+      background: rgba(22, 119, 255, 0.06);
+    }
+    .article-nav-item.active-article::before { height: 18px; }
+
+    /* ================================================================
+       [FRAMEWORK] 主内容区骨架 — 勿动
+       ================================================================ */
+    .main-content {
+      flex: 1; min-width: 0;
+      padding: 36px 48px;
+      display: flex; flex-direction: column; align-items: center;
+    }
+    .content-wrapper {
+      width: 100%; max-width: 1100px;
+      display: flex; flex-direction: column; align-items: center;
+    }
+    .page-header { margin-bottom: 32px; width: 100%; }
+    .page-title {
+      font-size: 32px; font-weight: 600; color: var(--text-primary);
+      letter-spacing: -0.5px; line-height: 1.25;
+    }
+    .page-description {
+      margin-top: 8px; font-size: 15px; color: var(--text-secondary); line-height: 1.6;
+    }
+
+    /* ================================================================
+       [FRAMEWORK] 文章卡片样式 — 勿动
+       ================================================================ */
+    .articles-grid {
+      display: flex; flex-direction: column;
+      gap: 16px; width: 100%;
+    }
+
+    .article-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(var(--glass-blur));
+      -webkit-backdrop-filter: blur(var(--glass-blur));
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 24px 28px;
+      cursor: pointer;
+      transition: all var(--transition-normal);
+      box-shadow: var(--card-shadow);
+      position: relative; overflow: hidden;
+    }
+    .article-card.anim-in { animation: cardFadeInUp 0.3s ease both; }
+    @keyframes cardFadeInUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .article-card:hover {
+      box-shadow: var(--card-shadow-hover);
+      border-color: var(--primary-blue);
+      transform: translateY(-3px);
+    }
+    .article-card:active { transform: translateY(0); }
+
+    .card-top-row {
+      display: flex; align-items: flex-start;
+      justify-content: space-between; gap: 16px; margin-bottom: 12px;
+    }
+    .article-title {
+      font-size: 19px; font-weight: 600; color: var(--text-primary);
+      line-height: 1.4; letter-spacing: -0.2px;
+      transition: color var(--transition-fast);
+    }
+    .article-card:hover .article-title { color: var(--primary-blue); }
+    .article-tag {
+      flex-shrink: 0; font-size: 12px; font-weight: 500;
+      color: var(--primary-blue); background: var(--primary-blue-light);
+      padding: 4px 12px; border-radius: 20px;
+      line-height: 1.6; white-space: nowrap;
+    }
+    .article-summary {
+      font-size: 15px; color: var(--text-secondary); line-height: 1.65;
+      margin-bottom: 16px;
+      display: -webkit-box; -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .card-meta-row {
+      display: flex; align-items: center;
+      justify-content: space-between;
+      font-size: 13.5px; color: var(--text-tertiary);
+    }
+    .meta-date, .meta-read-time { display: flex; align-items: center; gap: 5px; }
+    .icon-svg {
+      width: 15px; height: 15px; stroke: currentColor; fill: none;
+      stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0;
+    }
+
+    /* ================================================================
+       [FRAMEWORK] 动画类 — 勿动
+       ================================================================ */
+    .content-enter { animation: contentFadeInUp 0.3s ease both; }
+    @keyframes contentFadeInUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .content-exit {
+      opacity: 0; transform: translateY(-8px);
+      transition: opacity 200ms ease, transform 200ms ease;
+    }
+    .nav-exit {
+      opacity: 0; transform: translateX(-30px);
+      transition: opacity 200ms ease, transform 200ms ease;
+    }
+
+    /* ================================================================
+       [FRAMEWORK] 响应式断点 — 勿动
+       ================================================================ */
+    @media (max-width: 1024px) {
+      :root { --sidebar-width: 260px; }
+      .main-content { padding: 28px 32px; }
+    }
+
+    @media (max-width: 768px) {
+      .mobile-header { display: flex; }
+      .sidebar {
+        position: fixed;
+        top: 0; left: 0; bottom: 0;
+        width: var(--sidebar-width);
+        min-width: var(--sidebar-width);
+        height: 100vh;
+        z-index: 400;
+        transform: translateX(-100%);
+        transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: var(--sidebar-right-shadow);
+      }
+      .sidebar.open { transform: translateX(0); }
+      .main-content { padding: 72px 20px 24px; max-width: 100%; }
+      .article-card { padding: 20px; }
+      .card-top-row { flex-direction: column; gap: 8px; }
+      .article-title { font-size: 17px; }
+      .article-summary { font-size: 14px; }
+      .page-title { font-size: 24px; }
+      .profile-section { padding: 20px 20px 14px; gap: 12px; margin-top: 0; }
+      .avatar { width: 44px; height: 44px; }
+      .avatar-wrapper { width: 44px; height: 44px; }
+      .profile-name { font-size: 16px; }
+      .profile-subtitle { font-size: 12px; }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <!-- 头部标题区 -->
-        <div class="header">
-            <h1>🐾 Interzoo 2026 参展价值评估报告</h1>
-            <p class="subtitle">全球宠物用品贸易博览会参展可行性分析</p>
-            <div class="meta">
-                <span>📅 评估日期: 2026年4月1日</span>
-                <span>🏢 评估企业: 江苏仅一联合智造有限公司</span>
-            </div>
+
+  <a href="#main-content" class="skip-link">跳转到主要内容</a>
+
+  <!-- ================================================================
+       [FRAMEWORK] 移动端顶栏 — 勿动
+       ================================================================ -->
+  <header class="mobile-header">
+    <button class="hamburger-btn" type="button" onclick="toggleMobileSidebar()" aria-label="打开导航菜单">
+      <svg viewBox="0 0 24 24">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+    <span class="mobile-header-title">Zenger's Temp Pages</span>
+    <div class="mobile-header-avatar"></div>
+  </header>
+
+  <!-- ================================================================
+       [FRAMEWORK] 侧边栏遮罩 — 勿动
+       ================================================================ -->
+  <div class="sidebar-overlay" id="sidebarOverlay" onclick="closeMobileSidebar()"></div>
+
+  <div class="app-layout">
+
+    <!-- ============================================================== -->
+    <!-- 侧边栏                                                         -->
+    <!-- ============================================================== -->
+    <aside class="sidebar" id="sidebar" role="navigation" aria-label="文章目录导航">
+
+      <!-- [FRAMEWORK] 移动端关闭按钮 — 勿动 -->
+      <div class="mobile-sidebar-close" id="mobileCloseBtn" style="display:none;">
+        <button type="button" onclick="closeMobileSidebar()" aria-label="关闭导航菜单"
+                style="width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:none;border:none;cursor:pointer;border-radius:var(--radius-sm);color:var(--text-tertiary);margin-left:auto;margin-top:8px;margin-right:8px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- [FRAMEWORK] 个人资料区域 — 勿动 -->
+      <div class="profile-section">
+        <div class="avatar-wrapper">
+          <div class="avatar" aria-label="Zenger 的头像"></div>
+        </div>
+        <div class="profile-info">
+          <span class="profile-name">Zenger</span>
+          <span class="profile-subtitle">Zenger's temp pages</span>
+        </div>
+      </div>
+
+      <div class="sidebar-divider"></div>
+
+      <!-- [FRAMEWORK] 目录动效容器 — 勿动 -->
+      <div class="nav-container" id="navContainer">
+        <nav class="nav-panel panel-active" id="homeNav" aria-label="文章分类目录">
+
+        <!-- ============================================================
+             [CONTENT] 侧边栏分类与文章链接 — 在此区域增删文章
+             ============================================================ -->
+
+        <!-- 分类1: 市场调研 -->
+        <div class="category-item open" data-category="market-research">
+          <div class="category-header active-category" role="button" tabindex="0"
+               aria-expanded="true" aria-controls="cat-market-research"
+               onclick="toggleCategory(this)" onkeydown="handleKeyToggle(event,this)">
+            <svg class="category-icon icon-svg" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+            <span class="category-title">市场调研</span>
+            <svg class="chevron-icon icon-svg" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+          </div>
+          <div class="article-list" id="cat-market-research">
+            <a class="article-nav-item" href="article.html?id=coating-drums" onclick="navigateToArticle('coating-drums',event)">滚筒调味机（Coating Drums）投资可行性分析报告</a>
+          </div>
         </div>
 
-        <div class="content">
-            <!-- 核心结论卡片 -->
-            <div class="conclusion-card">
-                <h2>📊 综合评估结论</h2>
-                <div class="score-display">
-                    <div class="score-circle">
-                        <span class="number">30</span>
-                        <span class="total">/100分</span>
-                    </div>
-                    <div class="score-info">
-                        <div class="recommendation">不推荐参展</div>
-                        <div class="stars">⭐⭐</div>
-                        <div class="label">推荐指数</div>
-                    </div>
-                </div>
-                <div class="core-judgment">
-                    <strong>核心判断:</strong> Interzoo聚焦宠物用品行业,演讲嘉宾中无终端宠物食品生产商,客户匹配度极低,行业匹配度有限,不建议参展。
-                </div>
-            </div>
-
-            <!-- 一、会议介绍 -->
-            <div class="section">
-                <div class="section-title">一、会议介绍</div>
-                <div class="info-grid">
-                    <div class="info-item highlight">
-                        <div class="label">会议名称</div>
-                        <div class="value">Interzoo 2026</div>
-                    </div>
-                    <div class="info-item">
-                        <div class="label">会议时间</div>
-                        <div class="value">2026年5月12日至15日 (共4天)</div>
-                    </div>
-                    <div class="info-item">
-                        <div class="label">会议地点</div>
-                        <div class="value">🇩🇪 德国纽伦堡展览中心</div>
-                    </div>
-                    <div class="info-item highlight">
-                        <div class="label">官方主办方</div>
-                        <div class="value">WZF + ZZF + NürnbergMesse GmbH</div>
-                    </div>
-                </div>
-                <div class="evaluation-text">
-                    <strong>会议简介:</strong> Interzoo是全球领先的宠物用品贸易博览会,每两年在德国纽伦堡举办一次。作为专业B2B贸易展,Interzoo仅对行业专业人士开放。2024年展会创下历史新高,吸引<strong>2,146家展商</strong>(来自68个国家)和约<strong>37,000名专业观众</strong>(来自140个国家),展览面积达140,000平方米。展品范围涵盖宠物食品及生产技术、宠物配件、马术用品、包装技术、店铺陈设等全产业链。2026年展会预计规模将进一步扩大。
-                </div>
-            </div>
-
-            <div class="divider"></div>
-
-            <!-- 二、六大维度详细评估 -->
-            <div class="section">
-                <div class="section-title">二、六大维度详细评估</div>
-
-                <!-- 维度1: 行业匹配度 -->
-                <div class="dimension-card">
-                    <div class="dimension-header">
-                        <div class="dimension-title">1. 行业匹配度 <span class="weight">(权重: 20分)</span></div>
-                        <div class="dimension-score">
-                            <div class="score-bar"><div class="score-bar-fill medium" style="width: 40%"></div></div>
-                            <span class="score-text medium">8/20分</span>
-                        </div>
-                    </div>
-                    <div class="stat-tags">
-                        <span class="stat-tag">总议题数: <span class="num">5个</span></span>
-                        <span class="stat-tag">匹配议题数: <span class="num">2个</span></span>
-                        <span class="stat-tag">匹配占比: <span class="num">40%</span></span>
-                    </div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th style="width:8%">序号</th>
-                                <th style="width:32%">议题名称</th>
-                                <th style="width:12%">匹配</th>
-                                <th style="width:48%">匹配理由</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>宠物食品可持续发展的整体方法</td>
-                                <td><span class="match-no">❌</span></td>
-                                <td>聚焦可持续发展理念,与包装产线关联度低</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>再生配料与新型配料比较</td>
-                                <td><span class="match-no">❌</span></td>
-                                <td>聚焦原料配比,与包装产线关联度低</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>AI辅助供应商审核</td>
-                                <td><span class="match-no">❌</span></td>
-                                <td>聚焦供应链审核,与包装产线关联度低</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>酶在伴侣动物营养中的应用</td>
-                                <td><span class="match-no">❌</span></td>
-                                <td>聚焦营养配方,与包装产线关联度低</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>优化宠物食品冷冻干燥工艺</td>
-                                <td><span class="match-yes">✅</span></td>
-                                <td>涉及食品加工工艺,与仅一包装产线有一定关联</td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>宠物食品包装解决方案</td>
-                                <td><span class="match-yes">✅</span></td>
-                                <td>直接涉及包装设备和材料,与仅一业务高度匹配</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="evaluation-text">
-                        <strong>评价:</strong> Interzoo核心聚焦宠物用品行业,会议议题主要围绕宠物食品营养、配料创新、可持续发展等方向。虽然展会包含宠物食品生产技术和包装技术板块,但整体议题与仅一的乳品/药品/食品包装产线业务匹配度中等偏低。Petfood Forum Europe的议题更偏向原料和营养研究,仅冷冻干燥工艺和包装解决方案与仅一业务相关。
-                    </div>
-                </div>
-
-                <!-- 维度2: 客户匹配度 -->
-                <div class="dimension-card">
-                    <div class="dimension-header">
-                        <div class="dimension-title">2. 客户匹配度 <span class="weight">(权重: 40分)</span></div>
-                        <div class="dimension-score">
-                            <div class="score-bar"><div class="score-bar-fill low" style="width: 12.5%"></div></div>
-                            <span class="score-text low">5/40分</span>
-                        </div>
-                    </div>
-                    <div class="stat-tags">
-                        <span class="stat-tag">演讲嘉宾总数: <span class="num">5人</span></span>
-                        <span class="stat-tag">匹配终端客户: <span class="num">0人</span></span>
-                        <span class="stat-tag">客户匹配占比: <span class="num">0%</span></span>
-                    </div>
-
-                    <h4 style="color:#1a1a2e;margin:15px 0 10px;font-size:1em;">A. 终端客户 (宠物食品生产商)</h4>
-                    <div class="evaluation-text" style="background:#fff5f5;border-left-color:#e94560;">
-                        目前Petfood Forum Europe已公布的演讲嘉宾中,暂未发现终端宠物食品生产商(如Mars Petcare、Nestlé Purina、Hill's、Royal Canin等)。
-                    </div>
-
-                    <h4 style="color:#1a1a2e;margin:20px 0 10px;font-size:1em;">B. 同行/竞争对手 (设备供应商)</h4>
-                    <table class="competitor-table">
-                        <thead>
-                            <tr>
-                                <th>姓名</th>
-                                <th>职位</th>
-                                <th>公司/机构</th>
-                                <th>议题</th>
-                                <th>竞争关系</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Magnus Jochumsen</td>
-                                <td>高级项目与销售经理</td>
-                                <td>GEA Process Engineering</td>
-                                <td>优化宠物食品冷冻干燥工艺</td>
-                                <td><span style="color:#e94560;font-weight:700;">⭐⭐⭐⭐⭐</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <h4 style="color:#1a1a2e;margin:20px 0 10px;font-size:1em;">C. 供应商/服务商</h4>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>姓名</th>
-                                <th>职位</th>
-                                <th>公司/机构</th>
-                                <th>议题</th>
-                                <th>相关性</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Dan Lorenzen-Schmidt</td>
-                                <td>业务发展与创新高级副总裁</td>
-                                <td>BHJ公司</td>
-                                <td>宠物食品可持续发展</td>
-                                <td><span class="match-no">⭐</span></td>
-                            </tr>
-                            <tr>
-                                <td>Deni Kostelac, Ph.D.</td>
-                                <td>高级科学家</td>
-                                <td>International Flavors & Fragrances</td>
-                                <td>酶在伴侣动物营养中的应用</td>
-                                <td><span class="match-no">⭐</span></td>
-                            </tr>
-                            <tr>
-                                <td>Anne Gaasbeek</td>
-                                <td>团队负责人兼高级顾问</td>
-                                <td>Mérieux NutriSciences</td>
-                                <td>再生配料与新型配料比较</td>
-                                <td><span class="match-no">⭐</span></td>
-                            </tr>
-                            <tr>
-                                <td>David Rosenblatt, DVM</td>
-                                <td>学习与学术服务负责人</td>
-                                <td>Sher Consulting and Training</td>
-                                <td>AI辅助供应商审核</td>
-                                <td><span class="match-no">⭐</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <h4 style="color:#e94560;margin:20px 0 10px;font-size:1em;">⚠️ 重点关注同行: GEA Process Engineering</h4>
-                    <div class="info-grid" style="grid-template-columns:1fr 1fr;">
-                        <div class="info-item">
-                            <div class="label">公司背景</div>
-                            <div class="value">全球领先食品饮料设备供应商,总部德国,18,000+员工,2023年营收约51亿欧元</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="label">市场地位</div>
-                            <div class="value">食品加工设备领域重要地位,提供完整加工生产线和包装解决方案</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="label">业务动态</div>
-                            <div class="value">宠物食品加工设备持续投入研发,提供冷冻干燥、挤压成型、包装等环节</div>
-                        </div>
-                        <div class="info-item" style="background:#fff5f5;border-left-color:#e94560;">
-                            <div class="label">关注理由</div>
-                            <div class="value" style="color:#e94560;font-weight:600;">仅一在宠物食品包装领域的直接竞争对手</div>
-                        </div>
-                    </div>
-
-                    <div class="evaluation-text">
-                        <strong>评价:</strong> Petfood Forum Europe演讲嘉宾主要为配料供应商、技术服务商和设备供应商,终端宠物食品生产商(如Mars Petcare、Nestlé Purina等)未见在演讲名单中。GEA作为设备供应商是仅一的同行/竞争对手,不是仅一的客户。从已公布议程来看,仅一的终端客户匹配度低。展会的实际观众群体可能包含宠物食品制造商,但需要进一步验证。
-                    </div>
-                </div>
-
-                <!-- 维度3: 主办方与背书 -->
-                <div class="dimension-card">
-                    <div class="dimension-header">
-                        <div class="dimension-title">3. 主办方与背书 <span class="weight">(权重: 15分)</span></div>
-                        <div class="dimension-score">
-                            <div class="score-bar"><div class="score-bar-fill high" style="width: 93%"></div></div>
-                            <span class="score-text high">14/15分</span>
-                        </div>
-                    </div>
-                    <div class="info-grid" style="grid-template-columns:1fr 1fr;">
-                        <div class="info-item" style="background:linear-gradient(135deg,#667eea22,#764ba222);">
-                            <div class="label">官方主办方</div>
-                            <div class="value" style="font-weight:600;">WZF GmbH</div>
-                            <div style="font-size:0.85em;color:#4a5568;margin-top:5px;">成立:1966年 | 德国威斯巴登 | 宠物行业服务和展会组织</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="label">荣誉赞助方</div>
-                            <div class="value">ZZF (德国宠物贸易和工业协会)</div>
-                            <div style="font-size:0.85em;color:#4a5568;margin-top:5px;">创立于1947年,代表德国宠物行业利益</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="label">执行承办方</div>
-                            <div class="value">NürnbergMesse GmbH</div>
-                            <div style="font-size:0.85em;color:#4a5568;margin-top:5px;">全球知名展览公司</div>
-                        </div>
-                        <div class="info-item highlight">
-                            <div class="label">往届口碑</div>
-                            <div class="value">成功举办37届 | 满意度超95%</div>
-                            <div style="font-size:0.85em;color:#4a5568;margin-top:5px;">国际化程度高:85%展商来自德国以外</div>
-                        </div>
-                    </div>
-                    <div class="evaluation-text">
-                        <strong>评价:</strong> Interzoo由德国宠物行业协会下属的WZF主办,拥有强大的行业背书和超过50年的举办历史,主办方资质权威,往届口碑优秀,国际化程度高(85%展商来自德国以外)。主办方评分为最高档。
-                    </div>
-                </div>
-
-                <!-- 维度4: 商务对接与曝光机会 -->
-                <div class="dimension-card">
-                    <div class="dimension-header">
-                        <div class="dimension-title">4. 商务对接与曝光机会 <span class="weight">(权重: 15分)</span></div>
-                        <div class="dimension-score">
-                            <div class="score-bar"><div class="score-bar-fill high" style="width: 87%"></div></div>
-                            <span class="score-text high">13/15分</span>
-                        </div>
-                    </div>
-                    <div class="info-grid" style="grid-template-columns:1fr 1fr 1fr;">
-                        <div class="info-item">
-                            <div class="label">展位形式</div>
-                            <div class="value">标准展位 + 光地展位</div>
-                            <div style="font-size:0.85em;color:#4a5568;margin-top:5px;">多国家馆和产品细分展区</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="label">演讲机会</div>
-                            <div class="value">Petfood Forum Europe</div>
-                            <div style="font-size:0.85em;color:#4a5568;margin-top:5px;">产品展示 + 创意舞台</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="label">对接服务</div>
-                            <div class="value">一对一商务洽谈</div>
-                            <div style="font-size:0.85em;color:#4a5568;margin-top:5px;">买家预约 + Interzoo Party</div>
-                        </div>
-                    </div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>展商数量</th>
-                                <th>观众数量</th>
-                                <th>展览面积</th>
-                                <th>国际展商</th>
-                                <th>国际观众</th>
-                                <th>决策层观众</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr style="text-align:center;">
-                                <td><strong>2,146家</strong><br><span style="font-size:0.85em;color:#718096;">(2024年)</span></td>
-                                <td><strong>37,000名</strong><br><span style="font-size:0.85em;color:#718096;">专业观众</span></td>
-                                <td><strong>140,000m²</strong></td>
-                                <td><strong>85%</strong></td>
-                                <td><strong>74%</strong></td>
-                                <td><strong>91%</strong><br><span style="font-size:0.85em;color:#718096;">管理职位</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="evaluation-text">
-                        <strong>评价:</strong> Interzoo提供全方位的商务对接机会,包括展位展示、演讲平台、一对一洽谈、社交活动等。会议规模宏大,国际化程度高,观众决策权强(91%具有管理职位)。商务对接机会评分为最高档。
-                    </div>
-                </div>
-
-                <!-- 维度5: 品牌价值与行业地位 -->
-                <div class="dimension-card">
-                    <div class="dimension-header">
-                        <div class="dimension-title">5. 品牌价值与行业地位 <span class="weight">(权重: 10分)</span></div>
-                        <div class="dimension-score">
-                            <div class="score-bar"><div class="score-bar-fill low" style="width: 40%"></div></div>
-                            <span class="score-text low">4/10分</span>
-                        </div>
-                    </div>
-                    <div class="info-grid" style="grid-template-columns:1fr 1fr;">
-                        <div class="info-item">
-                            <div class="label">品牌价值</div>
-                            <div class="value">全球宠物用品行业最具影响力展会</div>
-                            <div style="font-size:0.85em;color:#718096;margin-top:5px;">但与仅一核心乳品/药品/食品行业存在差异</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="label">国际竞品</div>
-                            <div class="value">Tetra Pak、SIG等参与度未知</div>
-                            <div style="font-size:0.85em;color:#718096;margin-top:5px;">宠物食品包装供应商(tbs-pack等)已确认参展</div>
-                        </div>
-                    </div>
-                    <div class="evaluation-text">
-                        <strong>评价:</strong> Interzoo在宠物用品行业地位崇高,但对于仅一而言,展会聚焦的宠物行业与仅一核心业务存在差异,国际包装巨头参与度未知,品牌价值的直接提升有限。品牌价值评分偏低。
-                    </div>
-                </div>
-
-                <!-- 维度6: 商业转化潜力 -->
-                <div class="dimension-card">
-                    <div class="dimension-header">
-                        <div class="dimension-title">6. 商业转化潜力 <span class="weight">(权重: 10分)</span></div>
-                        <div class="dimension-score">
-                            <div class="score-bar"><div class="score-bar-fill medium" style="width: 60%"></div></div>
-                            <span class="score-text medium">6/10分</span>
-                        </div>
-                    </div>
-                    <div class="info-grid" style="grid-template-columns:1fr 1fr;">
-                        <div class="info-item" style="background:#fff5f5;">
-                            <div class="label">历史数据</div>
-                            <div class="value">暂无公开转化率数据</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="label">对接服务</div>
-                            <div class="value">买家预约 + 一对一洽谈 + 社交活动</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="label">竞争环境</div>
-                            <div class="value">tbs-pack、alpha-pack、Middleby等已参展</div>
-                        </div>
-                        <div class="info-item" style="background:#fff5f5;">
-                            <div class="label">仅一定位</div>
-                            <div class="value" style="color:#e94560;font-weight:600;">宠物食品包装领域新进入者</div>
-                        </div>
-                    </div>
-                    <div class="evaluation-text">
-                        <strong>评价:</strong> 展会提供较完善的对接服务,但暂无历史转化数据。对于仅一而言,宠物食品包装领域属于新市场,竞争环境中等偏激烈,转化潜力存在不确定性。
-                    </div>
-                </div>
-            </div>
-
-            <div class="divider"></div>
-
-            <!-- 四、参展策略建议 -->
-            <div class="section">
-                <div class="section-title">三、参展策略建议</div>
-
-                <div class="strategy-card">
-                    <h3>结论: 不建议参展</h3>
-                    <p style="color:#4a5568;margin-bottom:15px;font-size:0.92em;">由于Petfood Forum Europe已公布的演讲嘉宾中无终端宠物食品生产商(仅一的客户),客户匹配度为0%,不建议投入资源参展。以下是理论上的参展方案仅供参考:</p>
-
-                    <div class="plan-block">
-                        <h4>方案一: 展台参展 (不推荐)</h4>
-                        <table class="cost-table">
-                            <tr>
-                                <td>展位费</td>
-                                <td>约15-25万元 (标准展位9-18㎡)</td>
-                            </tr>
-                            <tr>
-                                <td>差旅费</td>
-                                <td>约4万元 (2人,含机票、酒店、餐饮)</td>
-                            </tr>
-                            <tr>
-                                <td>物料费</td>
-                                <td>约3-5万元 (展台搭建、宣传资料、样品运输)</td>
-                            </tr>
-                            <tr class="cost-total">
-                                <td>总投入</td>
-                                <td>约22-34万元</td>
-                            </tr>
-                        </table>
-                        <div style="margin-top:10px;font-size:0.9em;color:#718096;">
-                            <strong>预期效果:</strong> 接触决策人:未知 | 获得线索:极少 | 转化商机:极低
-                        </div>
-                    </div>
-
-                    <div class="plan-block">
-                        <h4>方案二: 听众参会 (不推荐)</h4>
-                        <table class="cost-table">
-                            <tr>
-                                <td>参会费</td>
-                                <td>约2,000-3,000元 (Petfood Forum Europe注册费)</td>
-                            </tr>
-                            <tr>
-                                <td>差旅费</td>
-                                <td>约4万元 (2人,含机票、酒店、餐饮)</td>
-                            </tr>
-                            <tr class="cost-total">
-                                <td>总投入</td>
-                                <td>约4.2-4.3万元</td>
-                            </tr>
-                        </table>
-                        <div style="margin-top:10px;font-size:0.9em;color:#718096;">
-                            <strong>预期效果:</strong> 接触决策人:未知 | 获得线索:极少 | 转化商机:极低
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="divider"></div>
-
-            <!-- 五、总结与建议 -->
-            <div class="summary-section">
-                <h2>📋 总结与建议</h2>
-
-                <h3>综合判断</h3>
-                <p>Interzoo 2026作为全球领先的宠物用品贸易展,主办方资质权威,展会规模宏大,国际化程度高。但对于江苏仅一联合智造有限公司而言,展会不具备参展价值:</p>
-
-                <h4>1. 客户匹配度极低 (致命缺陷)</h4>
-                <p>Petfood Forum Europe已公布的演讲嘉宾中,无终端宠物食品生产商(仅一的客户),全部为配料供应商、技术服务商和设备供应商。GEA作为设备供应商是仅一的同行/竞争对手,不是仅一的客户。客户匹配度为0%,这是决定性缺陷。</p>
-
-                <h4>2. 行业匹配度有限</h4>
-                <p>Interzoo聚焦宠物用品行业,会议议题主要围绕宠物食品营养、配料创新、可持续发展等方向,与仅一的乳品/药品/食品包装产线业务匹配度中等偏低(匹配议题占比40%)。</p>
-
-                <h4>3. 投入产出比不佳</h4>
-                <p>展台参展投入约22-34万元,听众参会投入约4.2-4.3万元,但由于无法接触到终端客户,难以获得有效的商业线索和转化机会,投入产出比极低。</p>
-
-                <h4>4. 市场竞争激烈</h4>
-                <p>宠物食品包装设备领域已有多家竞争对手参展(如GEA、tbs-pack、alpha-pack、Middleby等),仅一作为新进入者缺乏竞争优势。</p>
-
-                <div class="final-recommendation">
-                    <strong>最终建议: 不建议参展 Interzoo 2026</strong>
-                </div>
-
-                <h3>替代建议</h3>
-                <div class="alternative-list">
-                    <ul style="list-style:none;padding:0;">
-                        <li style="margin-bottom:15px;">
-                            <strong style="color:#ffd93d;">1. 直接拜访客户</strong><br>
-                            <span style="color:#cbd5e0;">直接联系Mars Petcare、Nestlé Purina、Hill's、Royal Canin等终端宠物食品生产商,安排技术交流和工厂考察,投入产出比更高。</span>
-                        </li>
-                        <li style="margin-bottom:15px;">
-                            <strong style="color:#ffd93d;">2. 参加食品/乳品行业展会</strong><br>
-                            <span style="color:#cbd5e0;">优先参加聚焦乳品、药品、食品行业的展会(如乳品展会、食品加工展会等),这些展会的终端客户匹配度更高,投入产出比更好。</span>
-                        </li>
-                        <li>
-                            <strong style="color:#ffd93d;">3. 关注宠物食品行业活动</strong><br>
-                            <span style="color:#cbd5e0;">关注宠物食品行业的创新大会、技术论坛等活动,寻找能够接触到终端生产商的机会。</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="evaluation-meta">
-                    评估完成日期: 2026年4月1日 | 评估机构: 江苏仅一联合智造有限公司市场部
-                </div>
-            </div>
+        <!-- 分类2: 展会评估 -->
+        <div class="category-item" data-category="exhibition">
+          <div class="category-header" role="button" tabindex="0"
+               aria-expanded="false" aria-controls="cat-exhibition"
+               onclick="toggleCategory(this)" onkeydown="handleKeyToggle(event,this)">
+            <svg class="category-icon icon-svg" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span class="category-title">展会评估</span>
+            <svg class="chevron-icon icon-svg" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+          </div>
+          <div class="article-list" id="cat-exhibition">
+            <a class="article-nav-item" href="article.html?id=interzoo-2026" onclick="navigateToArticle('interzoo-2026',event)">2026年德国纽伦堡宠物用品展（Interzoo 2026）评估报告</a>
+            <a class="article-nav-item" href="article.html?id=gdic-asia-2026" onclick="navigateToArticle('gdic-asia-2026',event)">第9届亚洲乳业创新峰会（9th GDIC Asia）评估报告</a>
+          </div>
         </div>
-    </div>
+
+        <!-- 分类3: 其他报告 -->
+        <div class="category-item" data-category="other">
+          <div class="category-header" role="button" tabindex="0"
+               aria-expanded="false" aria-controls="cat-other"
+               onclick="toggleCategory(this)" onkeydown="handleKeyToggle(event,this)">
+            <svg class="category-icon icon-svg" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+            <span class="category-title">其他报告</span>
+            <svg class="chevron-icon icon-svg" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+          </div>
+          <div class="article-list" id="cat-other">
+            <a class="article-nav-item" href="article.html?id=tdd-audit" onclick="navigateToArticle('tdd-audit',event)">跨国企业设备供应商审核体系</a>
+          </div>
+        </div>
+
+        <!-- [CONTENT END] 侧边栏分类区域结束 -->
+
+      </nav>
+      </div>
+    </aside>
+
+    <!-- ============================================================== -->
+    <!-- 主内容区                                                         -->
+    <!-- ============================================================== -->
+    <main class="main-content" id="main-content" role="main" aria-label="文章列表">
+      <div class="content-wrapper" id="contentWrapper">
+        <header class="page-header" id="pageHeader">
+          <h1 class="page-title">文章列表</h1>
+          <p class="page-description">市场调研、展会评估与行业分析，持续更新中</p>
+        </header>
+
+        <section class="articles-grid" id="articlesGrid" aria-label="文章卡片列表">
+
+        <!-- ============================================================
+             [CONTENT] 文章卡片列表 — 在此区域增删卡片
+             ============================================================ -->
+
+        <!-- Card 1: 滚筒调味机 -->
+        <article class="article-card" tabindex="0"
+                 onclick="navigateToArticle('coating-drums',event)"
+                 onkeydown="if(event.key==='Enter')navigateToArticle('coating-drums',event)">
+          <div class="card-top-row">
+            <h2 class="article-title">滚筒调味机（Coating Drums）投资可行性分析报告</h2>
+            <span class="article-tag">市场调研</span>
+          </div>
+          <p class="article-summary">膨化零食市场规模超千亿元，坚果炒货超三千亿元，CAGR 5%-7%。国内滚筒调味机市场以中小型企业为主，缺乏中高端品牌。建议以中高端定制化调味线为切入点，避开低价竞争红海。</p>
+          <div class="card-meta-row">
+            <span class="meta-date"><svg class="icon-svg" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> 2026-03-20</span>
+            <span class="meta-read-time"><svg class="icon-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 25 分钟阅读</span>
+          </div>
+        </article>
+
+        <!-- Card 2: Interzoo 2026 -->
+        <article class="article-card" tabindex="0"
+                 onclick="navigateToArticle('interzoo-2026',event)"
+                 onkeydown="if(event.key==='Enter')navigateToArticle('interzoo-2026',event)">
+          <div class="card-top-row">
+            <h2 class="article-title">2026年德国纽伦堡宠物用品展（Interzoo 2026）评估报告</h2>
+            <span class="article-tag">展会评估</span>
+          </div>
+          <p class="article-summary">综合评分30/100，不推荐参展。Interzoo聚焦宠物用品行业，客户匹配度极低（终端宠物食品生产商0%），行业匹配度有限。建议替代方案：直接拜访客户或参加食品/乳品行业展会。</p>
+          <div class="card-meta-row">
+            <span class="meta-date"><svg class="icon-svg" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> 2026-04-01</span>
+            <span class="meta-read-time"><svg class="icon-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 15 分钟阅读</span>
+          </div>
+        </article>
+
+        <!-- Card 3: GDIC Asia 2026 -->
+        <article class="article-card" tabindex="0"
+                 onclick="navigateToArticle('gdic-asia-2026',event)"
+                 onkeydown="if(event.key==='Enter')navigateToArticle('gdic-asia-2026',event)">
+          <div class="card-top-row">
+            <h2 class="article-title">第9届亚洲乳业创新峰会（9th GDIC Asia）评估报告</h2>
+            <span class="article-tag">展会评估</span>
+          </div>
+          <p class="article-summary">综合评分62/100，推荐参展。客户匹配度较高（46.3%），含8家以上大型跨国非仅一客户（Vinamilk、Fonterra、Arla Foods等）。建议首选听众参会方案，总投入约18,500元。</p>
+          <div class="card-meta-row">
+            <span class="meta-date"><svg class="icon-svg" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> 2026-03-19</span>
+            <span class="meta-read-time"><svg class="icon-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 20 分钟阅读</span>
+          </div>
+        </article>
+
+        <!-- Card 4: TDD审核体系 -->
+        <article class="article-card" tabindex="0"
+                 onclick="navigateToArticle('tdd-audit',event)"
+                 onkeydown="if(event.key==='Enter')navigateToArticle('tdd-audit',event)">
+          <div class="card-top-row">
+            <h2 class="article-title">跨国企业设备供应商审核体系</h2>
+            <span class="article-tag">其他报告</span>
+          </div>
+          <p class="article-summary">八大跨国企业（雀巢、达能、百事、玛氏、宝洁、亿滋、科赴、雅培）设备供应商TDD审核体系核心对比，涵盖技术合规、质量体系、准入准备全流程。审核红线：卫生设计、验证完整性、数据追溯、社会责任。</p>
+          <div class="card-meta-row">
+            <span class="meta-date"><svg class="icon-svg" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> 2026-04-01</span>
+            <span class="meta-read-time"><svg class="icon-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 18 分钟阅读</span>
+          </div>
+        </article>
+
+        <!-- [CONTENT END] 文章卡片区域结束 -->
+
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    /* ================================================================
+       [FRAMEWORK] 移动端侧边栏控制 — 勿动
+       ================================================================ */
+    function toggleMobileSidebar() {
+      var sidebar = document.getElementById('sidebar');
+      var overlay = document.getElementById('sidebarOverlay');
+      var closeBtn = document.getElementById('mobileCloseBtn');
+      sidebar.classList.toggle('open');
+      overlay.classList.toggle('active');
+      closeBtn.style.display = sidebar.classList.contains('open') ? 'block' : 'none';
+    }
+
+    function closeMobileSidebar() {
+      var sidebar = document.getElementById('sidebar');
+      var overlay = document.getElementById('sidebarOverlay');
+      var closeBtn = document.getElementById('mobileCloseBtn');
+      sidebar.classList.remove('open');
+      overlay.classList.remove('active');
+      closeBtn.style.display = 'none';
+    }
+
+    /* ================================================================
+       [FRAMEWORK] 页面进入动画 — 勿动
+       ================================================================ */
+    (function initAnimations() {
+      var nav = document.getElementById('homeNav');
+      nav.style.opacity = '0';
+      nav.style.transform = 'translateX(-30px)';
+      requestAnimationFrame(function() {
+        requestAnimationFrame(function() {
+          nav.style.transition = 'all 380ms cubic-bezier(0.4, 0, 0.2, 1)';
+          nav.style.opacity = '1';
+          nav.style.transform = 'translateX(0)';
+          nav.style.position = 'relative';
+        });
+      });
+
+      var cards = document.querySelectorAll('.article-card');
+      cards.forEach(function(card, i) {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(16px)';
+        setTimeout(function() {
+          card.classList.add('anim-in');
+          card.style.opacity = '';
+          card.style.transform = '';
+        }, 50 + i * 50);
+      });
+    })();
+
+    /* ================================================================
+       [FRAMEWORK] 分类折叠切换 — 勿动
+       ================================================================ */
+    function toggleCategory(headerEl) {
+      var item = headerEl.closest('.category-item');
+      var isOpen = item.classList.contains('open');
+      if (isOpen) {
+        item.classList.remove('open');
+        headerEl.setAttribute('aria-expanded', 'false');
+        headerEl.classList.remove('active-category');
+      } else {
+        item.classList.add('open');
+        headerEl.setAttribute('aria-expanded', 'true');
+        headerEl.classList.add('active-category');
+      }
+    }
+
+    function handleKeyToggle(e, el) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleCategory(el); }
+    }
+
+    /* ================================================================
+       [FRAMEWORK] 跳转正文页 — 勿动（如文件名变更则修改URL）
+       ================================================================ */
+    function navigateToArticle(id, e) {
+      if (e && e.preventDefault) e.preventDefault();
+
+      var nav = document.getElementById('homeNav');
+      nav.style.transition = 'all 200ms ease';
+      nav.style.opacity = '0';
+      nav.style.transform = 'translateX(-30px)';
+
+      var cards = document.querySelectorAll('.article-card');
+      cards.forEach(function(card) {
+        card.style.transition = 'opacity 200ms ease, transform 200ms ease';
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(-8px)';
+      });
+
+      setTimeout(function() {
+        window.location.href = 'article.html?id=' + id;
+      }, 250);
+    }
+  </script>
 </body>
 </html>
