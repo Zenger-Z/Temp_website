@@ -769,13 +769,16 @@
        [FRAMEWORK] 渲染引擎 — 勿动
        ================================================================ */
     function renderArticle(id, animate) {
-      // Show loading state
-      var contentEl = document.getElementById("articleContent");
-      contentEl.innerHTML = '<div style="text-align:center;padding:60px 0;color:var(--text-tertiary);font-size:15px;">加载中...</div>';
+      var wrapper = document.getElementById('contentWrapper');
+      // Hide content immediately to prevent empty-doc flash
+      wrapper.style.opacity = '0';
 
       loadArticle(id, function(art) {
+        var contentEl = document.getElementById("articleContent");
+
         if (!art) {
           contentEl.innerHTML = '<p>文章未找到</p>';
+          wrapper.style.opacity = '1';
           return;
         }
 
@@ -825,12 +828,13 @@
         var activeNav = document.querySelector("#homeNavPanel .article-nav-item[href$='id="+id+"']");
         if (activeNav) activeNav.classList.add("active-article");
 
+        // Content ready — fade in
         if (animate) {
-          var wrapper = document.getElementById('contentWrapper');
           wrapper.classList.remove('content-enter');
           void wrapper.offsetWidth;
           wrapper.classList.add('content-enter');
         }
+        wrapper.style.opacity = '';
 
         window.scrollTo({ top: 0, behavior: "smooth" });
       });
@@ -893,11 +897,6 @@
       setTimeout(function() {
         renderArticle(id, true);
         history.replaceState(null,"","?id="+id);
-        // Reset opacity after renderArticle triggers its own animation
-        setTimeout(function() {
-          content.style.opacity = '';
-          content.style.transform = '';
-        }, 100);
         closeMobileSidebar();
       }, 200);
     }
