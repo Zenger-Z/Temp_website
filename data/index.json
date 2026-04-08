@@ -1,0 +1,38 @@
+[
+  {
+    "id": "coating-drums",
+    "title": "滚筒调味机（Coating Drums）投资可行性分析报告",
+    "category": "市场调研",
+    "date": "2026-03-20",
+    "readTime": 25,
+    "prevId": null,
+    "nextId": "interzoo-2026"
+  },
+  {
+    "id": "interzoo-2026",
+    "title": "2026年德国纽伦堡宠物用品展（Interzoo 2026）评估报告",
+    "category": "展会评估",
+    "date": "2026-04-01",
+    "readTime": 15,
+    "prevId": "coating-drums",
+    "nextId": "gdic-asia-2026"
+  },
+  {
+    "id": "gdic-asia-2026",
+    "title": "第9届亚洲乳业创新峰会（9th GDIC Asia）评估报告",
+    "category": "展会评估",
+    "date": "2026-03-19",
+    "readTime": 20,
+    "prevId": "interzoo-2026",
+    "nextId": "tdd-audit"
+  },
+  {
+    "id": "tdd-audit",
+    "title": "跨国企业设备供应商审核体系",
+    "category": "其他报告",
+    "date": "2026-04-01",
+    "readTime": 18,
+    "prevId": "gdic-asia-2026",
+    "nextId": null
+  }
+]
