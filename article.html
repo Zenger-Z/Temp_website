@@ -8,7 +8,7 @@
   <!-- 字体加载 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Font Awesome（TDD审核体系文章需要） -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -109,12 +109,15 @@
     html { font-size: 16px; -webkit-font-smoothing: antialiased; }
 
     body {
-      font-family: 'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', 'Segoe UI', sans-serif;
       color: var(--text-primary);
       background: var(--bg-page);
       line-height: 1.75;
       min-height: 100vh;
       overflow-x: hidden;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
     a { text-decoration: none; color: inherit; cursor: pointer; }
@@ -309,7 +312,7 @@
 
     .article-nav-item {
       display: block; padding: 9px 13px; border-radius: 6px;
-      font-size: 14px; color: var(--color-text-secondary);
+      font-size: 15px; color: rgba(0, 0, 0, 0.75);
       transition: all var(--transition-fast);
       cursor: pointer; position: relative;
       white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
@@ -449,15 +452,15 @@
        [FRAMEWORK] 正文排版样式 — 勿动
        ================================================================ */
     .article-body {
-      font-size: 14px; line-height: 1.75; color: var(--color-text-secondary);
+      font-size: 16px; line-height: 1.75; color: rgba(0, 0, 0, 0.85);
     }
     .article-body h2 {
-      font-size: 20px; font-weight: 600; color: var(--color-text);
+      font-size: 22px; font-weight: 600; color: var(--color-text);
       margin-top: 40px; margin-bottom: 12px;
       line-height: 1.4; scroll-margin-top: 24px;
     }
     .article-body h3 {
-      font-size: 16px; font-weight: 600; color: var(--color-text);
+      font-size: 18px; font-weight: 600; color: var(--color-text);
       margin-top: 28px; margin-bottom: 8px;
       line-height: 1.5; scroll-margin-top: 24px;
     }
@@ -467,18 +470,70 @@
     .article-body li { margin-bottom: 4px; line-height: 1.75; }
     .article-body li::marker { color: var(--color-text-quaternary); }
 
-    .data-card {
-      background: var(--color-primary-bg);
-      border: 1px solid var(--color-primary-border);
-      border-radius: var(--radius-md);
-      padding: 16px 20px; margin: 24px 0;
+    /* ── section-label: 语义标签（替代大面积色块） ── */
+    .section-label {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 15px; font-weight: 600;
+      margin-top: 20px; margin-bottom: 8px;
     }
-    .data-card h4 { font-size: 14px; font-weight: 600; color: var(--color-primary); margin-bottom: 12px; }
+    /* 紧跟标题时折叠 margin-top，避免双重间距 */
+    h2 + .section-label,
+    h3 + .section-label { margin-top: 4px; }
+    /* 紧跟标题/section-label 时，表格和卡片也折叠上间距 */
+    h2 + table, h3 + table { margin-top: 4px; }
+    .section-label + table { margin-top: 0; }
+    h2 + .data-card, h3 + .data-card { margin-top: 4px; }
+    .section-label + .data-card { margin-top: 0; }
+    .section-label::before {
+      content: ''; display: inline-block;
+      width: 8px; height: 8px; border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .section-label--danger::before { background: #ff4d4f; }
+    .section-label--danger { color: #cf1322; }
+    .section-label--success::before { background: #52c41a; }
+    .section-label--success { color: #389e0d; }
+    .section-label--warning::before { background: #faad14; }
+    .section-label--warning { color: #d48806; }
+    .section-label--primary::before { background: var(--color-primary); }
+    .section-label--primary { color: var(--color-primary); }
+
+    /* ── data-card: 轻量化卡片（白底+极淡边框） ── */
+    .data-card {
+      background: var(--color-bg-container);
+      border: 1px solid var(--color-border-secondary);
+      border-radius: var(--radius-md);
+      padding: 16px 20px; margin: 12px 0 24px 0;
+    }
+    .data-card h4 {
+      font-size: 15px; font-weight: 600; color: var(--color-text);
+      margin-bottom: 12px; display: flex; align-items: center; gap: 8px;
+    }
+    /* 语义色通过 h4 左侧竖线表达，容器始终白底 */
+    .data-card h4::before {
+      content: ''; display: inline-block;
+      width: 3px; height: 16px; border-radius: 2px;
+      background: var(--color-text-quaternary); flex-shrink: 0;
+    }
     .data-card p, .data-card ul, .data-card ol { margin-bottom: 8px; }
+
+    /* 语义变体：只改 h4::before 颜色，不改容器背景 */
+    .data-card--info h4::before { background: var(--color-text-quaternary); }
+    .data-card--primary h4::before { background: var(--color-primary); }
+    .data-card--success h4::before { background: #52c41a; }
+    .data-card--warning h4::before { background: #faad14; }
+    .data-card--danger h4::before { background: #ff4d4f; }
+
+    /* --score: 评分/指标展示（居中大字号） */
+    .data-card--score {
+      text-align: center;
+      background: var(--color-bg-container);
+      border-color: var(--color-border-secondary);
+    }
 
     .article-body table {
       width: 100%; border-collapse: separate; border-spacing: 0;
-      margin: 24px 0; font-size: 14px;
+      margin: 12px 0 24px 0; font-size: 15px;
       border: 1px solid var(--color-border-secondary);
       border-radius: var(--radius-md); overflow: hidden;
     }
@@ -486,13 +541,13 @@
     .article-body th {
       padding: 12px 16px; text-align: left;
       font-weight: 600; color: var(--color-text);
-      font-size: 14px;
+      font-size: 15px;
       border-bottom: 1px solid var(--color-border-secondary);
     }
     .article-body td {
       padding: 12px 16px;
       border-bottom: 1px solid var(--color-border-secondary);
-      color: var(--color-text-secondary);
+      color: rgba(0, 0, 0, 0.75);
     }
     .article-body tr:last-child td { border-bottom: none; }
     .article-body tbody tr:hover { background: var(--color-bg-spotlight); }
@@ -503,7 +558,7 @@
       padding: 8px 16px; margin: 16px 0;
       background: var(--color-fill-quaternary);
       border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-      color: var(--color-text-secondary);
+      color: rgba(0, 0, 0, 0.75);
     }
     blockquote p:last-child { margin-bottom: 0; }
     code {
@@ -578,10 +633,10 @@
       .profile-subtitle { font-size: 12px; }
       .article-back-btn { display: none; }
       .article-title-main { font-size: 20px; }
-      .article-body { font-size: 14px; }
-      .article-body h2 { font-size: 18px; }
-      .article-body h3 { font-size: 15px; }
-      .article-body table { font-size: 13px; }
+      .article-body { font-size: 15px; }
+      .article-body h2 { font-size: 20px; }
+      .article-body h3 { font-size: 17px; }
+      .article-body table { font-size: 14px; }
       .article-body th, .article-body td { padding: 8px 12px; }
       .data-card { padding: 12px 16px; }
     }
@@ -862,6 +917,42 @@
           }
         });
         contentEl.innerHTML = html;
+
+        // ── 表格自动 nowrap：短内容列不换行，长表头不撑宽 ──
+        // 规则1：某列所有 td 纯文字都 ≤12 字符 → td 加 nowrap
+        // 规则2：数据极短(≤6字符) 且 标题也短(≤6字符) → th 加 width:1%（极窄列）
+        // 规则3：数据短但标题长 → th 不收缩，让标题自然换行，列宽由数据决定
+        contentEl.querySelectorAll('table').forEach(function(table) {
+          var rows = table.querySelectorAll('tbody tr');
+          if (rows.length === 0) return;
+          var colCount = rows[0].querySelectorAll('td').length;
+          var ths = table.querySelectorAll('thead th');
+          for (var c = 0; c < colCount; c++) {
+            var allShort = true;
+            var allVeryShort = true;
+            for (var r = 0; r < rows.length; r++) {
+              var cell = rows[r].querySelectorAll('td')[c];
+              if (!cell) { allShort = false; allVeryShort = false; break; }
+              var text = cell.textContent.replace(/\s+/g, '').trim();
+              if (text.length > 12) { allShort = false; allVeryShort = false; break; }
+              if (text.length > 6) { allVeryShort = false; }
+            }
+            if (allShort) {
+              // td 加 nowrap
+              rows.forEach(function(row) {
+                var td = row.querySelectorAll('td')[c];
+                if (td) td.style.whiteSpace = 'nowrap';
+              });
+              // 极窄列：数据极短 且 标题也短 → th 收缩
+              if (allVeryShort && ths[c]) {
+                var thText = ths[c].textContent.replace(/\s+/g, '').trim();
+                if (thText.length <= 6) {
+                  ths[c].style.width = '1%';
+                }
+              }
+            }
+          }
+        });
 
         var tocHtml = "";
         tocItems.forEach(function(item) {

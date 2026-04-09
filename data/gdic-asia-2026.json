@@ -12,7 +12,7 @@
     },
     {
       "type": "html",
-      "html": "<div class=\"data-card\" style=\"text-align:center;\"><div style=\"font-size:48px;font-weight:700;color:#27ae60;line-height:1;\">62</div><div style=\"font-size:18px;color:var(--text-tertiary);margin-bottom:16px;\">/100分</div><div style=\"font-size:24px;font-weight:700;color:#27ae60;\">推荐参展</div><div style=\"font-size:18px;margin-top:8px;\">推荐指数: ⭐⭐⭐⭐</div></div>"
+      "html": "<div class=\"data-card data-card--score\"><div style=\"font-size:48px;font-weight:700;line-height:1;color:#389e0d;\">62</div><div style=\"font-size:18px;color:var(--color-text-tertiary);margin-bottom:16px;\">/100分</div><div class=\"section-label section-label--success\">✅ 推荐参展</div><div style=\"font-size:18px;margin-top:8px;\">推荐指数: ⭐⭐⭐⭐</div></div>"
     },
     {
       "type": "blockquote",
@@ -24,7 +24,7 @@
     },
     {
       "type": "html",
-      "html": "<div class=\"data-card\"><h4>会议核心数据</h4><table><thead><tr><th>项目</th><th>内容</th></tr></thead><tbody><tr><td><strong>会议名称</strong></td><td>第9届全球乳业创新峰会亚洲站（9th Global Dairy Innovation Congress Asia）</td></tr><tr><td><strong>会议时间</strong></td><td>2026年10月13-15日</td></tr><tr><td><strong>会议地点</strong></td><td>新加坡</td></tr><tr><td><strong>参会人数</strong></td><td>500+</td></tr><tr><td><strong>演讲嘉宾</strong></td><td>80+</td></tr><tr><td><strong>展商数量</strong></td><td>50+</td></tr><tr><td><strong>主办方</strong></td><td>SZ&W Group</td></tr></tbody></table></div>"
+      "html": "<div class=\"section-label section-label--primary\">📋 会议核心数据</div><table><thead><tr><th>项目</th><th>内容</th></tr></thead><tbody><tr><td><strong>会议名称</strong></td><td>第9届全球乳业创新峰会亚洲站（9th Global Dairy Innovation Congress Asia）</td></tr><tr><td><strong>会议时间</strong></td><td>2026年10月13-15日</td></tr><tr><td><strong>会议地点</strong></td><td>新加坡</td></tr><tr><td><strong>参会人数</strong></td><td>500+</td></tr><tr><td><strong>演讲嘉宾</strong></td><td>80+</td></tr><tr><td><strong>展商数量</strong></td><td>50+</td></tr><tr><td><strong>主办方</strong></td><td>SZ&W Group</td></tr></tbody></table>"
     },
     {
       "type": "p",
@@ -52,7 +52,7 @@
     },
     {
       "type": "html",
-      "html": "<div class=\"data-card\"><h4>重点关注客户</h4><table><thead><tr><th>客户</th><th>参会嘉宾</th><th>关注理由</th></tr></thead><tbody><tr><td><strong>Vinamilk</strong>（越南乳业）⭐⭐⭐⭐⭐</td><td>Tri Nguyen, 首席营销官</td><td>越南最大乳企，新建2座奶粉工厂，投资1.5亿美元升级智能包装产线</td></tr><tr><td><strong>Fonterra</strong>（恒天然）⭐⭐⭐⭐⭐</td><td>Aamir Mehdi, 供应链副总裁</td><td>全球大型奶粉出口商，投资3亿新西兰元升级中国工厂包装产线</td></tr><tr><td><strong>Arla Foods</strong>（丹麦乳业）⭐⭐⭐⭐⭐</td><td>Tim Østergaard, 研发总监</td><td>全球第七大乳企，投资2亿欧元在德国新建奶粉工厂</td></tr><tr><td><strong>Meiji</strong>（明治乳业）⭐⭐⭐⭐⭐</td><td>Taro Yamamoto, 生产总监</td><td>日本大型乳企之一，投资1.5亿美元升级奶粉产线</td></tr><tr><td><strong>FrieslandCampina</strong>（荷兰乳业）⭐⭐⭐⭐⭐</td><td>Jan-Willem, 技术总监</td><td>全球前五大乳企，投资2.5亿欧元在荷兰新建奶粉工厂</td></tr></tbody></table></div>"
+      "html": "<div class=\"section-label section-label--success\">🎯 重点关注客户</div><table><thead><tr><th>客户</th><th>参会嘉宾</th><th>关注理由</th></tr></thead><tbody><tr><td><strong>Vinamilk</strong>（越南乳业）⭐⭐⭐⭐⭐</td><td>Tri Nguyen, 首席营销官</td><td>越南最大乳企，新建2座奶粉工厂，投资1.5亿美元升级智能包装产线</td></tr><tr><td><strong>Fonterra</strong>（恒天然）⭐⭐⭐⭐⭐</td><td>Aamir Mehdi, 供应链副总裁</td><td>全球大型奶粉出口商，投资3亿新西兰元升级中国工厂包装产线</td></tr><tr><td><strong>Arla Foods</strong>（丹麦乳业）⭐⭐⭐⭐⭐</td><td>Tim Østergaard, 研发总监</td><td>全球第七大乳企，投资2亿欧元在德国新建奶粉工厂</td></tr><tr><td><strong>Meiji</strong>（明治乳业）⭐⭐⭐⭐⭐</td><td>Taro Yamamoto, 生产总监</td><td>日本大型乳企之一，投资1.5亿美元升级奶粉产线</td></tr><tr><td><strong>FrieslandCampina</strong>（荷兰乳业）⭐⭐⭐⭐⭐</td><td>Jan-Willem, 技术总监</td><td>全球前五大乳企，投资2.5亿欧元在荷兰新建奶粉工厂</td></tr></tbody></table>"
     },
     {
       "type": "h3",
@@ -96,7 +96,7 @@
     },
     {
       "type": "html",
-      "html": "<div class=\"data-card\" style=\"border-left:4px solid #27ae60;\"><h4 style=\"color:#27ae60;\">✅ 最终建议: 推荐参展，建议首选方案二（听众参会）</h4><ul><li><strong>性价比高</strong> — 总投入仅18,500元，可接触10-20位决策人</li><li><strong>专注重点客户</strong> — 不需要展位值守，专注接触Vinamilk、Fonterra等重点非仅一客户</li><li><strong>ROI预期较好</strong> — 假设转化1个大客户（如Vinamilk奶粉产线项目），订单金额约500-1000万元</li></ul><p style=\"margin-top:12px;\"><strong>核心策略：</strong>重点接触非仅一客户 → 差异化竞争（定制化、柔性生产、性价比） → 主动预约目标客户 → 参会后3个月内持续跟进</p></div>"
+      "html": "<div class=\"data-card data-card--success\"><h4>✅ 最终建议: 推荐参展，建议首选方案二（听众参会）</h4><ul><li><strong>性价比高</strong> — 总投入仅18,500元，可接触10-20位决策人</li><li><strong>专注重点客户</strong> — 不需要展位值守，专注接触Vinamilk、Fonterra等重点非仅一客户</li><li><strong>ROI预期较好</strong> — 假设转化1个大客户（如Vinamilk奶粉产线项目），订单金额约500-1000万元</li></ul><p style=\"margin-top:12px;\"><strong>核心策略：</strong>重点接触非仅一客户 → 差异化竞争（定制化、柔性生产、性价比） → 主动预约目标客户 → 参会后3个月内持续跟进</p></div>"
     },
     {
       "type": "p",

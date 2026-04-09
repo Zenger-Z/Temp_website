@@ -203,23 +203,23 @@
     },
     {
       "type": "html",
-      "html": "<div class=\"data-card\"><h4>1. 基础体系资质</h4><ul><li><strong>质量体系：</strong>ISO 9001（基础通用）、FSSC 22000（食品接触类产线强制）、ISO 13485（医疗级设备/产线强制）</li><li><strong>卫生设计：</strong>EHEDG/3A认证、FDA 21 CFR Part 177</li><li><strong>合规证明：</strong>EU 1935/2004、CE/UL、FCM全项检测报告</li><li><strong>社会责任：</strong>SMETA 4-Pillar（雀巢/达能等强制）、ISO 14001、ISO 45001</li></ul></div>"
+      "html": "<div class=\"data-card data-card--info\"><h4>1. 基础体系资质</h4><ul><li><strong>质量体系：</strong>ISO 9001（基础通用）、FSSC 22000（食品接触类产线强制）、ISO 13485（医疗级设备/产线强制）</li><li><strong>卫生设计：</strong>EHEDG/3A认证、FDA 21 CFR Part 177</li><li><strong>合规证明：</strong>EU 1935/2004、CE/UL、FCM全项检测报告</li><li><strong>社会责任：</strong>SMETA 4-Pillar（雀巢/达能等强制）、ISO 14001、ISO 45001</li></ul></div>"
     },
     {
       "type": "html",
-      "html": "<div class=\"data-card\"><h4>2. 设备技术与设计</h4><ul><li><strong>卫生设计：</strong>食品/医疗接触区域优先316L不锈钢；无缝焊接、Ra≤0.8μm（接触区）；CIP/SIP兼容</li><li><strong>验证体系：</strong>IQ/OQ/PQ（关键设备强制）、FAT/SAT、FMEA、偏差闭环率100%</li><li><strong>过程控制：</strong>Cpk≥1.33、OEE≥85%、SPC、CPP/CCP</li><li><strong>数字化追溯：</strong>21 CFR Part 11、UDI、OPC UA接口</li></ul></div>"
+      "html": "<div class=\"data-card data-card--info\"><h4>2. 设备技术与设计</h4><ul><li><strong>卫生设计：</strong>食品/医疗接触区域优先316L不锈钢；无缝焊接、Ra≤0.8μm（接触区）；CIP/SIP兼容</li><li><strong>验证体系：</strong>IQ/OQ/PQ（关键设备强制）、FAT/SAT、FMEA、偏差闭环率100%</li><li><strong>过程控制：</strong>Cpk≥1.33、OEE≥85%、SPC、CPP/CCP</li><li><strong>数字化追溯：</strong>21 CFR Part 11、UDI、OPC UA接口</li></ul></div>"
     },
     {
       "type": "html",
-      "html": "<div class=\"data-card\"><h4>3. 文档与现场准备</h4><ul><li><strong>技术文件：</strong>设备手册（多语言版）、CAD图纸（含材质标注）、材质证明、验证报告</li><li><strong>质量文件：</strong>体系证书、HACCP计划、CAPA记录（近12个月）、不合格品处理流程</li><li><strong>现场准备：</strong>CIP/SIP运行演示、清洁验证取样记录、关键岗位人员资质考核</li></ul></div>"
+      "html": "<div class=\"data-card data-card--info\"><h4>3. 文档与现场准备</h4><ul><li><strong>技术文件：</strong>设备手册（多语言版）、CAD图纸（含材质标注）、材质证明、验证报告</li><li><strong>质量文件：</strong>体系证书、HACCP计划、CAPA记录（近12个月）、不合格品处理流程</li><li><strong>现场准备：</strong>CIP/SIP运行演示、清洁验证取样记录、关键岗位人员资质考核</li></ul></div>"
     },
     {
       "type": "html",
-      "html": "<div class=\"data-card\"><h4>4. 分步骤实施计划（6-12个月）</h4><ul><li><strong>1-2月：</strong>体系认证补全、SEDEX对接、SMETA审核</li><li><strong>3-4月：</strong>设备局部升级（接触区材质/焊接工艺）、验证体系标准化搭建</li><li><strong>5-6月：</strong>文件编制（多语言适配）、数字化系统升级</li><li><strong>7-9月：</strong>目标客户标准适配、第三方预审核（SGS/BV）</li><li><strong>10-12月：</strong>正式审核、整改闭环（一般整改周期≤30天）</li></ul></div>"
+      "html": "<div class=\"data-card data-card--info\"><h4>4. 分步骤实施计划（6-12个月）</h4><ul><li><strong>1-2月：</strong>体系认证补全、SEDEX对接、SMETA审核</li><li><strong>3-4月：</strong>设备局部升级（接触区材质/焊接工艺）、验证体系标准化搭建</li><li><strong>5-6月：</strong>文件编制（多语言适配）、数字化系统升级</li><li><strong>7-9月：</strong>目标客户标准适配、第三方预审核（SGS/BV）</li><li><strong>10-12月：</strong>正式审核、整改闭环（一般整改周期≤30天）</li></ul></div>"
     },
     {
       "type": "html",
-      "html": "<div class=\"data-card\" style=\"border-left:4px solid #e53935;\"><h4 style=\"color:#e53935;\">5. 核心风控要点</h4><ul><li style=\"color:#e53935;font-weight:600;\">食品/医疗接触区材质不合规 → 直接否决</li><li style=\"color:#e53935;font-weight:600;\">IQ/OQ/PQ报告缺失（关键设备） → 审核不通过</li><li style=\"color:#e53935;font-weight:600;\">电子记录不合规（医疗线） → 限期整改（≤45天）</li><li style=\"color:#e53935;font-weight:600;\">SMETA不合格（雀巢/达能） → 暂停合作直至整改完成</li><li style=\"color:#e53935;font-weight:600;\">关键变更未验证 → 准入资格临时失效</li></ul></div>"
+      "html": "<div class=\"data-card data-card--danger\"><h4>5. 核心风控要点</h4><ul><li>⛔ 食品/医疗接触区材质不合规 → 直接否决</li><li>⛔ IQ/OQ/PQ报告缺失（关键设备） → 审核不通过</li><li>⛔ 电子记录不合规（医疗线） → 限期整改（≤45天）</li><li>⛔ SMETA不合格（雀巢/达能） → 暂停合作直至整改完成</li><li>⛔ 关键变更未验证 → 准入资格临时失效</li></ul></div>"
     },
     {
       "type": "h2",

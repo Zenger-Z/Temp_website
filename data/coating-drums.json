@@ -12,7 +12,7 @@
     },
     {
       "type": "html",
-      "html": "<div class=\"data-card\"><h4>决策维度概览</h4><table><thead><tr><th>决策维度</th><th>核心指标</th><th>评估结论</th></tr></thead><tbody><tr><td><strong>终端市场规模</strong></td><td>膨化零食约1,155亿元（2024年）+ 坚果炒货约3,003亿元（2024年）</td><td>✅ 下游市场空间巨大</td></tr><tr><td><strong>终端市场增速</strong></td><td>膨化零食CAGR 5%；坚果炒货CAGR 7%。（2025-2030预测）</td><td>✅ 稳健增长</td></tr><tr><td><strong>设备市场空间</strong></td><td>全球食品调味设备市场2023年约12亿美元，CAGR 7.1%</td><td>✅ 持续扩容</td></tr><tr><td><strong>竞争强度（国外）</strong></td><td>PPM、AXIS、Heat and Control、tna、GEA等巨头主导高端市场</td><td>⚠️ 高端壁垒高</td></tr><tr><td><strong>竞争强度（国内）</strong></td><td>集中在山东中小型企业，价格竞争激烈，缺乏高端品牌</td><td>✅ 差异化机会明显</td></tr><tr><td><strong>技术门槛</strong></td><td>滚筒机械结构基础门槛中等，但智能化/高精度控制壁垒较高</td><td>⚠️ 中等偏上</td></tr><tr><td><strong>投资回报预期</strong></td><td>国产设备价格约2~8万元/台，进口设备约30~100万元/台，存在较大价差利润空间</td><td>✅ 利润空间可观</td></tr><tr><td><strong>风险等级</strong></td><td>中等（技术追赶风险、市场竞争风险、品牌建设风险）</td><td>⚠️ 需制定应对策略</td></tr></tbody></table></div>"
+      "html": "<div class=\"section-label section-label--primary\">📊 决策维度概览</div><table><thead><tr><th>决策维度</th><th>核心指标</th><th>评估结论</th></tr></thead><tbody><tr><td><strong>终端市场规模</strong></td><td>膨化零食约1,155亿元（2024年）+ 坚果炒货约3,003亿元（2024年）</td><td>✅ 下游市场空间巨大</td></tr><tr><td><strong>终端市场增速</strong></td><td>膨化零食CAGR 5%；坚果炒货CAGR 7%。（2025-2030预测）</td><td>✅ 稳健增长</td></tr><tr><td><strong>设备市场空间</strong></td><td>全球食品调味设备市场2023年约12亿美元，CAGR 7.1%</td><td>✅ 持续扩容</td></tr><tr><td><strong>竞争强度（国外）</strong></td><td>PPM、AXIS、Heat and Control、tna、GEA等巨头主导高端市场</td><td>⚠️ 高端壁垒高</td></tr><tr><td><strong>竞争强度（国内）</strong></td><td>集中在山东中小型企业，价格竞争激烈，缺乏高端品牌</td><td>✅ 差异化机会明显</td></tr><tr><td><strong>技术门槛</strong></td><td>滚筒机械结构基础门槛中等，但智能化/高精度控制壁垒较高</td><td>⚠️ 中等偏上</td></tr><tr><td><strong>投资回报预期</strong></td><td>国产设备价格约2~8万元/台，进口设备约30~100万元/台，存在较大价差利润空间</td><td>✅ 利润空间可观</td></tr><tr><td><strong>风险等级</strong></td><td>中等（技术追赶风险、市场竞争风险、品牌建设风险）</td><td>⚠️ 需制定应对策略</td></tr></tbody></table>"
     },
     {
       "type": "html",
@@ -20,7 +20,7 @@
     },
     {
       "type": "html",
-      "html": "<div class=\"data-card\"><h4>⚠️ 主要风险及应对措施</h4><table><thead><tr><th>风险点</th><th>风险等级</th><th>应对措施</th></tr></thead><tbody><tr><td>技术壁垒突破周期长，研发投入超预期</td><td>🔴 高风险</td><td>① 建议前期与高校/科研机构合作，采用\"引进消化+自主研发\"路径；② 聚焦核心技术突破（精准计量、智能控制）</td></tr><tr><td>市场竞争激烈，新进入者难以获得头部客户信任</td><td>🔴 高风险</td><td>① 先以标杆客户案例建立行业口碑；② 参加国内食品加工展会提高知名度</td></tr><tr><td>竞争压力大（进口品牌降价竞争，国产品牌价格很低）</td><td>🟠 中风险</td><td>① 聚焦非价格竞争维度（定制化、快速服务、灵活交期）；② 差异化定位中高端；③ 突出智能化和精准调味的技术优势；④ 提供整线解决方案而非单机销售</td></tr><tr><td>食品设备认证（CE/FDA）周期长，影响出口市场</td><td>🟠 中风险</td><td>初期聚焦国内市场，认证工作与产品研发同步推进</td></tr><tr><td>终端市场需求增速放缓、不及预期</td><td>🟢 低风险</td><td>① 保持柔性产线能力，支持多品种小批量生产以应对需求波动；② 关注宠物食品、烘焙食品等调味设备拓展机会</td></tr></tbody></table></div>"
+      "html": "<div class=\"section-label section-label--warning\">⚠️ 主要风险及应对措施</div><table><thead><tr><th>风险点</th><th>风险等级</th><th>应对措施</th></tr></thead><tbody><tr><td>技术壁垒突破周期长，研发投入超预期</td><td>🔴 高风险</td><td>① 建议前期与高校/科研机构合作，采用\"引进消化+自主研发\"路径；② 聚焦核心技术突破（精准计量、智能控制）</td></tr><tr><td>市场竞争激烈，新进入者难以获得头部客户信任</td><td>🔴 高风险</td><td>① 先以标杆客户案例建立行业口碑；② 参加国内食品加工展会提高知名度</td></tr><tr><td>竞争压力大（进口品牌降价竞争，国产品牌价格很低）</td><td>🟠 中风险</td><td>① 聚焦非价格竞争维度（定制化、快速服务、灵活交期）；② 差异化定位中高端；③ 突出智能化和精准调味的技术优势；④ 提供整线解决方案而非单机销售</td></tr><tr><td>食品设备认证（CE/FDA）周期长，影响出口市场</td><td>🟠 中风险</td><td>初期聚焦国内市场，认证工作与产品研发同步推进</td></tr><tr><td>终端市场需求增速放缓、不及预期</td><td>🟢 低风险</td><td>① 保持柔性产线能力，支持多品种小批量生产以应对需求波动；② 关注宠物食品、烘焙食品等调味设备拓展机会</td></tr></tbody></table>"
     },
     {
       "type": "h2",
@@ -60,7 +60,7 @@
     },
     {
       "type": "html",
-      "html": "<div class=\"data-card\"><h4>📊 数据说明</h4><p>以下数据来源于艾媒咨询、中国食品工业协会、头豹研究院、智研咨询等机构公开报告及行业统计，部分2026~2030年数据为基于CAGR的测算值。数据存在一定估算区间，仅供参考。</p></div>"
+      "html": "<div class=\"data-card data-card--info\"><h4>📊 数据说明</h4><p>以下数据来源于艾媒咨询、中国食品工业协会、头豹研究院、智研咨询等机构公开报告及行业统计，部分2026~2030年数据为基于CAGR的测算值。数据存在一定估算区间，仅供参考。</p></div>"
     },
     {
       "type": "html",
@@ -88,7 +88,7 @@
     },
     {
       "type": "html",
-      "html": "<div class=\"data-card\"><h4>📊 行业竞争特点</h4><ul><li>行业集中度（CR3）：约28%~32%，整体较为分散；</li><li>竞争焦点从\"价格\"转向\"口味创新 + 健康化 + 包装体验\"；</li><li>口味差异化是核心竞争手段——新口味研发周期缩短至3~6个月，对调味设备的灵活性要求提升；</li><li>头部品牌（三只松鼠、良品铺子等）持续扩产，存在设备更新和新增需求。</li></ul></div>"
+      "html": "<div class=\"section-label section-label--primary\">📊 行业竞争特点</div><ul><li>行业集中度（CR3）：约28%~32%，整体较为分散；</li><li>竞争焦点从\"价格\"转向\"口味创新 + 健康化 + 包装体验\"；</li><li>口味差异化是核心竞争手段——新口味研发周期缩短至3~6个月，对调味设备的灵活性要求提升；</li><li>头部品牌（三只松鼠、良品铺子等）持续扩产，存在设备更新和新增需求。</li></ul>"
     },
     {
       "type": "h3",
@@ -120,7 +120,7 @@
     },
     {
       "type": "html",
-      "html": "<div class=\"data-card\"><h4>🇨🇳 国内市场竞争特点</h4><ul><li>低端市场（¥5万以内）高度竞争，厂商众多，产品同质化严重；</li><li>中端市场（¥5万~¥20万）有一定的技术和产品差异，但总体技术壁垒不高；</li><li>高端市场（¥20万+）主要由进口品牌厂商占据；</li><li>国产设备在售后服务（响应快、成本低）和定制灵活性上有优势。</li></ul></div>"
+      "html": "<div class=\"section-label section-label--primary\">🇨🇳 国内市场竞争特点</div><ul><li>低端市场（¥5万以内）高度竞争，厂商众多，产品同质化严重；</li><li>中端市场（¥5万~¥20万）有一定的技术和产品差异，但总体技术壁垒不高；</li><li>高端市场（¥20万+）主要由进口品牌厂商占据；</li><li>国产设备在售后服务（响应快、成本低）和定制灵活性上有优势。</li></ul>"
     },
     {
       "type": "h3",
@@ -144,7 +144,7 @@
     },
     {
       "type": "html",
-      "html": "<table><thead><tr><th>维度</th><th>核心内容</th><th>关键支撑数据</th></tr></thead><tbody><tr style=\"background-color:#e8f5e9;\"><td><strong>优势（S）</strong></td><td>① 江苏仅一联合智造在食品包装/加工设备领域有积累；② 国内供应链完整，制造成本低于进口品牌；③ 售后服务响应快，可提供本土化定制；④ 国内食品设备市场渠道熟悉</td><td>国产设备价格比PPM/AXIS低约60%~80%</td></tr><tr style=\"background-color:#fce4ec;\"><td><strong>劣势（W）</strong></td><td>① 仅一此前未涉足食品调味设备领域，缺乏行业经验；② 高精度计量技术（±1%以内）、快速换色内衬技术等尚待验证</td><td>国外龙头在调味精度（<1%误差）、自动化程度、卫生设计等方面有深厚壁垒</td></tr><tr style=\"background-color:#fff9c4;\"><td><strong>机会（O）</strong></td><td>① 国产替代空间大：进口品牌价格高，国内多数厂商集中于低端，中高端存在空白；② 东南亚零食市场快速增长；③ 智能调味（PLC+传感器+称重反馈）是升级方向；④ 食品安全监管趋严，推动设备升级换代</td><td>膨化食品、坚果炒货终端市场巨大；消费者倾向低糖/低盐/低油产品</td></tr><tr style=\"background-color:#e3f2fd;\"><td><strong>威胁（T）</strong></td><td>① 国际龙头（PPM、AXIS等）技术积累深厚；② 国内山东诸城等地中小厂商已深耕多年，价格战激烈；③ 食品设备认证周期长；④ 下游食品行业增速放缓</td><td>PPM公司已有60年调味设备制造历史</td></tr></tbody></table>"
+      "html": "<div class=\"section-label section-label--primary\">SWOT 综合评估</div><table><thead><tr><th>维度</th><th>核心内容</th><th>关键支撑数据</th></tr></thead><tbody><tr><td><strong>优势（S）</strong></td><td>① 江苏仅一联合智造在食品包装/加工设备领域有积累；② 国内供应链完整，制造成本低于进口品牌；③ 售后服务响应快，可提供本土化定制；④ 国内食品设备市场渠道熟悉</td><td>国产设备价格比PPM/AXIS低约60%~80%</td></tr><tr><td><strong>劣势（W）</strong></td><td>① 仅一此前未涉足食品调味设备领域，缺乏行业经验；② 高精度计量技术（±1%以内）、快速换色内衬技术等尚待验证</td><td>国外龙头在调味精度（<1%误差）、自动化程度、卫生设计等方面有深厚壁垒</td></tr><tr><td><strong>机会（O）</strong></td><td>① 国产替代空间大：进口品牌价格高，国内多数厂商集中于低端，中高端存在空白；② 东南亚零食市场快速增长；③ 智能调味（PLC+传感器+称重反馈）是升级方向；④ 食品安全监管趋严，推动设备升级换代</td><td>膨化食品、坚果炒货终端市场巨大；消费者倾向低糖/低盐/低油产品</td></tr><tr><td><strong>威胁（T）</strong></td><td>① 国际龙头（PPM、AXIS等）技术积累深厚；② 国内山东诸城等地中小厂商已深耕多年，价格战激烈；③ 食品设备认证周期长；④ 下游食品行业增速放缓</td><td>PPM公司已有60年调味设备制造历史</td></tr></tbody></table>"
     },
     {
       "type": "h2",
@@ -152,7 +152,7 @@
     },
     {
       "type": "html",
-      "html": "<div class=\"data-card\"><h4>数据来源</h4><table><thead><tr><th>数据类型</th><th>来源机构</th><th>报告名称</th></tr></thead><tbody><tr><td>膨化零食市场规模</td><td>艾媒咨询</td><td>《2025年中国休闲食品行业发展状况与消费行为调查数据》</td></tr><tr><td>膨化零食市场规模</td><td>华经产业研究院</td><td>《2025年中国膨化零食行业发展现状及趋势分析》</td></tr><tr><td>膨化零食行业深度分析</td><td>头豹研究院</td><td>《膨化零食行业报告：健康化转型与场景多元化推动下的市场格局重塑》</td></tr><tr><td>坚果炒货市场规模</td><td>艾媒咨询</td><td>《2025-2026年中国坚果炒货市场发展现状及消费趋势洞察报告》</td></tr><tr><td>坚果炒货行业现状</td><td>华经产业研究院</td><td>《2025年中国坚果炒货行业现状及展望》</td></tr><tr><td>全球调味设备市场</td><td>DataIntelo</td><td>Seasoning Machine Market Report（2025）</td></tr><tr><td>区域市场分布</td><td>Verified Market Reports</td><td>Seasoning Machine Market Size, Competitive Dynamics（2025）</td></tr><tr><td>PPM产品信息</td><td>PPM Technologies官网</td><td>ppmtech.com</td></tr><tr><td>Axis产品信息</td><td>Axis Automation官网</td><td>axisautomation.com</td></tr><tr><td>国内厂家信息</td><td>阿里巴巴1688/食品机械设备网</td><td>各厂家公开产品信息和报价</td></tr></tbody></table></div>"
+      "html": "<div class=\"section-label section-label--primary\">数据来源</div><table><thead><tr><th>数据类型</th><th>来源机构</th><th>报告名称</th></tr></thead><tbody><tr><td>膨化零食市场规模</td><td>艾媒咨询</td><td>《2025年中国休闲食品行业发展状况与消费行为调查数据》</td></tr><tr><td>膨化零食市场规模</td><td>华经产业研究院</td><td>《2025年中国膨化零食行业发展现状及趋势分析》</td></tr><tr><td>膨化零食行业深度分析</td><td>头豹研究院</td><td>《膨化零食行业报告：健康化转型与场景多元化推动下的市场格局重塑》</td></tr><tr><td>坚果炒货市场规模</td><td>艾媒咨询</td><td>《2025-2026年中国坚果炒货市场发展现状及消费趋势洞察报告》</td></tr><tr><td>坚果炒货行业现状</td><td>华经产业研究院</td><td>《2025年中国坚果炒货行业现状及展望》</td></tr><tr><td>全球调味设备市场</td><td>DataIntelo</td><td>Seasoning Machine Market Report（2025）</td></tr><tr><td>区域市场分布</td><td>Verified Market Reports</td><td>Seasoning Machine Market Size, Competitive Dynamics（2025）</td></tr><tr><td>PPM产品信息</td><td>PPM Technologies官网</td><td>ppmtech.com</td></tr><tr><td>Axis产品信息</td><td>Axis Automation官网</td><td>axisautomation.com</td></tr><tr><td>国内厂家信息</td><td>阿里巴巴1688/食品机械设备网</td><td>各厂家公开产品信息和报价</td></tr></tbody></table>"
     },
     {
       "type": "html",

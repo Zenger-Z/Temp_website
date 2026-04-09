@@ -12,7 +12,7 @@
     },
     {
       "type": "html",
-      "html": "<div class=\"data-card\" style=\"text-align:center;\"><div style=\"font-size:48px;font-weight:700;color:#e94560;line-height:1;\">30</div><div style=\"font-size:18px;color:var(--text-tertiary);margin-bottom:16px;\">/100分</div><div style=\"font-size:24px;font-weight:700;color:#e94560;\">不推荐参展</div><div style=\"font-size:18px;margin-top:8px;\">推荐指数: ⭐⭐</div></div>"
+      "html": "<div class=\"data-card data-card--score\"><div style=\"font-size:48px;font-weight:700;line-height:1;color:#cf1322;\">30</div><div style=\"font-size:18px;color:var(--color-text-tertiary);margin-bottom:16px;\">/100分</div><div class=\"section-label section-label--danger\">⛔ 不推荐参展</div><div style=\"font-size:18px;margin-top:8px;\">推荐指数: ⭐⭐</div></div>"
     },
     {
       "type": "blockquote",
@@ -24,7 +24,7 @@
     },
     {
       "type": "html",
-      "html": "<div class=\"data-card\"><h4>会议信息</h4><table><thead><tr><th>项目</th><th>内容</th></tr></thead><tbody><tr><td><strong>会议名称</strong></td><td>Interzoo 2026</td></tr><tr><td><strong>会议时间</strong></td><td>2026年5月12日至15日（共4天）</td></tr><tr><td><strong>会议地点</strong></td><td>🇩🇪 德国纽伦堡展览中心</td></tr><tr><td><strong>官方主办方</strong></td><td>WZF + ZZF + NürnbergMesse GmbH</td></tr></tbody></table></div>"
+      "html": "<div class=\"section-label section-label--primary\">📋 会议信息</div><table><thead><tr><th>项目</th><th>内容</th></tr></thead><tbody><tr><td><strong>会议名称</strong></td><td>Interzoo 2026</td></tr><tr><td><strong>会议时间</strong></td><td>2026年5月12日至15日（共4天）</td></tr><tr><td><strong>会议地点</strong></td><td>🇩🇪 德国纽伦堡展览中心</td></tr><tr><td><strong>官方主办方</strong></td><td>WZF + ZZF + NürnbergMesse GmbH</td></tr></tbody></table>"
     },
     {
       "type": "p",
@@ -88,7 +88,7 @@
     },
     {
       "type": "html",
-      "html": "<div class=\"data-card\" style=\"border-left:4px solid #e94560;\"><h4>结论: 不建议参展</h4><p style=\"margin-bottom:12px;\">由于Petfood Forum Europe已公布的演讲嘉宾中无终端宠物食品生产商（仅一的客户），客户匹配度为0%，不建议投入资源参展。以下是理论上的参展方案仅供参考：</p><table><thead><tr><th>方案</th><th>展位费</th><th>差旅费</th><th>物料费</th><th>总投入</th><th>预期效果</th></tr></thead><tbody><tr><td><strong>展台参展（不推荐）</strong></td><td>约15-25万元</td><td>约4万元</td><td>约3-5万元</td><td>约22-34万元</td><td>接触决策人:未知 | 线索:极少 | 转化:极低</td></tr><tr><td><strong>听众参会（不推荐）</strong></td><td>约2,000-3,000元</td><td>约4万元</td><td>—</td><td>约4.2-4.3万元</td><td>接触决策人:未知 | 线索:极少 | 转化:极低</td></tr></tbody></table></div>"
+      "html": "<div class=\"section-label section-label--danger\">⛔ 结论: 不建议参展</div><p style=\"margin-bottom:12px;\">由于Petfood Forum Europe已公布的演讲嘉宾中无终端宠物食品生产商（仅一的客户），客户匹配度为0%，不建议投入资源参展。以下是理论上的参展方案仅供参考：</p><table><thead><tr><th>方案</th><th>展位费</th><th>差旅费</th><th>物料费</th><th>总投入</th><th>预期效果</th></tr></thead><tbody><tr><td><strong>展台参展（不推荐）</strong></td><td>约15-25万元</td><td>约4万元</td><td>约3-5万元</td><td>约22-34万元</td><td>接触决策人:未知 | 线索:极少 | 转化:极低</td></tr><tr><td><strong>听众参会（不推荐）</strong></td><td>约2,000-3,000元</td><td>约4万元</td><td>—</td><td>约4.2-4.3万元</td><td>接触决策人:未知 | 线索:极少 | 转化:极低</td></tr></tbody></table>"
     },
     {
       "type": "h2",
@@ -96,7 +96,7 @@
     },
     {
       "type": "html",
-      "html": "<div class=\"data-card\" style=\"background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);color:#fff;border:none;\"><h4 style=\"color:#e94560;\">📋 综合判断</h4><p style=\"color:#cbd5e0;\">Interzoo 2026作为全球领先的宠物用品贸易展，主办方资质权威，展会规模宏大，国际化程度高。但对于江苏仅一联合智造有限公司而言，展会不具备参展价值：</p><ul style=\"color:#cbd5e0;\"><li style=\"margin:10px 0;\"><strong style=\"color:#ffd93d;\">1. 客户匹配度极低（致命缺陷）</strong> — 终端宠物食品生产商0%，这是决定性缺陷。</li><li style=\"margin:10px 0;\"><strong style=\"color:#ffd93d;\">2. 行业匹配度有限</strong> — 仅30%议题与仅一业务直接相关。</li><li style=\"margin:10px 0;\"><strong style=\"color:#ffd93d;\">3. 投入产出比不佳</strong> — 展台参展投入约22-34万元，难以获得有效商业线索。</li><li style=\"margin:10px 0;\"><strong style=\"color:#ffd93d;\">4. 市场竞争激烈</strong> — 宠物食品包装设备领域已有多家竞争对手参展。</li></ul><p style=\"text-align:center;margin-top:16px;\"><strong style=\"font-size:18px;color:#e94560;\">最终建议: 不建议参展 Interzoo 2026</strong></p></div>"
+      "html": "<div class=\"data-card data-card--danger\"><h4>📋 综合判断</h4><p>Interzoo 2026作为全球领先的宠物用品贸易展，主办方资质权威，展会规模宏大，国际化程度高。但对于江苏仅一联合智造有限公司而言，展会不具备参展价值：</p><ul><li style=\"margin:10px 0;\"><strong>1. 客户匹配度极低（致命缺陷）</strong> — 终端宠物食品生产商0%，这是决定性缺陷。</li><li style=\"margin:10px 0;\"><strong>2. 行业匹配度有限</strong> — 仅30%议题与仅一业务直接相关。</li><li style=\"margin:10px 0;\"><strong>3. 投入产出比不佳</strong> — 展台参展投入约22-34万元，难以获得有效商业线索。</li><li style=\"margin:10px 0;\"><strong>4. 市场竞争激烈</strong> — 宠物食品包装设备领域已有多家竞争对手参展。</li></ul><p style=\"text-align:center;margin-top:16px;\"><strong class=\"section-label section-label--danger\" style=\"font-size:18px;justify-content:center;\">最终建议: 不建议参展 Interzoo 2026</strong></p></div>"
     },
     {
       "type": "h3",
