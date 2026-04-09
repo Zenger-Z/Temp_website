@@ -26,36 +26,70 @@
        [FRAMEWORK] CSS 变量 — 全局设计令牌，修改需谨慎
        ================================================================ */
     :root {
-      --primary-blue: #1677ff;
-      --primary-blue-light: #e8f1ff;
-      --primary-blue-hover: #4096ff;
-      --primary-blue-active: #0958d9;
+      /* ===== Ant Design 5.x Token 对齐 ===== */
 
-      --bg-page: #f5f7fa;
-      --bg-sidebar: #ffffff;
+      /* -- Color: Brand -- */
+      --color-primary: #1677ff;
+      --color-primary-hover: #4096ff;
+      --color-primary-active: #0958d9;
+      --color-primary-bg: #e6f4ff;
+      --color-primary-bg-hover: #bae0ff;
+      --color-primary-border: #91caff;
+
+      /* -- Color: Neutral / Fill -- */
+      --color-text: rgba(0, 0, 0, 0.88);
+      --color-text-secondary: rgba(0, 0, 0, 0.65);
+      --color-text-tertiary: rgba(0, 0, 0, 0.45);
+      --color-text-quaternary: rgba(0, 0, 0, 0.25);
+
+      --color-fill-quaternary: rgba(0, 0, 0, 0.02);
+      --color-fill-tertiary: rgba(0, 0, 0, 0.04);
+      --color-fill-secondary: rgba(0, 0, 0, 0.06);
+      --color-fill: rgba(0, 0, 0, 0.15);
+
+      /* -- Color: Border -- */
+      --color-border: #d9d9d9;
+      --color-border-secondary: #f0f0f0;
+
+      /* -- Color: Background -- */
+      --color-bg-container: #ffffff;
+      --color-bg-elevated: #ffffff;
+      --color-bg-layout: #f5f5f5;
+      --color-bg-spotlight: #fafafa;
+
+      /* -- Alias: 向后兼容旧变量 -- */
+      --primary-blue: var(--color-primary);
+      --primary-blue-light: var(--color-primary-bg);
+      --primary-blue-hover: var(--color-primary-hover);
+      --primary-blue-active: var(--color-primary-active);
+
+      --bg-page: var(--color-bg-layout);
+      --bg-sidebar: var(--color-bg-container);
       --bg-card: rgba(255, 255, 255, 0.72);
-
-      --text-primary: #1d1d1f;
-      --text-secondary: #424245;
-      --text-tertiary: #6e6e73;
-      --text-placeholder: #86868b;
-
-      --border-color: rgba(0, 0, 0, 0.06);
-      --divider-color: rgba(0, 0, 0, 0.04);
 
       --glass-bg: rgba(255, 255, 255, 0.80);
       --glass-blur: 16px;
 
-      --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+      --text-primary: var(--color-text);
+      --text-secondary: var(--color-text-secondary);
+      --text-tertiary: var(--color-text-tertiary);
+      --text-placeholder: var(--color-text-quaternary);
+
+      --border-color: var(--color-fill-secondary);
+      --divider-color: var(--color-fill-tertiary);
+
+      --card-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03), 0 1px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px 0 rgba(0, 0, 0, 0.02);
       --card-shadow-hover: 0 6px 16px rgba(22, 119, 255, 0.08);
       --sidebar-right-shadow: 6px 0 24px rgba(0, 0, 0, 0.08), 2px 0 8px rgba(0, 0, 0, 0.04);
 
-      --radius-sm: 8px;
-      --radius-md: 12px;
-      --radius-lg: 16px;
+      /* -- Radius (Ant Design 5.x) -- */
+      --radius-sm: 6px;
+      --radius-md: 8px;
+      --radius-lg: 12px;
 
       --sidebar-width: 300px;
 
+      /* -- Motion (Ant Design) -- */
       --transition-fast: 150ms ease;
       --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
       --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -240,11 +274,11 @@
       border-radius: var(--radius-sm); cursor: pointer;
       transition: all var(--transition-fast);
       user-select: none; -webkit-user-select: none;
-      color: #1d1d1f; font-size: 16px; font-weight: 600;
+      color: var(--color-text); font-size: 15px; font-weight: 600;
       position: relative;
     }
-    .category-header:hover { background: var(--primary-blue-light); color: var(--primary-blue); }
-    .category-header.active-category { background: var(--primary-blue-light); color: var(--primary-blue); }
+    .category-header:hover { background: var(--color-primary-bg); color: var(--color-primary); }
+    .category-header.active-category { background: var(--color-primary-bg); color: var(--color-primary); }
 
     .category-icon {
       width: 19px; height: 19px; flex-shrink: 0; opacity: 0.7;
@@ -273,7 +307,7 @@
 
     .article-nav-item {
       display: block; padding: 9px 13px; border-radius: 6px;
-      font-size: 15px; color: #424245;
+      font-size: 14px; color: var(--color-text-secondary);
       transition: all var(--transition-fast);
       cursor: pointer; position: relative;
       white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
@@ -282,14 +316,14 @@
     .article-nav-item::before {
       content: ''; position: absolute;
       left: 0; top: 50%; transform: translateY(-50%);
-      width: 3px; height: 0; background: var(--primary-blue);
+      width: 3px; height: 0; background: var(--color-primary);
       border-radius: 0 2px 2px 0;
       transition: height var(--transition-fast);
     }
-    .article-nav-item:hover { color: var(--primary-blue); background: rgba(22, 119, 255, 0.04); }
+    .article-nav-item:hover { color: var(--color-primary); background: var(--color-primary-bg); }
     .article-nav-item.active-article {
-      color: var(--primary-blue); font-weight: 550;
-      background: rgba(22, 119, 255, 0.06);
+      color: var(--color-primary); font-weight: 550;
+      background: var(--color-primary-bg);
     }
     .article-nav-item.active-article::before { height: 18px; }
 
@@ -341,8 +375,8 @@
     }
     .article-card:hover {
       box-shadow: var(--card-shadow-hover);
-      border-color: var(--primary-blue);
-      transform: translateY(-3px);
+      border-color: var(--color-primary);
+      transform: translateY(-2px);
     }
     .article-card:active { transform: translateY(0); }
 
@@ -355,12 +389,12 @@
       line-height: 1.4; letter-spacing: -0.2px;
       transition: color var(--transition-fast);
     }
-    .article-card:hover .article-title { color: var(--primary-blue); }
+    .article-card:hover .article-title { color: var(--color-primary); }
     .article-tag {
-      flex-shrink: 0; font-size: 12px; font-weight: 500;
-      color: var(--primary-blue); background: var(--primary-blue-light);
-      padding: 4px 12px; border-radius: 20px;
-      line-height: 1.6; white-space: nowrap;
+      flex-shrink: 0; font-size: 12px; font-weight: 400;
+      color: var(--color-primary); background: var(--color-primary-bg);
+      padding: 1px 8px; border-radius: 4px; border: 1px solid var(--color-primary-border);
+      line-height: 22px; white-space: nowrap;
     }
     .article-summary {
       font-size: 15px; color: var(--text-secondary); line-height: 1.65;
@@ -418,12 +452,12 @@
         box-shadow: var(--sidebar-right-shadow);
       }
       .sidebar.open { transform: translateX(0); }
-      .main-content { padding: 72px 20px 24px; max-width: 100%; }
-      .article-card { padding: 20px; }
+      .main-content { padding: 72px 16px 24px; max-width: 100%; }
+      .article-card { padding: 16px; }
       .card-top-row { flex-direction: column; gap: 8px; }
-      .article-title { font-size: 17px; }
+      .article-title { font-size: 16px; }
       .article-summary { font-size: 14px; }
-      .page-title { font-size: 24px; }
+      .page-title { font-size: 22px; }
       .profile-section { padding: 20px 20px 14px; gap: 12px; margin-top: 0; }
       .avatar { width: 44px; height: 44px; }
       .avatar-wrapper { width: 44px; height: 44px; }
