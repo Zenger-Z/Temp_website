@@ -1,0 +1,123 @@
+{
+  "title": "ProPak Asia 2026 出行方案报告",
+  "category": "其他报告",
+  "date": "2026-04-16",
+  "readTime": 10,
+  "prevId": "tdd-audit",
+  "nextId": null,
+  "content": [
+    {
+      "type": "h2",
+      "text": "一、展会时间安排"
+    },
+    {
+      "type": "html",
+      "html": "<table><thead><tr><th>阶段</th><th>日期</th><th>时间</th><th>内容</th></tr></thead><tbody><tr><td>搭建</td><td>6月6日</td><td>13:00-21:00</td><td>大型机器/吊装进场</td></tr><tr><td>搭建</td><td>6月7-9日</td><td>08:00-22:00</td><td>展商进场搭建</td></tr><tr><td>搭建</td><td>6月8-9日</td><td>09:00-18:00</td><td>展商注册登记</td></tr><tr><td>搭建</td><td>6月9日</td><td>08:30-18:00</td><td>装饰布置</td></tr><tr><td>开展</td><td>6月10日</td><td>09:00-10:00</td><td>开幕典礼</td></tr><tr><td>开展</td><td>6月10-13日</td><td>10:00-18:00</td><td>观众开放时间</td></tr><tr><td>撤展</td><td>6月13日</td><td>18:00</td><td>展会闭幕</td></tr><tr><td>撤展</td><td>6月13日</td><td>20:00-24:00</td><td>撤展</td></tr><tr><td>撤展</td><td>6月14日</td><td>08:00-15:00</td><td>继续撤展</td></tr></tbody></table>"
+    },
+    {
+      "type": "p",
+      "text": "展馆：IMPACT Challenger, Nonthaburi, Thailand"
+    },
+    {
+      "type": "h2",
+      "text": "二、航班方案"
+    },
+    {
+      "type": "h3",
+      "text": "2.1 为什么飞BKK（素万那普）而不是DMK（廊曼）"
+    },
+    {
+      "type": "html",
+      "html": "<table><thead><tr><th>方案</th><th>出发城市</th><th>目的地</th><th>直飞</th><th>总耗时（含地面交通）</th><th>总费用预估</th><th>携程链接</th></tr></thead><tbody><tr><td><strong>方案A（推荐）</strong></td><td>南京禄口</td><td>BKK</td><td>✅ 直飞4.5h</td><td>约6小时（丹阳→南京1.5h + 飞行4.5h）</td><td>¥1,400</td><td><a href=\"https://flights.ctrip.com/booking/NKG-BKK-day-1.html\" target=\"_blank\" rel=\"noopener\">查看</a></td></tr><tr><td>方案B</td><td>上海浦东</td><td>DMK</td><td>✅ 直飞4.5h</td><td>约7.5小时（丹阳→上海3h + 飞行4.5h）</td><td>¥1,200-1,500</td><td><a href=\"https://flights.ctrip.com/booking/PVG-DMK-day-1.html\" target=\"_blank\" rel=\"noopener\">查看</a></td></tr><tr><td>方案D</td><td>南京禄口</td><td>DMK</td><td>❌ 中转</td><td>约7小时（含中转等待）</td><td>¥1,500-1,800</td><td><a href=\"https://flights.ctrip.com/booking/NKG-DMK-day-1.html\" target=\"_blank\" rel=\"noopener\">查看</a></td></tr></tbody></table>"
+    },
+    {
+      "type": "p",
+      "text": "DMK优势：离IMPACT更近（25km vs 40km），出租车少10分钟。"
+    },
+    {
+      "type": "p",
+      "text": "DMK劣势：南京无直飞，需从上海出发，或南京中转。"
+    },
+    {
+      "type": "blockquote",
+      "text": "结论：方案A最省时省心，丹阳→南京只需1.5小时，直飞BKK总共约6小时。推荐方案A：JD 619直飞BKK。"
+    },
+    {
+      "type": "h3",
+      "text": "2.2 推荐航班：JD 619"
+    },
+    {
+      "type": "html",
+      "html": "<table><thead><tr><th>项目</th><th>内容</th></tr></thead><tbody><tr><td>航班号</td><td><strong>JD 619（首都航空）</strong></td></tr><tr><td>航线</td><td>南京禄口（NKG）→ 曼谷素万那普（BKK）</td></tr><tr><td>出发时间</td><td>11:05</td></tr><tr><td>到达时间</td><td>14:35（当地时间）</td></tr><tr><td>飞行时长</td><td>4小时30分钟</td></tr><tr><td>舱位</td><td>经济舱</td></tr><tr><td>参考票价</td><td>¥1,400/人</td></tr></tbody></table>"
+    },
+    {
+      "type": "p",
+      "text": "携程实时报价："
+    },
+    {
+      "type": "html",
+      "html": "<a href=\"https://flights.ctrip.com/booking/NKG-BKK-day-1.html\" target=\"_blank\" rel=\"noopener\" class=\"cta-link\">查看 JD 619 实时报价 →</a>"
+    },
+    {
+      "type": "h3",
+      "text": "2.3 航班费用"
+    },
+    {
+      "type": "html",
+      "html": "<table><thead><tr><th>批次</th><th>人数</th><th>单价</th><th>小计</th></tr></thead><tbody><tr><td>第一批（6月6日）</td><td>4人</td><td>¥1,400</td><td>¥5,600</td></tr><tr><td>第二批（6月9日）</td><td>5人</td><td>¥1,400</td><td>¥7,000</td></tr><tr><td><strong>合计</strong></td><td><strong>9人</strong></td><td>—</td><td><strong>¥12,600</strong></td></tr></tbody></table>"
+    },
+    {
+      "type": "h2",
+      "text": "三、酒店方案"
+    },
+    {
+      "type": "h3",
+      "text": "3.1 酒店对比（核心：地铁出行便利性）"
+    },
+    {
+      "type": "html",
+      "html": "<table><thead><tr><th>酒店</th><th>价格/晚</th><th>到MRT站</th><th>到IMPACT交通</th><th>是否换乘</th><th>早餐</th><th>总费用</th><th>推荐</th><th>携程链接</th></tr></thead><tbody><tr><td><strong>ibis Bangkok IMPACT</strong></td><td>¥530</td><td>—</td><td><strong>步行11分钟直达</strong></td><td>否</td><td>✅ 有</td><td><strong>¥16,430</strong></td><td>⭐⭐⭐⭐⭐</td><td><a href=\"https://hotels.ctrip.com/hotels/7631211.html\" target=\"_blank\" rel=\"noopener\">查看</a></td></tr><tr><td>KOO Hotel</td><td>¥490（三人间）</td><td>步行100米</td><td>步行+地铁29分钟</td><td><strong>是（主线→支线）</strong></td><td>❌ 无</td><td>¥12,740</td><td>⭐⭐⭐⭐</td><td><a href=\"https://hotels.ctrip.com/hotels/104581219.html\" target=\"_blank\" rel=\"noopener\">查看</a></td></tr><tr><td>TK Palace Hotel</td><td>¥420</td><td>步行即达</td><td>步行+地铁31分钟</td><td><strong>是（主线→支线）</strong></td><td>✅ 有</td><td>¥13,020</td><td>⭐⭐⭐</td><td><a href=\"https://hotels.ctrip.com/hotels/1513097.html\" target=\"_blank\" rel=\"noopener\">查看</a></td></tr><tr><td>Hop Inn</td><td>¥250</td><td>步行2分钟</td><td>步行+地铁38分钟</td><td><strong>是（主线→支线）</strong></td><td>❌ 无</td><td>¥7,750</td><td>❌ 无房</td><td><a href=\"https://hotels.ctrip.com/hotels/42749255.html\" target=\"_blank\" rel=\"noopener\">查看</a></td></tr></tbody></table>"
+    },
+    {
+      "type": "p",
+      "text": "筛选标准：距MT01地铁站3站MRT范围内"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "ibis：步行11分钟直达，无需换乘，最省时间",
+        "KOO Hotel：步行+地铁29分钟，需换乘主线→支线，三人间性价比高，但无早餐",
+        "TK Palace：步行+地铁31分钟，需换乘主线→支线，有早餐，价格适中",
+        "Hop Inn：步行+地铁38分钟，需换乘主线→支线，价格最低，但无房"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "数据来源：Trip.com、Booking.com住客评价（2026年4月16日查询）"
+    },
+    {
+      "type": "h3",
+      "text": "3.2 住宿费用明细"
+    },
+    {
+      "type": "html",
+      "html": "<table><thead><tr><th>批次</th><th>人数</th><th>入住日期</th><th>退房日期</th><th>晚数</th><th>房间数</th><th>费用</th></tr></thead><tbody><tr><td>第一批（先遣队）</td><td>4男</td><td>6月6日</td><td>6月14日</td><td>8晚</td><td>2间标间</td><td>¥8,480</td></tr><tr><td>第二批（主力队）</td><td>3男2女</td><td>6月9日</td><td>6月14日</td><td>5晚</td><td>3间标间</td><td>¥7,950</td></tr><tr><td><strong>合计</strong></td><td><strong>9人</strong></td><td>—</td><td>—</td><td>—</td><td><strong>5间标间</strong></td><td><strong>¥16,430</strong></td></tr></tbody></table>"
+    },
+    {
+      "type": "h2",
+      "text": "四、总费用预算"
+    },
+    {
+      "type": "blockquote",
+      "text": "推荐方案：JD 619 + ibis Bangkok IMPACT"
+    },
+    {
+      "type": "html",
+      "html": "<table><thead><tr><th>项目</th><th>费用</th><th>人均</th></tr></thead><tbody><tr><td>航班（9人）</td><td>¥12,600</td><td>¥1,400</td></tr><tr><td>住宿（ibis，31间晚）</td><td>¥16,430</td><td>¥1,826</td></tr><tr><td>交通（步行，¥0）</td><td>¥0</td><td>¥0</td></tr><tr><td><strong>合计</strong></td><td><strong>¥29,030</strong></td><td><strong>¥3,226</strong></td></tr></tbody></table>"
+    },
+    {
+      "type": "p",
+      "text": "报告日期：2026年4月16日 | 制表人：市场部"
+    }
+  ]
+}

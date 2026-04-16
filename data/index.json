@@ -33,6 +33,15 @@
     "date": "2026-04-01",
     "readTime": 18,
     "prevId": "gdic-asia-2026",
+    "nextId": "propak-asia-2026-travel"
+  },
+  {
+    "id": "propak-asia-2026-travel",
+    "title": "ProPak Asia 2026 出行方案报告",
+    "category": "其他报告",
+    "date": "2026-04-16",
+    "readTime": 10,
+    "prevId": "tdd-audit",
     "nextId": null
   }
 ]
