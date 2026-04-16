@@ -48,15 +48,7 @@
     },
     {
       "type": "html",
-      "html": "<table class=\"flight-info-table\"><thead><tr><th>航班号</th><th>航线</th><th>出发</th><th>到达</th><th>时长</th><th>舱位</th><th>票价</th></tr></thead><tbody><tr class=\"highlight-row\"><td><strong>JD 619</strong><br><span style=\"font-size:13px;color:#666\">首都航空</span></td><td>NKG → BKK<br><span style=\"font-size:13px;color:#666\">南京禄口 → 素万那普</span></td><td>11:05</td><td>14:35<br><span style=\"font-size:13px;color:#666\">当地时间</span></td><td>4.5h<br><span style=\"font-size:13px;color:#666\">直飞</span></td><td>经济舱</td><td><strong>¥1,400</strong>/人</td></tr></tbody></table>"
-    },
-    {
-      "type": "p",
-      "text": "携程实时报价："
-    },
-    {
-      "type": "html",
-      "html": "<a href=\"https://flights.ctrip.com/booking/NKG-BKK-day-1.html\" target=\"_blank\" rel=\"noopener\" class=\"cta-link\">查看 JD 619 实时报价 →</a>"
+      "html": "<table class=\"flight-info-table\"><colgroup><col><col><col><col><col><col><col></colgroup><thead><tr><th>航班号</th><th>航线</th><th>出发</th><th>到达</th><th>时长</th><th>舱位</th><th>票价</th></tr></thead><tbody><tr class=\"highlight-row\"><td><strong>JD 619</strong><br><span class=\"sub\">首都航空</span></td><td>NKG → BKK<br><span class=\"sub\">南京禄口 → 素万那普</span></td><td>11:05</td><td>14:35<br><span class=\"sub\">当地时间</span></td><td>4.5h<br><span class=\"sub\">直飞</span></td><td>经济舱</td><td><strong>¥1,400</strong>/人<br><a href=\"https://flights.ctrip.com/booking/NKG-BKK-day-1.html\" target=\"_blank\" rel=\"noopener\" class=\"mini-btn\">携程实时报价</a></td></tr></tbody></table>"
     },
     {
       "type": "h3",
@@ -64,7 +56,7 @@
     },
     {
       "type": "html",
-      "html": "<table class=\"fee-table\"><thead><tr><th>批次</th><th>人数</th><th>单价</th><th>小计</th></tr></thead><tbody><tr><td>第一批 6月6日</td><td>4人</td><td>¥1,400</td><td>¥5,600</td></tr><tr><td>第二批 6月9日</td><td>5人</td><td>¥1,400</td><td>¥7,000</td></tr><tr class=\"total-row\"><td><strong>合计</strong></td><td><strong>9人</strong></td><td>—</td><td><strong>¥12,600</strong></td></tr></tbody></table>"
+      "html": "<table class=\"fee-table\"><colgroup><col><col><col><col></colgroup><thead><tr><th>批次</th><th>人数</th><th>单价</th><th>小计</th></tr></thead><tbody><tr><td>第一批 6月6日</td><td>4人</td><td>¥1,400</td><td>¥5,600</td></tr><tr><td>第二批 6月9日</td><td>5人</td><td>¥1,400</td><td>¥7,000</td></tr><tr class=\"total-row\"><td><strong>合计</strong></td><td><strong>9人</strong></td><td>—</td><td><strong>¥12,600</strong></td></tr></tbody></table>"
     },
     {
       "type": "h2",

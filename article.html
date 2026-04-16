@@ -51,8 +51,8 @@
       --color-fill: rgba(0, 0, 0, 0.15);               /* 默认填充 */
 
       /* -- Color: Border -- */
-      --color-border: #d9d9d9;
-      --color-border-secondary: #f0f0f0;
+      --color-border: #b0b0b0;
+      --color-border-secondary: #e8e8e8;
 
       /* -- Color: Background -- */
       --color-bg-container: #ffffff;
@@ -569,10 +569,17 @@
     .article-body .hotel-table .rec-row:hover { background: var(--color-primary-bg-hover); }
     .article-body .hotel-table td[style] { font-size: 13px; }
 
+    .article-body .fee-table { table-layout: fixed; width: 100%; }
+    .article-body .fee-table th, .article-body .fee-table td { text-align: center; }
+    .article-body .fee-table colgroup col { width: 25%; }
     .article-body .fee-table .total-row td {
       background: var(--color-fill-quaternary);
       font-weight: 600;
     }
+
+    .article-body .flight-info-table { table-layout: fixed; width: 100%; }
+    .article-body .flight-info-table th, .article-body .flight-info-table td { text-align: center; }
+    .article-body .flight-info-table colgroup col { width: 14.28%; }
 
     .article-body table .sub {
       font-size: 12px;
