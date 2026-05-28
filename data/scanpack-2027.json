@@ -15,10 +15,6 @@
       "html": "<div class=\"data-card data-card--score data-card--danger\"><div style=\"font-size:48px;color:#cf1322;\">32</div><div class=\"section-label section-label--danger\">⭐ 不推荐参展</div></div>"
     },
     {
-      "type": "html",
-      "html": "<table><thead><tr><th>维度</th><th>权重</th><th>得分</th><th>评分依据</th></tr></thead><tbody><tr><td>1. 行业与产品形态匹配</td><td>25分</td><td>8分</td><td>展区无制药/乳品/食品分区，材料商占主导，设备商极少</td></tr><tr><td>2. 目标客户密度</td><td>25分</td><td>6分</td><td>未验证到适配的集团化品牌方参展或演讲</td></tr><tr><td>3. 展会规模与地位</td><td>20分</td><td>12分</td><td>60年历史北欧领先展，但面积估计<10,000㎡，区域属性强</td></tr><tr><td>4. 同行参与信号</td><td>15分</td><td>2分</td><td>16家同行0家确认参展</td></tr><tr><td>5. 配套活动</td><td>15分</td><td>4分</td><td>100场研讨会中已验证的8场均与仅一赛道无关</td></tr><tr><td><strong>总分</strong></td><td><strong>100分</strong></td><td><strong>32分</strong></td><td><strong>推荐指数 ⭐⭐</strong></td></tr></tbody></table>"
-    },
-    {
       "type": "blockquote",
       "text": "核心结论：不推荐参展。Scanpack 是北欧区域性包装展，核心聚焦可持续包装材料、包装设计与创新，设备制造商占比低。展区未按制药/乳品/食品行业细分，未搜到仅一直接竞品参展，与仅一业务匹配度较低。"
     },
