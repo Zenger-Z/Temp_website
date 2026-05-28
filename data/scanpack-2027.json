@@ -12,7 +12,11 @@
     },
     {
       "type": "html",
-      "html": "<table><thead><tr><th>项目</th><th>内容</th></tr></thead><tbody><tr><td><strong>展会</strong></td><td>Scanpack 2027（瑞典哥德堡，2027年10月26-29日）</td></tr><tr><td><strong>评分</strong></td><td><strong>32/100分</strong></td></tr><tr><td><strong>推荐指数</strong></td><td>⭐⭐（不推荐参展）</td></tr></tbody></table>"
+      "html": "<div class=\"data-card data-card--score data-card--danger\"><div style=\"font-size:48px;color:#cf1322;\">32</div><div class=\"section-label section-label--danger\">⭐ 不推荐参展</div></div>"
+    },
+    {
+      "type": "html",
+      "html": "<table><thead><tr><th>维度</th><th>权重</th><th>得分</th><th>评分依据</th></tr></thead><tbody><tr><td>1. 行业与产品形态匹配</td><td>25分</td><td>8分</td><td>展区无制药/乳品/食品分区，材料商占主导，设备商极少</td></tr><tr><td>2. 目标客户密度</td><td>25分</td><td>6分</td><td>未验证到适配的集团化品牌方参展或演讲</td></tr><tr><td>3. 展会规模与地位</td><td>20分</td><td>12分</td><td>60年历史北欧领先展，但面积估计<10,000㎡，区域属性强</td></tr><tr><td>4. 同行参与信号</td><td>15分</td><td>2分</td><td>16家同行0家确认参展</td></tr><tr><td>5. 配套活动</td><td>15分</td><td>4分</td><td>100场研讨会中已验证的8场均与仅一赛道无关</td></tr><tr><td><strong>总分</strong></td><td><strong>100分</strong></td><td><strong>32分</strong></td><td><strong>推荐指数 ⭐⭐</strong></td></tr></tbody></table>"
     },
     {
       "type": "blockquote",
@@ -25,6 +29,10 @@
     {
       "type": "html",
       "html": "<div class=\"data-card data-card--danger\"><h4>最大风险</h4><p>展会规模数据（面积、展商行业构成）未完全公开，面积据第三方估计小于 10,000 平方米；未获取完整参展商名单，可能存在信息遗漏。</p></div>"
+    },
+    {
+      "type": "html",
+      "html": "<div class=\"data-card data-card--danger\"><h4>参展建议：不推荐参展</h4><p>32分远低于60分及格线。核心问题：</p><ol><li><strong>行业匹配度低</strong>：展会聚焦包装材料、设计与可持续，非设备制造</li><li><strong>目标客户密度不足</strong>：未验证到制药/乳品/食品品牌方</li><li><strong>同行集体缺席</strong>：16家直接竞品均未见参展，信号明确</li></ol><p><strong>例外情况：</strong>若仅一战略上需要拓展北欧包装材料供应链合作（非设备销售），或展示可持续包装解决方案，可考虑派1-2人观展而非参展。</p><p><strong>替代建议：</strong>欧洲包装设备领域更匹配的展会包括 Interpack（德国，三年一届，行业绝对头部）、Achema（德国，化工/制药/食品加工）、CPHI Worldwide（制药包装）。</p></div>"
     },
     {
       "type": "h2",
@@ -176,23 +184,7 @@
     },
     {
       "type": "h2",
-      "text": "六、评分汇总与建议"
-    },
-    {
-      "type": "html",
-      "html": "<div class=\"data-card data-card--score data-card--danger\"><div style=\"font-size:48px;color:#cf1322;\">32</div><div class=\"section-label section-label--danger\">⭐ 不推荐参展</div></div>"
-    },
-    {
-      "type": "html",
-      "html": "<table><thead><tr><th>维度</th><th>权重</th><th>得分</th><th>评分依据</th></tr></thead><tbody><tr><td>1. 行业与产品形态匹配</td><td>25分</td><td>8分</td><td>展区无制药/乳品/食品分区，材料商占主导，设备商极少</td></tr><tr><td>2. 目标客户密度</td><td>25分</td><td>6分</td><td>未验证到适配的集团化品牌方参展或演讲</td></tr><tr><td>3. 展会规模与地位</td><td>20分</td><td>12分</td><td>60年历史北欧领先展，但面积估计<10,000㎡，区域属性强</td></tr><tr><td>4. 同行参与信号</td><td>15分</td><td>2分</td><td>16家同行0家确认参展</td></tr><tr><td>5. 配套活动</td><td>15分</td><td>4分</td><td>100场研讨会中已验证的8场均与仅一赛道无关</td></tr><tr><td><strong>总分</strong></td><td><strong>100分</strong></td><td><strong>32分</strong></td><td><strong>推荐指数 ⭐⭐</strong></td></tr></tbody></table>"
-    },
-    {
-      "type": "html",
-      "html": "<div class=\"data-card data-card--danger\"><h4>参展建议：不推荐参展</h4><p>32分远低于60分及格线。核心问题：</p><ol><li><strong>行业匹配度低</strong>：展会聚焦包装材料、设计与可持续，非设备制造</li><li><strong>目标客户密度不足</strong>：未验证到制药/乳品/食品品牌方</li><li><strong>同行集体缺席</strong>：16家直接竞品均未见参展，信号明确</li></ol><p><strong>例外情况：</strong>若仅一战略上需要拓展北欧包装材料供应链合作（非设备销售），或展示可持续包装解决方案，可考虑派1-2人观展而非参展。</p><p><strong>替代建议：</strong>欧洲包装设备领域更匹配的展会包括 Interpack（德国，三年一届，行业绝对头部）、Achema（德国，化工/制药/食品加工）、CPHI Worldwide（制药包装）。</p></div>"
-    },
-    {
-      "type": "h2",
-      "text": "七、报告可信度声明"
+      "text": "六、报告可信度声明"
     },
     {
       "type": "blockquote",

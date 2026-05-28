@@ -12,7 +12,11 @@
     },
     {
       "type": "html",
-      "html": "<table><thead><tr><th>项目</th><th>内容</th></tr></thead><tbody><tr><td><strong>展会</strong></td><td>FACHPACK 2027（德国纽伦堡，2027年9月21-23日）</td></tr><tr><td><strong>评分</strong></td><td><strong>59/100分</strong></td></tr><tr><td><strong>推荐指数</strong></td><td>⭐⭐⭐（不推荐常规参展）</td></tr></tbody></table>"
+      "html": "<div class=\"data-card data-card--score data-card--danger\"><div style=\"font-size:48px;color:#cf1322;\">59</div><div class=\"section-label section-label--danger\">⭐ 不推荐常规参展</div></div>"
+    },
+    {
+      "type": "html",
+      "html": "<table><thead><tr><th>维度</th><th>权重</th><th>得分</th></tr></thead><tbody><tr><td>1. 行业与产品形态匹配</td><td>25</td><td>14</td></tr><tr><td>2. 目标客户密度</td><td>25</td><td>16</td></tr><tr><td>3. 展会规模与地位</td><td>20</td><td>18</td></tr><tr><td>4. 同行参与信号</td><td>15</td><td>3</td></tr><tr><td>5. 配套活动</td><td>15</td><td>8</td></tr><tr><td><strong>总分</strong></td><td><strong>100</strong></td><td><strong>59</strong></td></tr></tbody></table>"
     },
     {
       "type": "blockquote",
@@ -25,6 +29,20 @@
     {
       "type": "html",
       "html": "<div class=\"data-card data-card--danger\"><h4>最大风险</h4><ol><li>同行信号弱（3/15分）—未确认与仅一核心产线重叠的直接竞品参展</li><li>制药展区产品形态以泡罩/热成型为主，与仅一适配形态不匹配，目标客户密度存在高估风险</li></ol></div>"
+    },
+    {
+      "type": "html",
+      "html": "<div class=\"section-label section-label--primary\">参展建议</div>"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "参展定位：将 FACHPACK 定位为欧洲市场品牌曝光和客户触达渠道，而非精准产线对接平台",
+        "关注同期联展：Powtech Technopharm（粉体加工技术展）与 FACHPACK 同期同地举办，涉及粉体输送、混合、制粒等前段工艺，建议评估是否需要同时关注",
+        "首次参展策略：建议以标准展位或小面积光地展位试水，重点展示 Stick 条包整线（跨行业适用性最广），设定明确的线索收集KPI",
+        "目标观众筛选：展前通过主办方获取预注册观众名单，优先接触食品行业的粉剂/保健品企业和制药行业的颗粒剂/粉剂企业",
+        "后续跟进：参展后6个月内追踪线索转化率，作为下届是否扩大参展规模的决策依据"
+      ]
     },
     {
       "type": "h2",
@@ -188,33 +206,7 @@
     },
     {
       "type": "h2",
-      "text": "六、评分汇总与建议"
-    },
-    {
-      "type": "html",
-      "html": "<div class=\"data-card data-card--score data-card--danger\"><div style=\"font-size:48px;color:#cf1322;\">59</div><div class=\"section-label section-label--danger\">⭐ 不推荐常规参展</div></div>"
-    },
-    {
-      "type": "html",
-      "html": "<table><thead><tr><th>维度</th><th>权重</th><th>得分</th></tr></thead><tbody><tr><td>1. 行业与产品形态匹配</td><td>25</td><td>14</td></tr><tr><td>2. 目标客户密度</td><td>25</td><td>16</td></tr><tr><td>3. 展会规模与地位</td><td>20</td><td>18</td></tr><tr><td>4. 同行参与信号</td><td>15</td><td>3</td></tr><tr><td>5. 配套活动</td><td>15</td><td>8</td></tr><tr><td><strong>总分</strong></td><td><strong>100</strong></td><td><strong>59</strong></td></tr></tbody></table>"
-    },
-    {
-      "type": "html",
-      "html": "<div class=\"section-label section-label--primary\">参展建议</div>"
-    },
-    {
-      "type": "ol",
-      "items": [
-        "参展定位：将 FACHPACK 定位为欧洲市场品牌曝光和客户触达渠道，而非精准产线对接平台",
-        "关注同期联展：Powtech Technopharm（粉体加工技术展）与 FACHPACK 同期同地举办，涉及粉体输送、混合、制粒等前段工艺，建议评估是否需要同时关注",
-        "首次参展策略：建议以标准展位或小面积光地展位试水，重点展示 Stick 条包整线（跨行业适用性最广），设定明确的线索收集KPI",
-        "目标观众筛选：展前通过主办方获取预注册观众名单，优先接触食品行业的粉剂/保健品企业和制药行业的颗粒剂/粉剂企业",
-        "后续跟进：参展后6个月内追踪线索转化率，作为下届是否扩大参展规模的决策依据"
-      ]
-    },
-    {
-      "type": "h2",
-      "text": "七、报告可信度声明"
+      "text": "六、报告可信度声明"
     },
     {
       "type": "blockquote",
