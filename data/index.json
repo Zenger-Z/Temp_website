@@ -24,24 +24,6 @@
     "date": "2026-03-19",
     "readTime": 20,
     "prevId": "interzoo-2026",
-    "nextId": "fachpack-2027"
-  },
-  {
-    "id": "fachpack-2027",
-    "title": "FACHPACK 2027 参展价值评估报告",
-    "category": "展会评估",
-    "date": "2026-05-28",
-    "readTime": 25,
-    "prevId": "gdic-asia-2026",
-    "nextId": "scanpack-2027"
-  },
-  {
-    "id": "scanpack-2027",
-    "title": "SCANPACK 2027 参展价值评估报告",
-    "category": "展会评估",
-    "date": "2026-05-28",
-    "readTime": 22,
-    "prevId": "fachpack-2027",
     "nextId": "tdd-audit"
   },
   {
@@ -50,7 +32,7 @@
     "category": "其他报告",
     "date": "2026-04-01",
     "readTime": 18,
-    "prevId": "scanpack-2027",
+    "prevId": "gdic-asia-2026",
     "nextId": "propak-asia-2026-travel"
   },
   {
