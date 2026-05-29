@@ -24,6 +24,51 @@
     "date": "2026-03-19",
     "readTime": 20,
     "prevId": "interzoo-2026",
+    "nextId": "allpack-indonesia-2026"
+  },
+  {
+    "id": "allpack-indonesia-2026",
+    "title": "ALLPACK Indonesia 2026 参展价值评估报告",
+    "category": "展会评估",
+    "date": "2026-05-29",
+    "readTime": 18,
+    "prevId": "gdic-asia-2026",
+    "nextId": "fachpack-joyea"
+  },
+  {
+    "id": "fachpack-joyea",
+    "title": "FACHPACK 参展价值评估报告",
+    "category": "展会评估",
+    "date": "2026-05-29",
+    "readTime": 18,
+    "prevId": "allpack-indonesia-2026",
+    "nextId": "interpack-joyea"
+  },
+  {
+    "id": "interpack-joyea",
+    "title": "Interpack 参展价值评估报告",
+    "category": "展会评估",
+    "date": "2026-05-29",
+    "readTime": 18,
+    "prevId": "fachpack-joyea",
+    "nextId": "propak-asia-2026-eval"
+  },
+  {
+    "id": "propak-asia-2026-eval",
+    "title": "ProPak Asia 2026 参展价值评估报告",
+    "category": "展会评估",
+    "date": "2026-05-29",
+    "readTime": 16,
+    "prevId": "interpack-joyea",
+    "nextId": "scanpack-joyea"
+  },
+  {
+    "id": "scanpack-joyea",
+    "title": "SPACK 参展价值评估报告",
+    "category": "展会评估",
+    "date": "2026-05-29",
+    "readTime": 16,
+    "prevId": "propak-asia-2026-eval",
     "nextId": "tdd-audit"
   },
   {
@@ -32,7 +77,7 @@
     "category": "其他报告",
     "date": "2026-04-01",
     "readTime": 18,
-    "prevId": "gdic-asia-2026",
+    "prevId": "scanpack-joyea",
     "nextId": "propak-asia-2026-travel"
   },
   {

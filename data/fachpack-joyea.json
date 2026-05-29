@@ -1,0 +1,31 @@
+{
+  "title": "FACHPACK 参展价值评估报告",
+  "category": "展会评估",
+  "date": "2026-05-29",
+  "readTime": 18,
+  "prevId": "allpack-indonesia-2026",
+  "nextId": "interpack-joyea",
+  "content": [
+    {"type":"h2","text":"一、决策摘要"},
+    {"type":"html","html":"<div class=\"data-card data-card--score data-card--success\"><div style=\"font-size:48px;color:#389e0d;\">91</div><div class=\"section-label section-label--success\">✅ 值得作为欧洲区域重点展会参加</div></div>"},
+    {"type":"blockquote","text":"一句话判断：FACHPACK 不是 Interpack 级别的全球展，但公开信息显示其欧洲区域包装设备、制药/食品包装、Stick 条包和自动化设备信号很强，适合作为仅一欧洲市场重点候选展会。"},
+    {"type":"html","html":"<div class=\"section-label section-label--primary\">评分维度</div>"},
+    {"type":"html","html":"<table><thead><tr><th>维度</th><th>权重</th><th>得分</th><th>判断</th></tr></thead><tbody><tr><td>区域入口价值</td><td>20</td><td>18</td><td>欧洲包装行业重要区域入口，受 Interpack 替代性影响</td></tr><tr><td>业务与产品相关性</td><td>30</td><td>27</td><td>Stick 条包、VFFS、包装设备、制药/食品包装信号明确</td></tr><tr><td>赛道展商信号</td><td>30</td><td>28</td><td>欧洲区域同行和相关设备商证据强</td></tr><tr><td>展会可信度与影响力</td><td>20</td><td>18</td><td>历史、主办方、规模、媒体口碑均较强</td></tr><tr><td><strong>总分</strong></td><td><strong>100</strong></td><td><strong>91</strong></td><td><strong>值得作为欧洲区域重点展会参加</strong></td></tr></tbody></table>"},
+    {"type":"html","html":"<div class=\"data-card data-card--success\"><h4>最关键的正面证据</h4><ol><li>官方确认 FACHPACK 覆盖包装材料、包装生产、包装技术、物流和包装系统</li><li>Marchesini 展示 stickpack 设备，Syntegon、Optima、Korber 等欧洲同行/设备商信号强</li><li>与 POWTECH TECHNOPHARM 同期，有助于粉体、制药工艺与包装场景联动</li></ol></div>"},
+    {"type":"html","html":"<div class=\"data-card data-card--danger\"><h4>最关键的不确定因素</h4><ol><li>FACHPACK 受 Interpack 替代性影响，如果仅一只选一个欧洲包装展，Interpack 优先级更高</li><li>2027 年最终展商名单尚未完整确认，需复核核心同行和展品方向</li></ol></div>"},
+    {"type":"html","html":"<div class=\"section-label section-label--primary\">最终建议</div>"},
+    {"type":"blockquote","text":"FACHPACK 适合作为仅一欧洲市场重点候选展会。建议等 2027 展商名单开放后，重点复核 Syntegon、Marchesini、Korber、Optima、Harro Hofliger 等设备商展品方向，再决定展位规模。"},
+    {"type":"h2","text":"二、评分明细"},
+    {"type":"h3","text":"1. 区域入口价值：18/20"},
+    {"type":"html","html":"<table><thead><tr><th>子项</th><th>得分</th><th>证据摘要</th></tr></thead><tbody><tr><td>区域代表性</td><td>4/4</td><td>官方定位为欧洲包装行业重要会面点</td></tr><tr><td>仅一相关行业入口属性</td><td>4/4</td><td>覆盖包装、食品、制药、健康、宠物食品等生产端行业</td></tr><tr><td>本地适配产业覆盖</td><td>3/4</td><td>欧洲包装设备和包装生态强，乳品/听装专项不突出</td></tr><tr><td>生产端场景明确度</td><td>4/4</td><td>包装生产、包装技术、包装系统和自动化是核心</td></tr><tr><td>同区域替代性</td><td>3/4</td><td>Interpack 是更强替代，但 FACHPACK 仍是区域核心展</td></tr></tbody></table>"},
+    {"type":"h3","text":"2. 业务与产品相关性：27/30"},
+    {"type":"html","html":"<table><thead><tr><th>子项</th><th>得分</th><th>证据摘要</th></tr></thead><tbody><tr><td>核心应用行业匹配</td><td>5/6</td><td>食品、制药、健康、宠物食品等覆盖明确</td></tr><tr><td>包装设备场景</td><td>6/6</td><td>包装机械、包装生产、系统和自动化证据直接</td></tr><tr><td>Stick 条包信号</td><td>6/6</td><td>Marchesini 在 FACHPACK 展示 16 道 stickpack 机器</td></tr><tr><td>听装/粉体信号</td><td>4/6</td><td>与 POWTECH TECHNOPHARM 同期，粉体/工艺协同较强</td></tr><tr><td>软袋/整线信号</td><td>6/6</td><td>Syntegon VFFS、包装自动化、整线和后道设备信号强</td></tr></tbody></table>"},
+    {"type":"h3","text":"3. 赛道展商信号：28/30"},
+    {"type":"html","html":"<table><thead><tr><th>子项</th><th>得分</th><th>证据摘要</th></tr></thead><tbody><tr><td>区域同行/本地设备商信号</td><td>6/6</td><td>Syntegon、Optima、Marchesini、Korber 等欧洲企业信号强</td></tr><tr><td>全球头部同行信号</td><td>5/6</td><td>多家全球头部企业出现，但不是所有仅一核心同行均确认</td></tr><tr><td>重叠产品展示证据</td><td>6/6</td><td>Stickpack、VFFS、自动化包装线等重叠证据直接</td></tr><tr><td>相关设备商数量</td><td>6/6</td><td>Schubert、MULTIVAC、Weber、Harro Hofliger 等设备商生态强</td></tr><tr><td>展商信息可验证性</td><td>5/6</td><td>官方、企业官网和行业媒体均可验证，仍以 2025 信息为主</td></tr></tbody></table>"},
+    {"type":"h3","text":"4. 展会可信度与影响力：18/20"},
+    {"type":"html","html":"<table><thead><tr><th>子项</th><th>得分</th><th>证据摘要</th></tr></thead><tbody><tr><td>主办方可信度</td><td>4/4</td><td>NurnbergMesse 主办</td></tr><tr><td>展会历史稳定性</td><td>4/4</td><td>展会始于 1979 年，历史稳定</td></tr><tr><td>规模与趋势</td><td>3/4</td><td>2024 年约 1,455 展商、3.7 万观众；规模稳定</td></tr><tr><td>认证与背书</td><td>3/4</td><td>Packaging Valley、German Packaging Award 等行业生态强</td></tr><tr><td>媒体与口碑</td><td>4/4</td><td>官方和行业媒体报道充分</td></tr></tbody></table>"},
+    {"type":"h2","text":"三、关键证据来源"},
+    {"type":"ul","items":["FACHPACK 官网：fachpack.de/en","Marchesini 展示 16 道 stickpack 设备","Syntegon、Optima、Korber 等参展信息"]},
+    {"type":"p","text":"报告日期：2026年5月29日 | 制表人：市场部"}
+  ]
+}

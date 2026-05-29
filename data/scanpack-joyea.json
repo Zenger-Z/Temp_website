@@ -1,0 +1,31 @@
+{
+  "title": "SPACK 参展价值评估报告",
+  "category": "展会评估",
+  "date": "2026-05-29",
+  "readTime": 16,
+  "prevId": "propak-asia-2026-eval",
+  "nextId": "tdd-audit",
+  "content": [
+    {"type":"h2","text":"一、决策摘要"},
+    {"type":"html","html":"<div class=\"data-card data-card--score data-card--warning\"><div style=\"font-size:48px;color:#d48806;\">64</div><div class=\"section-label section-label--warning\">⚠️ 谨慎，适合观展或小规模试水</div></div>"},
+    {"type":"blockquote","text":"一句话判断：Scanpack 是北欧包装市场的重要入口，但公开信息显示它更偏包装材料、可持续包装、食品包装和通用包装设备；仅一核心产品形态和同行信号不足，不适合直接重投入参展。"},
+    {"type":"html","html":"<div class=\"section-label section-label--primary\">评分维度</div>"},
+    {"type":"html","html":"<table><thead><tr><th>维度</th><th>权重</th><th>得分</th><th>判断</th></tr></thead><tbody><tr><td>区域入口价值</td><td>20</td><td>17</td><td>北欧包装入口价值强</td></tr><tr><td>业务与产品相关性</td><td>30</td><td>14</td><td>泛包装和食品包装相关，但仅一核心产品形态证据弱</td></tr><tr><td>赛道展商信号</td><td>30</td><td>15</td><td>有食品包装设备商和代理生态，但直接同行与重叠产品信号弱</td></tr><tr><td>展会可信度与影响力</td><td>20</td><td>18</td><td>历史长、规模稳定、口碑较好</td></tr><tr><td><strong>总分</strong></td><td><strong>100</strong></td><td><strong>64</strong></td><td><strong>谨慎，适合观展或小规模试水</strong></td></tr></tbody></table>"},
+    {"type":"html","html":"<div class=\"data-card data-card--success\"><h4>最关键的正面证据</h4><ol><li>Scanpack 官方称其为斯堪的纳维亚包装行业领先展会，历史可追溯到 1964 年</li><li>2024 年有 407 家展商、14,117 名参与者，规模较稳定</li><li>Ishida、PFM/Nemco 等设备商信号存在，说明展会不是纯消费或零售展</li></ol></div>"},
+    {"type":"html","html":"<div class=\"data-card data-card--danger\"><h4>最关键的不确定因素</h4><ol><li>未确认 IMA、Syntegon、Optima、Korber 等仅一核心同行参展</li><li>条包、听装粉剂、粉体灌装等仅一核心产品形态证据弱</li></ol></div>"},
+    {"type":"html","html":"<div class=\"section-label section-label--primary\">最终建议</div>"},
+    {"type":"blockquote","text":"Scanpack 适合作为北欧市场观展验证或小规模试水展会，不建议直接重投入。若 2027 展商名单显示 IMA、Syntegon、Optima、Korber、Universal Pack 或明确 stick pack/powder filling/can filling 设备商参展，可重新上调评分。"},
+    {"type":"h2","text":"二、评分明细"},
+    {"type":"h3","text":"1. 区域入口价值：17/20"},
+    {"type":"html","html":"<table><thead><tr><th>子项</th><th>得分</th><th>证据摘要</th></tr></thead><tbody><tr><td>区域代表性</td><td>4/4</td><td>官方称自 1964 年以来是斯堪的纳维亚包装行业领先展会</td></tr><tr><td>仅一相关行业入口属性</td><td>4/4</td><td>北欧包装行业入口明确，但核心应用更多是泛包装/食品包装</td></tr><tr><td>本地适配产业覆盖</td><td>3/4</td><td>覆盖食品饮料、制造、包装、物流等；制药/乳品/粉体专项不强</td></tr><tr><td>生产端场景明确度</td><td>3/4</td><td>有包装设备和系统，但包材、设计、可持续包装占比也高</td></tr><tr><td>同区域替代性</td><td>3/4</td><td>北欧区域内替代展不明显，但欧洲更大展会可替代</td></tr></tbody></table>"},
+    {"type":"h3","text":"2. 业务与产品相关性：14/30"},
+    {"type":"html","html":"<table><thead><tr><th>子项</th><th>得分</th><th>证据摘要</th></tr></thead><tbody><tr><td>核心应用行业匹配</td><td>3/6</td><td>泛食品饮料和包装行业相关，制药/乳品/保健品专项不明显</td></tr><tr><td>包装设备场景</td><td>4/6</td><td>有包装机械设备、系统、自动化方向</td></tr><tr><td>Stick 条包信号</td><td>2/6</td><td>PFM/Nemco 有 VFFS 和 flow wrapper 信号，但未见明确 stick pack</td></tr><tr><td>听装/粉体信号</td><td>1/6</td><td>未见听装粉剂、奶粉、粉体灌装直接信号</td></tr><tr><td>软袋/整线信号</td><td>4/6</td><td>Ishida、Nemco、PFM 等有食品包装自动化和 VFFS 信号</td></tr></tbody></table>"},
+    {"type":"h3","text":"3. 赛道展商信号：15/30"},
+    {"type":"html","html":"<table><thead><tr><th>子项</th><th>得分</th><th>证据摘要</th></tr></thead><tbody><tr><td>区域同行/本地设备商信号</td><td>4/6</td><td>Nemco、Ishida、PFM 等北欧/欧洲设备和代理生态存在</td></tr><tr><td>全球头部同行信号</td><td>1/6</td><td>未确认 IMA、Syntegon、Optima、Korber 等核心同行参展</td></tr><tr><td>重叠产品展示证据</td><td>2/6</td><td>VFFS、flow wrapper 有弱重叠；条包/听装/粉体直接证据弱</td></tr><tr><td>相关设备商数量</td><td>5/6</td><td>食品包装设备商、称重、检测、封口、包装系统生态较强</td></tr><tr><td>展商信息可验证性</td><td>3/6</td><td>官方和企业页面可查部分信息，但完整展商产品验证有限</td></tr></tbody></table>"},
+    {"type":"h3","text":"4. 展会可信度与影响力：18/20"},
+    {"type":"html","html":"<table><thead><tr><th>子项</th><th>得分</th><th>证据摘要</th></tr></thead><tbody><tr><td>主办方可信度</td><td>4/4</td><td>Svenska Massan Gothia Towers 组织，场馆和会展资源明确</td></tr><tr><td>展会历史稳定性</td><td>4/4</td><td>1964 年创办，2024 年为 60 周年</td></tr><tr><td>规模与趋势</td><td>4/4</td><td>2024 年 407 展商、14,117 参与者、45 个访问国家</td></tr><tr><td>认证与背书</td><td>3/4</td><td>Fairlink 调研、ScanStar、Packnorth 等北欧包装生态背书</td></tr><tr><td>媒体与口碑</td><td>3/4</td><td>官方和展商反馈较好，但国际设备媒体曝光不如欧洲大展</td></tr></tbody></table>"},
+    {"type":"h2","text":"三、关键证据来源"},
+    {"type":"ul","items":["Scanpack 官网：en.scanpack.se","Scanpack 2024 展商反馈","PFM Scanpack 2024：pfm.it","Ishida Scanpack 2024：ishidaeurope.com"]},
+    {"type":"p","text":"报告日期：2026年5月29日 | 制表人：市场部"}
+  ]
+}

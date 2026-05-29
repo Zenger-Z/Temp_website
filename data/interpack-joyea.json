@@ -1,0 +1,31 @@
+{
+  "title": "Interpack 参展价值评估报告",
+  "category": "展会评估",
+  "date": "2026-05-29",
+  "readTime": 18,
+  "prevId": "fachpack-joyea",
+  "nextId": "propak-asia-2026-eval",
+  "content": [
+    {"type":"h2","text":"一、决策摘要"},
+    {"type":"html","html":"<div class=\"data-card data-card--score data-card--success\"><div style=\"font-size:48px;color:#389e0d;\">95</div><div class=\"section-label section-label--success\">✅ 值得作为欧洲/全球重点展会参加</div></div>"},
+    {"type":"blockquote","text":"一句话判断：Interpack 是全球包装行业头部展会，区域入口、业务相关性、全球同行和重叠产品证据都很强，适合作为仅一欧洲和全球市场的重点展会。"},
+    {"type":"html","html":"<div class=\"section-label section-label--primary\">评分维度</div>"},
+    {"type":"html","html":"<table><thead><tr><th>维度</th><th>权重</th><th>得分</th><th>判断</th></tr></thead><tbody><tr><td>区域入口价值</td><td>20</td><td>20</td><td>全球及欧洲包装行业核心入口</td></tr><tr><td>业务与产品相关性</td><td>30</td><td>27</td><td>制药、食品、包装机械、Stick 条包、VFFS、自动化证据强</td></tr><tr><td>赛道展商信号</td><td>30</td><td>29</td><td>多家欧洲及全球头部同行确认参展并展示重叠设备</td></tr><tr><td>展会可信度与影响力</td><td>20</td><td>19</td><td>主办方、历史、规模、认证强，观众下滑是主要风险</td></tr><tr><td><strong>总分</strong></td><td><strong>100</strong></td><td><strong>95</strong></td><td><strong>值得作为欧洲/全球重点展会参加</strong></td></tr></tbody></table>"},
+    {"type":"html","html":"<div class=\"data-card data-card--success\"><h4>最关键的正面证据</h4><ol><li>Interpack 是全球包装加工行业核心展会，欧洲和全球入口价值都很强</li><li>IMA、Syntegon、Korber、Universal Pack、Marchesini、Optima 等欧洲/全球同行参展信号强</li><li>条包、VFFS、制药包装、粉体/液体包装、包装自动化等与仅一相关的设备证据明确</li></ol></div>"},
+    {"type":"html","html":"<div class=\"data-card data-card--danger\"><h4>最关键的不确定因素</h4><ol><li>2026 年观众数较 2023 年下降，需观察是否为趋势性变化</li><li>公开信息不能确认仅一目标客户的采购/工程团队是否实际到场</li></ol></div>"},
+    {"type":"html","html":"<div class=\"section-label section-label--primary\">最终建议</div>"},
+    {"type":"blockquote","text":"Interpack 适合作为仅一欧洲和全球市场重点展会。若首次参展，应优先控制投入规模，提前预约目标客户，并把竞品展品、展位投入和新品发布作为重点情报目标。"},
+    {"type":"h2","text":"二、评分明细"},
+    {"type":"h3","text":"1. 区域入口价值：20/20"},
+    {"type":"html","html":"<table><thead><tr><th>子项</th><th>得分</th><th>证据摘要</th></tr></thead><tbody><tr><td>区域代表性</td><td>4/4</td><td>全球包装行业头部展，覆盖欧洲和全球买方</td></tr><tr><td>仅一相关行业入口属性</td><td>4/4</td><td>覆盖食品、制药、化妆品、饮料等生产端包装行业</td></tr><tr><td>本地适配产业覆盖</td><td>4/4</td><td>欧洲包装机械、制药包装、食品包装生态完整</td></tr><tr><td>生产端场景明确度</td><td>4/4</td><td>展品以加工、包装机械、包装系统、自动化为核心</td></tr><tr><td>同区域替代性</td><td>4/4</td><td>在全球包装展里本身就是核心选择</td></tr></tbody></table>"},
+    {"type":"h3","text":"2. 业务与产品相关性：27/30"},
+    {"type":"html","html":"<table><thead><tr><th>子项</th><th>得分</th><th>证据摘要</th></tr></thead><tbody><tr><td>核心应用行业匹配</td><td>6/6</td><td>食品、制药、保健品/化妆品等多行业覆盖</td></tr><tr><td>包装设备场景</td><td>6/6</td><td>明确覆盖包装机械、加工技术、整线与自动化</td></tr><tr><td>Stick 条包信号</td><td>5/6</td><td>IMA、Korber、Universal Pack 等有条包/小袋设备信号</td></tr><tr><td>听装/粉体信号</td><td>4/6</td><td>Syntegon、IMA、Optima 等有粉体/灌装/听装相关产品线</td></tr><tr><td>软袋/整线信号</td><td>6/6</td><td>VFFS、软袋、装盒、后道、整线自动化设备密集</td></tr></tbody></table>"},
+    {"type":"h3","text":"3. 赛道展商信号：29/30"},
+    {"type":"html","html":"<table><thead><tr><th>子项</th><th>得分</th><th>证据摘要</th></tr></thead><tbody><tr><td>区域同行/本地设备商信号</td><td>6/6</td><td>欧洲本地同行 Syntegon、IMA、Korber、Marchesini、Optima 等强势出现</td></tr><tr><td>全球头部同行信号</td><td>6/6</td><td>多家全球头部包装设备集团确认参展</td></tr><tr><td>重叠产品展示证据</td><td>6/6</td><td>条包、VFFS、制药包装、粉体/液体包装等重叠证据明确</td></tr><tr><td>相关设备商数量</td><td>6/6</td><td>包装机械、灌装、制袋、自动化设备商规模大</td></tr><tr><td>展商信息可验证性</td><td>5/6</td><td>企业官网和行业媒体可查；个别未确认企业仍有遗漏可能</td></tr></tbody></table>"},
+    {"type":"h3","text":"4. 展会可信度与影响力：19/20"},
+    {"type":"html","html":"<table><thead><tr><th>子项</th><th>得分</th><th>证据摘要</th></tr></thead><tbody><tr><td>主办方可信度</td><td>4/4</td><td>Messe Dusseldorf 主办，全球知名展览机构</td></tr><tr><td>展会历史稳定性</td><td>4/4</td><td>1958 年首届，长期稳定，三年一届</td></tr><tr><td>规模与趋势</td><td>3/4</td><td>2026 展商数强，但观众数较 2023 年下降</td></tr><tr><td>认证与背书</td><td>4/4</td><td>FKM、UFI、行业媒体和国际展商背书强</td></tr><tr><td>媒体与口碑</td><td>4/4</td><td>多家行业媒体报道，头部企业用于新品展示</td></tr></tbody></table>"},
+    {"type":"h2","text":"三、关键证据来源"},
+    {"type":"ul","items":["Interpack 官网：interpack.com","IMA Interpack 参展信息","Syntegon Interpack 参展信息","Interpack 展商资料与行业媒体报道"]},
+    {"type":"p","text":"报告日期：2026年5月29日 | 制表人：市场部"}
+  ]
+}
