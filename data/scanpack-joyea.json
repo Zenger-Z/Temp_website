@@ -29,7 +29,10 @@
     {"type":"html","html":"<table><thead><tr><th>子项</th><th>得分</th><th>证据摘要</th></tr></thead><tbody><tr><td>主办方可信度</td><td>4/4</td><td>Svenska Massan Gothia Towers 组织，场馆和会展资源明确</td></tr><tr><td>展会历史稳定性</td><td>4/4</td><td>1964 年创办，2024 年为 60 周年</td></tr><tr><td>规模与趋势</td><td>4/4</td><td>2024 年 407 展商、14,117 参与者、45 个访问国家</td></tr><tr><td>认证与背书</td><td>3/4</td><td>Fairlink 调研、ScanStar、Packnorth 等北欧包装生态背书</td></tr><tr><td>媒体与口碑</td><td>3/4</td><td>官方和展商反馈较好，但国际设备媒体曝光不如欧洲大展</td></tr></tbody></table>"},
     {"type":"p","text":"Scanpack 的展会可信度较好。它历史长、区域定位清晰、规模稳定，官方和参展商反馈都比较正面。但可信度高不等于仅一业务高度匹配。Scanpack 的问题不是展会不可靠，而是公开信息中的仅一核心赛道证据不足。"},
     {"type":"h2","text":"三、关键证据来源"},
-    {"type":"ul","items":["Scanpack 官网：en.scanpack.se","Scanpack 2024 展商反馈","PFM Scanpack 2024：pfm.it","Ishida Scanpack 2024：ishidaeurope.com"]},
+    {"type":"ul","items":["Scanpack 官网：<a href=\"https://en.scanpack.se/\" target=\"_blank\" rel=\"noopener\">en.scanpack.se</a>","Scanpack 关于展会：<a href=\"https://en.scanpack.se/home/about-scanpack/\" target=\"_blank\" rel=\"noopener\">About Scanpack</a>","Scanpack 2024 展商反馈：<a href=\"https://en.scanpack.se/2024/10/satisfied-exhibitors-scanpack-exceeds-expectations/\" target=\"_blank\" rel=\"noopener\">Exhibitor Feedback</a>","PFM Scanpack 2024：<a href=\"https://www.pfm.it/en/scanpack-2024/\" target=\"_blank\" rel=\"noopener\">pfm.it</a>","Ishida Scanpack 2024：<a href=\"https://www.ishidaeurope.com/nl/event/scanpack-2024/\" target=\"_blank\" rel=\"noopener\">ishidaeurope.com</a>"]},
+    {"type":"h2","text":"四、判断边界"},
+    {"type":"p","text":"以下内容公开信息不能可靠判断："},
+    {"type":"ul","items":["2027 年最终展商名单和具体产品","仅一目标客户是否派采购、工程或工厂团队到场","展位价格、设备运输成本和参展预算","参展 ROI、成交概率和线索质量"]},
     {"type":"p","text":"报告日期：2026年5月29日 | 制表人：市场部"}
   ]
 }

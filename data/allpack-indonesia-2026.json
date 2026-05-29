@@ -29,7 +29,11 @@
     {"type":"html","html":"<table><thead><tr><th>子项</th><th>得分</th><th>证据摘要</th></tr></thead><tbody><tr><td>主办方可信度</td><td>3/4</td><td>Krista Exhibitions 1994 年成立，长期办展</td></tr><tr><td>展会历史稳定性</td><td>4/4</td><td>第 25 届，历史较长</td></tr><tr><td>规模与趋势</td><td>2/4</td><td>规模数据多为主办方/第三方口径，年份数据有矛盾</td></tr><tr><td>认证与背书</td><td>3/4</td><td>印尼政府部门和行业协会支持，未见 UFI/FKM</td></tr><tr><td>媒体与口碑</td><td>4/4</td><td>有行业报道、设备商参展信息，且仅一曾参展 2025</td></tr></tbody></table>"},
     {"type":"p","text":"ALLPACK Indonesia 的展会可信度中上。主办方 Krista Exhibitions / PT Kristamedia Pratama 成立时间较早，长期运营印尼本地 B2B 展览。ALLPACK Indonesia 已举办到第 25 届，说明展会历史和连续性具备基本支撑。展会也有印尼政府部门、行业协会等背书，这对本地市场入口价值有帮助。主要扣分点在规模数据质量——公开资料中的展商数、观众数、面积等数据多来自主办方或第三方展会数据库，且不同年份口径存在不一致，未见 UFI/FKM 等较强第三方审计认证。展会影响力方面，有设备商参展信息、行业报道，以及仅一 2025 年曾参展这一内部可验证线索。因此媒体与口碑给 4/4，但建议后续优先用仅一 2025 年实测数据校准判断。"},
     {"type":"h2","text":"三、关键证据来源"},
-    {"type":"ul","items":["ALLPACK Indonesia 官网：allpack-indonesia.com","Tofflon 印尼 ALLPACK 官方展商页","Yenchen ALLPACK Indonesia 2026 参展页","Heat and Control ALLPACK Indonesia 2026 参展页"]},
+    {"type":"ul","items":["ALLPACK Indonesia 官网：<a href=\"https://allpack-indonesia.com/\" target=\"_blank\" rel=\"noopener\">allpack-indonesia.com</a>","Tofflon 印尼 ALLPACK 官方展商页：<a href=\"https://allpack-indonesia.com/detail-exhibitor/14232\" target=\"_blank\" rel=\"noopener\">详情</a>","Yenchen：<a href=\"https://www.yenchen.com.tw/en/exhibitions/exhibition-093.html\" target=\"_blank\" rel=\"noopener\">参展信息</a>","Heat and Control：<a href=\"https://www.heatandcontrol.com/event/allpack-indonesia-2026\" target=\"_blank\" rel=\"noopener\">参展信息</a>","Wesexpo：<a href=\"https://www.wesexpo.com/exhibition/2026-10_indonesia_allpack\" target=\"_blank\" rel=\"noopener\">展会代理</a>"]},
+    {"type":"h2","text":"四、判断边界"},
+    {"type":"p","text":"以下内容公开信息不能可靠判断："},
+    {"type":"ul","items":["仅一目标客户是否派采购、工程、工厂或包装负责人到场","展位价格、搭建费用、人员差旅、设备运输成本","参展 ROI、成交概率、线索质量","2026 年完整展商名单中，条包、听装、软袋设备商的实际数量","仅一 2025 年参展现场效果"]},
+    {"type":"p","text":"最重要的信息缺口是仅一 2025 年参展复盘：实际到访展位的客户数量和质量；是否有雀巢、达能、菲仕兰、印尼本地大药企/食品企业到访；现场看到的本地和国际竞品；后续销售线索转化情况；总参展成本和内部评价。"},
     {"type":"p","text":"报告日期：2026年5月29日 | 制表人：市场部"}
   ]
 }

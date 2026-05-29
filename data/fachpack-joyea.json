@@ -29,7 +29,10 @@
     {"type":"html","html":"<table><thead><tr><th>子项</th><th>得分</th><th>证据摘要</th></tr></thead><tbody><tr><td>主办方可信度</td><td>4/4</td><td>NurnbergMesse 主办</td></tr><tr><td>展会历史稳定性</td><td>4/4</td><td>展会始于 1979 年，历史稳定</td></tr><tr><td>规模与趋势</td><td>3/4</td><td>2024 年约 1,455 展商、3.7 万观众；规模稳定</td></tr><tr><td>认证与背书</td><td>3/4</td><td>Packaging Valley、German Packaging Award 等行业生态强</td></tr><tr><td>媒体与口碑</td><td>4/4</td><td>官方和行业媒体报道充分</td></tr></tbody></table>"},
     {"type":"p","text":"FACHPACK 可信度较高。主办方 NurnbergMesse 具备稳定办展能力，FACHPACK 本身历史长、行业媒体可见度高、参展商质量较好。它的规模不如 Interpack，但作为欧洲区域包装展已经足够成熟。扣分主要来自认证/审计数据不如 Interpack 明确，以及规模影响力低于全球头部展。"},
     {"type":"h2","text":"三、关键证据来源"},
-    {"type":"ul","items":["FACHPACK 官网：fachpack.de/en","Marchesini 展示 16 道 stickpack 设备","Syntegon、Optima、Korber 等参展信息"]},
+    {"type":"ul","items":["FACHPACK 官网：<a href=\"https://www.fachpack.de/en\" target=\"_blank\" rel=\"noopener\">fachpack.de/en</a>","FACHPACK 展会详情：<a href=\"https://www.fachpack.de/en/all-about-the-exhibition/fachpack/messedetails\" target=\"_blank\" rel=\"noopener\">messdetails</a>","FACHPACK 技术文章：<a href=\"https://www.fachpack.de/en/fachpack-360/2025-2/article/technology-fachpack-packaging-of-the-future-thanks-to-the-latest-technology\" target=\"_blank\" rel=\"noopener\">Technology</a>","Marchesini 展示：<a href=\"https://packaging-journal.de/en/marchesini-group-presents-pharmaceutical-and-cosmetic-solutions/\" target=\"_blank\" rel=\"noopener\">packaging-journal.de</a>"]},
+    {"type":"h2","text":"四、判断边界"},
+    {"type":"p","text":"以下内容公开信息不能可靠判断："},
+    {"type":"ul","items":["2027 年最终展商名单和具体展品","仅一目标客户是否派采购或工程团队到场","展位价格、搭建费用、设备运输成本","参展 ROI、成交概率和线索质量"]},
     {"type":"p","text":"报告日期：2026年5月29日 | 制表人：市场部"}
   ]
 }

@@ -29,7 +29,10 @@
     {"type":"html","html":"<table><thead><tr><th>子项</th><th>得分</th><th>证据摘要</th></tr></thead><tbody><tr><td>主办方可信度</td><td>4/4</td><td>Messe Dusseldorf 主办，全球知名展览机构</td></tr><tr><td>展会历史稳定性</td><td>4/4</td><td>1958 年首届，长期稳定，三年一届</td></tr><tr><td>规模与趋势</td><td>3/4</td><td>2026 展商数强，但观众数较 2023 年下降</td></tr><tr><td>认证与背书</td><td>4/4</td><td>FKM、UFI、行业媒体和国际展商背书强</td></tr><tr><td>媒体与口碑</td><td>4/4</td><td>多家行业媒体报道，头部企业用于新品展示</td></tr></tbody></table>"},
     {"type":"p","text":"Interpack 的展会可信度很高。主办方 Messe Dusseldorf 是全球知名展览机构，展会历史长、品牌稳定、国际化程度高，并有 FKM/UFI 等可信背书。主要扣分点是 2026 年观众数较 2023 年下降。虽然展商数仍强，但\"展商强、观众下滑\"的趋势值得关注。这个风险不会改变 Interpack 的重点展会地位，但会影响参展投入规模和 KPI 设定。"},
     {"type":"h2","text":"三、关键证据来源"},
-    {"type":"ul","items":["Interpack 官网：interpack.com","IMA Interpack 参展信息","Syntegon Interpack 参展信息","行业媒体报道"]},
+    {"type":"ul","items":["Interpack 官网：<a href=\"https://www.interpack.com/\" target=\"_blank\" rel=\"noopener\">interpack.com</a>","IMA Interpack 参展：<a href=\"https://imagroup.com/exhibitions/interpack-2026/\" target=\"_blank\" rel=\"noopener\">imagroup.com</a>","Syntegon Interpack：<a href=\"https://www.syntegon.com/\" target=\"_blank\" rel=\"noopener\">syntegon.com</a>","展商资料与行业媒体报道"]},
+    {"type":"h2","text":"四、判断边界"},
+    {"type":"p","text":"以下内容公开信息不能可靠判断："},
+    {"type":"ul","items":["仅一目标客户是否派采购、工程或工厂团队到场","展位价格、搭建费用、人员差旅和设备运输成本","参展 ROI、成交概率和线索质量","2029 年最终展区规划和展商名单"]},
     {"type":"p","text":"报告日期：2026年5月29日 | 制表人：市场部"}
   ]
 }
