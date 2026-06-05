@@ -87,6 +87,15 @@
     "date": "2026-04-16",
     "readTime": 10,
     "prevId": "tdd-audit",
+    "nextId": "thailand-potential-customers"
+  },
+  {
+    "id": "thailand-potential-customers",
+    "title": "泰国市场仅一潜在客户清单",
+    "category": "其他报告",
+    "date": "2026-06-05",
+    "readTime": 22,
+    "prevId": "propak-asia-2026-travel",
     "nextId": null
   }
 ]
