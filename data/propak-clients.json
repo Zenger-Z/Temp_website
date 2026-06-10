@@ -1,0 +1,708 @@
+{
+  "visited": [
+    {
+      "seq": 1,
+      "name": "Dutch Mill Group-达美集团",
+      "person": "James",
+      "logo": "logo_left_002.png"
+    },
+    {
+      "seq": 2,
+      "name": "NATURIE CO.,LTD.",
+      "person": "James",
+      "logo": "logo_left_003.png"
+    },
+    {
+      "seq": 3,
+      "name": "PRESERVED FOOD SPECIALTY CO.. LTD,",
+      "person": "James",
+      "logo": "logo_left_004.png"
+    },
+    {
+      "seq": 4,
+      "name": "PTT Oil and Retail Business Public Company Limited（OR）",
+      "person": "James",
+      "logo": "logo_left_005.png"
+    },
+    {
+      "seq": 5,
+      "name": "INGENIUM CO..LTD",
+      "person": "James",
+      "logo": "logo_left_006.png"
+    },
+    {
+      "seq": 6,
+      "name": "SENTA PACK MACHINERY & SERVICE CO., LTD.",
+      "person": "Jim",
+      "logo": "logo_left_007.png"
+    },
+    {
+      "seq": 7,
+      "name": "Betagro Public Company Limited",
+      "person": "Jim",
+      "logo": "logo_left_008.png"
+    },
+    {
+      "seq": 8,
+      "name": "BIOLAB CO.， LTD",
+      "person": "Wali",
+      "logo": "logo_left_009.png"
+    },
+    {
+      "seq": 9,
+      "name": "KENVUE(THAILAND) LTD.",
+      "person": "James",
+      "logo": "logo_left_010.png"
+    },
+    {
+      "seq": 10,
+      "name": "Khao Shong Industry 1979 Co., Ltd.",
+      "person": "Tom",
+      "logo": "logo_left_011.png"
+    },
+    {
+      "seq": 11,
+      "name": "GAMBOL/乖宝泰国",
+      "person": "James",
+      "logo": "logo_left_012.png"
+    },
+    {
+      "seq": 12,
+      "name": "Greater Pharma Co., Ltd.",
+      "person": "Wali",
+      "logo": "logo_left_013.png"
+    },
+    {
+      "seq": 13,
+      "name": "Thai Wah Public Company，简称 TWPC",
+      "person": "Wali",
+      "logo": "logo_left_014.png"
+    },
+    {
+      "seq": 14,
+      "name": "NUTRITION PROFESS PUBLIC COMPANY LIMITED.",
+      "person": "Wali",
+      "logo": "logo_left_015.png"
+    },
+    {
+      "seq": 15,
+      "name": "Banpong Novitate Co.， Ltd（bpnovitat）BPN",
+      "person": "Wali",
+      "logo": "logo_left_016.png"
+    },
+    {
+      "seq": 16,
+      "name": "Berli Jucker Foods Ltd.",
+      "person": "Wali",
+      "logo": "logo_left_017.png"
+    },
+    {
+      "seq": 17,
+      "name": "MADESCO Intelligence Co., Ltd",
+      "person": "Wali",
+      "logo": "logo_left_018.png"
+    },
+    {
+      "seq": 18,
+      "name": "Reckitt Benckiser Healthcare Manufacturing Thailand LTD",
+      "person": "Jacky",
+      "logo": "logo_left_019.png"
+    },
+    {
+      "seq": 19,
+      "name": "T.C. Pharmaceutical Industries Company Limited",
+      "person": "Wali",
+      "logo": "logo_left_020.png"
+    },
+    {
+      "seq": 20,
+      "name": "UNILEVER THAILAND",
+      "person": "Wali",
+      "logo": "logo_left_021.png"
+    },
+    {
+      "seq": 21,
+      "name": "OCTA FOODS COMPANY LIMITED",
+      "person": "Wali",
+      "logo": "logo_left_022.png"
+    },
+    {
+      "seq": 22,
+      "name": "OD INNOVACOSMEX",
+      "person": "Wali",
+      "logo": "logo_left_023.png"
+    },
+    {
+      "seq": 23,
+      "name": "Milott laboratories",
+      "person": "Jim",
+      "logo": "logo_left_024.png"
+    },
+    {
+      "seq": 24,
+      "name": "McCormick & Company, Inc（中国公司叫味好美）",
+      "person": "Tom",
+      "logo": "logo_left_025.png"
+    },
+    {
+      "seq": 25,
+      "name": "Chulafartech Co.， Ltd.",
+      "person": "James",
+      "logo": "logo_left_026.png"
+    },
+    {
+      "seq": 26,
+      "name": "Unike Bioceutics Co.， Ltd.",
+      "person": "Tom",
+      "logo": "logo_left_027.png"
+    },
+    {
+      "seq": 27,
+      "name": "R.X. Manufacturing Co.,Ltd",
+      "person": "James",
+      "logo": "logo_left_028.png"
+    },
+    {
+      "seq": 28,
+      "name": "King Stella Group Co.,Ltd.",
+      "person": "James",
+      "logo": "logo_left_029.png"
+    },
+    {
+      "seq": 29,
+      "name": "Greatest Pet Care Co., Ltd.",
+      "person": "Tom",
+      "logo": "logo_left_030.png"
+    },
+    {
+      "seq": 30,
+      "name": "Sea Value(UNICORD PUBLIC COMPANY LIMITED)",
+      "person": "James",
+      "logo": "logo_left_031.png"
+    },
+    {
+      "seq": 31,
+      "name": "UNICORD CO.LTD",
+      "person": "James",
+      "logo": "logo_left_032.png"
+    },
+    {
+      "seq": 32,
+      "name": "Giffarine/SKYLINE HEALTH CARE CO., LTD.",
+      "person": "Tom",
+      "logo": "logo_left_033.png"
+    },
+    {
+      "seq": 33,
+      "name": "CEO FACTORY THAILAND",
+      "person": "James",
+      "logo": "logo_left_034.png"
+    },
+    {
+      "seq": 34,
+      "name": "Sand-m global co., Ltd",
+      "person": "Tom",
+      "logo": "logo_left_035.png"
+    },
+    {
+      "seq": 35,
+      "name": "The Thai Dairy Industry Co.， Ltd.",
+      "person": "Jim",
+      "logo": "logo_left_036.png"
+    },
+    {
+      "seq": 36,
+      "name": "FOODSTAR CO., LTD.",
+      "person": "Tom",
+      "logo": "logo_left_037.png"
+    },
+    {
+      "seq": 37,
+      "name": "Perfect Companion Group （PCG）隶属于正大集团（Charoen Pokphand Group，简称CP Group）",
+      "person": "James",
+      "logo": "logo_left_038.png"
+    },
+    {
+      "seq": 38,
+      "name": "Nutrix Public Company Limited",
+      "person": "James",
+      "logo": "logo_left_039.png"
+    },
+    {
+      "seq": 39,
+      "name": "The Government Pharmaceutical Organization （GPO）",
+      "person": "Jim",
+      "logo": "logo_left_040.png"
+    },
+    {
+      "seq": 40,
+      "name": "DUCHESS CO., LTD.",
+      "person": "Jim",
+      "logo": "logo_left_041.png"
+    },
+    {
+      "seq": 41,
+      "name": "FONTERRA BRANDS LANKA (PVT) LTD",
+      "person": "Wali",
+      "logo": "logo_left_042.png"
+    },
+    {
+      "seq": 42,
+      "name": "Jemaluang Dairy Valley Sdn Bhd",
+      "person": "Jacky",
+      "logo": "logo_left_043.png"
+    },
+    {
+      "seq": 43,
+      "name": "JACOBS DOUWE EGBERTS",
+      "person": "Tom",
+      "logo": "logo_left_044.png"
+    },
+    {
+      "seq": 44,
+      "name": "ROOMI ENTERPRISES(PRIVATE)LTD",
+      "person": "Wali",
+      "logo": "logo_left_045.png"
+    },
+    {
+      "seq": 45,
+      "name": "IAC (IFTEKHAR AHMED & CO)",
+      "person": "Wali",
+      "logo": "logo_left_046.png"
+    },
+    {
+      "seq": 46,
+      "name": "SUPER SEVEN STARS",
+      "person": "Wali",
+      "logo": "logo_left_047.png"
+    },
+    {
+      "seq": 47,
+      "name": "Flexpack Systems",
+      "person": "Wali",
+      "logo": "logo_left_048.png"
+    },
+    {
+      "seq": 48,
+      "name": "Dovelac Nutritionals",
+      "person": "James",
+      "logo": "logo_left_049.png"
+    },
+    {
+      "seq": 49,
+      "name": "THE BASEFOOD COMPANY",
+      "person": "James",
+      "logo": "logo_left_050.png"
+    },
+    {
+      "seq": 50,
+      "name": "GRB",
+      "person": "James",
+      "logo": "logo_left_051.png"
+    },
+    {
+      "seq": 51,
+      "name": "NGWE LARB MINN FOOD AND NATURAL JUICE PRODUCTION",
+      "person": "Wali",
+      "logo": "logo_left_052.png"
+    },
+    {
+      "seq": 52,
+      "name": "cimory",
+      "person": "James",
+      "logo": "logo_left_053.png"
+    },
+    {
+      "seq": 53,
+      "name": "D2",
+      "person": "James",
+      "logo": "logo_left_054.png"
+    },
+    {
+      "seq": 54,
+      "name": "丰华生物科技",
+      "person": "James",
+      "logo": "logo_left_055.png"
+    },
+    {
+      "seq": 55,
+      "name": "Laive",
+      "person": "Jim",
+      "logo": "logo_left_056.png"
+    },
+    {
+      "seq": 56,
+      "name": "FLAVOUR MAKERS",
+      "person": "Wali",
+      "logo": "logo_left_057.png"
+    },
+    {
+      "seq": 57,
+      "name": "BRITANNIA INDUSTRIES LIMITED",
+      "person": "Wali",
+      "logo": "logo_left_058.png"
+    },
+    {
+      "seq": 58,
+      "name": "URC (Thailand) Co., Ltd",
+      "person": "James",
+      "logo": "logo_left_059.png"
+    },
+    {
+      "seq": 59,
+      "name": "UNILEVER THAI HOLDING CO LTD",
+      "person": "Wali",
+      "logo": "logo_left_060.png"
+    },
+    {
+      "seq": 60,
+      "name": "ROSARIOS DELICACIES",
+      "person": "Wali",
+      "logo": "logo_left_061.png"
+    },
+    {
+      "seq": 61,
+      "name": "F&B Nutrition Sdn. Bhd.",
+      "person": "Wali",
+      "logo": "logo_left_062.png"
+    }
+  ],
+  "potential": [
+    {
+      "seq": 1,
+      "name": "CHA THAI INTERNATION CO LTD(（ChaTraMue）",
+      "person": "Tom",
+      "logo": "logo_right_002.png"
+    },
+    {
+      "seq": 2,
+      "name": "F AND N DAIRIES/F&N Dairies (Thailand) Limited",
+      "person": "Mia",
+      "logo": "logo_right_003.png"
+    },
+    {
+      "seq": 3,
+      "name": "I TAIL CORPORATION PUBLIC COMPANY LI",
+      "person": "Mia",
+      "logo": "logo_right_004.png"
+    },
+    {
+      "seq": 4,
+      "name": "บจก.เนสท์เล่ (ไทย) NESTLE THAI LTD",
+      "person": "周洋",
+      "logo": "logo_right_005.png"
+    },
+    {
+      "seq": 5,
+      "name": "New Concept Product Co., Ltd.",
+      "person": "Mia",
+      "logo": "logo_right_006.png"
+    },
+    {
+      "seq": 6,
+      "name": "I.P. ONE COMPANY LIMITED CÔNG TY TNHH I P ONE VIỆT NAM",
+      "person": "Mia",
+      "logo": "logo_right_007.png"
+    },
+    {
+      "seq": 7,
+      "name": "KHAOLAOR LABORATORIES CO., LTD.(泰国考拉窝制药有限公司)",
+      "person": "Mia",
+      "logo": "logo_right_008.png"
+    },
+    {
+      "seq": 8,
+      "name": "DI-WELL GROUPS CO., LTD",
+      "person": "Mia",
+      "logo": "logo_right_009.png"
+    },
+    {
+      "seq": 9,
+      "name": "Nutrimaster Thailand",
+      "person": "Mia",
+      "logo": "logo_right_010.png"
+    },
+    {
+      "seq": 10,
+      "name": "Fancy world Co., Ltd.",
+      "person": "Mia",
+      "logo": "logo_right_011.png"
+    },
+    {
+      "seq": 11,
+      "name": "Biopharm Chemicals Co., Ltd.",
+      "person": "Mia",
+      "logo": "logo_right_012.png"
+    },
+    {
+      "seq": 12,
+      "name": "NUUI WORLD COMPANY LIMITED",
+      "person": "Mia",
+      "logo": "logo_right_013.png"
+    },
+    {
+      "seq": 13,
+      "name": "POSH MEDICA LIFETECH CO., LTD.",
+      "person": "Mia",
+      "logo": "logo_right_014.png"
+    },
+    {
+      "seq": 14,
+      "name": "GREEN TEA COMPANY LIMITED",
+      "person": "Mia",
+      "logo": "logo_right_015.png"
+    },
+    {
+      "seq": 15,
+      "name": "Bangkok Pharmaceutical Group /PHARMALAND 1982 CO LTD",
+      "person": "Mia",
+      "logo": "logo_right_016.png"
+    },
+    {
+      "seq": 16,
+      "name": "V.S.PHARMA (1971) Co.,Ltd.",
+      "person": "Mia",
+      "logo": "logo_right_017.png"
+    },
+    {
+      "seq": 17,
+      "name": "Plantae",
+      "person": "Mia",
+      "logo": "logo_right_018.png"
+    },
+    {
+      "seq": 18,
+      "name": "Dutch Lady Milk Industries Bhd (Factory)（Dutch Lady Malaysia）",
+      "person": "Jim",
+      "logo": "logo_right_019.png"
+    },
+    {
+      "seq": 19,
+      "name": "POWER ROOT MANUFACTURING SDN BHD",
+      "person": "Jim",
+      "logo": "logo_right_020.png"
+    },
+    {
+      "seq": 20,
+      "name": "HEI HWANG FOOD INDUSTRIES (M) SDN BHD",
+      "person": "Mia",
+      "logo": "logo_right_021.png"
+    },
+    {
+      "seq": 21,
+      "name": "SERBA WANGI SDN BHD",
+      "person": "Mia",
+      "logo": "logo_right_022.png"
+    },
+    {
+      "seq": 22,
+      "name": "Morning Arch Sdn Bhd",
+      "person": "Tom",
+      "logo": "logo_right_023.png"
+    },
+    {
+      "seq": 23,
+      "name": "Aik Cheong Coffee Roaster Sdn. Bhd",
+      "person": "Mia",
+      "logo": "logo_right_024.png"
+    },
+    {
+      "seq": 24,
+      "name": "Guan Tong Industries Sdn Bhd",
+      "person": "Mia",
+      "logo": "logo_right_025.png"
+    },
+    {
+      "seq": 25,
+      "name": "Farm Fresh Berhad",
+      "person": "Mia",
+      "logo": "logo_right_026.png"
+    },
+    {
+      "seq": 26,
+      "name": "Godrej Consumer Products Limited",
+      "person": "Jacky",
+      "logo": "logo_right_027.png"
+    },
+    {
+      "seq": 27,
+      "name": "Encube Ethicals Private Limited",
+      "person": "Jacky",
+      "logo": "logo_right_028.png"
+    },
+    {
+      "seq": 28,
+      "name": "FDC Limited",
+      "person": "Jacky",
+      "logo": "logo_right_029.png"
+    },
+    {
+      "seq": 29,
+      "name": "Intas Pharmaceuticals Ltd",
+      "person": "Jacky",
+      "logo": "logo_right_030.png"
+    },
+    {
+      "seq": 30,
+      "name": "PARSONS NUTRITIONALS PVT LTD",
+      "person": "Jacky",
+      "logo": "logo_right_031.png"
+    },
+    {
+      "seq": 31,
+      "name": "IND SWIFT LTD",
+      "person": "Jacky",
+      "logo": "logo_right_032.png"
+    },
+    {
+      "seq": 32,
+      "name": "ADCOCK INGRAM PHARMA PRIVATE LIMITED",
+      "person": "Jim",
+      "logo": "logo_right_033.png"
+    },
+    {
+      "seq": 33,
+      "name": "FERRING PHARMACEUTICALS PVT LTD",
+      "person": "Jim",
+      "logo": "logo_right_034.png"
+    },
+    {
+      "seq": 34,
+      "name": "Senso Foods Pvt Ltd",
+      "person": "Mia",
+      "logo": "logo_right_035.png"
+    },
+    {
+      "seq": 35,
+      "name": "PT LESAFFRE SARI NUSA",
+      "person": "James",
+      "logo": "logo_right_036.png"
+    },
+    {
+      "seq": 36,
+      "name": "PT MOTASA INDONESIA",
+      "person": "James",
+      "logo": "logo_right_037.png"
+    },
+    {
+      "seq": 37,
+      "name": "PT LASALLEFOOD INDONESIA",
+      "person": "James",
+      "logo": "logo_right_038.png"
+    },
+    {
+      "seq": 38,
+      "name": "PT Sinde Budi Sentosa",
+      "person": "James",
+      "logo": "logo_right_039.png"
+    },
+    {
+      "seq": 39,
+      "name": "PT Garudafood Putra Putri Jaya Tbk",
+      "person": "Tom",
+      "logo": "logo_right_040.png"
+    },
+    {
+      "seq": 40,
+      "name": "PT INTERNUSA FOOD",
+      "person": "Mia",
+      "logo": "logo_right_041.png"
+    },
+    {
+      "seq": 41,
+      "name": "PT TRICORE UTAMA",
+      "person": "Mia",
+      "logo": ""
+    },
+    {
+      "seq": 42,
+      "name": "CÔNG TY CỔ PHẦN SANOFI VIỆT NAM",
+      "person": "James",
+      "logo": "logo_right_043.png"
+    },
+    {
+      "seq": 43,
+      "name": "Future Generation Co. Ltd（FGC）",
+      "person": "James",
+      "logo": "logo_right_044.png"
+    },
+    {
+      "seq": 44,
+      "name": "越南中原咖啡集团（Trung Nguyen Group）",
+      "person": "James",
+      "logo": "logo_right_045.png"
+    },
+    {
+      "seq": 45,
+      "name": "CÔNG TY TNHH TRẦN QUANG VIỆT NAM （Trần Quang Coffee）",
+      "person": "James",
+      "logo": "logo_right_046.png"
+    },
+    {
+      "seq": 46,
+      "name": "CÔNG TY CỔ PHẦN PHINDELI",
+      "person": "James",
+      "logo": "logo_right_047.png"
+    },
+    {
+      "seq": 47,
+      "name": "Masan Group（CÔNG TY CỔ PHẦN TẬP ĐOÀN MASAN）",
+      "person": "James",
+      "logo": "logo_right_048.png"
+    },
+    {
+      "seq": 48,
+      "name": "TỔNG CÔNG TY CÀ PHÊ VIỆT NAM(VINACAFE)-VIETNAM NATIONAL COFFEE CORPORATION",
+      "person": "James",
+      "logo": "logo_right_049.png"
+    },
+    {
+      "seq": 49,
+      "name": "CÔNG TY CỔ PHẦN THỰC PHẨM DINH DƯỠNG NUTIFOOD BÌNH DƯƠNG（Nutifood）",
+      "person": "James",
+      "logo": "logo_right_050.png"
+    },
+    {
+      "seq": 50,
+      "name": "Ban Me Gold Co., Ltd（CÔNG TY TNHH VÀNG BAN MÊ）",
+      "person": "James",
+      "logo": "logo_right_051.png"
+    },
+    {
+      "seq": 51,
+      "name": "CÔNG TY TNHH I P ONE VIỆT NAM",
+      "person": "James",
+      "logo": "logo_right_052.png"
+    },
+    {
+      "seq": 52,
+      "name": "LIWAYWAY MARKETING CORPORATION Liwayway Holdings Company Limited",
+      "person": "James",
+      "logo": "logo_right_053.png"
+    },
+    {
+      "seq": 53,
+      "name": "Universal Robina Corporation",
+      "person": "James",
+      "logo": "logo_right_054.png"
+    },
+    {
+      "seq": 54,
+      "name": "FOOD EMPIRE HOLDINGS LIMITED",
+      "person": "James",
+      "logo": "logo_right_055.png"
+    },
+    {
+      "seq": 55,
+      "name": "余仁生（Eu Yan Sang） EU YAN SANG MARKETING PTE LTD",
+      "person": "James",
+      "logo": "logo_right_056.png"
+    },
+    {
+      "seq": 56,
+      "name": "Gold Kili Trading Enterprise (Singapore)",
+      "person": "James",
+      "logo": "logo_right_057.png"
+    }
+  ]
+}
