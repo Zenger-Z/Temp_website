@@ -29,6 +29,9 @@
   --color-tag-mia: #52c41a;
 }
 
+/* ── Touch-friendly utilities ── */
+.card { -webkit-tap-highlight-color: transparent; }
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -323,52 +326,74 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ── Mobile: 2-column vertical cards ── */
+/* ── Mobile: 2-column big touch-friendly cards ── */
 @media (max-width: 639px) {
   .header h1 { font-size: 16px; }
   .toolbar { top: 49px; padding: 10px 12px; }
   .tabs { top: 91px; }
-  .content { padding: 10px; }
+  .content { padding: 12px; }
 
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
+    gap: 10px;
   }
 
   .card {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 16px 10px 12px;
-    min-height: 210px;
+    padding: 22px 14px 16px;
+    min-height: 250px;
     gap: 0;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  .card:hover {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.14);
+    transform: translateY(-3px);
+  }
+  .card:active {
+    transform: scale(0.96);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
   }
 
   .card .logo-wrap {
-    width: 88px;
-    height: 88px;
-    margin-bottom: 12px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 16px;
     flex-shrink: 0;
-    border-radius: var(--radius-md);
+    border-radius: 14px;
+    background: linear-gradient(135deg, #fafafa 0%, #f0f0f0 100%);
+    border: 1.5px solid #eaeaea;
+  }
+  .card .logo-wrap img {
+    max-width: 88%;
+    max-height: 88%;
   }
   .card .logo-wrap .logo-placeholder {
-    width: 48px; height: 48px; font-size: 22px;
+    width: 56px; height: 56px; font-size: 24px;
+    background: linear-gradient(135deg, #e6f4ff 0%, #bae0ff 100%);
+    color: #0958d9;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.04);
   }
 
   .card .name-en {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.4;
     -webkit-line-clamp: 2;
+    font-weight: 700;
   }
   .card .name-cn {
-    font-size: 11px;
-    margin-top: 2px;
+    font-size: 13px;
+    margin-top: 4px;
     -webkit-line-clamp: 1;
+    font-weight: 400;
   }
   .card .name-single {
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 0;
     -webkit-line-clamp: 2;
+    font-weight: 700;
   }
 
   .card .name-block {
@@ -377,27 +402,32 @@ body {
     min-width: 0;
     align-items: center;
     justify-content: center;
+    gap: 4px;
   }
 
   .card .person-tag {
-    font-size: 10px;
-    padding: 2px 10px;
+    font-size: 12px;
+    padding: 4px 14px;
     margin-top: auto;
     align-self: center;
+    border-radius: 14px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
   }
 
-  .tab-btn { padding: 8px 16px; font-size: 14px; }
+  .tab-btn { padding: 10px 20px; font-size: 14px; }
 }
 @media (max-width: 380px) {
-  .card-grid { gap: 6px; }
-  .content { padding: 8px; }
-  .card { padding: 14px 8px 10px; min-height: 190px; }
-  .card .logo-wrap { width: 76px; height: 76px; margin-bottom: 10px; }
-  .card .logo-wrap .logo-placeholder { width: 40px; height: 40px; font-size: 20px; }
-  .card .name-en { font-size: 11px; }
-  .card .name-cn { font-size: 10px; }
-  .card .name-single { font-size: 11px; }
-  .card .person-tag { font-size: 10px; padding: 2px 8px; }
+  .card-grid { gap: 8px; }
+  .content { padding: 10px; }
+  .card { padding: 18px 10px 12px; min-height: 220px; }
+  .card .logo-wrap { width: 84px; height: 84px; margin-bottom: 12px; }
+  .card .logo-wrap .logo-placeholder { width: 48px; height: 48px; font-size: 22px; }
+  .card .name-en { font-size: 13px; }
+  .card .name-cn { font-size: 12px; }
+  .card .name-single { font-size: 13px; }
+  .card .person-tag { font-size: 11px; padding: 3px 12px; }
 }
 </style>
 </head>
@@ -484,26 +514,17 @@ function renderCards() {
   const person = document.getElementById('personFilter').value;
   const list = currentTab === 'visited' ? allData.visited : allData.potential;
 
-  // Smart name splitting: avoid duplicate Chinese display
-  function splitName(name, nameCn) {
-    const cnChars = name.match(/[\u4e00-\u9fff]+/g);
-    const extractedCn = cnChars ? cnChars.join('') : '';
-    if (extractedCn && nameCn && extractedCn === nameCn) {
-      // Name already contains Chinese, strip it for clean EN display
-      let en = name.replace(/[\u4e00-\u9fff]+/g, '').replace(/[（()）\-–/]\s*/g, ' ').replace(/\s{2,}/g, ' ').trim();
-      return { en, cn: nameCn };
-    }
-    if (!extractedCn && nameCn) {
-      return { en: name, cn: nameCn };
-    }
-    return { en: name, cn: nameCn || '' };
+  // Clean EN name by stripping Chinese chars and separators
+  function cleanEn(name) {
+    return name.replace(/[\u4e00-\u9fff]+/g, ' ').replace(/[（()）\-–/]\s*/g, ' ').replace(/\s{2,}/g, ' ').trim();
   }
 
   let filtered = list;
   if (search) {
     filtered = filtered.filter(c => {
-      const s = splitName(c.name, c.name_cn || '');
-      return c.name.toLowerCase().includes(search) || (s.cn && s.cn.includes(search));
+      const raw = c.name.toLowerCase();
+      const cn = (c.name_cn || '').toLowerCase();
+      return raw.includes(search) || cn.includes(search);
     });
   }
   if (person) {
@@ -528,10 +549,11 @@ function renderCards() {
       ? `<img src="image/propak-logos/${c.logo}" alt="${c.name}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=logo-placeholder>${c.name.charAt(0)}</div>'">`
       : `<div class="logo-placeholder">${c.name.charAt(0)}</div>`;
 
-    const s = splitName(c.name, c.name_cn || '');
-    const nameHtml = s.cn
-      ? `<div class="name-en">${s.en}</div><div class="name-cn">${s.cn}</div>`
-      : `<div class="name-single">${s.en}</div>`;
+    const en = cleanEn(c.name) || c.name;
+    const cn = c.name_cn || '';
+    const nameHtml = cn
+      ? `<div class="name-en">${en}</div><div class="name-cn">${cn}</div>`
+      : `<div class="name-single">${en}</div>`;
 
     const personTag = c.person ? `<span class="person-tag ${tagClass(c.person)}">${c.person}</span>` : '';
 
