@@ -288,6 +288,8 @@ body {
   flex-direction: column;
   align-items: center;
   flex: 1;
+  width: 100%;
+  min-width: 0;
 }
 .card .person-tag {
   font-size: 12px;
@@ -321,7 +323,7 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ── Mobile: single column horizontal cards ── */
+/* ── Mobile: 2-column vertical cards ── */
 @media (max-width: 639px) {
   .header h1 { font-size: 16px; }
   .toolbar { top: 49px; padding: 10px 12px; }
@@ -329,55 +331,59 @@ body {
   .content { padding: 10px; }
 
   .card-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 8px;
   }
 
   .card {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    text-align: left;
-    padding: 14px;
-    min-height: 0;
-    gap: 14px;
+    text-align: center;
+    padding: 16px 10px 12px;
+    min-height: 210px;
+    gap: 0;
   }
 
   .card .logo-wrap {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 0;
+    width: 88px;
+    height: 88px;
+    margin-bottom: 12px;
     flex-shrink: 0;
     border-radius: var(--radius-md);
   }
   .card .logo-wrap .logo-placeholder {
-    width: 44px; height: 44px; font-size: 20px;
+    width: 48px; height: 48px; font-size: 22px;
   }
 
   .card .name-en {
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 1.4;
     -webkit-line-clamp: 2;
   }
   .card .name-cn {
-    font-size: 12px;
-    color: var(--color-text-secondary);
+    font-size: 11px;
+    margin-top: 2px;
+    -webkit-line-clamp: 1;
   }
   .card .name-single {
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 0;
     -webkit-line-clamp: 2;
   }
 
   .card .name-block {
     flex: 1;
+    width: 100%;
     min-width: 0;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
   }
 
   .card .person-tag {
-    font-size: 11px;
+    font-size: 10px;
     padding: 2px 10px;
-    margin-top: 4px;
-    align-self: flex-start;
+    margin-top: auto;
+    align-self: center;
   }
 
   .tab-btn { padding: 8px 16px; font-size: 14px; }
@@ -385,12 +391,12 @@ body {
 @media (max-width: 380px) {
   .card-grid { gap: 6px; }
   .content { padding: 8px; }
-  .card { padding: 12px; gap: 10px; }
-  .card .logo-wrap { width: 68px; height: 68px; }
-  .card .logo-wrap .logo-placeholder { width: 36px; height: 36px; font-size: 18px; }
-  .card .name-en { font-size: 13px; }
-  .card .name-cn { font-size: 11px; }
-  .card .name-single { font-size: 13px; }
+  .card { padding: 14px 8px 10px; min-height: 190px; }
+  .card .logo-wrap { width: 76px; height: 76px; margin-bottom: 10px; }
+  .card .logo-wrap .logo-placeholder { width: 40px; height: 40px; font-size: 20px; }
+  .card .name-en { font-size: 11px; }
+  .card .name-cn { font-size: 10px; }
+  .card .name-single { font-size: 11px; }
   .card .person-tag { font-size: 10px; padding: 2px 8px; }
 }
 </style>
@@ -478,11 +484,26 @@ function renderCards() {
   const person = document.getElementById('personFilter').value;
   const list = currentTab === 'visited' ? allData.visited : allData.potential;
 
+  // Smart name splitting: avoid duplicate Chinese display
+  function splitName(name, nameCn) {
+    const cnChars = name.match(/[\u4e00-\u9fff]+/g);
+    const extractedCn = cnChars ? cnChars.join('') : '';
+    if (extractedCn && nameCn && extractedCn === nameCn) {
+      // Name already contains Chinese, strip it for clean EN display
+      let en = name.replace(/[\u4e00-\u9fff]+/g, '').replace(/[（()）\-–/]\s*/g, ' ').replace(/\s{2,}/g, ' ').trim();
+      return { en, cn: nameCn };
+    }
+    if (!extractedCn && nameCn) {
+      return { en: name, cn: nameCn };
+    }
+    return { en: name, cn: nameCn || '' };
+  }
+
   let filtered = list;
   if (search) {
     filtered = filtered.filter(c => {
-      const cn = c.name_cn || '';
-      return c.name.toLowerCase().includes(search) || cn.includes(search);
+      const s = splitName(c.name, c.name_cn || '');
+      return c.name.toLowerCase().includes(search) || (s.cn && s.cn.includes(search));
     });
   }
   if (person) {
@@ -507,12 +528,10 @@ function renderCards() {
       ? `<img src="image/propak-logos/${c.logo}" alt="${c.name}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=logo-placeholder>${c.name.charAt(0)}</div>'">`
       : `<div class="logo-placeholder">${c.name.charAt(0)}</div>`;
 
-    let nameHtml;
-    if (c.name_cn) {
-      nameHtml = `<div class="name-en">${c.name}</div><div class="name-cn">${c.name_cn}</div>`;
-    } else {
-      nameHtml = `<div class="name-single">${c.name}</div>`;
-    }
+    const s = splitName(c.name, c.name_cn || '');
+    const nameHtml = s.cn
+      ? `<div class="name-en">${s.en}</div><div class="name-cn">${s.cn}</div>`
+      : `<div class="name-single">${s.en}</div>`;
 
     const personTag = c.person ? `<span class="person-tag ${tagClass(c.person)}">${c.person}</span>` : '';
 
