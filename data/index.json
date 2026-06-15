@@ -96,6 +96,15 @@
     "date": "2026-06-05",
     "readTime": 22,
     "prevId": "propak-asia-2026-travel",
+    "nextId": "propak-asia-2026-summary"
+  },
+  {
+    "id": "propak-asia-2026-summary",
+    "title": "ProPak Asia 2026 参展总结报告",
+    "category": "其他报告",
+    "date": "2026-06-14",
+    "readTime": 20,
+    "prevId": "thailand-potential-customers",
     "nextId": null
   }
 ]
