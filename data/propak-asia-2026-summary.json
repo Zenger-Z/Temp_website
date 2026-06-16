@@ -27,14 +27,6 @@
       "html": "<div style=\"display:flex;gap:12px;margin:20px 0 28px;flex-wrap:wrap\"><div style=\"flex:1;min-width:200px\"><figure style=\"height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/设备进场越早越好 防止其他展位搭好了叉车不好进.jpg\" alt=\"设备进场越早越好 防止其他展位搭好了叉车不好进\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><div style=\"font-size:12px;color:#1677ff;margin-top:8px;text-align:center;font-weight:500\">设备进场越早越好 防止其他展位搭好了叉车不好进</div></div><div style=\"flex:1;min-width:200px\"><figure style=\"height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/第一天展台搭建进度.jpg\" alt=\"第一天展台搭建进度\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><div style=\"font-size:12px;color:#1677ff;margin-top:8px;text-align:center;font-weight:500\">第一天展台搭建进度</div></div></div>"
     },
     {
-      "type": "p",
-      "text": "展台设计中尽量使用硬质 KT 板替代贴纸。本次展台部分贴纸在展会期间起皱，影响展台形象。后续全部改用硬质 KT 板，外观更整洁耐用。"
-    },
-    {
-      "type": "html",
-      "html": "<div style=\"margin:20px 0 28px\"><figure style=\"height:320px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee\"><img src=\"image/propak-summary/展台设计中尽量使用硬质 KT 板替代贴纸 贴纸容易起皱.jpg\" alt=\"展台设计中尽量使用硬质 KT 板替代贴纸 贴纸容易起皱\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><div style=\"font-size:12px;color:#1677ff;margin-top:8px;text-align:center;font-weight:500\">展台设计中尽量使用硬质 KT 板替代贴纸 贴纸容易起皱</div></div>"
-    },
-    {
       "type": "h3",
       "text": "1.2 物流与包装"
     },
@@ -76,11 +68,7 @@
     },
     {
       "type": "html",
-      "html": "<div style=\"margin:20px 0 28px\"><figure style=\"height:320px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee\"><img src=\"image/propak-summary/设备接电不可以拆除展商的电箱 不给送电.jpg\" alt=\"设备接电不可以拆除展商的电箱 不给送电\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><div style=\"font-size:12px;color:#1677ff;margin-top:8px;text-align:center;font-weight:500\">设备接电不可以拆除展商的电箱 不给送电</div></div>"
-    },
-    {
-      "type": "html",
-      "html": "<div style=\"margin:20px 0 28px\"><figure style=\"height:320px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee\"><img src=\"image/propak-summary/场馆内电气接口.jpg\" alt=\"场馆内电气接口\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><div style=\"font-size:12px;color:#1677ff;margin-top:8px;text-align:center;font-weight:500\">场馆内电气接口</div></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:20px 0 28px;flex-wrap:wrap\"><div style=\"flex:1;min-width:200px\"><figure style=\"height:320px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee\"><img src=\"image/propak-summary/设备接电不可以拆除展商的电箱 不给送电.jpg\" alt=\"设备接电不可以拆除展商的电箱 不给送电\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><div style=\"font-size:12px;color:#1677ff;margin-top:8px;text-align:center;font-weight:500\">设备接电不可以拆除展商的电箱 不给送电</div></div><div style=\"flex:1;min-width:200px\"><figure style=\"height:320px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee\"><img src=\"image/propak-summary/场馆内电气接口.jpg\" alt=\"场馆内电气接口\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><div style=\"font-size:12px;color:#1677ff;margin-top:8px;text-align:center;font-weight:500\">场馆内电气接口</div></div></div>"
     },
     {
       "type": "h3",
@@ -267,7 +255,19 @@
     },
     {
       "type": "h3",
-      "text": "2.7 展台隐私安全"
+      "text": "2.7 搭建材料"
+    },
+    {
+      "type": "p",
+      "text": "展台设计中尽量使用硬质 KT 板替代贴纸。本次展台部分贴纸在展会期间起皱，影响展台形象。后续全部改用硬质 KT 板，外观更整洁耐用。"
+    },
+    {
+      "type": "html",
+      "html": "<div style=\"margin:20px 0 28px\"><figure style=\"height:320px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee\"><img src=\"image/propak-summary/展台设计中尽量使用硬质 KT 板替代贴纸 贴纸容易起皱.jpg\" alt=\"展台设计中尽量使用硬质 KT 板替代贴纸 贴纸容易起皱\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><div style=\"font-size:12px;color:#1677ff;margin-top:8px;text-align:center;font-weight:500\">展台设计中尽量使用硬质 KT 板替代贴纸 贴纸容易起皱</div></div>"
+    },
+    {
+      "type": "h3",
+      "text": "2.8 展台隐私安全"
     },
     {
       "type": "p",
