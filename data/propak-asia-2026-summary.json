@@ -3,7 +3,7 @@
   "title": "ProPak Asia 2026 参展总结报告",
   "date": "2026-06-14",
   "tag": "展会总结",
-  "summary": "基于72张现场照片的系统性参展复盘。分为仅一JOYEA实操经验（搭建、物流、电气、设备、撤展、展台位置）与其它展商设计参考（白色灯光、吊旗立柱、空间布局、创意手法、灯光Logo、友商展台、反面案例）两大板块，图文并茂，附未来改进建议。",
+  "summary": "基于近90张现场照片的系统性参展复盘。分为仅一JOYEA实操经验（搭建、物流、电气、设备、撤展、展台位置、展会事项）与展台设计改进方向、其他展商设计参考三大板块，图文并茂，每节附改进建议。",
   "category": "其他报告",
   "content": [
     {
@@ -20,19 +20,11 @@
     },
     {
       "type": "p",
-      "text": "设备进场通道在搭建初期相对畅通，但后期其他展位搭建完成后叉车无法通行。设备进场越早越好。核心设备应在搭建首日上午优先安排进场，列为第一优先级任务。"
+      "text": "设备进场通道在搭建初期相对畅通，但后期其他展位搭建完成后叉车无法通行。设备进场越早越好，核心设备应在搭建首日上午优先安排进场，列为第一优先级任务。"
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/设备进场越早越好 防止其他展位搭好了叉车不好进.jpg\" alt=\"设备进场越早越好 防止其他展位搭好了叉车不好进\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">设备进场越早越好 防止其他展位搭好了叉车不好进</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/第一天展台搭建进度.jpg\" alt=\"第一天展台搭建进度\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">第一天展台搭建进度</figcaption></figure></div>"
-    },
-    {
-      "type": "html",
-      "html": "<table>\n<thead><tr><th>问题</th><th>影响</th><th>改进措施</th></tr></thead>\n<tbody>\n<tr><td>打包服务排队到次日</td><td>撤展延迟</td><td>提前一天预约，备用自行打包方案</td></tr>\n<tr><td>设备进场时机偏晚</td><td>叉车无法通过</td><td>首批进场</td></tr>\n<tr><td>电器箱钥匙不够</td><td>临时配钥匙</td><td>标配3把以上</td></tr>\n<tr><td>未准备Y形端子</td><td>接电被拒</td><td>提前调研场馆规范，备足端子</td></tr>\n<tr><td>贴纸起皱</td><td>展台形象受损</td><td>使用硬质KT板替代贴纸</td></tr>\n<tr><td>未准备快拆气管接头</td><td>气路连接耗时</td><td>准备各口径快拆接头</td></tr>\n<tr><td>LED电视遮挡射灯</td><td>海报区光照不足</td><td>调整安装位置或增设补光灯</td></tr>\n<tr><td>接线管接头未留档</td><td>下次搭建接线参考缺失</td><td>撤展前逐一拍照，打印放入电机箱</td></tr>\n<tr><td>展台LOGO辨识度不足</td><td>远距离不可见</td><td>采用大尺寸灯箱LOGO方案</td></tr>\n<tr><td>背立面无展位号</td><td>后方观众无法识别</td><td>增设立面展位号牌</td></tr>\n<tr><td>储藏间未安装门锁</td><td>物料存在安全隐患</td><td>将门锁安装纳入搭建验收清单</td></tr>\n<tr><td>设备遮罩布尺寸不足</td><td>无法完全遮盖设备</td><td>按设备周长×高度重新定制</td></tr>\n</tbody>\n</table>"
-    },
-    {
-      "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/设备进场越早越好 防止其他展位搭好了叉车不好进.jpg\" alt=\"设备进场越早越好 防止其他展位搭好了叉车不好进\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">设备进场越早越好 防止其他展位搭好了叉车不好进</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/第一天展台搭建进度.jpg\" alt=\"第一天展台搭建进度\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">第一天展台搭建进度</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/设备进场越早越好 防止其他展位搭好了叉车不好进.jpg\" alt=\"设备进场越早越好 防止其他展位搭好了叉车不好进\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">设备进场越早越好 防止其他展位搭好了叉车不好进</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/第一天展台搭建进度.jpg\" alt=\"第一天展台搭建进度\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">第一天展台搭建进度</figcaption></figure></div>"
     },
     {
       "type": "h3",
@@ -44,15 +36,7 @@
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/H1 馆打包排到第二天上午 栈板要提前一天就送到门口 1.jpg\" alt=\"H1 馆打包排到第二天上午 栈板要提前一天就送到门口 1\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">H1 馆打包排到第二天上午 栈板要提前一天就送到门口 1</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/H1 馆打包排到第二天上午 栈板要提前一天就送到门口 2.jpg\" alt=\"H1 馆打包排到第二天上午 栈板要提前一天就送到门口 2\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">H1 馆打包排到第二天上午 栈板要提前一天就送到门口 2</figcaption></figure></div>"
-    },
-    {
-      "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/H1 馆打包排到第二天上午 栈板要提前一天就送到门口 3.jpg\" alt=\"H1 馆打包排到第二天上午 栈板要提前一天就送到门口 3\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">H1 馆打包排到第二天上午 栈板要提前一天就送到门口 3</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/H1 馆打包排到第二天上午 栈板要提前一天就送到门口 4.jpg\" alt=\"H1 馆打包排到第二天上午 栈板要提前一天就送到门口 4\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">H1 馆打包排到第二天上午 栈板要提前一天就送到门口 4</figcaption></figure></div>"
-    },
-    {
-      "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/H1 馆打包排到第二天上午 栈板要提前一天就送到门口 5.jpg\" alt=\"H1 馆打包排到第二天上午 栈板要提前一天就送到门口 5\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">H1 馆打包排到第二天上午 栈板要提前一天就送到门口 5</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/H1 馆打包排到第二天上午 栈板要提前一天就送到门口 6.jpg\" alt=\"H1 馆打包排到第二天上午 栈板要提前一天就送到门口 6\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">H1 馆打包排到第二天上午 栈板要提前一天就送到门口 6</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/H1 馆打包排到第二天上午 栈板要提前一天就送到门口 1.jpg\" alt=\"H1 馆打包排到第二天上午 栈板要提前一天就送到门口 1\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">H1 馆打包排到第二天上午 栈板要提前一天就送到门口 1</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/H1 馆打包排到第二天上午 栈板要提前一天就送到门口 2.jpg\" alt=\"H1 馆打包排到第二天上午 栈板要提前一天就送到门口 2\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">H1 馆打包排到第二天上午 栈板要提前一天就送到门口 2</figcaption></figure></div>"
     },
     {
       "type": "p",
@@ -60,7 +44,7 @@
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/准备硬质箱子加托盘 省的每次都要很多小箱子麻烦 1.jpg\" alt=\"准备硬质箱子加托盘 省的每次都要很多小箱子麻烦 1\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">准备硬质箱子加托盘 省的每次都要很多小箱子麻烦 1</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/准备硬质箱子加托盘 省的每次都要很多小箱子麻烦 2.jpg\" alt=\"准备硬质箱子加托盘 省的每次都要很多小箱子麻烦 2\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">准备硬质箱子加托盘 省的每次都要很多小箱子麻烦 2</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/准备硬质箱子加托盘 省的每次都要很多小箱子麻烦 1.jpg\" alt=\"准备硬质箱子加托盘 省的每次都要很多小箱子麻烦 1\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">准备硬质箱子加托盘 省的每次都要很多小箱子麻烦 1</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/准备硬质箱子加托盘 省的每次都要很多小箱子麻烦 2.jpg\" alt=\"准备硬质箱子加托盘 省的每次都要很多小箱子麻烦 2\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">准备硬质箱子加托盘 省的每次都要很多小箱子麻烦 2</figcaption></figure></div>"
     },
     {
       "type": "p",
@@ -68,7 +52,7 @@
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/设备木箱发货单 1.jpg\" alt=\"设备木箱发货单 1\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">设备木箱发货单 1</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/设备木箱发货单 2.jpg\" alt=\"设备木箱发货单 2\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">设备木箱发货单 2</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/设备木箱发货单 1.jpg\" alt=\"设备木箱发货单 1\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">设备木箱发货单 1</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/设备木箱发货单 2.jpg\" alt=\"设备木箱发货单 2\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">设备木箱发货单 2</figcaption></figure></div>"
     },
     {
       "type": "h3",
@@ -80,19 +64,15 @@
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/设备接电要使用Y 形端子.jpg\" alt=\"设备接电要使用Y 形端子\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">设备接电要使用Y 形端子</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/设备接电要使用 Y 形端子 2.jpg\" alt=\"设备接电要使用 Y 形端子 2\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">设备接电要使用 Y 形端子 2</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/设备接电要使用Y 形端子.jpg\" alt=\"设备接电要使用Y 形端子\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">设备接电要使用Y 形端子</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/设备接电要使用 Y 形端子 2.jpg\" alt=\"设备接电要使用 Y 形端子 2\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">设备接电要使用 Y 形端子 2</figcaption></figure></div>"
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/设备接电要使用Y 形端子 3.jpg\" alt=\"设备接电要使用Y 形端子 3\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">设备接电要使用Y 形端子 3</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/设备接电不可以拆除展商的电箱 不给送电.jpg\" alt=\"设备接电不可以拆除展商的电箱 不给送电\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">设备接电不可以拆除展商的电箱 不给送电</figcaption></figure></div>"
+      "html": "<figure style=\"margin:12px 0;height:320px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee\"><img src=\"image/propak-summary/设备接电不可以拆除展商的电箱 不给送电.jpg\" alt=\"设备接电不可以拆除展商的电箱 不给送电\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">设备接电不可以拆除展商的电箱 不给送电</figcaption>"
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/设备接电要使用Y 形端子 3.jpg\" alt=\"设备接电要使用Y 形端子 3\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">设备接电要使用Y 形端子 3</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/设备接电不可以拆除展商的电箱 不给送电.jpg\" alt=\"设备接电不可以拆除展商的电箱 不给送电\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">设备接电不可以拆除展商的电箱 不给送电</figcaption></figure></div>"
-    },
-    {
-      "type": "html",
-      "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/场馆内电气接口.jpg\" alt=\"场馆内电气接口\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">场馆内电气接口</figcaption></figure>"
+      "html": "<figure style=\"margin:12px 0;height:320px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee\"><img src=\"image/propak-summary/场馆内电气接口.jpg\" alt=\"场馆内电气接口\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">场馆内电气接口</figcaption>"
     },
     {
       "type": "h3",
@@ -111,31 +91,19 @@
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/充填机电器箱钥匙多买几把.jpg\" alt=\"充填机电器箱钥匙多买几把\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">充填机电器箱钥匙多买几把</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/准备各个口径的快拆气管接头.jpg\" alt=\"准备各个口径的快拆气管接头\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">准备各个口径的快拆气管接头</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/充填机电器箱钥匙多买几把.jpg\" alt=\"充填机电器箱钥匙多买几把\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">充填机电器箱钥匙多买几把</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/准备各个口径的快拆气管接头.jpg\" alt=\"准备各个口径的快拆气管接头\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">准备各个口径的快拆气管接头</figcaption></figure></div>"
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/充填机电器箱钥匙多买几把.jpg\" alt=\"充填机电器箱钥匙多买几把\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">充填机电器箱钥匙多买几把</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/准备各个口径的快拆气管接头.jpg\" alt=\"准备各个口径的快拆气管接头\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">准备各个口径的快拆气管接头</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/充填机倾倒标识提示倾倒 设备未见异常.jpg\" alt=\"充填机倾倒标识提示倾倒 设备未见异常\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">充填机倾倒标识提示倾倒 设备未见异常</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/主机未显示倾倒.jpg\" alt=\"主机未显示倾倒\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">主机未显示倾倒</figcaption></figure></div>"
     },
     {
       "type": "html",
-      "html": "<table>\n<thead><tr><th>问题</th><th>影响</th><th>改进措施</th></tr></thead>\n<tbody>\n<tr><td>打包服务排队到次日</td><td>撤展延迟</td><td>提前一天预约，备用自行打包方案</td></tr>\n<tr><td>设备进场时机偏晚</td><td>叉车无法通过</td><td>首批进场</td></tr>\n<tr><td>电器箱钥匙不够</td><td>临时配钥匙</td><td>标配3把以上</td></tr>\n<tr><td>未准备Y形端子</td><td>接电被拒</td><td>提前调研场馆规范，备足端子</td></tr>\n<tr><td>贴纸起皱</td><td>展台形象受损</td><td>使用硬质KT板替代贴纸</td></tr>\n<tr><td>未准备快拆气管接头</td><td>气路连接耗时</td><td>准备各口径快拆接头</td></tr>\n<tr><td>LED电视遮挡射灯</td><td>海报区光照不足</td><td>调整安装位置或增设补光灯</td></tr>\n<tr><td>接线管接头未留档</td><td>下次搭建接线参考缺失</td><td>撤展前逐一拍照，打印放入电机箱</td></tr>\n<tr><td>展台LOGO辨识度不足</td><td>远距离不可见</td><td>采用大尺寸灯箱LOGO方案</td></tr>\n<tr><td>背立面无展位号</td><td>后方观众无法识别</td><td>增设立面展位号牌</td></tr>\n<tr><td>储藏间未安装门锁</td><td>物料存在安全隐患</td><td>将门锁安装纳入搭建验收清单</td></tr>\n<tr><td>设备遮罩布尺寸不足</td><td>无法完全遮盖设备</td><td>按设备周长×高度重新定制</td></tr>\n</tbody>\n</table>"
+      "html": "<figure style=\"margin:12px 0;height:320px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee\"><img src=\"image/propak-summary/电视机的 USB 带延长线方便使用.jpg\" alt=\"电视机的 USB 带延长线方便使用\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">电视机的 USB 带延长线方便使用</figcaption>"
     },
     {
       "type": "html",
-      "html": "<table>\n<thead><tr><th>物品</th><th>数量建议</th><th>备注</th></tr></thead>\n<tbody>\n<tr><td>Y形端子（各规格）</td><td>每种10个</td><td>提前确认场馆要求</td></tr>\n<tr><td>快拆气管接头（各口径）</td><td>每种5个</td><td>含气管备用</td></tr>\n<tr><td>电器箱钥匙</td><td>3-5把</td><td>专人保管加备用</td></tr>\n<tr><td>USB延长线</td><td>2-3条</td><td>电视机、充电使用</td></tr>\n<tr><td>多国转换插线板</td><td>3个</td><td>确认当地插座标准</td></tr>\n<tr><td>柜用万能钥匙</td><td>2-3把</td><td>应对配电箱开锁</td></tr>\n</tbody>\n</table>"
-    },
-    {
-      "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/充填机倾倒标识提示倾倒 设备未见异常.jpg\" alt=\"充填机倾倒标识提示倾倒 设备未见异常\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">充填机倾倒标识提示倾倒 设备未见异常</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/主机未显示倾倒.jpg\" alt=\"主机未显示倾倒\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">主机未显示倾倒</figcaption></figure></div>"
-    },
-    {
-      "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/充填机倾倒标识提示倾倒 设备未见异常.jpg\" alt=\"充填机倾倒标识提示倾倒 设备未见异常\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">充填机倾倒标识提示倾倒 设备未见异常</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/主机未显示倾倒.jpg\" alt=\"主机未显示倾倒\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">主机未显示倾倒</figcaption></figure></div>"
-    },
-    {
-      "type": "html",
-      "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/电视机的 USB 带延长线方便使用.jpg\" alt=\"电视机的 USB 带延长线方便使用\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">电视机的 USB 带延长线方便使用</figcaption></figure>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/IMA展台设备遮罩布效果-整体-20260613.jpg\" alt=\"IMA展台设备遮罩布效果-整体\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">IMA展台设备遮罩布效果-整体</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/IMA展台设备遮罩布材质-近距离-20260613.jpg\" alt=\"IMA展台设备遮罩布材质-近距离\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">IMA展台设备遮罩布材质-近距离</figcaption></figure></div>"
     },
     {
       "type": "h3",
@@ -147,11 +115,7 @@
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/展会最后一天下午 5 点前撤展人员已经在外等待 1.jpg\" alt=\"展会最后一天下午 5 点前撤展人员已经在外等待 1\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展会最后一天下午 5 点前撤展人员已经在外等待 1</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/展会最后一天下午 5 点前撤展人员已经在外等待 2.jpg\" alt=\"展会最后一天下午 5 点前撤展人员已经在外等待 2\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展会最后一天下午 5 点前撤展人员已经在外等待 2</figcaption></figure></div>"
-    },
-    {
-      "type": "html",
-      "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/展会最后一天下午 5 点前撤展人员已经在外等待 3.jpg\" alt=\"展会最后一天下午 5 点前撤展人员已经在外等待 3\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展会最后一天下午 5 点前撤展人员已经在外等待 3</figcaption></figure>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/展会最后一天下午 5 点前撤展人员已经在外等待 1.jpg\" alt=\"展会最后一天下午 5 点前撤展人员已经在外等待 1\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展会最后一天下午 5 点前撤展人员已经在外等待 1</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/展会最后一天下午 5 点前撤展人员已经在外等待 2.jpg\" alt=\"展会最后一天下午 5 点前撤展人员已经在外等待 2\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展会最后一天下午 5 点前撤展人员已经在外等待 2</figcaption></figure></div>"
     },
     {
       "type": "h3",
@@ -163,15 +127,11 @@
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/H1 馆左侧低质量标摊.jpg\" alt=\"H1 馆左侧低质量标摊\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">H1 馆左侧低质量标摊</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/H3 右侧都是小标摊.jpg\" alt=\"H3 右侧都是小标摊\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">H3 右侧都是小标摊</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/H1 馆左侧低质量标摊.jpg\" alt=\"H1 馆左侧低质量标摊\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">H1 馆左侧低质量标摊</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/H3 右侧都是小标摊.jpg\" alt=\"H3 右侧都是小标摊\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">H3 右侧都是小标摊</figcaption></figure></div>"
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/H1 馆左侧低质量标摊.jpg\" alt=\"H1 馆左侧低质量标摊\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">H1 馆左侧低质量标摊</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/H3 右侧都是小标摊.jpg\" alt=\"H3 右侧都是小标摊\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">H3 右侧都是小标摊</figcaption></figure></div>"
-    },
-    {
-      "type": "html",
-      "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/H1 馆左侧条包机厂商.jpg\" alt=\"H1 馆左侧条包机厂商\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">H1 馆左侧条包机厂商</figcaption></figure>"
+      "html": "<figure style=\"margin:12px 0;height:320px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee\"><img src=\"image/propak-summary/H1 馆左侧条包机厂商.jpg\" alt=\"H1 馆左侧条包机厂商\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">H1 馆左侧条包机厂商</figcaption>"
     },
     {
       "type": "h3",
@@ -179,7 +139,7 @@
     },
     {
       "type": "p",
-      "text": "展台储藏间搭建完成后应同步安装门锁。首日搭建后未及时锁闭储物间，展会物料和工具存在安全隐患。将门锁安装纳入搭建验收清单。"
+      "text": "展台储藏间搭建完成后应同步安装门锁。首日搭建后未及时锁闭储物间，展会物料和工具存在安全隐患。"
     },
     {
       "type": "p",
@@ -187,23 +147,31 @@
     },
     {
       "type": "p",
-      "text": "展会结束后将展商地图和展商手册存档保存。下次参展选址时可参考往届展馆布局、优质展位位置及同行动态。"
-    },
-    {
-      "type": "p",
       "text": "展会礼品包装上的二维码应使用国际通用渠道链接（公司国际官网、LinkedIn、YouTube 等），而非仅国内平台。ProPak Asia 为国际展会，参观者来自各国，二维码须指向海外可正常访问的平台。"
     },
     {
-      "type": "p",
-      "text": "展会礼品行李牌优化建议：1) 外壳材质加硬，提升质感；2) 背面个人信息区改为插卡式设计，更换人员时无需丢弃整体，实现重复使用。"
+      "type": "html",
+      "html": "<figure style=\"margin:12px 0;height:320px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee\"><img src=\"image/propak-summary/展会礼品-包装盒二维码示例-20260613.jpg\" alt=\"展会礼品-包装盒二维码示例\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展会礼品-包装盒二维码示例</figcaption>"
     },
     {
-      "type": "h3",
-      "text": "1.8 本次实操问题与改进方案"
+      "type": "p",
+      "text": "展会礼品行李牌优化建议：(1) 外壳材质加硬，提升质感；(2) 背面个人信息区改为插卡式设计，更换人员时无需丢弃整体，实现重复使用。"
     },
     {
       "type": "html",
-      "html": "<table>\n<thead><tr><th>问题</th><th>影响</th><th>改进措施</th></tr></thead>\n<tbody>\n<tr><td>打包服务排队到次日</td><td>撤展延迟</td><td>提前一天预约，备用自行打包方案</td></tr>\n<tr><td>设备进场时机偏晚</td><td>叉车无法通过</td><td>首批进场</td></tr>\n<tr><td>电器箱钥匙不够</td><td>临时配钥匙</td><td>标配3把以上</td></tr>\n<tr><td>未准备Y形端子</td><td>接电被拒</td><td>提前调研场馆规范，备足端子</td></tr>\n<tr><td>贴纸起皱</td><td>展台形象受损</td><td>使用硬质KT板替代贴纸</td></tr>\n<tr><td>未准备快拆气管接头</td><td>气路连接耗时</td><td>准备各口径快拆接头</td></tr>\n<tr><td>LED电视遮挡射灯</td><td>海报区光照不足</td><td>调整安装位置或增设补光灯</td></tr>\n<tr><td>接线管接头未留档</td><td>下次搭建接线参考缺失</td><td>撤展前逐一拍照，打印放入电机箱</td></tr>\n<tr><td>展台LOGO辨识度不足</td><td>远距离不可见</td><td>采用大尺寸灯箱LOGO方案</td></tr>\n<tr><td>背立面无展位号</td><td>后方观众无法识别</td><td>增设立面展位号牌</td></tr>\n<tr><td>储藏间未安装门锁</td><td>物料存在安全隐患</td><td>将门锁安装纳入搭建验收清单</td></tr>\n<tr><td>设备遮罩布尺寸不足</td><td>无法完全遮盖设备</td><td>按设备周长×高度重新定制</td></tr>\n</tbody>\n</table>"
+      "html": "<figure style=\"margin:12px 0;height:320px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee\"><img src=\"image/propak-summary/行李牌设计-正面展示-JOYEA品牌-20260610.jpg\" alt=\"行李牌设计-正面展示\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">行李牌设计-正面展示</figcaption>"
+    },
+    {
+      "type": "html",
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/行李牌设计-插卡式可更换设计-20260610.jpg\" alt=\"行李牌设计-插卡式可更换设计\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">行李牌设计-插卡式可更换设计</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/行李牌设计-背面信息填写区-20260610.jpg\" alt=\"行李牌设计-背面信息填写区\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">行李牌设计-背面信息填写区</figcaption></figure></div>"
+    },
+    {
+      "type": "h3",
+      "text": "1.8 问题与改进方案汇总"
+    },
+    {
+      "type": "html",
+      "html": "<table>\n<thead><tr><th>问题</th><th>影响</th><th>改进措施</th></tr></thead>\n<tbody>\n<tr><td>打包服务排队到次日</td><td>撤展延迟</td><td>提前一天预约，备用自行打包方案</td></tr>\n<tr><td>设备进场时机偏晚</td><td>叉车无法通过</td><td>首批进场，首日上午优先</td></tr>\n<tr><td>电器箱钥匙不够</td><td>临时配钥匙</td><td>标配3把以上+柜用万能钥匙2-3把</td></tr>\n<tr><td>未准备Y形端子</td><td>接电被拒</td><td>提前调研场馆规范，备足端子</td></tr>\n<tr><td>贴纸起皱</td><td>展台形象受损</td><td>使用硬质KT板替代贴纸</td></tr>\n<tr><td>未准备快拆气管接头</td><td>气路连接耗时</td><td>准备各口径快拆接头</td></tr>\n<tr><td>LED电视遮挡射灯</td><td>海报区光照不足</td><td>调整安装位置或增设补光灯</td></tr>\n<tr><td>接线管接头未留档</td><td>下次搭建接线参考缺失</td><td>撤展前逐一拍照，打印放入电机箱</td></tr>\n<tr><td>展台LOGO辨识度不足</td><td>远距离不可见</td><td>采用大尺寸灯箱LOGO方案</td></tr>\n<tr><td>背立面无展位号</td><td>后方观众无法识别</td><td>增设立面展位号牌</td></tr>\n<tr><td>储藏间未安装门锁</td><td>物料存在安全隐患</td><td>将门锁安装纳入搭建验收清单</td></tr>\n<tr><td>设备遮罩布尺寸不足</td><td>无法完全遮盖设备</td><td>按设备周长×高度重新定制</td></tr>\n</tbody>\n</table>"
     },
     {
       "type": "h2",
@@ -227,7 +195,11 @@
     },
     {
       "type": "p",
-      "text": "本次展台采用开放式框架吊顶设计（白色金属框架搭配橙色穿孔板），兼顾照明设备灵活布置与成本控制。视觉效果简洁现代，后续可继续采用。"
+      "text": "本次展台采用开放式框架吊顶设计（白色金属框架搭配橙色穿孔板），兼顾照明设备灵活布置与成本控制。视觉效果简洁现代，后续建议继续采用。"
+    },
+    {
+      "type": "html",
+      "html": "<figure style=\"margin:12px 0;height:320px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee\"><img src=\"image/propak-summary/展台开放式框架吊顶-经济型方案-20260610.jpg\" alt=\"展台开放式框架吊顶-经济型方案\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展台开放式框架吊顶-经济型方案</figcaption>"
     },
     {
       "type": "h3",
@@ -247,11 +219,15 @@
     },
     {
       "type": "html",
-      "html": "<table>\n<thead><tr><th>问题</th><th>影响</th><th>改进措施</th></tr></thead>\n<tbody>\n<tr><td>打包服务排队到次日</td><td>撤展延迟</td><td>提前一天预约，备用自行打包方案</td></tr>\n<tr><td>设备进场时机偏晚</td><td>叉车无法通过</td><td>首批进场</td></tr>\n<tr><td>电器箱钥匙不够</td><td>临时配钥匙</td><td>标配3把以上</td></tr>\n<tr><td>未准备Y形端子</td><td>接电被拒</td><td>提前调研场馆规范，备足端子</td></tr>\n<tr><td>贴纸起皱</td><td>展台形象受损</td><td>使用硬质KT板替代贴纸</td></tr>\n<tr><td>未准备快拆气管接头</td><td>气路连接耗时</td><td>准备各口径快拆接头</td></tr>\n<tr><td>LED电视遮挡射灯</td><td>海报区光照不足</td><td>调整安装位置或增设补光灯</td></tr>\n<tr><td>接线管接头未留档</td><td>下次搭建接线参考缺失</td><td>撤展前逐一拍照，打印放入电机箱</td></tr>\n<tr><td>展台LOGO辨识度不足</td><td>远距离不可见</td><td>采用大尺寸灯箱LOGO方案</td></tr>\n<tr><td>背立面无展位号</td><td>后方观众无法识别</td><td>增设立面展位号牌</td></tr>\n<tr><td>储藏间未安装门锁</td><td>物料存在安全隐患</td><td>将门锁安装纳入搭建验收清单</td></tr>\n<tr><td>设备遮罩布尺寸不足</td><td>无法完全遮盖设备</td><td>按设备周长×高度重新定制</td></tr>\n</tbody>\n</table>"
+      "html": "<figure style=\"margin:12px 0;height:320px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee\"><img src=\"image/propak-summary/照片-电视遮挡灯光导致海报暗淡-20260610.jpg\" alt=\"照片-电视遮挡灯光导致海报暗淡\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">照片-电视遮挡灯光导致海报暗淡</figcaption>"
     },
     {
       "type": "p",
       "text": "展台侧面竖墙区域可增设线性流光灯带。"
+    },
+    {
+      "type": "html",
+      "html": "<figure style=\"margin:12px 0;height:320px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee\"><img src=\"image/propak-summary/展台侧面竖墙-流光灯建议-20260611.jpg\" alt=\"展台侧面竖墙-流光灯建议\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展台侧面竖墙-流光灯建议</figcaption>"
     },
     {
       "type": "h3",
@@ -262,12 +238,20 @@
       "text": "参考 KHS 展台：墙面采用内嵌式照片墙设计，中央设大屏电视播放企业视频，周围多尺寸相框展示项目案例与产品图。"
     },
     {
+      "type": "html",
+      "html": "<figure style=\"margin:12px 0;height:320px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee\"><img src=\"image/propak-summary/KHS展台照片墙设计-参考效果-20260613.jpg\" alt=\"KHS展台照片墙设计-参考效果\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">KHS展台照片墙设计-参考效果</figcaption>"
+    },
+    {
       "type": "h3",
       "text": "2.6 模块化可重复利用"
     },
     {
       "type": "p",
       "text": "建议将展台核心组件（柜体、货架、接待台、储藏室）设计为可重复利用的模块化单元，整体发运。接待台嵌入电视屏，更换播放内容即可适配不同展会。设备运输使用集装箱，到达后可直接作为展台储藏间。"
+    },
+    {
+      "type": "html",
+      "html": "<figure style=\"margin:12px 0;height:320px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee\"><img src=\"image/propak-summary/可重复利用展台组件-木质货架设计-20260610.jpg\" alt=\"可重复利用展台组件-木质货架设计\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">可重复利用展台组件-木质货架设计</figcaption>"
     },
     {
       "type": "h3",
@@ -286,10 +270,6 @@
       "text": "以下为展会期间观察到的其他展商展台设计方案和细节，供仅一未来参展参考。"
     },
     {
-      "type": "p",
-      "text": "以下为展会期间观察到的其他展商展台设计方案和细节，供仅一未来参展参考。"
-    },
-    {
       "type": "h3",
       "text": "3.1 白色地板 + 充足灯光"
     },
@@ -299,11 +279,11 @@
     },
     {
       "type": "html",
-      "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/星德科展台设计很简单 但很亮 大片色彩很有辨识度.jpg\" alt=\"星德科展台设计很简单 但很亮 大片色彩很有辨识度\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">星德科展台设计很简单 但很亮 大片色彩很有辨识度</figcaption></figure>"
+      "html": "<figure style=\"margin:12px 0;height:320px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee\"><img src=\"image/propak-summary/星德科展台设计很简单 但很亮 大片色彩很有辨识度.jpg\" alt=\"星德科展台设计很简单 但很亮 大片色彩很有辨识度\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">星德科展台设计很简单 但很亮 大片色彩很有辨识度</figcaption>"
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/星德科展台设计很简单 但很亮 大片色彩很有辨识度 2.jpg\" alt=\"星德科展台设计很简单 但很亮 大片色彩很有辨识度 2\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">星德科展台设计很简单 但很亮 大片色彩很有辨识度 2</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/星德科展台设计很简单 但很亮 大片色彩很有辨识度 3.jpg\" alt=\"星德科展台设计很简单 但很亮 大片色彩很有辨识度 3\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">星德科展台设计很简单 但很亮 大片色彩很有辨识度 3</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/星德科展台设计很简单 但很亮 大片色彩很有辨识度 2.jpg\" alt=\"星德科展台设计很简单 但很亮 大片色彩很有辨识度 2\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">星德科展台设计很简单 但很亮 大片色彩很有辨识度 2</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/星德科展台设计很简单 但很亮 大片色彩很有辨识度 3.jpg\" alt=\"星德科展台设计很简单 但很亮 大片色彩很有辨识度 3\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">星德科展台设计很简单 但很亮 大片色彩很有辨识度 3</figcaption></figure></div>"
     },
     {
       "type": "p",
@@ -311,7 +291,7 @@
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/IMA 展台 灯光充足 白色地板 显得亮 高档.jpg\" alt=\"IMA 展台 灯光充足 白色地板 显得亮 高档\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">IMA 展台 灯光充足 白色地板 显得亮 高档</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/IMA 展台 灯光充足 白色地板 显得亮 高档 2.jpg\" alt=\"IMA 展台 灯光充足 白色地板 显得亮 高档 2\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">IMA 展台 灯光充足 白色地板 显得亮 高档 2</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/IMA 展台 灯光充足 白色地板 显得亮 高档.jpg\" alt=\"IMA 展台 灯光充足 白色地板 显得亮 高档\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">IMA 展台 灯光充足 白色地板 显得亮 高档</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/IMA 展台 灯光充足 白色地板 显得亮 高档 2.jpg\" alt=\"IMA 展台 灯光充足 白色地板 显得亮 高档 2\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">IMA 展台 灯光充足 白色地板 显得亮 高档 2</figcaption></figure></div>"
     },
     {
       "type": "p",
@@ -319,7 +299,7 @@
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/Eiahe白色的展台显得很亮高档.jpg\" alt=\"Eiahe白色的展台显得很亮高档\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">Eiahe白色的展台显得很亮高档</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/Eiahe白色的展台显得很亮高档 2.jpg\" alt=\"Eiahe白色的展台显得很亮高档 2\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">Eiahe白色的展台显得很亮高档 2</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/Eiahe白色的展台显得很亮高档.jpg\" alt=\"Eiahe白色的展台显得很亮高档\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">Eiahe白色的展台显得很亮高档</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/Eiahe白色的展台显得很亮高档 2.jpg\" alt=\"Eiahe白色的展台显得很亮高档 2\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">Eiahe白色的展台显得很亮高档 2</figcaption></figure></div>"
     },
     {
       "type": "p",
@@ -327,7 +307,7 @@
     },
     {
       "type": "html",
-      "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/GEA 展台 白色 地台还做了灯光 看起来高档.jpg\" alt=\"GEA 展台 白色 地台还做了灯光 看起来高档\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">GEA 展台 白色 地台还做了灯光 看起来高档</figcaption></figure>"
+      "html": "<figure style=\"margin:12px 0;height:320px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee\"><img src=\"image/propak-summary/GEA 展台 白色 地台还做了灯光 看起来高档.jpg\" alt=\"GEA 展台 白色 地台还做了灯光 看起来高档\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">GEA 展台 白色 地台还做了灯光 看起来高档</figcaption>"
     },
     {
       "type": "p",
@@ -335,7 +315,7 @@
     },
     {
       "type": "html",
-      "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/保立隆展台 灯光充足 白色地板 显得亮 高档.jpg\" alt=\"保立隆展台 灯光充足 白色地板 显得亮 高档\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">保立隆展台 灯光充足 白色地板 显得亮 高档</figcaption></figure>"
+      "html": "<figure style=\"margin:12px 0;height:320px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee\"><img src=\"image/propak-summary/保立隆展台 灯光充足 白色地板 显得亮 高档.jpg\" alt=\"保立隆展台 灯光充足 白色地板 显得亮 高档\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">保立隆展台 灯光充足 白色地板 显得亮 高档</figcaption>"
     },
     {
       "type": "h3",
@@ -347,15 +327,15 @@
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/吊旗在展台里很显眼.jpg\" alt=\"吊旗在展台里很显眼\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">吊旗在展台里很显眼</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/吊旗在展台里很显眼 2.jpg\" alt=\"吊旗在展台里很显眼 2\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">吊旗在展台里很显眼 2</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/吊旗在展台里很显眼.jpg\" alt=\"吊旗在展台里很显眼\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">吊旗在展台里很显眼</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/吊旗在展台里很显眼 2.jpg\" alt=\"吊旗在展台里很显眼 2\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">吊旗在展台里很显眼 2</figcaption></figure></div>"
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/吊旗上挂灯打光 效果很好.jpg\" alt=\"吊旗上挂灯打光 效果很好\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">吊旗上挂灯打光 效果很好</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/吊旗做光照 展台很亮.jpg\" alt=\"吊旗做光照 展台很亮\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">吊旗做光照 展台很亮</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/吊旗上挂灯打光 效果很好.jpg\" alt=\"吊旗上挂灯打光 效果很好\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">吊旗上挂灯打光 效果很好</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/吊旗做光照 展台很亮.jpg\" alt=\"吊旗做光照 展台很亮\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">吊旗做光照 展台很亮</figcaption></figure></div>"
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/吊装广告牌补光 展台很亮.jpg\" alt=\"吊装广告牌补光 展台很亮\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">吊装广告牌补光 展台很亮</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/吊旗造型做的很复杂.jpg\" alt=\"吊旗造型做的很复杂\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">吊旗造型做的很复杂</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/吊装广告牌补光 展台很亮.jpg\" alt=\"吊装广告牌补光 展台很亮\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">吊装广告牌补光 展台很亮</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/吊旗造型做的很复杂.jpg\" alt=\"吊旗造型做的很复杂\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">吊旗造型做的很复杂</figcaption></figure></div>"
     },
     {
       "type": "h3",
@@ -367,11 +347,11 @@
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/立柱灯参考.jpg\" alt=\"立柱灯参考\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">立柱灯参考</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/立柱打光参考.jpg\" alt=\"立柱打光参考\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">立柱打光参考</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/立柱灯参考.jpg\" alt=\"立柱灯参考\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">立柱灯参考</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/立柱打光参考.jpg\" alt=\"立柱打光参考\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">立柱打光参考</figcaption></figure></div>"
     },
     {
       "type": "html",
-      "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/立柱打灯效果还行.jpg\" alt=\"立柱打灯效果还行\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">立柱打灯效果还行</figcaption></figure>"
+      "html": "<figure style=\"margin:12px 0;height:320px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee\"><img src=\"image/propak-summary/立柱打灯效果还行.jpg\" alt=\"立柱打灯效果还行\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">立柱打灯效果还行</figcaption>"
     },
     {
       "type": "h3",
@@ -383,7 +363,7 @@
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/展台前面空旷 后面放座位 用立柱灯光 设计思路参考.jpg\" alt=\"展台前面空旷 后面放座位 用立柱灯光 设计思路参考\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展台前面空旷 后面放座位 用立柱灯光 设计思路参考</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/展台前面空旷 后面放座位 用立柱灯光 设计思路参考 2.jpg\" alt=\"展台前面空旷 后面放座位 用立柱灯光 设计思路参考 2\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展台前面空旷 后面放座位 用立柱灯光 设计思路参考 2</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/展台前面空旷 后面放座位 用立柱灯光 设计思路参考.jpg\" alt=\"展台前面空旷 后面放座位 用立柱灯光 设计思路参考\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展台前面空旷 后面放座位 用立柱灯光 设计思路参考</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/展台前面空旷 后面放座位 用立柱灯光 设计思路参考 2.jpg\" alt=\"展台前面空旷 后面放座位 用立柱灯光 设计思路参考 2\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展台前面空旷 后面放座位 用立柱灯光 设计思路参考 2</figcaption></figure></div>"
     },
     {
       "type": "p",
@@ -391,7 +371,7 @@
     },
     {
       "type": "html",
-      "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/二层做接待的设计效果.jpg\" alt=\"二层做接待的设计效果\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">二层做接待的设计效果</figcaption></figure>"
+      "html": "<figure style=\"margin:12px 0;height:320px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee\"><img src=\"image/propak-summary/二层做接待的设计效果.jpg\" alt=\"二层做接待的设计效果\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">二层做接待的设计效果</figcaption>"
     },
     {
       "type": "p",
@@ -399,7 +379,7 @@
     },
     {
       "type": "html",
-      "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/岛台在中间兼做储物间.jpg\" alt=\"岛台在中间兼做储物间\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">岛台在中间兼做储物间</figcaption></figure>"
+      "html": "<figure style=\"margin:12px 0;height:320px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee\"><img src=\"image/propak-summary/岛台在中间兼做储物间.jpg\" alt=\"岛台在中间兼做储物间\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">岛台在中间兼做储物间</figcaption>"
     },
     {
       "type": "p",
@@ -407,7 +387,7 @@
     },
     {
       "type": "html",
-      "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/接待台可以放电视.jpg\" alt=\"接待台可以放电视\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">接待台可以放电视</figcaption></figure>"
+      "html": "<figure style=\"margin:12px 0;height:320px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee\"><img src=\"image/propak-summary/接待台可以放电视.jpg\" alt=\"接待台可以放电视\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">接待台可以放电视</figcaption>"
     },
     {
       "type": "h3",
@@ -429,31 +409,31 @@
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/3D 模型展柜参考 1.jpg\" alt=\"3D 模型展柜参考 1\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">3D 模型展柜参考 1</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/3D 模型展柜参考 2.jpg\" alt=\"3D 模型展柜参考 2\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">3D 模型展柜参考 2</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/3D 模型展柜参考 1.jpg\" alt=\"3D 模型展柜参考 1\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">3D 模型展柜参考 1</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/3D 模型展柜参考 2.jpg\" alt=\"3D 模型展柜参考 2\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">3D 模型展柜参考 2</figcaption></figure></div>"
     },
     {
       "type": "html",
-      "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/3D 模型展柜参考 3.jpg\" alt=\"3D 模型展柜参考 3\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">3D 模型展柜参考 3</figcaption></figure>"
+      "html": "<figure style=\"margin:12px 0;height:320px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee\"><img src=\"image/propak-summary/3D 模型展柜参考 3.jpg\" alt=\"3D 模型展柜参考 3\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">3D 模型展柜参考 3</figcaption>"
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/展品搭展台创意 1.jpg\" alt=\"展品搭展台创意 1\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展品搭展台创意 1</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/展品搭展台创意 2.jpg\" alt=\"展品搭展台创意 2\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展品搭展台创意 2</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/展品搭展台创意 1.jpg\" alt=\"展品搭展台创意 1\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展品搭展台创意 1</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/展品搭展台创意 2.jpg\" alt=\"展品搭展台创意 2\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展品搭展台创意 2</figcaption></figure></div>"
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/展品吊装装饰.jpg\" alt=\"展品吊装装饰\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展品吊装装饰</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/展台搭出产品造型 创意吸睛.jpg\" alt=\"展台搭出产品造型 创意吸睛\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展台搭出产品造型 创意吸睛</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/展品吊装装饰.jpg\" alt=\"展品吊装装饰\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展品吊装装饰</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/展台搭出产品造型 创意吸睛.jpg\" alt=\"展台搭出产品造型 创意吸睛\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展台搭出产品造型 创意吸睛</figcaption></figure></div>"
     },
     {
       "type": "html",
-      "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/柔性屏接待台.jpg\" alt=\"柔性屏接待台\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">柔性屏接待台</figcaption></figure>"
+      "html": "<figure style=\"margin:12px 0;height:320px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee\"><img src=\"image/propak-summary/柔性屏接待台.jpg\" alt=\"柔性屏接待台\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">柔性屏接待台</figcaption>"
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/设备底下放屏幕介绍.jpg\" alt=\"设备底下放屏幕介绍\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">设备底下放屏幕介绍</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/顶部造型比较新颖.jpg\" alt=\"顶部造型比较新颖\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">顶部造型比较新颖</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/设备底下放屏幕介绍.jpg\" alt=\"设备底下放屏幕介绍\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">设备底下放屏幕介绍</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/顶部造型比较新颖.jpg\" alt=\"顶部造型比较新颖\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">顶部造型比较新颖</figcaption></figure></div>"
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/Sidel 一排展品柜视觉效果不错.jpg\" alt=\"Sidel 一排展品柜视觉效果不错\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">Sidel 一排展品柜视觉效果不错</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/斜面的展柜不太实用.jpg\" alt=\"斜面的展柜不太实用\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">斜面的展柜不太实用</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/Sidel 一排展品柜视觉效果不错.jpg\" alt=\"Sidel 一排展品柜视觉效果不错\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">Sidel 一排展品柜视觉效果不错</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/斜面的展柜不太实用.jpg\" alt=\"斜面的展柜不太实用\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">斜面的展柜不太实用</figcaption></figure></div>"
     },
     {
       "type": "h3",
@@ -465,22 +445,19 @@
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/灯光 Logo 设计参考 1.jpg\" alt=\"灯光 Logo 设计参考 1\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">灯光 Logo 设计参考 1</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/灯光 Logo 设计参考 2.jpg\" alt=\"灯光 Logo 设计参考 2\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">灯光 Logo 设计参考 2</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/灯光 Logo 设计参考 1.jpg\" alt=\"灯光 Logo 设计参考 1\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">灯光 Logo 设计参考 1</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/灯光 Logo 设计参考 2.jpg\" alt=\"灯光 Logo 设计参考 2\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">灯光 Logo 设计参考 2</figcaption></figure></div>"
     },
     {
       "type": "h3",
       "text": "3.7 吸引人流的技巧"
     },
     {
-      "type": "ul",
-      "items": [
-        "设备上摆放了蜡笔小新人偶吸引注意。",
-        "基恩士发放的超大购物袋，观众把其他展商资料袋都放在基恩士袋子里，起到了广泛的二次传播效果。"
-      ]
+      "type": "p",
+      "text": "设备上摆放了蜡笔小新人偶吸引注意。基恩士发放的超大购物袋，观众把其他展商资料袋都放在基恩士袋子里，起到了广泛的二次传播效果。"
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/设备上摆了蜡笔小新人偶吸引人注意.jpg\" alt=\"设备上摆了蜡笔小新人偶吸引人注意\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">设备上摆了蜡笔小新人偶吸引人注意</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/观众很多人都拎了基恩士的袋子 袋子做的很大 客户也会把其他家的袋子都放在基恩士袋子里 起到了广泛的宣传效果.jpg\" alt=\"观众很多人都拎了基恩士的袋子 袋子做的很大 客户也会把其他家的袋子都放在基恩士袋子里 起到了广泛的宣传效果\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">观众很多人都拎了基恩士的袋子 袋子做的很大 客户也会把其他家的袋子都放在基恩士袋子里 起到了广泛的宣传效果</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/设备上摆了蜡笔小新人偶吸引人注意.jpg\" alt=\"设备上摆了蜡笔小新人偶吸引人注意\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">设备上摆了蜡笔小新人偶吸引人注意</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/观众很多人都拎了基恩士的袋子 袋子做的很大 客户也会把其他家的袋子都放在基恩士袋子里 起到了广泛的宣传效果.jpg\" alt=\"观众很多人都拎了基恩士的袋子 袋子做的很大 客户也会把其他家的袋子都放在基恩士袋子里 起到了广泛的宣传效果\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">观众很多人都拎了基恩士的袋子 袋子做的很大 客户也会把其他家的袋子都放在基恩士袋子里 起到了广泛的宣传效果</figcaption></figure></div>"
     },
     {
       "type": "h3",
@@ -496,11 +473,11 @@
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/友商久煜展台.jpg\" alt=\"友商久煜展台\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">友商久煜展台</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/友商珐玛珈展台.jpg\" alt=\"友商珐玛珈展台\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">友商珐玛珈展台</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/友商久煜展台.jpg\" alt=\"友商久煜展台\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">友商久煜展台</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/友商珐玛珈展台.jpg\" alt=\"友商珐玛珈展台\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">友商珐玛珈展台</figcaption></figure></div>"
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/友商珐玛珈展台 2.jpg\" alt=\"友商珐玛珈展台 2\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">友商珐玛珈展台 2</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/友商瑞泰展台.jpg\" alt=\"友商瑞泰展台\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">友商瑞泰展台</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/友商珐玛珈展台 2.jpg\" alt=\"友商珐玛珈展台 2\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">友商珐玛珈展台 2</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/友商瑞泰展台.jpg\" alt=\"友商瑞泰展台\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">友商瑞泰展台</figcaption></figure></div>"
     },
     {
       "type": "h3",
@@ -512,7 +489,7 @@
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/展台暗淡.jpg\" alt=\"展台暗淡\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展台暗淡</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/展台设备摆太多很拥挤 没有向进入的欲望.jpg\" alt=\"展台设备摆太多很拥挤 没有向进入的欲望\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展台设备摆太多很拥挤 没有向进入的欲望</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/展台暗淡.jpg\" alt=\"展台暗淡\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展台暗淡</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/展台设备摆太多很拥挤 没有向进入的欲望.jpg\" alt=\"展台设备摆太多很拥挤 没有向进入的欲望\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展台设备摆太多很拥挤 没有向进入的欲望</figcaption></figure></div>"
     },
     {
       "type": "p",
@@ -520,11 +497,11 @@
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/绿色搭建看起来比较简陋.jpg\" alt=\"绿色搭建看起来比较简陋\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">绿色搭建看起来比较简陋</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/气球飘荡 LOGO 装饰 效果一般.jpg\" alt=\"气球飘荡 LOGO 装饰 效果一般\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">气球飘荡 LOGO 装饰 效果一般</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/绿色搭建看起来比较简陋.jpg\" alt=\"绿色搭建看起来比较简陋\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">绿色搭建看起来比较简陋</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/气球飘荡 LOGO 装饰 效果一般.jpg\" alt=\"气球飘荡 LOGO 装饰 效果一般\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">气球飘荡 LOGO 装饰 效果一般</figcaption></figure></div>"
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/桁架展台参考.jpg\" alt=\"桁架展台参考\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">桁架展台参考</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/columbit 展台 看起来一般.jpg\" alt=\"columbit 展台 看起来一般\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">columbit 展台 看起来一般</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/桁架展台参考.jpg\" alt=\"桁架展台参考\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">桁架展台参考</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/columbit 展台 看起来一般.jpg\" alt=\"columbit 展台 看起来一般\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">columbit 展台 看起来一般</figcaption></figure></div>"
     },
     {
       "type": "h3",
@@ -532,11 +509,11 @@
     },
     {
       "type": "p",
-      "text": "金石（包材企业）的展品和渲染风格与仅一相似，在展会上已有观众将仅一误认为是做包装材料的公司。需要在未来展台设计中注意通过设备展示和视觉传达明确「设备制造商」的定位。"
+      "text": "金石（包材企业）的展品和渲染风格与仅一相似，在展会上已有观众将仅一误认为是做包装材料的公司。在未来展台设计中应注意通过设备展示和视觉传达明确「设备制造商」的定位。"
     },
     {
       "type": "html",
-      "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/金石做包材的展品和渲染与仅一相似 我们在展会上也会被误以为是做包材的.jpg\" alt=\"金石做包材的展品和渲染与仅一相似 我们在展会上也会被误以为是做包材的\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">金石做包材的展品和渲染与仅一相似 我们在展会上也会被误以为是做包材的</figcaption></figure>"
+      "html": "<figure style=\"margin:12px 0;height:320px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee\"><img src=\"image/propak-summary/金石做包材的展品和渲染与仅一相似 我们在展会上也会被误以为是做包材的.jpg\" alt=\"金石做包材的展品和渲染与仅一相似 我们在展会上也会被误以为是做包材的\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">金石做包材的展品和渲染与仅一相似 我们在展会上也会被误以为是做包材的</figcaption>"
     },
     {
       "type": "h3",
@@ -544,89 +521,15 @@
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/展台设计很好看.jpg\" alt=\"展台设计很好看\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展台设计很好看</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/展台设计中尽量使用硬质 KT 板替代贴纸 贴纸容易起皱.jpg\" alt=\"展台设计中尽量使用硬质 KT 板替代贴纸 贴纸容易起皱\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展台设计中尽量使用硬质 KT 板替代贴纸 贴纸容易起皱</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/展台设计很好看.jpg\" alt=\"展台设计很好看\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展台设计很好看</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/展台设计中尽量使用硬质 KT 板替代贴纸 贴纸容易起皱.jpg\" alt=\"展台设计中尽量使用硬质 KT 板替代贴纸 贴纸容易起皱\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展台设计中尽量使用硬质 KT 板替代贴纸 贴纸容易起皱</figcaption></figure></div>"
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/展台样品摆放位置备份 1.jpg\" alt=\"展台样品摆放位置备份 1\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展台样品摆放位置备份 1</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/展台样品摆放位置备份 2.jpg\" alt=\"展台样品摆放位置备份 2\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展台样品摆放位置备份 2</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:12px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/展台样品摆放位置备份 1.jpg\" alt=\"展台样品摆放位置备份 1\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展台样品摆放位置备份 1</figcaption></figure><div style=\"flex:1;min-width:200px;margin:0\"><figure style=\"flex:1;min-width:200px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee;margin:0\"><img src=\"image/propak-summary/展台样品摆放位置备份 2.jpg\" alt=\"展台样品摆放位置备份 2\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展台样品摆放位置备份 2</figcaption></figure></div>"
     },
     {
       "type": "html",
-      "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/展台样品摆放位置备份 3.jpg\" alt=\"展台样品摆放位置备份 3\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展台样品摆放位置备份 3</figcaption></figure>"
-    },
-    {
-      "type": "h2",
-      "text": "四、未来参展改进建议"
-    },
-    {
-      "type": "h3",
-      "text": "4.1 展台设计"
-    },
-    {
-      "type": "ol",
-      "items": [
-        "参考白色地板加充足灯光的设计方案。",
-        "确保展台灯光全覆盖、无暗角。",
-        "吊旗加装灯光照射，提高远距离辨识度。",
-        "采用前展示、后洽谈的空间分区设计。",
-        "配备 3D 模型展柜展示无法实物展出的大型设备。",
-        "在展台视觉中突出设备元素，避免与包材企业混淆。",
-        "设备展示面朝向展台宽面（10m），避免窄面。",
-        "LOGO采用大尺寸灯箱方案，背立面增设展位号标识。",
-        "侧面竖墙增设线性流光灯带。",
-        "参考内嵌式照片墙设计，中央大屏加周围相框。",
-        "继续采用开放式框架吊顶方案。",
-        "拍照打卡点设在展台内部，保护客户隐私。"
-      ]
-    },
-    {
-      "type": "h3",
-      "text": "4.2 物流与操作"
-    },
-    {
-      "type": "ol",
-      "items": [
-        "统一硬质箱加托盘方案。",
-        "设备进场排首批，与主办方提前沟通。",
-        "打包服务提前预约，撤展前一天即联系打包服务商，栈板提前送到展馆门口排队。",
-        "自备打包工具作为备用方案。",
-        "探索模块化可重复利用展台组件方案。",
-        "按设备周长×高度重新定制轻量化遮罩布。"
-      ]
-    },
-    {
-      "type": "h3",
-      "text": "4.3 电气准备清单"
-    },
-    {
-      "type": "html",
-      "html": "<table>\n<thead><tr><th>物品</th><th>数量建议</th><th>备注</th></tr></thead>\n<tbody>\n<tr><td>Y形端子（各规格）</td><td>每种10个</td><td>提前确认场馆要求</td></tr>\n<tr><td>快拆气管接头（各口径）</td><td>每种5个</td><td>含气管备用</td></tr>\n<tr><td>电器箱钥匙</td><td>3-5把</td><td>专人保管加备用</td></tr>\n<tr><td>USB延长线</td><td>2-3条</td><td>电视机、充电使用</td></tr>\n<tr><td>多国转换插线板</td><td>3个</td><td>确认当地插座标准</td></tr>\n<tr><td>柜用万能钥匙</td><td>2-3把</td><td>应对配电箱开锁</td></tr>\n</tbody>\n</table>"
-    },
-    {
-      "type": "h3",
-      "text": "4.4 市场宣传"
-    },
-    {
-      "type": "ol",
-      "items": [
-        "定制大尺寸展会袋，参照基恩士的策略。",
-        "拍照打卡点设在展台内部，防止友商窥视仅一接待了哪些客户，避免客户信息泄密。",
-        "准备中英双语的礼品包装及配料表。",
-        "礼品行李牌改用硬质材质加插卡式设计，实现重复使用。",
-        "所有二维码和链接指向国际通用平台（官网、LinkedIn、YouTube），确保海外观众可访问。"
-      ]
-    },
-    {
-      "type": "h3",
-      "text": "4.5 展会事项"
-    },
-    {
-      "type": "ol",
-      "items": [
-        "参展人员随身携带外套，应对展馆空调低温。",
-        "展会结束后存档展商地图和展商手册，供下届选址参考。",
-        "搭建验收清单纳入储藏间门锁安装。"
-      ]
+      "html": "<figure style=\"margin:12px 0;height:320px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;overflow:hidden;border:1px solid #eee\"><img src=\"image/propak-summary/展台样品摆放位置备份 3.jpg\" alt=\"展台样品摆放位置备份 3\" loading=\"lazy\" style=\"max-width:100%;max-height:100%;object-fit:contain\"></figure><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展台样品摆放位置备份 3</figcaption>"
     }
   ]
 }
