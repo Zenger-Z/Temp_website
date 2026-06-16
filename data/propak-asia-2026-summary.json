@@ -8,7 +8,7 @@
   "content": [
     {
       "type": "h2",
-      "text": "一、仅一 JOYEA 本次参展实操经验"
+      "text": "一、仅一 JOYEA 本次参展实操"
     },
     {
       "type": "p",
@@ -16,31 +16,23 @@
     },
     {
       "type": "h3",
-      "text": "1.1 搭建"
+      "text": "1.1 搭建与进场"
     },
     {
       "type": "p",
-      "text": "设备进场通道在搭建初期相对畅通，但后期其他展位搭建完成后叉车无法通行。设备进场越早越好。"
+      "text": "设备进场通道在搭建初期相对畅通，但后期其他展位搭建完成后叉车无法通行。设备进场越早越好。核心设备应在搭建首日上午优先安排进场，列为第一优先级任务。"
     },
     {
       "type": "html",
       "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/设备进场越早越好 防止其他展位搭好了叉车不好进.jpg\" alt=\"设备进场越早越好 防止其他展位搭好了叉车不好进\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">设备进场越早越好 防止其他展位搭好了叉车不好进</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/第一天展台搭建进度.jpg\" alt=\"第一天展台搭建进度\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">第一天展台搭建进度</figcaption></figure></div>"
     },
     {
-      "type": "p",
-      "text": "展台储藏间搭建完成后应同步安装门锁。首日搭建后未及时锁闭储物间，展会物料和工具存在安全隐患。将门锁安装纳入搭建验收清单。"
-    },
-    {
-      "type": "p",
-      "text": "展台规格为 6×10m，本次设备展示面朝向 6 米窄面。后续搭建将设备主展示面朝向 10 米宽面，展台视觉上更宽敞有气势。"
-    },
-    {
-      "type": "p",
-      "text": "本次展台采用开放式框架吊顶设计（白色金属框架搭配橙色穿孔板），兼顾照明设备灵活布置与成本控制。视觉效果简洁现代，后续可继续采用此类经济型吊顶方案。"
+      "type": "html",
+      "html": "<table>\n<thead><tr><th>问题</th><th>影响</th><th>改进措施</th></tr></thead>\n<tbody>\n<tr><td>打包服务排队到次日</td><td>撤展延迟</td><td>提前一天预约，备用自行打包方案</td></tr>\n<tr><td>设备进场时机偏晚</td><td>叉车无法通过</td><td>首批进场</td></tr>\n<tr><td>电器箱钥匙不够</td><td>临时配钥匙</td><td>标配3把以上</td></tr>\n<tr><td>未准备Y形端子</td><td>接电被拒</td><td>提前调研场馆规范，备足端子</td></tr>\n<tr><td>贴纸起皱</td><td>展台形象受损</td><td>使用硬质KT板替代贴纸</td></tr>\n<tr><td>未准备快拆气管接头</td><td>气路连接耗时</td><td>准备各口径快拆接头</td></tr>\n<tr><td>LED电视遮挡射灯</td><td>海报区光照不足</td><td>调整安装位置或增设补光灯</td></tr>\n<tr><td>接线管接头未留档</td><td>下次搭建接线参考缺失</td><td>撤展前逐一拍照，打印放入电机箱</td></tr>\n<tr><td>展台LOGO辨识度不足</td><td>远距离不可见</td><td>采用大尺寸灯箱LOGO方案</td></tr>\n<tr><td>背立面无展位号</td><td>后方观众无法识别</td><td>增设立面展位号牌</td></tr>\n<tr><td>储藏间未安装门锁</td><td>物料存在安全隐患</td><td>将门锁安装纳入搭建验收清单</td></tr>\n<tr><td>设备遮罩布尺寸不足</td><td>无法完全遮盖设备</td><td>按设备周长×高度重新定制</td></tr>\n</tbody>\n</table>"
     },
     {
       "type": "html",
-      "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/展台开放式框架吊顶-经济型方案-20260610.jpg\" alt=\"展台开放式框架吊顶-经济型方案\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展台开放式框架吊顶-经济型方案</figcaption></figure>"
+      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/设备进场越早越好 防止其他展位搭好了叉车不好进.jpg\" alt=\"设备进场越早越好 防止其他展位搭好了叉车不好进\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">设备进场越早越好 防止其他展位搭好了叉车不好进</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/第一天展台搭建进度.jpg\" alt=\"第一天展台搭建进度\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">第一天展台搭建进度</figcaption></figure></div>"
     },
     {
       "type": "h3",
@@ -48,7 +40,7 @@
     },
     {
       "type": "p",
-      "text": "展会结束后打包需求集中，H1 馆打包服务排到了次日（第二天上午才能处理）。栈板需要提前一天送到展馆门口排队。"
+      "text": "展会结束后打包需求集中，H1 馆打包服务排到了次日。栈板需要提前一天送到展馆门口排队。"
     },
     {
       "type": "html",
@@ -84,18 +76,15 @@
     },
     {
       "type": "p",
-      "text": "泰国场馆对电气安全有明确要求："
-    },
-    {
-      "type": "ol",
-      "items": [
-        "设备接电必须使用 Y 形端子，不可使用裸线或非标端子，否则场馆方不给送电。",
-        "不可以拆除展商提供的电箱接线，这属于违规行为，场馆方发现后将拒绝送电。"
-      ]
+      "text": "泰国场馆对电气安全有明确要求：设备接电必须使用 Y 形端子，不可使用裸线或非标端子，否则场馆方不给送电。不可以拆除展商提供的电箱接线，这属于违规行为，场馆方发现后将拒绝送电。"
     },
     {
       "type": "html",
       "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/设备接电要使用Y 形端子.jpg\" alt=\"设备接电要使用Y 形端子\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">设备接电要使用Y 形端子</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/设备接电要使用 Y 形端子 2.jpg\" alt=\"设备接电要使用 Y 形端子 2\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">设备接电要使用 Y 形端子 2</figcaption></figure></div>"
+    },
+    {
+      "type": "html",
+      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/设备接电要使用Y 形端子 3.jpg\" alt=\"设备接电要使用Y 形端子 3\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">设备接电要使用Y 形端子 3</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/设备接电不可以拆除展商的电箱 不给送电.jpg\" alt=\"设备接电不可以拆除展商的电箱 不给送电\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">设备接电不可以拆除展商的电箱 不给送电</figcaption></figure></div>"
     },
     {
       "type": "html",
@@ -112,21 +101,33 @@
     {
       "type": "ul",
       "items": [
-        "充填机电器箱钥匙建议多配几把，并提前购置 2-3 把柜用万能钥匙备用。现场已出现钥匙不够用、无法开配电箱的情况。",
+        "充填机电器箱钥匙建议多配几把，并提前购置2-3把柜用万能钥匙备用。现场已出现钥匙不够用、无法开配电箱的情况。",
         "提前准备各个口径的快拆气管接头，避免现场临时找配件。",
         "充填机上倾倒标识要清晰可见，运输途中如果倾倒需及时检查内部状态。",
         "电视机 USB 接口配延长线引至方便插拔的位置。",
-        "设备接线管接头在撤展拆除前须逐一拍照留档，打印后放入电机箱内保存。下次搭建时可对照照片复原接线，避免接错。",
+        "设备接线管接头在撤展拆除前须逐一拍照留档，打印后放入电机箱内保存。下次搭建时可对照照片复原接线。",
         "现有设备遮罩布尺寸不足，建议按设备周长×高度重新定制，采用 IMA 展台同类轻量化材质，便于单人操作。"
       ]
     },
     {
       "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/IMA展台设备遮罩布效果-整体-20260613.jpg\" alt=\"IMA展台设备遮罩布效果-整体\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">IMA展台设备遮罩布效果-整体</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/IMA展台设备遮罩布材质-近距离-20260613.jpg\" alt=\"IMA展台设备遮罩布材质-近距离\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">IMA展台设备遮罩布材质-近距离</figcaption></figure></div>"
+      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/充填机电器箱钥匙多买几把.jpg\" alt=\"充填机电器箱钥匙多买几把\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">充填机电器箱钥匙多买几把</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/准备各个口径的快拆气管接头.jpg\" alt=\"准备各个口径的快拆气管接头\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">准备各个口径的快拆气管接头</figcaption></figure></div>"
     },
     {
       "type": "html",
       "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/充填机电器箱钥匙多买几把.jpg\" alt=\"充填机电器箱钥匙多买几把\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">充填机电器箱钥匙多买几把</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/准备各个口径的快拆气管接头.jpg\" alt=\"准备各个口径的快拆气管接头\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">准备各个口径的快拆气管接头</figcaption></figure></div>"
+    },
+    {
+      "type": "html",
+      "html": "<table>\n<thead><tr><th>问题</th><th>影响</th><th>改进措施</th></tr></thead>\n<tbody>\n<tr><td>打包服务排队到次日</td><td>撤展延迟</td><td>提前一天预约，备用自行打包方案</td></tr>\n<tr><td>设备进场时机偏晚</td><td>叉车无法通过</td><td>首批进场</td></tr>\n<tr><td>电器箱钥匙不够</td><td>临时配钥匙</td><td>标配3把以上</td></tr>\n<tr><td>未准备Y形端子</td><td>接电被拒</td><td>提前调研场馆规范，备足端子</td></tr>\n<tr><td>贴纸起皱</td><td>展台形象受损</td><td>使用硬质KT板替代贴纸</td></tr>\n<tr><td>未准备快拆气管接头</td><td>气路连接耗时</td><td>准备各口径快拆接头</td></tr>\n<tr><td>LED电视遮挡射灯</td><td>海报区光照不足</td><td>调整安装位置或增设补光灯</td></tr>\n<tr><td>接线管接头未留档</td><td>下次搭建接线参考缺失</td><td>撤展前逐一拍照，打印放入电机箱</td></tr>\n<tr><td>展台LOGO辨识度不足</td><td>远距离不可见</td><td>采用大尺寸灯箱LOGO方案</td></tr>\n<tr><td>背立面无展位号</td><td>后方观众无法识别</td><td>增设立面展位号牌</td></tr>\n<tr><td>储藏间未安装门锁</td><td>物料存在安全隐患</td><td>将门锁安装纳入搭建验收清单</td></tr>\n<tr><td>设备遮罩布尺寸不足</td><td>无法完全遮盖设备</td><td>按设备周长×高度重新定制</td></tr>\n</tbody>\n</table>"
+    },
+    {
+      "type": "html",
+      "html": "<table>\n<thead><tr><th>物品</th><th>数量建议</th><th>备注</th></tr></thead>\n<tbody>\n<tr><td>Y形端子（各规格）</td><td>每种10个</td><td>提前确认场馆要求</td></tr>\n<tr><td>快拆气管接头（各口径）</td><td>每种5个</td><td>含气管备用</td></tr>\n<tr><td>电器箱钥匙</td><td>3-5把</td><td>专人保管加备用</td></tr>\n<tr><td>USB延长线</td><td>2-3条</td><td>电视机、充电使用</td></tr>\n<tr><td>多国转换插线板</td><td>3个</td><td>确认当地插座标准</td></tr>\n<tr><td>柜用万能钥匙</td><td>2-3把</td><td>应对配电箱开锁</td></tr>\n</tbody>\n</table>"
+    },
+    {
+      "type": "html",
+      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/充填机倾倒标识提示倾倒 设备未见异常.jpg\" alt=\"充填机倾倒标识提示倾倒 设备未见异常\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">充填机倾倒标识提示倾倒 设备未见异常</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/主机未显示倾倒.jpg\" alt=\"主机未显示倾倒\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">主机未显示倾倒</figcaption></figure></div>"
     },
     {
       "type": "html",
@@ -153,38 +154,6 @@
       "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/展会最后一天下午 5 点前撤展人员已经在外等待 3.jpg\" alt=\"展会最后一天下午 5 点前撤展人员已经在外等待 3\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展会最后一天下午 5 点前撤展人员已经在外等待 3</figcaption></figure>"
     },
     {
-      "type": "p",
-      "text": "展台 LED 电视安装位置遮挡了顶部射灯，导致下方海报区域光照不足。后续应调整电视悬挂高度或角度，或增设独立补光。"
-    },
-    {
-      "type": "html",
-      "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/照片-电视遮挡灯光导致海报暗淡-20260610.jpg\" alt=\"照片-电视遮挡灯光导致海报暗淡\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">照片-电视遮挡灯光导致海报暗淡</figcaption></figure>"
-    },
-    {
-      "type": "p",
-      "text": "展台 LOGO 采用大尺寸灯箱方案，确保远距离可见。本次 LOGO 辨识度不足，后续参展应优先保障。"
-    },
-    {
-      "type": "p",
-      "text": "展台背立面未设置展位号标识，观众从后方无法识别。后续应在背立面增设展位号牌或灯箱标识。"
-    },
-    {
-      "type": "p",
-      "text": "展台侧面竖墙区域可增设线性流光灯带，增强远距离视觉吸引力。"
-    },
-    {
-      "type": "html",
-      "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/展台侧面竖墙-流光灯建议-20260611.jpg\" alt=\"展台侧面竖墙-流光灯建议\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展台侧面竖墙-流光灯建议</figcaption></figure>"
-    },
-    {
-      "type": "p",
-      "text": "参考其他展台：墙面采用内嵌式照片墙设计，中央设大屏电视播放企业视频，周围多尺寸相框展示项目案例与产品图。兼具品牌展示与空间装饰功能。"
-    },
-    {
-      "type": "html",
-      "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/KHS展台照片墙设计-参考效果-20260613.jpg\" alt=\"KHS展台照片墙设计-参考效果\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">KHS展台照片墙设计-参考效果</figcaption></figure>"
-    },
-    {
       "type": "h3",
       "text": "1.6 展台位置观察"
     },
@@ -198,39 +167,19 @@
     },
     {
       "type": "html",
+      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/H1 馆左侧低质量标摊.jpg\" alt=\"H1 馆左侧低质量标摊\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">H1 馆左侧低质量标摊</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/H3 右侧都是小标摊.jpg\" alt=\"H3 右侧都是小标摊\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">H3 右侧都是小标摊</figcaption></figure></div>"
+    },
+    {
+      "type": "html",
       "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/H1 馆左侧条包机厂商.jpg\" alt=\"H1 馆左侧条包机厂商\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">H1 馆左侧条包机厂商</figcaption></figure>"
     },
     {
       "type": "h3",
-      "text": "1.7 本次实操问题与改进"
-    },
-    {
-      "type": "html",
-      "html": "<table>\n<thead><tr><th>问题</th><th>影响</th><th>改进措施</th></tr></thead>\n<tbody>\n<tr><td>打包服务排队到次日</td><td>撤展延迟</td><td>提前一天预约，备用自行打包方案</td></tr>\n<tr><td>设备进场时机偏晚</td><td>叉车无法通过</td><td>首批进场</td></tr>\n<tr><td>电器箱钥匙不够</td><td>临时配钥匙</td><td>标配3把以上</td></tr>\n<tr><td>未准备Y形端子</td><td>接电被拒</td><td>提前调研场馆规范，备足端子</td></tr>\n<tr><td>贴纸起皱</td><td>展台形象受损</td><td>使用硬质KT板替代贴纸</td></tr>\n<tr><td>未准备快拆气管接头</td><td>气路连接耗时</td><td>准备各口径快拆接头</td></tr>\n<tr><td>LED电视遮挡射灯</td><td>海报区光照不足</td><td>调整安装位置或增设补光灯</td></tr>\n<tr><td>接线管接头未留档</td><td>下次搭建接线参考缺失</td><td>撤展前逐一拍照，打印放入电机箱</td></tr>\n<tr><td>展台LOGO辨识度不足</td><td>远距离不可见</td><td>采用大尺寸灯箱LOGO方案</td></tr>\n<tr><td>背立面无展位号</td><td>后方观众无法识别</td><td>增设立面展位号牌</td></tr>\n<tr><td>储藏间未安装门锁</td><td>物料存在安全隐患</td><td>将门锁安装纳入搭建验收清单</td></tr>\n<tr><td>设备遮罩布尺寸不足</td><td>无法完全遮盖设备</td><td>按设备周长×高度重新定制</td></tr>\n</tbody>\n</table>"
-    },
-    {
-      "type": "h3",
-      "text": "1.8 展会事项改进"
+      "text": "1.7 展会事项"
     },
     {
       "type": "p",
-      "text": "建议将展台核心组件（柜体、货架、接待台、储藏室）设计为可重复利用的模块化单元，整体发运。关键思路：1) 接待台嵌入电视屏，根据展会更换播放内容，避免每次重做；2) 设备运输使用集装箱，到达展馆后集装箱可直接作为展台储藏间。此方案可降低跨国参展的重复搭建成本。"
-    },
-    {
-      "type": "html",
-      "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/可重复利用展台组件-木质货架设计-20260610.jpg\" alt=\"可重复利用展台组件-木质货架设计\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">可重复利用展台组件-木质货架设计</figcaption></figure>"
-    },
-    {
-      "type": "p",
-      "text": "展会礼品行李牌优化建议：1) 外壳材质加硬，提升质感；2) 背面个人信息区改为插卡式设计，更换人员时无需丢弃整体，实现重复使用。"
-    },
-    {
-      "type": "html",
-      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/行李牌设计-正面展示-JOYEA品牌-20260610.jpg\" alt=\"行李牌设计-正面展示\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">行李牌设计-正面展示</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/行李牌设计-插卡式可更换设计-20260610.jpg\" alt=\"行李牌设计-插卡式可更换设计\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">行李牌设计-插卡式可更换设计</figcaption></figure></div>"
-    },
-    {
-      "type": "html",
-      "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/行李牌设计-背面信息填写区-20260610.jpg\" alt=\"行李牌设计-背面信息填写区\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">行李牌设计-背面信息填写区</figcaption></figure>"
+      "text": "展台储藏间搭建完成后应同步安装门锁。首日搭建后未及时锁闭储物间，展会物料和工具存在安全隐患。将门锁安装纳入搭建验收清单。"
     },
     {
       "type": "p",
@@ -245,12 +194,96 @@
       "text": "展会礼品包装上的二维码应使用国际通用渠道链接（公司国际官网、LinkedIn、YouTube 等），而非仅国内平台。ProPak Asia 为国际展会，参观者来自各国，二维码须指向海外可正常访问的平台。"
     },
     {
+      "type": "p",
+      "text": "展会礼品行李牌优化建议：1) 外壳材质加硬，提升质感；2) 背面个人信息区改为插卡式设计，更换人员时无需丢弃整体，实现重复使用。"
+    },
+    {
+      "type": "h3",
+      "text": "1.8 本次实操问题与改进方案"
+    },
+    {
       "type": "html",
-      "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/展会礼品-包装盒二维码示例-20260613.jpg\" alt=\"展会礼品-包装盒二维码示例\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展会礼品-包装盒二维码示例</figcaption></figure>"
+      "html": "<table>\n<thead><tr><th>问题</th><th>影响</th><th>改进措施</th></tr></thead>\n<tbody>\n<tr><td>打包服务排队到次日</td><td>撤展延迟</td><td>提前一天预约，备用自行打包方案</td></tr>\n<tr><td>设备进场时机偏晚</td><td>叉车无法通过</td><td>首批进场</td></tr>\n<tr><td>电器箱钥匙不够</td><td>临时配钥匙</td><td>标配3把以上</td></tr>\n<tr><td>未准备Y形端子</td><td>接电被拒</td><td>提前调研场馆规范，备足端子</td></tr>\n<tr><td>贴纸起皱</td><td>展台形象受损</td><td>使用硬质KT板替代贴纸</td></tr>\n<tr><td>未准备快拆气管接头</td><td>气路连接耗时</td><td>准备各口径快拆接头</td></tr>\n<tr><td>LED电视遮挡射灯</td><td>海报区光照不足</td><td>调整安装位置或增设补光灯</td></tr>\n<tr><td>接线管接头未留档</td><td>下次搭建接线参考缺失</td><td>撤展前逐一拍照，打印放入电机箱</td></tr>\n<tr><td>展台LOGO辨识度不足</td><td>远距离不可见</td><td>采用大尺寸灯箱LOGO方案</td></tr>\n<tr><td>背立面无展位号</td><td>后方观众无法识别</td><td>增设立面展位号牌</td></tr>\n<tr><td>储藏间未安装门锁</td><td>物料存在安全隐患</td><td>将门锁安装纳入搭建验收清单</td></tr>\n<tr><td>设备遮罩布尺寸不足</td><td>无法完全遮盖设备</td><td>按设备周长×高度重新定制</td></tr>\n</tbody>\n</table>"
     },
     {
       "type": "h2",
-      "text": "二、其他展商设计参考"
+      "text": "二、仅一 JOYEA 展台设计改进方向"
+    },
+    {
+      "type": "p",
+      "text": "基于本次参展经验，对仅一下次展台设计提出以下改进方向。"
+    },
+    {
+      "type": "h3",
+      "text": "2.1 展台朝向"
+    },
+    {
+      "type": "p",
+      "text": "展台规格为 6×10m，本次设备展示面朝向 6 米窄面。后续搭建将设备主展示面朝向 10 米宽面，使展台视觉上更宽敞有气势。"
+    },
+    {
+      "type": "h3",
+      "text": "2.2 框架吊顶"
+    },
+    {
+      "type": "p",
+      "text": "本次展台采用开放式框架吊顶设计（白色金属框架搭配橙色穿孔板），兼顾照明设备灵活布置与成本控制。视觉效果简洁现代，后续可继续采用。"
+    },
+    {
+      "type": "h3",
+      "text": "2.3 LOGO 与标识"
+    },
+    {
+      "type": "p",
+      "text": "展台 LOGO 采用大尺寸灯箱方案，确保远距离可见。背立面应增设展位号牌或灯箱标识，避免后方观众无法识别本展位。"
+    },
+    {
+      "type": "h3",
+      "text": "2.4 灯光效果"
+    },
+    {
+      "type": "p",
+      "text": "展台 LED 电视安装位置遮挡了顶部射灯，导致下方海报区域光照不足。后续应调整电视悬挂高度或角度，或增设独立补光。"
+    },
+    {
+      "type": "html",
+      "html": "<table>\n<thead><tr><th>问题</th><th>影响</th><th>改进措施</th></tr></thead>\n<tbody>\n<tr><td>打包服务排队到次日</td><td>撤展延迟</td><td>提前一天预约，备用自行打包方案</td></tr>\n<tr><td>设备进场时机偏晚</td><td>叉车无法通过</td><td>首批进场</td></tr>\n<tr><td>电器箱钥匙不够</td><td>临时配钥匙</td><td>标配3把以上</td></tr>\n<tr><td>未准备Y形端子</td><td>接电被拒</td><td>提前调研场馆规范，备足端子</td></tr>\n<tr><td>贴纸起皱</td><td>展台形象受损</td><td>使用硬质KT板替代贴纸</td></tr>\n<tr><td>未准备快拆气管接头</td><td>气路连接耗时</td><td>准备各口径快拆接头</td></tr>\n<tr><td>LED电视遮挡射灯</td><td>海报区光照不足</td><td>调整安装位置或增设补光灯</td></tr>\n<tr><td>接线管接头未留档</td><td>下次搭建接线参考缺失</td><td>撤展前逐一拍照，打印放入电机箱</td></tr>\n<tr><td>展台LOGO辨识度不足</td><td>远距离不可见</td><td>采用大尺寸灯箱LOGO方案</td></tr>\n<tr><td>背立面无展位号</td><td>后方观众无法识别</td><td>增设立面展位号牌</td></tr>\n<tr><td>储藏间未安装门锁</td><td>物料存在安全隐患</td><td>将门锁安装纳入搭建验收清单</td></tr>\n<tr><td>设备遮罩布尺寸不足</td><td>无法完全遮盖设备</td><td>按设备周长×高度重新定制</td></tr>\n</tbody>\n</table>"
+    },
+    {
+      "type": "p",
+      "text": "展台侧面竖墙区域可增设线性流光灯带。"
+    },
+    {
+      "type": "h3",
+      "text": "2.5 墙面展示"
+    },
+    {
+      "type": "p",
+      "text": "参考 KHS 展台：墙面采用内嵌式照片墙设计，中央设大屏电视播放企业视频，周围多尺寸相框展示项目案例与产品图。"
+    },
+    {
+      "type": "h3",
+      "text": "2.6 模块化可重复利用"
+    },
+    {
+      "type": "p",
+      "text": "建议将展台核心组件（柜体、货架、接待台、储藏室）设计为可重复利用的模块化单元，整体发运。接待台嵌入电视屏，更换播放内容即可适配不同展会。设备运输使用集装箱，到达后可直接作为展台储藏间。"
+    },
+    {
+      "type": "h3",
+      "text": "2.7 展台隐私安全"
+    },
+    {
+      "type": "p",
+      "text": "拍照打卡点应设在展台内部而非外围。放在外面时每次合影都会被友商看到仅一接待了哪些客户，存在客户信息泄密风险。拍照点放在展台内部可有效保护客户隐私。"
+    },
+    {
+      "type": "h2",
+      "text": "三、其他展商设计参考"
+    },
+    {
+      "type": "p",
+      "text": "以下为展会期间观察到的其他展商展台设计方案和细节，供仅一未来参展参考。"
     },
     {
       "type": "p",
@@ -258,7 +291,7 @@
     },
     {
       "type": "h3",
-      "text": "2.1 白色地板 + 充足灯光"
+      "text": "3.1 白色地板 + 充足灯光"
     },
     {
       "type": "p",
@@ -306,7 +339,7 @@
     },
     {
       "type": "h3",
-      "text": "2.2 吊旗与顶部装饰光照"
+      "text": "3.2 吊旗与顶部装饰光照"
     },
     {
       "type": "p",
@@ -326,7 +359,7 @@
     },
     {
       "type": "h3",
-      "text": "2.3 立柱灯光"
+      "text": "3.3 立柱灯光"
     },
     {
       "type": "p",
@@ -342,7 +375,7 @@
     },
     {
       "type": "h3",
-      "text": "2.4 空间布局"
+      "text": "3.4 空间布局"
     },
     {
       "type": "p",
@@ -378,7 +411,7 @@
     },
     {
       "type": "h3",
-      "text": "2.5 展示创意与手法"
+      "text": "3.5 展示创意与手法"
     },
     {
       "type": "ul",
@@ -424,7 +457,7 @@
     },
     {
       "type": "h3",
-      "text": "2.6 灯光 Logo 设计"
+      "text": "3.6 灯光 Logo 设计"
     },
     {
       "type": "p",
@@ -436,7 +469,7 @@
     },
     {
       "type": "h3",
-      "text": "2.7 吸引人流的技巧"
+      "text": "3.7 吸引人流的技巧"
     },
     {
       "type": "ul",
@@ -451,7 +484,7 @@
     },
     {
       "type": "h3",
-      "text": "2.8 友商展台"
+      "text": "3.8 友商展台"
     },
     {
       "type": "ul",
@@ -471,7 +504,7 @@
     },
     {
       "type": "h3",
-      "text": "2.9 反面参考"
+      "text": "3.9 反面参考"
     },
     {
       "type": "p",
@@ -495,7 +528,7 @@
     },
     {
       "type": "h3",
-      "text": "2.10 行业认知混淆风险"
+      "text": "3.10 行业认知混淆风险"
     },
     {
       "type": "p",
@@ -507,7 +540,7 @@
     },
     {
       "type": "h3",
-      "text": "2.11 其他参考照片"
+      "text": "3.11 其他参考照片"
     },
     {
       "type": "html",
@@ -523,11 +556,11 @@
     },
     {
       "type": "h2",
-      "text": "三、未来参展改进建议"
+      "text": "四、未来参展改进建议"
     },
     {
       "type": "h3",
-      "text": "3.1 展台设计"
+      "text": "4.1 展台设计"
     },
     {
       "type": "ol",
@@ -538,30 +571,32 @@
         "采用前展示、后洽谈的空间分区设计。",
         "配备 3D 模型展柜展示无法实物展出的大型设备。",
         "在展台视觉中突出设备元素，避免与包材企业混淆。",
-        "设备展示面朝向展台宽面（10m），避免窄面限制视觉效果。",
+        "设备展示面朝向展台宽面（10m），避免窄面。",
         "LOGO采用大尺寸灯箱方案，背立面增设展位号标识。",
-        "侧面竖墙增设线性流光灯带，增强远距离视觉引导。",
-        "参考内嵌式照片墙设计，中央大屏+周围相框展示项目案例。"
+        "侧面竖墙增设线性流光灯带。",
+        "参考内嵌式照片墙设计，中央大屏加周围相框。",
+        "继续采用开放式框架吊顶方案。",
+        "拍照打卡点设在展台内部，保护客户隐私。"
       ]
     },
     {
       "type": "h3",
-      "text": "3.2 物流与操作"
+      "text": "4.2 物流与操作"
     },
     {
       "type": "ol",
       "items": [
         "统一硬质箱加托盘方案。",
         "设备进场排首批，与主办方提前沟通。",
-        "打包服务提前预约，撤展前一天即联系打包服务商并放置栈板在展馆门口排队。",
-        "自备打包工具（打包机、缠绕膜、胶带等）作为备用方案。",
-        "探索模块化可重复利用展台组件方案，降低跨国参展重复搭建成本。",
+        "打包服务提前预约，撤展前一天即联系打包服务商，栈板提前送到展馆门口排队。",
+        "自备打包工具作为备用方案。",
+        "探索模块化可重复利用展台组件方案。",
         "按设备周长×高度重新定制轻量化遮罩布。"
       ]
     },
     {
       "type": "h3",
-      "text": "3.3 电气准备清单"
+      "text": "4.3 电气准备清单"
     },
     {
       "type": "html",
@@ -569,17 +604,21 @@
     },
     {
       "type": "h3",
-      "text": "3.4 市场宣传"
+      "text": "4.4 市场宣传"
     },
     {
       "type": "ol",
       "items": [
         "定制大尺寸展会袋，参照基恩士的策略。",
-        "展台内设置拍照打卡点，鼓励社交媒体二次传播。",
-        "准备中英双语产品手册。",
-        "礼品行李牌改用硬质材质+插卡式设计，实现重复使用。",
+        "拍照打卡点设在展台内部，防止友商窥视仅一接待了哪些客户，避免客户信息泄密。",
+        "准备中英双语的礼品包装及配料表。",
+        "礼品行李牌改用硬质材质加插卡式设计，实现重复使用。",
         "所有二维码和链接指向国际通用平台（官网、LinkedIn、YouTube），确保海外观众可访问。"
       ]
+    },
+    {
+      "type": "h3",
+      "text": "4.5 展会事项"
     },
     {
       "type": "ol",
@@ -588,10 +627,6 @@
         "展会结束后存档展商地图和展商手册，供下届选址参考。",
         "搭建验收清单纳入储藏间门锁安装。"
       ]
-    },
-    {
-      "type": "h3",
-      "text": "3.5 展会事项"
     }
   ]
 }
