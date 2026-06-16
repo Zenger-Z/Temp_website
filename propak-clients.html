@@ -32,6 +32,31 @@
 /* ── Touch-friendly utilities ── */
 .card { -webkit-tap-highlight-color: transparent; }
 
+/* ── Password Gate ── */
+.pwd-overlay {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  background: #f5f5f5; z-index: 9999;
+  display: flex; align-items: center; justify-content: center;
+}
+.pwd-box {
+  background: #fff; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  padding: 40px 32px; max-width: 360px; width: 90%; text-align: center;
+}
+.pwd-box h2 { font-size: 20px; margin-bottom: 8px; color: #1f1f1f; }
+.pwd-box p  { font-size: 14px; color: #999; margin-bottom: 24px; }
+.pwd-box input {
+  width: 100%; padding: 12px 16px; font-size: 16px;
+  border: 1.5px solid #e8e8e8; border-radius: 10px; outline: none;
+  text-align: center; letter-spacing: 2px;
+}
+.pwd-box input:focus { border-color: #1677ff; box-shadow: 0 0 0 3px rgba(22,119,255,0.1); }
+.pwd-box button {
+  width: 100%; margin-top: 16px; padding: 12px; font-size: 16px; font-weight: 600;
+  background: #1677ff; color: #fff; border: none; border-radius: 10px; cursor: pointer;
+}
+.pwd-box button:hover { background: #4096ff; }
+.pwd-box .pwd-error { color: #cf1322; font-size: 13px; margin-top: 12px; display: none; }
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -453,6 +478,17 @@ body {
 </head>
 <body>
 
+<!-- Password Gate -->
+<div class="pwd-overlay" id="pwdOverlay">
+  <div class="pwd-box">
+    <h2>🔒 访问验证</h2>
+    <p>请输入访问密码</p>
+    <input type="password" id="pwdInput" placeholder="请输入密码" onkeydown="if(event.key==='Enter')checkPwd()">
+    <button onclick="checkPwd()">确认</button>
+    <div class="pwd-error" id="pwdError">密码错误，请重试</div>
+  </div>
+</div>
+
 <div class="header">
   <div class="header-inner">
     <h1>2026 泰国 ProPak 拟邀请客户</h1>
@@ -488,6 +524,27 @@ body {
 </div>
 
 <script>
+// ── Password Gate ──
+const PWD_KEY = 'propak_authed';
+const PWD_HASH = '32ccd313'; // JOYEA88031111
+
+function hashSimple(s) { var h = 0; for (var i = 0; i < s.length; i++) { h = ((h << 5) - h) + s.charCodeAt(i); h |= 0; } return Math.abs(h).toString(16); }
+
+function checkPwd() {
+  var input = document.getElementById('pwdInput').value;
+  if (hashSimple(input) === PWD_HASH) {
+    sessionStorage.setItem(PWD_KEY, '1');
+    document.getElementById('pwdOverlay').style.display = 'none';
+  } else {
+    document.getElementById('pwdError').style.display = 'block';
+    document.getElementById('pwdInput').value = '';
+  }
+}
+
+if (sessionStorage.getItem(PWD_KEY) === '1') {
+  document.getElementById('pwdOverlay').style.display = 'none';
+}
+
 let allData = { visited: [], potential: [] };
 let currentTab = 'visited';
 
