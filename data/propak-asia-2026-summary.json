@@ -39,6 +39,10 @@
       "text": "本次展台采用开放式框架吊顶设计（白色金属框架搭配橙色穿孔板），兼顾照明设备灵活布置与成本控制。视觉效果简洁现代，后续可继续采用此类经济型吊顶方案。"
     },
     {
+      "type": "html",
+      "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/展台开放式框架吊顶-经济型方案-20260610.jpg\" alt=\"展台开放式框架吊顶-经济型方案\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展台开放式框架吊顶-经济型方案</figcaption></figure>"
+    },
+    {
       "type": "h3",
       "text": "1.2 物流与包装"
     },
@@ -118,6 +122,10 @@
     },
     {
       "type": "html",
+      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/IMA展台设备遮罩布效果-整体-20260613.jpg\" alt=\"IMA展台设备遮罩布效果-整体\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">IMA展台设备遮罩布效果-整体</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/IMA展台设备遮罩布材质-近距离-20260613.jpg\" alt=\"IMA展台设备遮罩布材质-近距离\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">IMA展台设备遮罩布材质-近距离</figcaption></figure></div>"
+    },
+    {
+      "type": "html",
       "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/充填机电器箱钥匙多买几把.jpg\" alt=\"充填机电器箱钥匙多买几把\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">充填机电器箱钥匙多买几把</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/准备各个口径的快拆气管接头.jpg\" alt=\"准备各个口径的快拆气管接头\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">准备各个口径的快拆气管接头</figcaption></figure></div>"
     },
     {
@@ -149,6 +157,10 @@
       "text": "展台 LED 电视安装位置遮挡了顶部射灯，导致下方海报区域光照不足。后续应调整电视悬挂高度或角度，或增设独立补光。"
     },
     {
+      "type": "html",
+      "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/照片-电视遮挡灯光导致海报暗淡-20260610.jpg\" alt=\"照片-电视遮挡灯光导致海报暗淡\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">照片-电视遮挡灯光导致海报暗淡</figcaption></figure>"
+    },
+    {
       "type": "p",
       "text": "展台 LOGO 采用大尺寸灯箱方案，确保远距离可见。本次 LOGO 辨识度不足，后续参展应优先保障。"
     },
@@ -161,8 +173,16 @@
       "text": "展台侧面竖墙区域可增设线性流光灯带，增强远距离视觉吸引力。"
     },
     {
+      "type": "html",
+      "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/展台侧面竖墙-流光灯建议-20260611.jpg\" alt=\"展台侧面竖墙-流光灯建议\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展台侧面竖墙-流光灯建议</figcaption></figure>"
+    },
+    {
       "type": "p",
       "text": "参考其他展台：墙面采用内嵌式照片墙设计，中央设大屏电视播放企业视频，周围多尺寸相框展示项目案例与产品图。兼具品牌展示与空间装饰功能。"
+    },
+    {
+      "type": "html",
+      "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/KHS展台照片墙设计-参考效果-20260613.jpg\" alt=\"KHS展台照片墙设计-参考效果\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">KHS展台照片墙设计-参考效果</figcaption></figure>"
     },
     {
       "type": "h3",
@@ -197,8 +217,20 @@
       "text": "建议将展台核心组件（柜体、货架、接待台、储藏室）设计为可重复利用的模块化单元，整体发运。关键思路：1) 接待台嵌入电视屏，根据展会更换播放内容，避免每次重做；2) 设备运输使用集装箱，到达展馆后集装箱可直接作为展台储藏间。此方案可降低跨国参展的重复搭建成本。"
     },
     {
+      "type": "html",
+      "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/可重复利用展台组件-木质货架设计-20260610.jpg\" alt=\"可重复利用展台组件-木质货架设计\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">可重复利用展台组件-木质货架设计</figcaption></figure>"
+    },
+    {
       "type": "p",
       "text": "展会礼品行李牌优化建议：1) 外壳材质加硬，提升质感；2) 背面个人信息区改为插卡式设计，更换人员时无需丢弃整体，实现重复使用。"
+    },
+    {
+      "type": "html",
+      "html": "<div style=\"display:flex;gap:12px;margin:16px 0;flex-wrap:wrap\"><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/行李牌设计-正面展示-JOYEA品牌-20260610.jpg\" alt=\"行李牌设计-正面展示\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">行李牌设计-正面展示</figcaption></figure><figure style=\"flex:1;min-width:200px;margin:0\"><img src=\"image/propak-summary/行李牌设计-插卡式可更换设计-20260610.jpg\" alt=\"行李牌设计-插卡式可更换设计\" loading=\"lazy\" style=\"width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">行李牌设计-插卡式可更换设计</figcaption></figure></div>"
+    },
+    {
+      "type": "html",
+      "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/行李牌设计-背面信息填写区-20260610.jpg\" alt=\"行李牌设计-背面信息填写区\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">行李牌设计-背面信息填写区</figcaption></figure>"
     },
     {
       "type": "p",
@@ -211,6 +243,10 @@
     {
       "type": "p",
       "text": "展会礼品包装上的二维码应使用国际通用渠道链接（公司国际官网、LinkedIn、YouTube 等），而非仅国内平台。ProPak Asia 为国际展会，参观者来自各国，二维码须指向海外可正常访问的平台。"
+    },
+    {
+      "type": "html",
+      "html": "<figure style=\"margin:16px 0;max-width:100%\"><img src=\"image/propak-summary/展会礼品-包装盒二维码示例-20260613.jpg\" alt=\"展会礼品-包装盒二维码示例\" loading=\"lazy\" style=\"max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);display:block\"><figcaption style=\"font-size:12px;color:#1677ff;margin-top:6px;text-align:center;font-weight:500\">展会礼品-包装盒二维码示例</figcaption></figure>"
     },
     {
       "type": "h2",
