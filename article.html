@@ -466,6 +466,19 @@
     }
     .article-body p { margin-bottom: 12px; }
     .article-body strong { color: var(--color-text); font-weight: 600; }
+    .article-body a {
+      color: var(--color-primary);
+      font-weight: 600;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+      overflow-wrap: anywhere;
+    }
+    .article-body a:hover {
+      color: var(--color-primary-hover);
+      background: rgba(22, 119, 255, 0.08);
+      border-radius: 3px;
+    }
     .article-body ul, .article-body ol { margin-bottom: 12px; padding-left: 24px; }
     .article-body li { margin-bottom: 4px; line-height: 1.75; }
     .article-body li::marker { color: var(--color-text-quaternary); }
@@ -552,6 +565,24 @@
     .article-body tr:last-child td { border-bottom: none; }
     .article-body tbody tr:hover { background: var(--color-bg-spotlight); }
     .article-body tbody tr:last-child:hover { background: var(--color-bg-spotlight); }
+    .table-scroll {
+      width: 100%;
+      overflow-x: auto;
+      margin: 12px 0 24px 0;
+      border-radius: var(--radius-md);
+    }
+    .table-scroll table { margin: 0; }
+    .table-scroll--wide table {
+      min-width: 920px;
+      font-size: 13px;
+    }
+    .table-scroll--wide th,
+    .table-scroll--wide td {
+      padding: 9px 10px;
+      white-space: normal !important;
+      vertical-align: top;
+      overflow-wrap: anywhere;
+    }
 
     blockquote {
       border-left: 4px solid var(--color-primary);
@@ -992,8 +1023,9 @@
           var rows = table.querySelectorAll('tbody tr');
           if (rows.length === 0) return;
           var colCount = rows[0].querySelectorAll('td').length;
+          var isWideTable = colCount > 5;
           var ths = table.querySelectorAll('thead th');
-          for (var c = 0; c < colCount; c++) {
+          if (!isWideTable) for (var c = 0; c < colCount; c++) {
             var allShort = true;
             var allVeryShort = true;
             for (var r = 0; r < rows.length; r++) {
@@ -1017,6 +1049,12 @@
                 }
               }
             }
+          }
+          if (!table.parentElement || !table.parentElement.classList.contains('table-scroll')) {
+            var wrap = document.createElement('div');
+            wrap.className = isWideTable ? 'table-scroll table-scroll--wide' : 'table-scroll';
+            table.parentNode.insertBefore(wrap, table);
+            wrap.appendChild(table);
           }
         });
 
