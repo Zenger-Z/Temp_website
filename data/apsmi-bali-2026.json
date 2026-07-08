@@ -1,198 +1,70 @@
 {
-  "id": "apsmi-bali-2026",
-  "title": "APSMI/Self-CARER/GPFI Bali Summit 2026 参会价值评估",
-  "date": "2026-07-08",
-  "tag": "展会评估",
-  "summary": "综合评分 66/100。建议仅一以 1 人普通参会形式参加（早鸟价 USD 680），不建议购买赞助或展位。会议覆盖亚太 OTC/consumer health/self-care 产业，Platinum sponsor 含 Kalbe、P&G、Kenvue、Haleon 等 10 家头部企业，但议题偏政策与监管，无生产/包装/供应链主题。建议低成本验证客户生态。",
+  "title": "APSMI Bali Summit 2026 参展价值评估报告",
   "category": "展会评估",
+  "date": "2026-07-08",
+  "readTime": 18,
+  "prevId": "propak-asia-2026-summary",
+  "nextId": null,
   "content": [
     {
       "type": "h2",
       "text": "一、决策摘要"
     },
     {
-      "type": "p",
-      "text": "综合评分：66/100。建议仅一以 1 人普通参会形式参加，不建议购买赞助或展位。"
+      "type": "blockquote",
+      "text": "一句话判断：该会议是印尼及亚太 OTC/consumer health/self-care 行业的政策与生态会议，不是包装设备销售型展会。会议对仅一的价值在于接触 Kalbe、P&G、Kenvue、Haleon 等区域头部药企和消费健康企业网络，而非直接获取包装设备采购线索。公开日程中无生产、包装、工程、供应链或自动化主题。"
     },
     {
       "type": "p",
-      "text": "该会议对仅一的价值主要在于接触印尼及亚太 OTC / consumer health / self-care 行业生态，识别 Kalbe、Konimex、Darya-Varia、P&G、Kenvue、Haleon、Opella、Taisho 等潜在目标客户，而不是直接获取包装设备采购线索。会议议题偏政策、监管、健康素养和数字健康，公开日程没有生产、包装、工程、供应链或自动化主题。"
+      "text": "会议全称 APSMI BM / Self-CARER Meeting / Self-CARER WG Meeting / APSMI/Self-CARER/GPFI Open Conference 2026，主题「Self-Care in Healthcare: Scaling Partnership for Better Health Outcomes」，由 Asia-Pacific Self-Medication Industry（APSMI）、Self-CARER（亚洲 self-medication 监管交流平台）和 Gabungan Perusahaan Farmasi Indonesia（GPFI，印尼药企协会）联合主办，2026 年 10 月 29-31 日在印尼巴厘岛 Paradisus by Melia Hotel 召开，11 月 1 日为 Self-Care Fun Run。注册网站：https://apsmibalimeeting2026.com/ 。"
+    },
+    {
+      "type": "p",
+      "text": "公开会议议程涵盖 6 个 sessions：Self-Care 全球和亚太共同愿景、亚太 self-care 联合宣言、健康素养、Self-care 落地实践、监管流程优化、数字化 self-care。议程围绕政策、监管、健康素养和数字健康展开，无生产、包装、工程、供应链或自动化主题。会议分为邀请制会议和公开会议两类，仅一作为普通非会员注册参会，可参加 10 月 29-31 日面向注册参会者开放的 open conference sessions 及茶歇、networking lunch、gala dinner 等注册权益，不能参加 APSMI BM、Self-CARER WG Meeting、Self-CARER Meeting 等 invited-only sessions。有效参会窗口：10 月 30 日下午 Open Seminar + 10 月 31 日全天 Open Conference + Welcome Reception + Gala Dinner。"
+    },
+    {
+      "type": "p",
+      "text": "Platinum sponsor 均带 booth，名单包括 Reckitt Benckiser、Sato Pharmaceutical、P&G、Opella（原 Sanofi Consumer Healthcare）、Kenvue（强生消费健康）、Kalbe Group、Haleon、Darya-Varia、Konimex、Taisho。这批 sponsor 质量是本会议最重要的正面信号——证明会议能吸引 OTC/consumer health 头部企业和印尼本土药企。"
     },
     {
       "type": "html",
-      "html": "<table><thead><tr><th>维度</th><th>得分</th><th>判断</th></tr></thead><tbody><tr><td>区域/行业入口价值</td><td>17/20</td><td>印尼和亚太 OTC / self-care 入口价值较高</td></tr><tr><td>议题与业务相关性</td><td>15/30</td><td>行业相关，但包装设备和生产议题弱</td></tr><tr><td>参会角色与客户信号</td><td>17/30</td><td>客户质量较好，但岗位和采购场景不确定</td></tr><tr><td>主办方可信度与会议影响力</td><td>17/20</td><td>APSMI、Self-CARER、GPFI 组合可信度较高</td></tr><tr><td><strong>合计</strong></td><td><strong>66/100</strong></td><td><strong>谨慎参加，低成本验证</strong></td></tr></tbody></table>"
+      "html": "<table><thead><tr><th>维度</th><th>得分</th><th>判断</th></thead><tbody><tr><td>区域入口价值</td><td>17/20</td><td>印尼和亚太 OTC/self-care 入口价值较高，GPFI 增强印尼本土药企网络接入</td></tr><tr><td>业务与产品相关性</td><td>15/30</td><td>终端行业与仅一相关，议题偏政策与监管，生产/包装场景极弱</td></tr><tr><td>赛道展商/客户信号</td><td>17/30</td><td>Platinum sponsor 含 10 家头部企业，客户质量较好，但无生产/包装/采购岗位信息</td></tr><tr><td>展会可信度与影响力</td><td>17/20</td><td>APSMI+GPFI+Self-CARER 三方联合，2025 年已有成功举办记录</td></tr><tr><td><strong>合计</strong></td><td><strong>66/100</strong></td><td><strong>谨慎参加，低成本验证</strong></td></tr></tbody></table>"
     },
     {
       "type": "p",
-      "text": "最终建议：仅一安排 1 名海外业务/东南亚市场负责人以中国公司身份注册普通参会，参加 2026 年 10 月 29-31 日期间面向注册参会者开放的公开会议内容，并参加茶歇、networking lunch、gala dinner 等注册权益内活动。10 月 29 日的 APSMI BM、Self-CARER WG Meeting 等邀请制会议不能参加。会前应联系目标 sponsor 和本土药企确认是否有 manufacturing、packaging、supply chain、procurement 相关人员参会；若不能确认，不建议购买 Gold / Platinum booth。"
+      "text": "非会员/国际参会者早鸟注册费 USD 680（截至 2026-07-31），普通注册费 USD 780。Platinum Booth USD 5,000（3天、2人、3x3m booth、10 分钟发言），Gold Booth USD 4,000（3天、1人、3x3m booth、无发言），Meeting Package USD 2,370-3,550（单日茶歇/晚宴赞助）。预估 1 人参会总成本（上海往返、早鸟价、会议酒店 3 晚）：USD 2,821-3,665，约 RMB 19,190-24,980；控制成本版本约 RMB 12,040-16,760。"
+    },
+    {
+      "type": "p",
+      "text": "会前行动建议：(1) 尽快以仅一中国公司身份注册早鸟价（截止 7 月 31 日）；(2) 10 月 29 日抵达，30 日下午开始参会+Welcome Reception，31 日全天+Gala Dinner；(3) 优先联系 Kalbe、Konimex、Darya-Varia、P&G、Kenvue、Haleon、Opella、Taisho，确认是否有 manufacturing/packaging/supply chain/procurement 人员到场；(4) 准备一页英文资料，聚焦 stick pack、粉剂/颗粒/液体条包、保健品/OTC/consumer health 包装整线；(5) 现场不以成交为目标，目标是确认 5-8 家企业的产品形态、生产布局和关键联系人。"
+    },
+    {
+      "type": "blockquote",
+      "text": "建议仅一以 1 人普通参会形式参加，不建议购买赞助或展位。会前应确认目标企业是否有生产/包装相关人员参会；若不能确认，不建议追加 Gold booth。只有在会前确认至少 3 家目标企业有生产、包装、工程、供应链或采购岗位人员参会时，才考虑追加 Gold booth。"
     },
     {
       "type": "h2",
-      "text": "二、会议基本信息"
+      "text": "二、评分明细"
     },
     {
       "type": "h3",
-      "text": "会议定位"
-    },
-    {
-      "type": "p",
-      "text": "这是一个面向亚太 OTC / consumer health / self-care / self-medication 行业的会议，核心不是包装设备展，也不是普通药品展，而是围绕非处方药、自我药疗、自我保健政策、监管协同和产业合作展开的行业峰会。"
-    },
-    {
-      "type": "p",
-      "text": "会议由 APSMI（Asia-Pacific Self-Medication Industry）、Self-CARER（面向亚洲监管交流的 self-medication 专家圆桌平台）和 GPFI（Gabungan Perusahaan Farmasi Indonesia，印尼药企协会）相关方共同组织。"
-    },
-    {
-      "type": "p",
-      "text": "对仅一来说，这个会议的直接价值不是看设备需求，而是进入印尼和亚太 OTC / consumer health 客户生态，接触区域药企、跨国消费健康企业、监管和协会网络，再判断是否存在后续包装产线、条包、粉剂/颗粒/液体包装整线机会。"
+      "text": "1. 区域入口价值：17/20"
     },
     {
       "type": "html",
-      "html": "<table><thead><tr><th>项目</th><th>内容</th></tr></thead><tbody><tr><td>会议名称</td><td>APSMI BM / Self-CARER Meeting / Self-CARER WG Meeting / APSMI/Self-CARER/GPFI Open Conference 2026</td></tr><tr><td>主题</td><td>Self-Care in Healthcare: Scaling Partnership for Better Health Outcomes</td></tr><tr><td>日期</td><td>2026 年 10 月 29 日 - 10 月 31 日；11 月 1 日为 Self-Care Fun Run</td></tr><tr><td>地点</td><td>Paradisus by Melia Hotel, Kawasan Pariwisata ITDC Lot N1, Bali, Indonesia</td></tr><tr><td>注册网站</td><td><a href='https://apsmibalimeeting2026.com/'>apsmibalimeeting2026.com</a></td></tr><tr><td>主办/相关方</td><td>APSMI、Self-CARER、GPFI</td></tr><tr><td>会议性质</td><td>OTC / self-care / self-medication 行业与监管会议</td></tr></tbody></table>"
+      "html": "<table><thead><tr><th>子项</th><th>分数</th></thead><tbody><tr><td>区域覆盖</td><td>4/4</td></tr><tr><td>行业垂直度</td><td>4/4</td></tr><tr><td>会议对象层级</td><td>3/4</td></tr><tr><td>市场进入场景</td><td>3/4</td></tr><tr><td>区域连续性</td><td>3/4</td></tr></tbody></table>"
+    },
+    {
+      "type": "p",
+      "text": "会议覆盖亚太 OTC/self-care 产业，GPFI 参与组织增强了印尼本土药企网络接入能力。Platinum sponsor 包含多家跨国和印尼本土 consumer health/OTC 企业，证明有较好的客户池。2025 年 APSMI Bali Summit 已有公开会后报道，2026 年 proposal 体现出延续性。扣分点在于它不是制造、包装或供应链垂直会议。"
     },
     {
       "type": "h3",
-      "text": "主要议题"
-    },
-    {
-      "type": "p",
-      "text": "公开会议议程集中在以下方向："
+      "text": "2. 业务与产品相关性：15/30"
     },
     {
       "type": "html",
-      "html": "<table><thead><tr><th>议题方向</th><th>具体内容</th><th>对仅一的含义</th></tr></thead><tbody><tr><td>Self-care 全球和亚太共同愿景</td><td>Session 1: Self-Care - A Shared Vision Globally and in Asia Pacific</td><td>帮助判断亚太 OTC / consumer health 行业政策方向</td></tr><tr><td>亚太 self-care 联合宣言</td><td>Session 2: Our Shared Vision moving into Action</td><td>反映协会和头部企业共同推动的行业议程</td></tr><tr><td>健康素养</td><td>Session 3: Health Literacy</td><td>更偏公共卫生、消费者教育，对设备需求间接</td></tr><tr><td>Self-care 落地实践</td><td>Session 4: Self Care in action</td><td>可能涉及企业实践，但不是生产包装主题</td></tr><tr><td>监管流程优化</td><td>Session 5: Regulatory streamline</td><td>偏注册、法规和市场准入</td></tr><tr><td>数字化 self-care</td><td>Session 6: Digital self care</td><td>偏数字健康、标签、信息触达</td></tr></tbody></table>"
-    },
-    {
-      "type": "h3",
-      "text": "Platinum Sponsor 信号"
-    },
-    {
-      "type": "p",
-      "text": "用户提供的 sponsor 信息显示，Platinum sponsor 均带 booth："
-    },
-    {
-      "type": "html",
-      "html": "<table><thead><tr><th>序号</th><th>Platinum Sponsor</th><th>企业类型</th><th>对仅一的潜在价值</th></tr></thead><tbody><tr><td>1</td><td>Reckitt Benckiser / Reckitt</td><td>英国跨国消费健康、卫生和营养品公司</td><td>全球 consumer health 客户信号</td></tr><tr><td>2</td><td>Sato Pharmaceutical</td><td>日本 OTC 药企</td><td>日本 OTC 客户信号，需筛选产品形态</td></tr><tr><td>3</td><td>P&G</td><td>全球日化和消费健康企业</td><td>仅一已有宝洁客户背景，值得重点跟进</td></tr><tr><td>4</td><td>Opella</td><td>原 Sanofi Consumer Healthcare</td><td>药品/保健品相关性较高</td></tr><tr><td>5</td><td>Kenvue</td><td>强生消费健康拆分公司</td><td>consumer health 头部客户</td></tr><tr><td>6</td><td>Kalbe Group</td><td>印尼大型本土医药健康集团</td><td>印尼本土重点目标客户</td></tr><tr><td>7</td><td>Haleon</td><td>全球消费健康企业</td><td>全球 OTC/self-care 头部客户</td></tr><tr><td>8</td><td>Darya-Varia</td><td>印尼制药企业</td><td>印尼本土制造型客户信号</td></tr><tr><td>9</td><td>Konimex</td><td>印尼本土医药、补充剂企业</td><td>本地关系和制造型客户价值较高</td></tr><tr><td>10</td><td>Taisho</td><td>日本 OTC/self-medication 企业</td><td>日本和东南亚 OTC 客户信号</td></tr></tbody></table>"
-    },
-    {
-      "type": "p",
-      "text": "这批 sponsor 的质量是本会议最重要的正面信号——它们证明会议能吸引 OTC / consumer health 头部企业和印尼本土药企。但这些企业参会并不等于现场有包装设备采购场景，仍需通过会前约见确认参会人员岗位。"
-    },
-    {
-      "type": "h2",
-      "text": "三、会议日程与仅一可参加范围"
-    },
-    {
-      "type": "p",
-      "text": "根据 proposal 日程表和注册说明，会议分为邀请制会议和公开会议两类。仅一作为普通非会员注册参会，可以参加 2026 年 10 月 29-31 日期间面向注册参会者开放的 open conference sessions，并享受茶歇、networking lunch、gala dinner、演讲资料等注册权益；但不能参加 APSMI BM、Self-CARER WG Meeting、Self-CARER Meeting 等 invited-only sessions。"
-    },
-    {
-      "type": "html",
-      "html": "<table><thead><tr><th>日期</th><th>日程</th><th>文件标注</th><th>仅一普通注册能否参加</th></tr></thead><tbody><tr><td>10 月 29 日上午</td><td>APSMI BM</td><td>Invited Only</td><td>不能参加</td></tr><tr><td>10 月 29 日下午</td><td>Self-CARER WG Meeting</td><td>Invited Only</td><td>不能参加</td></tr><tr><td>10 月 29 日晚上</td><td>Meal Coupon / Co-Chairs Meeting</td><td>邀请制</td><td>Co-Chairs 不能参加；餐饮以注册权益为准</td></tr><tr><td>10 月 30 日上午</td><td>Self-CARER Meeting</td><td>Invited Only</td><td>不能参加</td></tr><tr><td>10 月 30 日下午</td><td>Open Seminar / Open Conference Session 1-2</td><td>Open</td><td>能参加</td></tr><tr><td>10 月 30 日晚上</td><td>Welcome Reception</td><td>注册日程活动</td><td>能参加</td></tr><tr><td>10 月 31 日全天</td><td>Open Conference Session 3-6</td><td>Open</td><td>能参加</td></tr><tr><td>10 月 31 日晚上</td><td>Gala Dinner</td><td>注册日程活动</td><td>能参加</td></tr><tr><td>11 月 1 日上午</td><td>Self-Care Fun Run 5 Km</td><td>注册会议活动</td><td>能参加（可选）</td></tr></tbody></table>"
-    },
-    {
-      "type": "p",
-      "text": "仅一实际有效参会窗口：2026 年 10 月 29-31 日注册权益覆盖 open conference sessions（不覆盖 invited-only sessions）；10 月 30 日下午 Open Seminar / Open Conference；10 月 31 日全天 Open Conference；10 月 30 日晚上 Welcome Reception；10 月 31 日晚上 Gala Dinner；11 月 1 日上午 Self-Care Fun Run（商务价值有限，可视返程时间决定）。"
-    },
-    {
-      "type": "h2",
-      "text": "四、建议参会形式"
-    },
-    {
-      "type": "h3",
-      "text": "推荐形式：普通参会，1 人"
-    },
-    {
-      "type": "p",
-      "text": "推荐理由：当前会议对仅一的直接销售价值尚未被证明，不适合先购买赞助或展位。普通参会成本可控，足以完成客户网络摸底、会议质量验证、目标企业接触。会议公开部分只有 1.5 天，1 人参会即可完成初步判断。"
-    },
-    {
-      "type": "p",
-      "text": "建议参会人员：海外业务负责人，或负责东南亚/印尼市场的业务人员。要求具备英文沟通能力，能现场判断企业角色和后续项目可能性。"
-    },
-    {
-      "type": "h3",
-      "text": "可选参会/赞助形式与权益"
-    },
-    {
-      "type": "p",
-      "text": "<strong>1. 普通参会</strong>"
-    },
-    {
-      "type": "html",
-      "html": "<table><thead><tr><th>项目</th><th>内容</th></tr></thead><tbody><tr><td>适用对象</td><td>非 APSMI/GPFI 会员、国际参会者、行业企业</td></tr><tr><td>仅一适用类别</td><td>Non APSMI/GPFI Members / International Participant</td></tr><tr><td>可参加内容</td><td>10 月 29-31 日 open conference sessions、茶歇、networking lunch、gala dinner、演讲资料、Self-Care Fun Run</td></tr><tr><td>不可参加内容</td><td>APSMI BM、Self-CARER WG Meeting、Self-CARER Meeting 等 invited-only sessions</td></tr><tr><td>早鸟注册费</td><td>USD 680/人，截至 2026-07-31</td></tr><tr><td>支付方式</td><td>注册费可用信用卡以印尼盾支付</td></tr></tbody></table>"
-    },
-    {
-      "type": "p",
-      "text": "这是当前建议仅一采用的形式。"
-    },
-    {
-      "type": "p",
-      "text": "<strong>2. Premium Package：Platinum / Gold</strong>"
-    },
-    {
-      "type": "html",
-      "html": "<table><thead><tr><th>权益</th><th>Platinum Booth</th><th>Platinum Non Booth</th><th>Gold Booth</th><th>Gold Non Booth</th></tr></thead><tbody><tr><td>价格</td><td>USD 5,000</td><td>USD 5,000</td><td>USD 4,000</td><td>USD 4,000</td></tr><tr><td>周期</td><td>3 天</td><td>3 天</td><td>3 天</td><td>3 天</td></tr><tr><td>开幕致辞提及公司名</td><td>有</td><td>有</td><td>有</td><td>有</td></tr><tr><td>10 分钟发言</td><td>有</td><td>有</td><td>无</td><td>无</td></tr><tr><td>官网 logo 展示</td><td>有</td><td>有</td><td>有</td><td>有</td></tr><tr><td>免费参会名额</td><td>2 人</td><td>4 人</td><td>1 人</td><td>2 人</td></tr><tr><td>booth 尺寸</td><td>3x3m</td><td>无</td><td>3x3m</td><td>无</td></tr></tbody></table>"
-    },
-    {
-      "type": "p",
-      "text": "当前 Platinum sponsors 均为 booth 形式。仅一若追加赞助需确认是否有 booth 名额，以及设备商身份是否适合出现在该会议的赞助结构中。"
-    },
-    {
-      "type": "p",
-      "text": "<strong>3. Meeting Package</strong>"
-    },
-    {
-      "type": "html",
-      "html": "<table><thead><tr><th>形式</th><th>日期</th><th>价格（USD）</th><th>权益</th></tr></thead><tbody><tr><td>Lunch & Coffee Break Day-01</td><td>10-29</td><td>USD 2,370</td><td>X-banner、mini standing banner</td></tr><tr><td>Lunch & Coffee Break Day-02</td><td>10-30</td><td>USD 2,370</td><td>X-banner、mini standing banner</td></tr><tr><td>Lunch & Coffee Break Day-03</td><td>10-31</td><td>USD 2,370</td><td>X-banner、mini standing banner</td></tr><tr><td>Gala Dinner</td><td>10-31</td><td>USD 3,550</td><td>X-banner、餐桌 leaflet</td></tr></tbody></table>"
-    },
-    {
-      "type": "p",
-      "text": "暂不建议购买 Meeting Package 的原因：会议议题不围绕包装设备/工厂/自动化/供应链；参会岗位可能偏法规、协会事务、公共事务、医学事务和市场准入；当前无法确认现场有足够生产/包装/采购负责人；已确认的 Platinum sponsor 主要是 OTC / consumer health 品牌方，设备商更适合先做低成本关系验证。只有在会前确认至少 3 家目标企业有生产、包装、工程、供应链或采购岗位人员参会时，才考虑追加 Gold booth。"
-    },
-    {
-      "type": "h2",
-      "text": "五、预估参会成本"
-    },
-    {
-      "type": "p",
-      "text": "成本假设：注册身份为 Non APSMI/GPFI Members / International Participant，1 人，2026 年 7 月 31 日前按早鸟价报名。出发地上海，到达地巴厘岛登巴萨机场 DPS，行程 10 月 29 日抵达、11 月 1 日离开。酒店优先住会议酒店 Paradisus by Melia Bali 或同级。汇率估算：1 USD ≈ RMB 6.8。"
-    },
-    {
-      "type": "html",
-      "html": "<table><thead><tr><th>项目</th><th>估算金额（USD）</th><th>估算金额（RMB）</th><th>说明</th></tr></thead><tbody><tr><td>注册费</td><td>680</td><td>4,600</td><td>早鸟价，截至 2026-07-31</td></tr><tr><td>上海-巴厘岛往返机票</td><td>450-700</td><td>3,100-4,800</td><td>经济舱，含可能中转</td></tr><tr><td>酒店 3 晚</td><td>1,500-1,950</td><td>10,200-13,300</td><td>按会议酒店或同级高端酒店估算</td></tr><tr><td>印尼 e-VOA / VOA 签证</td><td>31-35</td><td>210-240</td><td>官方 eVisa/VOA 费用 IDR 500,000</td></tr><tr><td>当地交通</td><td>80-150</td><td>540-1,020</td><td>机场往返、短途交通</td></tr><tr><td>非会议餐饮及杂费</td><td>80-150</td><td>540-1,020</td><td>注册费已含茶歇、午餐、晚宴</td></tr><tr><td><strong>合计</strong></td><td><strong>2,821-3,665</strong></td><td><strong>约 19,190-24,980</strong></td><td>按会议酒店住宿估算</td></tr></tbody></table>"
-    },
-    {
-      "type": "p",
-      "text": "控制成本方案：若不住会议酒店，选择 Nusa Dua 附近商务型酒店（按 USD 150-250/晚估算），整体成本可降至 USD 1,771-2,465，约 RMB 12,040-16,760。"
-    },
-    {
-      "type": "p",
-      "text": "建议预算口径：内部立项可按 RMB 20,000-25,000/人申报（住会议酒店）；若明确控制成本，可按 RMB 12,000-17,000/人申报（需接受通勤和社交便利性下降）。"
-    },
-    {
-      "type": "h2",
-      "text": "六、评分明细"
-    },
-    {
-      "type": "h3",
-      "text": "1. 区域/行业入口价值：17/20"
-    },
-    {
-      "type": "html",
-      "html": "<table><thead><tr><th>子项</th><th>分数</th></tr></thead><tbody><tr><td>区域覆盖</td><td>4/4</td></tr><tr><td>行业垂直度</td><td>4/4</td></tr><tr><td>会议对象层级</td><td>3/4</td></tr><tr><td>市场进入场景</td><td>3/4</td></tr><tr><td>区域连续性</td><td>3/4</td></tr></tbody></table>"
-    },
-    {
-      "type": "p",
-      "text": "会议覆盖亚太 OTC / self-care 产业，并由印尼 GPFI 参与组织，对进入印尼及亚太 OTC、consumer health、制药企业网络有入口价值。Platinum sponsor 包含多家跨国和印尼本土 consumer health / OTC 企业，证明该会议有较好的客户池。扣分点在于它不是制造、包装或供应链垂直会议。"
-    },
-    {
-      "type": "h3",
-      "text": "2. 议题与业务相关性：15/30"
-    },
-    {
-      "type": "html",
-      "html": "<table><thead><tr><th>子项</th><th>分数</th></tr></thead><tbody><tr><td>终端行业匹配</td><td>5/6</td></tr><tr><td>产品形态匹配</td><td>2/6</td></tr><tr><td>生产/包装场景</td><td>1/6</td></tr><tr><td>议程可验证程度</td><td>5/6</td></tr><tr><td>业务痛点接近度</td><td>2/6</td></tr></tbody></table>"
+      "html": "<table><thead><tr><th>子项</th><th>分数</th></thead><tbody><tr><td>终端行业匹配</td><td>5/6</td></tr><tr><td>产品形态匹配</td><td>2/6</td></tr><tr><td>生产/包装场景</td><td>1/6</td></tr><tr><td>议程可验证程度</td><td>5/6</td></tr><tr><td>业务痛点接近度</td><td>2/6</td></tr></tbody></table>"
     },
     {
       "type": "p",
@@ -200,67 +72,68 @@
     },
     {
       "type": "h3",
-      "text": "3. 参会角色与客户信号：17/30"
+      "text": "3. 赛道展商/客户信号：17/30"
     },
     {
       "type": "html",
-      "html": "<table><thead><tr><th>子项</th><th>分数</th></tr></thead><tbody><tr><td>终端客户信号</td><td>5/6</td></tr><tr><td>职位相关性</td><td>2/6</td></tr><tr><td>目标企业质量</td><td>5/6</td></tr><tr><td>同行/设备商参与</td><td>1/6</td></tr><tr><td>信息充分性</td><td>4/6</td></tr></tbody></table>"
+      "html": "<table><thead><tr><th>子项</th><th>分数</th></thead><tbody><tr><td>终端客户信号</td><td>5/6</td></tr><tr><td>职位相关性</td><td>2/6</td></tr><tr><td>目标企业质量</td><td>5/6</td></tr><tr><td>同行/设备商参与</td><td>1/6</td></tr><tr><td>信息充分性</td><td>4/6</td></tr></tbody></table>"
     },
     {
       "type": "p",
-      "text": "Platinum sponsor 名单包括 Reckitt、Sato、P&G、Opella、Kenvue、Kalbe、Haleon、Darya-Varia、Konimex、Taisho，客户质量较好。其中 Kalbe、Darya-Varia、Konimex 是印尼本土药企/健康产品企业，对仅一的区域客户价值更直接。但公开资料和 proposal 显示的参会对象更偏 regulator、association、healthcare professionals、industries、media、general public，没有生产、包装、工程、采购岗位信息。也没有看到包装设备商或仅一同行参与信号。"
+      "text": "Platinum sponsor 名单包括 Reckitt、Sato、P&G、Opella、Kenvue、Kalbe、Haleon、Darya-Varia、Konimex、Taisho，客户质量较好。其中 Kalbe、Darya-Varia、Konimex 是印尼本土药企/健康产品企业，对仅一的区域客户价值更直接；P&G、Kenvue、Haleon、Opella、Taisho、Reckitt 是跨国或区域 consumer health 头部企业。但公开资料和 proposal 显示的参会对象更偏 regulator、association、healthcare professionals、media，没有生产、包装、工程、采购岗位信息。也没有看到包装设备商同行参与信号。"
     },
     {
       "type": "h3",
-      "text": "4. 主办方可信度与会议影响力：17/20"
+      "text": "4. 展会可信度与影响力：17/20"
     },
     {
       "type": "html",
-      "html": "<table><thead><tr><th>子项</th><th>分数</th></tr></thead><tbody><tr><td>主办方可信度</td><td>4/4</td></tr><tr><td>举办历史</td><td>3/4</td></tr><tr><td>公开透明度</td><td>3/4</td></tr><tr><td>行业影响力</td><td>3/4</td></tr><tr><td>执行确定性</td><td>4/4</td></tr></tbody></table>"
+      "html": "<table><thead><tr><th>子项</th><th>分数</th></thead><tbody><tr><td>主办方可信度</td><td>4/4</td></tr><tr><td>举办历史</td><td>3/4</td></tr><tr><td>公开透明度</td><td>3/4</td></tr><tr><td>行业影响力</td><td>3/4</td></tr><tr><td>执行确定性</td><td>4/4</td></tr></tbody></table>"
     },
     {
       "type": "p",
-      "text": "APSMI 是亚太 self-medication 行业组织，GPFI 是印尼药企协会，Self-CARER 是非处方药/自我药疗监管交流平台。2025 年 Bali Summit 的公开报道显示有 100+ 位来自 11 个亚太国家/地区的 healthcare leaders 参会。2026 年 proposal 已签署、内容完整，执行确定性较好。"
+      "text": "APSMI 是亚太 self-medication 行业组织，GPFI 是印尼药企协会，Self-CARER 是非处方药/自我药疗监管交流平台。2025 年 Bali Summit 的公开报道显示有 100+ 位来自 11 个亚太国家/地区的 healthcare leaders 参会。2026 年 proposal 已签署、内容完整，执行确定性较好。扣分点是官网访问稳定性一般，且 2026 公开页面信息不如 proposal 完整。"
     },
     {
       "type": "h2",
-      "text": "七、会前行动建议"
-    },
-    {
-      "type": "ol",
-      "items": [
-        "尽快报名早鸟价：以仅一中国公司身份注册，按 Non APSMI/GPFI Members 早鸟价 USD 680。早鸟截止日期为 2026 年 7 月 31 日。",
-        "按可参加日程安排行程：10 月 29 日为抵达和准备日；10 月 30 日下午开始参加 Open Seminar，并参加 welcome reception；10 月 31 日全天参加 Open Conference，并参加 gala dinner；11 月 1 日 fun run 可选。",
-        "会前约见目标企业：优先联系 Kalbe、Konimex、Darya-Varia、P&G、Kenvue、Haleon、Opella、Taisho。重点确认是否有 manufacturing、packaging、supply chain、procurement 相关人员到场。",
-        "准备一页英文资料：聚焦 stick pack、粉剂/颗粒/液体条包、保健品/OTC/consumer health 包装整线；强调跨国客户经验和东南亚交付能力。",
-        "现场目标：不以成交为目标。目标是确认 5-8 家企业的产品形态、生产布局、关键岗位联系人和后续拜访可能性。"
-      ]
-    },
-    {
-      "type": "h2",
-      "text": "八、关键证据来源"
+      "text": "三、关键证据来源"
     },
     {
       "type": "ul",
       "items": [
         "用户提供文件：Proposal APSMI01_eSigned.pdf（含会议名称、主办方、主题、日期、地点、注册网址、议题、注册价格、赞助价格和权益）",
-        "用户提供信息：Platinum sponsor 均带 booth，名单包括 Reckitt、Sato、P&G、Opella、Kenvue、Kalbe、Haleon、Darya-Varia、Konimex、Taisho",
-        "APSMI 官网：2026 Bali Summit announcement",
-        "GPFI 官网：2025 APSMI Conference 页面",
-        "PR Newswire：2025 APSMI Bali Summit 会后报道（100+ 位来自 11 个亚太国家的 healthcare leaders）",
+        "用户提供信息：Platinum sponsor 均带 booth，名单包括 Reckitt Benckiser、Sato、P&G、Opella、Kenvue / Johnson & Johnson Pte Ltd、Kalbe Group、Haleon、Darya-Varia、Konimex、Taisho",
+        "APSMI 官网 2026 Bali Summit announcement：https://www.apsmi.org/",
+        "GPFI 官网 2025 APSMI Conference 页面：https://www.gpfarmasi.id/",
+        "PR Newswire 2025 APSMI Bali Summit 会后报道（100+ 位来自 11 个亚太国家的 healthcare leaders）",
         "Skyscanner：上海至巴厘岛航班价格参考",
         "Expedia：会议酒店 Paradisus by Melia Bali 价格参考",
-        "印尼官方 eVisa / eVOA 费用说明",
+        "印尼官方 eVisa/eVOA 费用说明：https://evisa.imigrasi.go.id/",
         "wise.com：USD/CNY 历史汇率参考"
       ]
     },
     {
       "type": "h2",
-      "text": "九、判断边界"
+      "text": "四、判断边界"
     },
     {
       "type": "p",
-      "text": "本报告不能判断实际参会企业名单、现场岗位层级、能否接触到包装/生产负责人、现场接触效率、会后转化率或订单机会。当前证据支持它是一个印尼及亚太 OTC / self-care 客户生态和政策情报入口，不支持把它判断为包装设备销售型重点会议。因此建议低成本参会验证，不建议高投入赞助。"
+      "text": "以下内容公开信息不能可靠判断："
+    },
+    {
+      "type": "ul",
+      "items": [
+        "实际参会企业名单和现场岗位层级",
+        "能否接触到包装/生产/供应链/采购负责人",
+        "现场接触效率和会后转化率",
+        "订单机会或具体项目信息",
+        "参会人员具体职能（更可能偏 regulatory、association affairs、public affairs、medical affairs、market access）",
+        "设备商同行是否参会（公开资料未见包装设备商信号）"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "当前证据支持它是一个印尼及亚太 OTC/self-care 客户生态和政策情报入口，不支持把它判断为包装设备销售型重点会议。因此建议低成本参会验证，不建议高投入赞助。"
     }
   ]
 }
