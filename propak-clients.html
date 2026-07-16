@@ -208,6 +208,13 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 8px;
 }
+.card-grid.is-updating {
+  animation: gridFadeIn 160ms ease both;
+}
+@keyframes gridFadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 @media (min-width: 640px) {
   .card-grid { grid-template-columns: repeat(3, 1fr); gap: 10px; }
 }
@@ -229,7 +236,6 @@ body {
   text-align: center;
   transition: box-shadow 0.2s, transform 0.2s;
   cursor: default;
-  animation: fadeInUp 0.3s ease both;
   min-height: 200px;
 }
 .card:hover {
@@ -632,7 +638,7 @@ function renderCards() {
     return map[p] || '';
   };
 
-  grid.innerHTML = filtered.map((c, i) => {
+  grid.innerHTML = filtered.map((c) => {
     const logoHtml = c.logo
       ? `<img src="image/propak-logos/${c.logo}" alt="${c.name}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=logo-placeholder>${c.name.charAt(0)}</div>'">`
       : `<div class="logo-placeholder">${c.name.charAt(0)}</div>`;
@@ -645,11 +651,16 @@ function renderCards() {
 
     const personTag = c.person ? `<span class="person-tag ${tagClass(c.person)}">${c.person}</span>` : '';
 
-    return `<div class="card" style="animation-delay:${i * 0.03}s">
+    return `<div class="card">
       <div class="logo-wrap">${logoHtml}</div>
       <div class="name-block">${nameHtml}${personTag}</div>
     </div>`;
   }).join('');
+
+  // 筛选时只让整个网格轻量淡入，避免几十张卡片同时错峰动画。
+  grid.classList.remove('is-updating');
+  void grid.offsetWidth;
+  grid.classList.add('is-updating');
 }
 </script>
 
