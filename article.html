@@ -1090,7 +1090,7 @@
         tocItems.forEach(function(item) {
           var cls = item.level===2 ? "toc-item toc-sub" : "toc-item";
           if (item.level===1 && tocItems.indexOf(item)===0) cls += " active-toc";
-          tocHtml += '<a class="'+cls+'" href="#'+item.anchor+'" onclick="scrollToHeading(\''+item.anchor+'\',this)">'+item.text+'</a>';
+          tocHtml += '<a class="'+cls+'" href="#'+item.anchor+'" onclick="return scrollToHeading(\''+item.anchor+'\',this,event)">'+item.text+'</a>';
         });
         document.getElementById("tocItems").innerHTML = tocHtml;
 
@@ -1156,9 +1156,24 @@
     /* ================================================================
        [FRAMEWORK] 目录点击 — 勿动
        ================================================================ */
-    function scrollToHeading(anchor, el) {
+    function scrollToHeading(anchor, el, event) {
+      if (event) event.preventDefault();
       document.querySelectorAll(".toc-item").forEach(function(t){ t.classList.remove("active-toc"); });
       el.classList.add("active-toc");
+
+      var target = document.getElementById(anchor);
+      if (!target) return false;
+
+      var mobileHeader = document.querySelector('.mobile-header');
+      var headerOffset = mobileHeader && getComputedStyle(mobileHeader).display !== 'none'
+        ? mobileHeader.offsetHeight + 16
+        : 24;
+      var targetTop = window.scrollY + target.getBoundingClientRect().top - headerOffset;
+      var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: Math.max(0, targetTop), behavior: reduceMotion ? 'auto' : 'smooth' });
+
+      history.replaceState(null, '', '#' + anchor);
+      return false;
     }
 
     /* ================================================================
