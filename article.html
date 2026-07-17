@@ -396,6 +396,12 @@
       box-shadow: var(--card-shadow);
       transition: opacity 220ms cubic-bezier(0.4, 0, 0.2, 1), transform 220ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+    .content-wrapper.article-switching {
+      opacity: 0;
+      transform: translateY(-10px);
+      pointer-events: none;
+      transition-duration: 180ms;
+    }
 
     /* 目录与正文在内容就绪后一起进入或退出。 */
     #tocNavPanel {
@@ -700,9 +706,9 @@
     /* ================================================================
        [FRAMEWORK] 动画类 — 勿动
        ================================================================ */
-    .content-enter { animation: contentFadeInUp 0.3s ease both; }
+    .content-enter { animation: contentFadeInUp 240ms cubic-bezier(0.4, 0, 0.2, 1) both; }
     @keyframes contentFadeInUp {
-      from { opacity: 0; transform: translateY(16px); }
+      from { opacity: 0; transform: translateY(12px); }
       to   { opacity: 1; transform: translateY(0); }
     }
 
@@ -986,6 +992,8 @@
     /* ================================================================
        [FRAMEWORK] 渲染引擎 — 勿动
        ================================================================ */
+    var articleSwitchInProgress = false;
+
     function renderArticle(id, animate) {
       var wrapper = document.getElementById('contentWrapper');
       // Hide content immediately to prevent empty-doc flash
@@ -996,7 +1004,10 @@
 
         if (!art) {
           contentEl.innerHTML = '<p>文章未找到</p>';
+          wrapper.classList.remove('article-switching');
           wrapper.style.opacity = '1';
+          wrapper.removeAttribute('aria-busy');
+          articleSwitchInProgress = false;
           return;
         }
 
@@ -1096,9 +1107,12 @@
           void wrapper.offsetWidth;
           wrapper.classList.add('content-enter');
         }
+        wrapper.classList.remove('article-switching');
         wrapper.style.opacity = '';
         wrapper.style.transform = '';
         wrapper.style.transition = '';
+        wrapper.removeAttribute('aria-busy');
+        articleSwitchInProgress = false;
 
         window.scrollTo({ top: 0, behavior: "auto" });
 
@@ -1152,16 +1166,23 @@
        ================================================================ */
     function switchArticle(id, e) {
       e.preventDefault();
+      if (articleSwitchInProgress || new URLSearchParams(window.location.search).get('id') === id) return;
+
+      articleSwitchInProgress = true;
       var content = document.querySelector('.content-wrapper');
-      content.style.transition = 'opacity 200ms ease, transform 200ms ease';
-      content.style.opacity = '0';
-      content.style.transform = 'translateY(-8px)';
+      content.setAttribute('aria-busy', 'true');
+      content.classList.add('article-switching');
+
+      document.querySelectorAll('#homeNavPanel .article-nav-item').forEach(function(item) {
+        item.classList.remove('active-article');
+      });
+      if (e.currentTarget) e.currentTarget.classList.add('active-article');
 
       setTimeout(function() {
         renderArticle(id, true);
         history.replaceState(null,"","?id="+id);
         closeMobileSidebar();
-      }, 200);
+      }, 180);
     }
 
     /* ================================================================
