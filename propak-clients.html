@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>2026 泰国 ProPak 拟邀请客户清单</title>
+<link rel="icon" href="image/shared/BIOLAB.ico">
 <style>
 :root {
   --color-primary: #1677ff;
@@ -640,7 +641,7 @@ function renderCards() {
 
   grid.innerHTML = filtered.map((c) => {
     const logoHtml = c.logo
-      ? `<img src="image/propak-logos/${c.logo}" alt="${c.name}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=logo-placeholder>${c.name.charAt(0)}</div>'">`
+      ? `<img src="image/articles/propak-clients/logos/${c.logo}" alt="${c.name}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=logo-placeholder>${c.name.charAt(0)}</div>'">`
       : `<div class="logo-placeholder">${c.name.charAt(0)}</div>`;
 
     const en = cleanEn(c.name) || c.name;
