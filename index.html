@@ -539,24 +539,10 @@
              [CONTENT] 侧边栏分类与文章链接 — 在此区域增删文章
              ============================================================ -->
 
-        <!-- 分类1: 市场调研 -->
-        <div class="category-item open" data-category="market-research">
+        <!-- 分类1: 展会评估 -->
+        <div class="category-item open" data-category="exhibition">
           <div class="category-header active-category" role="button" tabindex="0"
-               aria-expanded="true" aria-controls="cat-market-research"
-               onclick="toggleCategory(this)" onkeydown="handleKeyToggle(event,this)">
-            <svg class="category-icon icon-svg" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
-            <span class="category-title">市场调研</span>
-            <svg class="chevron-icon icon-svg" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
-          </div>
-          <div class="article-list" id="cat-market-research">
-            <a class="article-nav-item" href="article.html?id=coating-drums" onclick="navigateToArticle('coating-drums',event)">滚筒调味机（Coating Drums）投资可行性分析报告</a>
-          </div>
-        </div>
-
-        <!-- 分类2: 展会评估 -->
-        <div class="category-item" data-category="exhibition">
-          <div class="category-header" role="button" tabindex="0"
-               aria-expanded="false" aria-controls="cat-exhibition"
+               aria-expanded="true" aria-controls="cat-exhibition"
                onclick="toggleCategory(this)" onkeydown="handleKeyToggle(event,this)">
             <svg class="category-icon icon-svg" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
             <span class="category-title">展会评估</span>
@@ -571,6 +557,20 @@
             <a class="article-nav-item" href="article.html?id=interpack-joyea" onclick="navigateToArticle('interpack-joyea',event)">Interpack 参展价值评估报告</a>
             <a class="article-nav-item" href="article.html?id=propak-asia-2026-eval" onclick="navigateToArticle('propak-asia-2026-eval',event)">ProPak Asia 2026 参展价值评估报告</a>
             <a class="article-nav-item" href="article.html?id=scanpack-joyea" onclick="navigateToArticle('scanpack-joyea',event)">SPACK 参展价值评估报告</a>
+          </div>
+        </div>
+
+        <!-- 分类2: 市场调研 -->
+        <div class="category-item" data-category="market-research">
+          <div class="category-header" role="button" tabindex="0"
+               aria-expanded="false" aria-controls="cat-market-research"
+               onclick="toggleCategory(this)" onkeydown="handleKeyToggle(event,this)">
+            <svg class="category-icon icon-svg" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+            <span class="category-title">市场调研</span>
+            <svg class="chevron-icon icon-svg" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+          </div>
+          <div class="article-list" id="cat-market-research">
+            <a class="article-nav-item" href="article.html?id=coating-drums" onclick="navigateToArticle('coating-drums',event)">滚筒调味机（Coating Drums）投资可行性分析报告</a>
           </div>
         </div>
 
