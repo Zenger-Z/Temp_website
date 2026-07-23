@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>计量盒主机除尘系统 - 三维素材</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --orange:#e87820; --ink:#1f2933; --muted:#69727d; --line:#e5e7eb; --panel:rgba(255,255,255,.92); }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100vh; background:#f3f5f7; color:var(--ink); font-family:Inter,"Noto Sans SC","Microsoft YaHei",sans-serif; opacity:0; transform:translateY(10px); transition:opacity .32s ease, transform .32s ease; }
+    body.page-ready { opacity:1; transform:translateY(0); }
+    button { font:inherit; }
+    .page-shell { min-height:100vh; padding:28px clamp(16px,4vw,64px) 44px; }
+    .topbar { max-width:1440px; margin:0 auto 20px; display:flex; justify-content:space-between; align-items:center; gap:16px; }
+    .breadcrumb { font-size:14px; color:var(--muted); }
+    .breadcrumb strong { color:var(--ink); font-weight:600; }
+    .back-button { position:absolute; right:22px; bottom:22px; z-index:10; border:1px solid #d9dee5; border-radius:8px; background:var(--panel); color:#374151; padding:9px 14px; cursor:pointer; transition:.18s ease; box-shadow:0 2px 8px rgba(0,0,0,.1); }
+    .back-button:hover { color:#b8550a; border-color:#f0b37c; background:#fff9f4; transform:translateY(-1px); }
+    .viewer { max-width:1440px; margin:0 auto; background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; box-shadow:0 12px 30px rgba(31,41,51,.08); }
+    .viewer-header { padding:20px clamp(18px,3vw,32px); display:flex; align-items:center; justify-content:space-between; gap:18px; border-bottom:1px solid var(--line); }
+    h1 { margin:0; font-size:clamp(20px,2.2vw,28px); letter-spacing:-.03em; }
+    .view-label { margin:5px 0 0; min-height:22px; color:var(--muted); font-size:14px; transition:opacity .15s ease; }
+    .canvas-wrap { padding:clamp(12px,2vw,28px); background:linear-gradient(180deg,#fafbfc 0%,#f5f7f9 100%); }
+    .canvas { position:relative; width:100%; aspect-ratio:16 / 10; overflow:hidden; background:#fff; border-radius:10px; box-shadow:inset 0 0 0 1px rgba(0,0,0,.03); }
+    .scene { position:absolute; inset:0; opacity:0; pointer-events:none; transform:scale(.42); transition:opacity .5s ease, transform .5s ease; z-index:1; }
+    .scene[data-scene="main"] { transform:scale(1.22); }
+    .scene.active { opacity:1; pointer-events:auto; transform:scale(1); z-index:2; }
+    .base-image, .overlay-image { position:absolute; inset:0; width:100%; height:100%; object-fit:contain; user-select:none; -webkit-user-drag:none; }
+    .overlay-image { opacity:0; pointer-events:none; transition:opacity .2s ease; }
+    .hotspot { position:absolute; border:0; background:transparent; cursor:pointer; border-radius:8px; z-index:2; }
+    .overlay-image.preview { opacity:1; }
+    .hotspot:focus-visible { outline:3px solid rgba(232,120,32,.8); outline-offset:2px; }
+    .hotspot-label { position:absolute; z-index:5; border:1px solid #f29100; border-radius:4px; background:rgb(242,145,0); color:#fff; padding:7px 10px 7px 30px; cursor:pointer; font-size:13px; font-weight:600; letter-spacing:.02em; box-shadow:0 3px 9px rgba(161,90,0,.2); transition:transform .2s ease, box-shadow .2s ease, background .2s ease; white-space:nowrap; }
+    .hotspot-label::before { content:''; position:absolute; left:10px; top:50%; width:9px; height:9px; border:1.7px solid #fff; border-radius:50%; transform:translateY(-65%); }
+    .hotspot-label::after { content:''; position:absolute; left:19px; top:50%; width:6px; height:1.7px; background:#fff; border-radius:2px; transform:translateY(5px) rotate(45deg); transform-origin:left center; }
+    .hotspot-label:hover, .hotspot-label:focus-visible { transform:scale(1.12); background:rgb(255,159,14); box-shadow:0 6px 15px rgba(161,90,0,.3); outline:none; }
+    .detail-scene .base-image { cursor:default; }
+    .viewer-footer { padding:14px clamp(18px,3vw,32px) 20px; color:#7a838e; font-size:13px; }
+    @media (max-width:640px) { .page-shell { padding:16px 10px 24px; } .topbar { margin-bottom:12px; } .breadcrumb { display:none; } .viewer-header { align-items:flex-start; flex-direction:column; gap:8px; } .hotspot-label { font-size:10px; padding:4px 7px 4px 21px; } .hotspot-label::before { left:6px; width:7px; height:7px; } .hotspot-label::after { left:13px; width:5px; } .back-button { right:10px; bottom:10px; padding:7px 10px; font-size:12px; } }
+    @media (prefers-reduced-motion:reduce) { *,*::before,*::after { transition-duration:.01ms !important; } }
+  </style>
+</head>
+<body>
+  <main class="page-shell">
+    <div class="topbar">
+      <div class="breadcrumb">三维素材 / <strong>计量盒主机除尘系统</strong></div>
+    </div>
+
+    <section class="viewer" aria-labelledby="pageTitle">
+      <div class="viewer-header">
+        <div>
+          <h1 id="pageTitle">计量盒主机除尘系统</h1>
+          <p class="view-label" id="viewLabel">将鼠标移至橙色区域，查看系统组成；点击进入对应视图。</p>
+        </div>
+      </div>
+
+      <div class="canvas-wrap">
+        <div class="canvas">
+          <section class="scene active" data-scene="main" aria-label="主机总览">
+            <img class="base-image" src="image/three-dimensional-assets/metering-box-dust-collection/计量盒主机除尘系统_图1.jpg" alt="计量盒主机除尘系统总览">
+            <button class="hotspot" type="button" data-target="detail8" data-overlay="overlay2" aria-label="计量盒除尘，点击查看详情" style="left:40%;top:32%;width:23%;height:6%;z-index:4;"></button>
+            <img class="overlay-image" data-overlay="overlay2" src="image/three-dimensional-assets/metering-box-dust-collection/计量盒主机除尘系统_图2.png" alt="">
+            <button class="hotspot-label" type="button" data-target="detail8" data-overlay="overlay2" style="left:78.5%;top:33%;">计量盒除尘</button>
+            <button class="hotspot" type="button" data-target="detail9" data-overlay="overlay3" aria-label="充填管除尘，点击查看详情" style="left:41%;top:38%;width:21%;height:13%;z-index:4;"></button>
+            <img class="overlay-image" data-overlay="overlay3" src="image/three-dimensional-assets/metering-box-dust-collection/计量盒主机除尘系统_图3.png" alt="">
+            <button class="hotspot-label" type="button" data-target="detail9" data-overlay="overlay3" style="left:78.5%;top:42%;">充填管除尘</button>
+            <button class="hotspot" type="button" data-target="subsystem" data-overlay="overlay4" aria-label="计量盒主机除尘系统，点击查看详情" style="left:0%;top:32%;width:54%;height:68%;z-index:2;"></button>
+            <img class="overlay-image" data-overlay="overlay4" src="image/three-dimensional-assets/metering-box-dust-collection/计量盒主机除尘系统_图4.png" alt="">
+            <button class="hotspot-label" type="button" data-target="subsystem" data-overlay="overlay4" style="left:15%;top:49%;">计量盒主机除尘系统</button>
+          </section>
+
+          <section class="scene" data-scene="subsystem" aria-label="计量盒主机除尘系统局部总览">
+            <img class="base-image" src="image/three-dimensional-assets/metering-box-dust-collection/计量盒主机除尘系统_图5.jpg" alt="计量盒主机除尘系统局部总览">
+            <button class="hotspot" type="button" data-target="detail8" data-overlay="overlay6" aria-label="计量盒除尘，点击查看详情" style="left:43%;top:9%;width:42%;height:10%;"></button>
+            <img class="overlay-image" data-overlay="overlay6" src="image/three-dimensional-assets/metering-box-dust-collection/计量盒主机除尘系统_图6.png" alt="">
+            <button class="hotspot-label" type="button" data-target="detail8" data-overlay="overlay6" style="left:86%;top:20%;">计量盒除尘</button>
+            <button class="hotspot" type="button" data-target="detail9" data-overlay="overlay7" aria-label="充填管除尘，点击查看详情" style="left:45%;top:19%;width:36%;height:52%;"></button>
+            <img class="overlay-image" data-overlay="overlay7" src="image/three-dimensional-assets/metering-box-dust-collection/计量盒主机除尘系统_图7.png" alt="">
+            <button class="hotspot-label" type="button" data-target="detail9" data-overlay="overlay7" style="left:86%;top:31%;">充填管除尘</button>
+          </section>
+
+          <section class="scene detail-scene" data-scene="detail8" aria-label="计量盒除尘详情">
+            <img class="base-image" src="image/three-dimensional-assets/metering-box-dust-collection/计量盒主机除尘系统_图8.jpg" alt="计量盒除尘详情">
+          </section>
+
+          <section class="scene detail-scene" data-scene="detail9" aria-label="充填管除尘详情">
+            <img class="base-image" src="image/three-dimensional-assets/metering-box-dust-collection/计量盒主机除尘系统_图9.jpg" alt="充填管除尘详情">
+          </section>
+          <button class="back-button" id="backButton" type="button">← 返回三维素材</button>
+        </div>
+      </div>
+      <div class="viewer-footer">提示：在橙色部件上悬停可预览，点击可进入对应的独立查看页面。</div>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      requestAnimationFrame(function () { document.body.classList.add('page-ready'); });
+      var scenes = document.querySelectorAll('.scene');
+      var backButton = document.getElementById('backButton');
+      var viewLabel = document.getElementById('viewLabel');
+      var currentScene = 'main';
+      var trail = [];
+      var labels = {
+        main: '将鼠标移至橙色区域，查看系统组成；点击进入对应视图。',
+        subsystem: '将鼠标移至橙色区域，查看局部除尘结构；点击进入对应视图。',
+        detail8: '计量盒除尘详情。',
+        detail9: '充填管除尘详情。'
+      };
+
+      function updateBackButton() {
+        backButton.textContent = currentScene === 'main' ? '← 返回三维素材' : '← 返回上一步';
+      }
+
+      function showScene(nextScene, remember) {
+        if (nextScene === currentScene) return;
+        if (remember) trail.push(currentScene);
+        scenes.forEach(function (scene) {
+          scene.classList.toggle('active', scene.dataset.scene === nextScene);
+        });
+        currentScene = nextScene;
+        viewLabel.textContent = labels[nextScene];
+        updateBackButton();
+      }
+
+      document.querySelectorAll('.hotspot, .hotspot-label').forEach(function (hotspot) {
+        var overlay = document.querySelector('.overlay-image[data-overlay="' + hotspot.dataset.overlay + '"]');
+        hotspot.addEventListener('pointerenter', function () { if (overlay) overlay.classList.add('preview'); });
+        hotspot.addEventListener('pointerleave', function () { if (overlay) overlay.classList.remove('preview'); });
+        hotspot.addEventListener('focus', function () { if (overlay) overlay.classList.add('preview'); });
+        hotspot.addEventListener('blur', function () { if (overlay) overlay.classList.remove('preview'); });
+        hotspot.addEventListener('click', function () { showScene(hotspot.dataset.target, true); });
+      });
+
+      backButton.addEventListener('click', function () {
+        if (currentScene === 'main') {
+          window.location.href = 'index.html';
+          return;
+        }
+        showScene(trail.pop() || 'main', false);
+      });
+    }());
+  </script>
+</body>
+</html>
