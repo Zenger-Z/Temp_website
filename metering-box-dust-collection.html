@@ -11,7 +11,13 @@
     :root { --orange:#e87820; --ink:#1f2933; --muted:#69727d; --line:#e5e7eb; --panel:rgba(255,255,255,.92); }
     * { box-sizing:border-box; }
     body { margin:0; min-height:100vh; background:#f3f5f7; color:var(--ink); font-family:Inter,"Noto Sans SC","Microsoft YaHei",sans-serif; opacity:0; transform:translateY(10px); transition:opacity .32s ease, transform .32s ease; }
-    body.page-ready { opacity:1; transform:translateY(0); }
+    body.page-ready { opacity:1; transform:none; }
+    body.is-leaving {
+      opacity:0;
+      transform:translateY(-6px);
+      pointer-events:none;
+      transition-duration:220ms;
+    }
     button { font:inherit; }
     .page-shell { min-height:100vh; padding:28px clamp(16px,4vw,64px) 44px; }
     .topbar { max-width:1440px; margin:0 auto 20px; display:flex; justify-content:space-between; align-items:center; gap:16px; }
@@ -20,9 +26,12 @@
     .back-button { position:absolute; right:22px; bottom:22px; z-index:10; border:1px solid #d9dee5; border-radius:8px; background:var(--panel); color:#374151; padding:9px 14px; cursor:pointer; transition:.18s ease; box-shadow:0 2px 8px rgba(0,0,0,.1); }
     .back-button:hover { color:#b8550a; border-color:#f0b37c; background:#fff9f4; transform:translateY(-1px); }
     .viewer { max-width:1440px; margin:0 auto; background:#fff; border:1px solid var(--line); border-radius:16px; overflow:hidden; box-shadow:0 12px 30px rgba(31,41,51,.08); }
-    .viewer-header { padding:20px clamp(18px,3vw,32px); display:flex; align-items:center; justify-content:space-between; gap:18px; border-bottom:1px solid var(--line); }
+    .viewer-header { padding:20px clamp(18px,3vw,32px); border-bottom:1px solid var(--line); }
     h1 { margin:0; font-size:clamp(20px,2.2vw,28px); letter-spacing:-.03em; }
-    .view-label { margin:5px 0 0; min-height:22px; color:var(--muted); font-size:14px; transition:opacity .15s ease; }
+    .asset-meta-line { display:flex; align-items:center; flex-wrap:wrap; gap:10px; margin-top:12px; color:var(--muted); font-size:13px; }
+    .asset-category-tag { padding:2px 8px; border:1px solid #b7ddff; border-radius:4px; background:#e6f4ff; color:#1677ff; font-size:12px; font-weight:500; }
+    .asset-meta-item, .view-label { display:inline-flex; align-items:center; gap:5px; margin:0; min-height:0; color:var(--muted); font-size:13px; transition:opacity .15s ease; }
+    .asset-meta-icon { width:15px; height:15px; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
     .canvas-wrap { padding:clamp(12px,2vw,28px); background:linear-gradient(180deg,#fafbfc 0%,#f5f7f9 100%); }
     .canvas { position:relative; width:100%; aspect-ratio:16 / 10; overflow:hidden; background:#fff; border-radius:10px; box-shadow:inset 0 0 0 1px rgba(0,0,0,.03); }
     .scene { position:absolute; inset:0; opacity:0; pointer-events:none; transform:scale(.42); transition:opacity .5s ease, transform .5s ease; z-index:1; }
@@ -38,22 +47,251 @@
     .hotspot-label::after { content:''; position:absolute; left:19px; top:50%; width:6px; height:1.7px; background:#fff; border-radius:2px; transform:translateY(5px) rotate(45deg); transform-origin:left center; }
     .hotspot-label:hover, .hotspot-label:focus-visible { transform:scale(1.12); background:rgb(255,159,14); box-shadow:0 6px 15px rgba(161,90,0,.3); outline:none; }
     .detail-scene .base-image { cursor:default; }
+    .mobile-header, .mobile-nav-overlay { display:none; }
+    .mobile-controls { display:none; }
+    .mobile-back-button { display:none; }
     .viewer-footer { padding:14px clamp(18px,3vw,32px) 20px; color:#7a838e; font-size:13px; }
-    @media (max-width:640px) { .page-shell { padding:16px 10px 24px; } .topbar { margin-bottom:12px; } .breadcrumb { display:none; } .viewer-header { align-items:flex-start; flex-direction:column; gap:8px; } .hotspot-label { font-size:10px; padding:4px 7px 4px 21px; } .hotspot-label::before { left:6px; width:7px; height:7px; } .hotspot-label::after { left:13px; width:5px; } .back-button { right:10px; bottom:10px; padding:7px 10px; font-size:12px; } }
+    .desktop-slim-nav, .desktop-nav-footer { display:none; }
+    .mobile-category-header::after { display:none; }
+    .mobile-category-icon, .mobile-category-chevron { fill:none; stroke:currentColor; stroke-linecap:round; stroke-linejoin:round; }
+    .mobile-category-icon { width:19px; height:19px; flex:0 0 19px; stroke-width:1.8; opacity:.7; }
+    .mobile-category.open .mobile-category-icon, .mobile-category-header:hover .mobile-category-icon { opacity:1; }
+    .mobile-category-title { min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .mobile-category-chevron { width:17px; height:17px; margin-left:auto; flex:0 0 17px; stroke-width:1.8; color:#8b949e; transition:transform .3s ease; }
+    .mobile-category.open .mobile-category-chevron { transform:rotate(90deg); }
+    @media (min-width:769px) {
+      .desktop-slim-nav { position:fixed; inset:0 auto 0 0; z-index:41; width:64px; display:flex; flex-direction:column; align-items:center; overflow:hidden; padding:16px 0 14px; background:linear-gradient(90deg,rgba(255,255,255,.97) 0 64px,transparent 64px); box-shadow:3px 0 14px rgba(15,23,42,.05); opacity:1; transform:translateX(0); transition:width 360ms cubic-bezier(.4,0,.2,1), opacity 180ms ease, transform 360ms cubic-bezier(.4,0,.2,1), background-color 180ms ease; will-change:width,opacity,transform; pointer-events:none; }
+      .desktop-slim-nav::after { content:''; position:absolute; inset:0 0 0 auto; width:1px; background:#e7eaee; transition:background-color 180ms ease; }
+      body:not(.page-ready) .desktop-slim-nav { opacity:0; transform:translateX(-14px); }
+      body.desktop-nav-open .desktop-slim-nav { width:300px; background:transparent; box-shadow:6px 0 24px rgba(0,0,0,.08), 2px 0 8px rgba(0,0,0,.04); }
+      .desktop-slim-avatar { align-self:flex-start; width:34px; height:34px; margin:0 0 20px 15px; border-radius:50%; background:url('image/shared/头像.png') center / cover no-repeat; box-shadow:0 2px 8px rgba(22,119,255,.2); transition:opacity 120ms ease, transform 160ms ease; }
+      .desktop-slim-item, .desktop-slim-toggle, .desktop-nav-collapse { display:flex; align-items:center; justify-content:center; border:0; background:none; color:#69727d; cursor:pointer; }
+      .desktop-slim-avatar, .desktop-slim-item, .desktop-slim-toggle { pointer-events:auto; }
+      .desktop-slim-item { align-self:flex-start; width:42px; height:42px; margin:3px 0 3px 11px; border-radius:8px; transition:background .18s ease, color .18s ease, opacity 120ms ease, transform 160ms ease; }
+      .desktop-slim-item:hover, .desktop-slim-item.active { color:#1677ff; background:#e6f4ff; }
+      .desktop-slim-item svg, .desktop-slim-toggle svg, .desktop-nav-collapse svg { width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.9; stroke-linecap:round; stroke-linejoin:round; }
+      .desktop-slim-toggle { position:absolute; bottom:18px; left:11px; width:42px; height:42px; border-radius:8px; color:#52606d; transition:opacity 120ms ease, transform 160ms ease, background .18s ease, color .18s ease; }
+      .desktop-slim-toggle:hover, .desktop-nav-collapse:hover { color:#1677ff; background:#e6f4ff; }
+      .desktop-expanded-profile { position:absolute; top:0; left:0; display:flex; align-items:center; gap:14px; box-sizing:border-box; width:300px; height:116px; padding:28px 24px 16px; background:rgba(255,255,255,.80); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); opacity:0; transform:translateX(-10px); pointer-events:none; transition:opacity 130ms ease, transform 180ms ease; }
+      .desktop-expanded-profile .desktop-expanded-avatar { width:52px; height:52px; flex:0 0 52px; border-radius:50%; background:url('image/shared/头像.png') center / cover no-repeat; box-shadow:0 3px 12px rgba(22,119,255,.28); }
+      .desktop-expanded-profile strong, .desktop-expanded-profile span { display:block; }
+      .desktop-expanded-profile strong { color:#1f2933; font-size:17px; font-weight:650; letter-spacing:-.3px; line-height:1.25; }
+      .desktop-expanded-profile span { margin-top:2px; color:#8b949e; font-size:12.5px; line-height:1.4; }
+      .desktop-expanded-profile::after { content:''; position:absolute; right:12px; bottom:0; left:12px; height:1px; background:#f0f0f0; }
+      body.desktop-nav-open .desktop-slim-avatar, body.desktop-nav-open .desktop-slim-item, body.desktop-nav-open .desktop-slim-toggle { opacity:0; transform:translateX(-8px); pointer-events:none; }
+      body.desktop-nav-closing .desktop-slim-avatar, body.desktop-nav-closing .desktop-slim-item, body.desktop-nav-closing .desktop-slim-toggle { opacity:0; transform:translateX(-8px); pointer-events:none; }
+      body.desktop-nav-closing .desktop-slim-nav { background:transparent; }
+      body.desktop-nav-open .desktop-expanded-profile { opacity:1; transform:translateX(0); transition-delay:100ms,80ms; }
+      body.desktop-nav-closing .desktop-expanded-profile { opacity:0; transform:translateX(-10px); transition-delay:0ms; }
+      .mobile-nav-overlay { display:block; position:fixed; inset:0 auto 0 0; z-index:40; width:64px; overflow:hidden; background:transparent; opacity:1; pointer-events:none; transition:width 360ms cubic-bezier(.4,0,.2,1); will-change:width; }
+      .mobile-nav-drawer { box-sizing:border-box; width:300px; height:100%; display:flex; flex-direction:column; overflow-y:auto; padding:126px 12px 28px; background:rgba(255,255,255,.80); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); border:0; border-right:1px solid rgba(0,0,0,.06); box-shadow:none; transform:none; pointer-events:auto; font-family:'Inter',-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei','Noto Sans SC','Segoe UI',sans-serif; line-height:1.6; }
+      .mobile-nav-drawer .mobile-nav-profile { display:none; }
+      .mobile-category { margin:0 0 4px; }
+      .mobile-category-header { gap:9px; padding:11px 13px; border-radius:6px; color:rgba(0,0,0,.88); font-family:'Inter',-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei','Noto Sans SC','Segoe UI',sans-serif; font-size:15px; font-weight:600; }
+      .mobile-category-header::after { font-size:17px; line-height:17px; }
+      .mobile-category-list { padding-left:30px; }
+      .mobile-nav-link { position:relative; margin:0 0 4px; padding:9px 13px; border-radius:6px; color:rgba(0,0,0,.75); font-family:'Inter',-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei','Noto Sans SC','Segoe UI',sans-serif; font-size:15px; font-weight:400; line-height:1.6; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+      .mobile-nav-link:hover { color:#1677ff; background:#e6f4ff; }
+      .mobile-nav-link.current { color:#1677ff; background:#e6f4ff; font-weight:550; }
+      .mobile-nav-link::before { content:''; position:absolute; left:0; top:50%; width:3px; height:0; border-radius:0 2px 2px 0; background:#1677ff; transform:translateY(-50%); transition:height .18s ease; }
+      .mobile-nav-link:hover::before, .mobile-nav-link.current::before { height:18px; }
+      body.desktop-nav-open .mobile-nav-overlay { width:300px; pointer-events:auto; }
+      body.desktop-nav-closing .mobile-nav-overlay { width:64px; pointer-events:none; }
+      .mobile-nav-close { display:none; }
+      .mobile-nav-profile { display:flex; align-items:center; gap:12px; padding:6px 10px 16px; border-bottom:1px solid #edf0f2; }
+      .mobile-nav-profile .mobile-header-avatar { flex:0 0 40px; width:40px; height:40px; border-radius:50%; background:url('image/shared/头像.png') center / cover no-repeat; }
+      .mobile-nav-profile strong, .mobile-nav-profile span { display:block; }
+      .mobile-nav-profile strong { color:#1f2933; font-size:16px; }
+      .mobile-nav-profile span { margin-top:3px; color:#8b949e; font-size:12px; }
+      .mobile-category { margin-top:8px; }
+      .mobile-category-header { width:100%; display:flex; align-items:center; gap:10px; padding:11px 10px; border:0; border-radius:6px; background:none; color:#303943; text-align:left; font-size:14px; font-weight:600; cursor:pointer; outline:none; }
+      .mobile-category-header:hover, .mobile-category.open .mobile-category-header { color:#1677ff; background:#e6f4ff; }
+      .mobile-category-header::after { content:'›'; margin-left:auto; color:#8b949e; font-size:20px; line-height:12px; transition:transform .2s ease; }
+      .mobile-category.open .mobile-category-header::after { transform:rotate(90deg); }
+      .mobile-category-list { max-height:0; overflow:hidden; transition:max-height .3s ease; }
+      .mobile-category.open .mobile-category-list { max-height:900px; }
+      .mobile-nav-link { display:block; margin:2px 0 2px 12px; padding:9px 12px; border-radius:6px; color:#4b5563; font-size:13px; line-height:1.35; text-decoration:none; }
+      .mobile-nav-link:hover, .mobile-nav-link.current { color:#1677ff; background:#e6f4ff; }
+      /* 展开态与首页侧边目录保持同一套排版和视觉规格。 */
+      .mobile-category { margin:0 0 4px; }
+      .mobile-category, .desktop-nav-footer { opacity:0; transform:translateX(-8px); pointer-events:none; transition:opacity 180ms ease, transform 220ms ease; }
+      body.desktop-nav-open .mobile-category, body.desktop-nav-open .desktop-nav-footer {
+        opacity:1; transform:translateX(0); pointer-events:auto;
+        transition-delay:100ms,80ms;
+      }
+      body.desktop-nav-closing .mobile-category, body.desktop-nav-closing .desktop-nav-footer { opacity:0; transform:translateX(-8px); pointer-events:none; }
+      .mobile-category-header { gap:9px; padding:11px 13px; color:rgba(0,0,0,.88); font-size:15px; line-height:1.6; }
+      .mobile-category-header::after { display:none; }
+      .mobile-category-icon { width:19px; height:19px; flex:0 0 19px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; opacity:.7; }
+      .mobile-category.open .mobile-category-icon, .mobile-category-header:hover .mobile-category-icon { opacity:1; }
+      .mobile-category-title { min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+      .mobile-category-chevron { width:17px; height:17px; margin-left:auto; flex:0 0 17px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; color:#8b949e; transition:transform .3s ease; }
+      .mobile-category.open .mobile-category-chevron { transform:rotate(90deg); }
+      .mobile-category-list { padding-top:4px; padding-left:30px; }
+      .mobile-nav-link { margin:0 0 4px; padding:9px 13px; color:rgba(0,0,0,.75); font-size:15px; font-weight:400; line-height:1.6; }
+      .desktop-nav-footer { display:block; margin-top:auto; padding:16px 0 0; border-top:0; }
+      .desktop-nav-collapse { width:calc(100% - 64px); max-width:220px; margin:0 auto; gap:8px; padding:9px 12px; border-radius:6px; font-size:13px; font-weight:600; }
+      .desktop-nav-collapse svg { transform:rotate(180deg); }
+    }
+    @media (min-width:769px) {
+      .page-shell { margin-left:64px; padding:40px; transition:margin-left 360ms cubic-bezier(.4,0,.2,1); will-change:margin-left; }
+      .topbar { display:none; }
+      .viewer { max-width:1600px; border-radius:12px; border-color:#f0f0f0; box-shadow:0 1px 2px rgba(0,0,0,.03), 0 1px 6px rgba(0,0,0,.02); }
+      .viewer-header { padding:24px 40px; }
+      h1 { font-size:28px; font-weight:600; }
+      .asset-meta-line { margin-top:12px; }
+      .canvas-wrap { padding:24px 40px 40px; background:#fff; }
+      .viewer-footer { padding:16px 48px 28px; }
+    }
+    @media (min-width:1200px) { body.desktop-nav-open .page-shell { margin-left:300px; } }
+    @media (max-width:640px) { .page-shell { padding:72px 16px 16px; } .topbar { margin-bottom:12px; } .breadcrumb { display:none; } .viewer-header { padding:16px; align-items:flex-start; flex-direction:column; gap:8px; } .hotspot-label { font-size:10px; padding:4px 7px 4px 21px; } .hotspot-label::before { left:6px; width:7px; height:7px; } .hotspot-label::after { left:13px; width:5px; } .back-button { right:10px; bottom:10px; padding:7px 10px; font-size:12px; } }
+    @media (max-width:768px) {
+      .mobile-header { position:fixed; inset:0 0 auto; z-index:30; height:56px; display:flex; align-items:center; gap:12px; padding:0 16px; border-bottom:1px solid rgba(0,0,0,.06); background:rgba(255,255,255,.80); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); }
+      .hamburger-btn { width:40px; height:40px; display:flex; align-items:center; justify-content:center; border:0; border-radius:6px; background:none; cursor:pointer; outline:none; -webkit-tap-highlight-color:transparent; }
+      .hamburger-btn:active { background:rgba(0,0,0,.08); }
+      .hamburger-btn:focus-visible { outline:2px solid #1677ff; outline-offset:2px; }
+      .hamburger-btn svg { width:24px; height:24px; stroke:#1f2933; fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+      .mobile-header-title { flex:1; font-size:17px; font-weight:600; color:#1f2933; letter-spacing:-.3px; }
+      .mobile-header-avatar { width:32px; height:32px; border-radius:50%; background:url('image/shared/头像.png') center / cover no-repeat; box-shadow:0 2px 8px rgba(22,119,255,.2); }
+      .mobile-nav-overlay { display:block; position:fixed; inset:0; z-index:39; background:rgba(0,0,0,.4); opacity:0; pointer-events:none; transition:opacity .3s ease; }
+      .mobile-nav-overlay.is-open { opacity:1; pointer-events:auto; }
+      .mobile-nav-drawer { position:relative; width:min(300px,82vw); height:100%; display:flex; flex-direction:column; overflow-y:auto; box-sizing:border-box; padding:8px 12px 24px; background:#fff; box-shadow:6px 0 24px rgba(0,0,0,.08); transform:translateX(-100%); transition:transform .3s cubic-bezier(.4,0,.2,1); }
+      .mobile-nav-overlay.is-open .mobile-nav-drawer { transform:translateX(0); }
+      .mobile-nav-close { display:block; margin-left:auto; width:36px; height:36px; border:0; border-radius:6px; background:none; color:#6b7280; font-size:22px; cursor:pointer; }
+      .mobile-nav-profile { display:flex; align-items:center; gap:12px; padding:8px 10px 16px; border-bottom:1px solid #edf0f2; }
+      .mobile-nav-profile .mobile-header-avatar { flex:0 0 40px; width:40px; height:40px; }
+      .mobile-nav-profile strong, .mobile-nav-profile span { display:block; }
+      .mobile-nav-profile strong { color:#1f2933; font-size:16px; }
+      .mobile-nav-profile span { margin-top:3px; color:#8b949e; font-size:12px; }
+      .mobile-category { margin-top:8px; }
+      .mobile-category-header { width:100%; display:flex; align-items:center; gap:10px; padding:11px 10px; border:0; border-radius:6px; background:none; color:#303943; text-align:left; font-size:14px; font-weight:600; cursor:pointer; outline:none; -webkit-tap-highlight-color:transparent; }
+      .mobile-category-header:hover { color:#1677ff; background:#f0f7ff; }
+      .mobile-category.open .mobile-category-header { color:#1677ff; background:#e6f4ff; }
+      .mobile-category-header:focus-visible { outline:2px solid #1677ff; outline-offset:2px; }
+      .mobile-category-header::after { content:'›'; margin-left:auto; color:#8b949e; font-size:20px; line-height:12px; transform:rotate(0deg); transition:transform .2s ease; }
+      .mobile-category.open .mobile-category-header::after { transform:rotate(90deg); }
+      .mobile-category-list { max-height:0; overflow:hidden; transition:max-height .3s ease; }
+      .mobile-category.open .mobile-category-list { max-height:900px; }
+      .mobile-nav-link { display:block; margin:2px 0 2px 12px; padding:9px 12px; border-radius:6px; color:#4b5563; font-size:13px; line-height:1.35; text-decoration:none; }
+      .mobile-nav-link.current { color:#1677ff; font-weight:600; background:#e6f4ff; }
+      .page-shell { padding:72px 16px 16px; }
+      .page-shell, .viewer, .viewer-header, .asset-meta-line, .canvas-wrap, .canvas {
+        min-width:0; max-width:100%;
+      }
+      .viewer-header { padding:16px; }
+      .viewer-header > div, .view-label, #viewLabel { min-width:0; max-width:100%; }
+      h1, #viewLabel { overflow-wrap:anywhere; word-break:break-word; }
+      .asset-meta-line { align-items:flex-start; flex-wrap:wrap; }
+      .base-image, .overlay-image { max-width:100%; }
+      .hotspot, .hotspot-label { display:none; }
+      .canvas-wrap { padding:16px; }
+      .mobile-controls { display:none; grid-template-columns:1fr; gap:9px; padding:14px 2px 2px; }
+      .mobile-controls.is-visible { display:grid; }
+      .mobile-control { position:relative; min-height:48px; border:1px solid #e7e9ec; border-radius:9px; background:#fff; color:#374151; padding:12px 16px 12px 42px; text-align:left; font-size:14px; font-weight:600; cursor:pointer; transition:.2s ease; box-shadow:0 1px 2px rgba(0,0,0,.03); }
+      .mobile-control::before { content:''; position:absolute; left:18px; top:50%; width:11px; height:11px; border:2px solid #d77a1b; border-radius:50%; transform:translateY(-65%); }
+      .mobile-control::after { content:''; position:absolute; left:29px; top:50%; width:7px; height:2px; background:#d77a1b; border-radius:2px; transform:translateY(5px) rotate(45deg); transform-origin:left center; }
+      .mobile-control.is-selected { border-color:#f29100; background:#fff6ec; color:#ad5707; box-shadow:0 4px 12px rgba(214,111,10,.12); }
+      .canvas > .back-button { display:none; }
+      .mobile-back-button { display:block; width:100%; margin-top:12px; border:1px solid #d9dee5; border-radius:9px; background:#fff; color:#374151; padding:12px 16px; cursor:pointer; font-size:14px; font-weight:600; text-align:center; box-shadow:0 1px 2px rgba(0,0,0,.03); }
+      .viewer-footer { display:none; }
+    }
     @media (prefers-reduced-motion:reduce) { *,*::before,*::after { transition-duration:.01ms !important; } }
   </style>
 </head>
 <body>
-  <main class="page-shell">
-    <div class="topbar">
-      <div class="breadcrumb">三维素材 / <strong>计量盒主机除尘系统</strong></div>
+  <aside class="desktop-slim-nav" id="desktopSlimNav" aria-label="折叠的网站目录">
+    <div class="desktop-expanded-profile" aria-hidden="true">
+      <div class="desktop-expanded-avatar"></div>
+      <div><strong>Zenger</strong><span>Zenger's temp pages</span></div>
     </div>
-
+    <div class="desktop-slim-avatar" aria-label="Zenger 的头像"></div>
+    <button class="desktop-slim-item" type="button" data-desktop-category="exhibition" aria-label="展会评估" title="展会评估"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg></button>
+    <button class="desktop-slim-item" type="button" data-desktop-category="market-research" aria-label="市场调研" title="市场调研"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></button>
+    <button class="desktop-slim-item" type="button" data-desktop-category="other" aria-label="其他报告" title="其他报告"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></button>
+    <button class="desktop-slim-item active" type="button" data-desktop-category="three-dimensional-assets" aria-label="三维素材" title="三维素材"><svg viewBox="0 0 24 24"><path d="M12 2 3 7l9 5 9-5-9-5Z"/><path d="m3 12 9 5 9-5"/><path d="m3 17 9 5 9-5"/></svg></button>
+    <button class="desktop-slim-toggle" id="desktopNavToggle" type="button" aria-label="展开网站目录" title="展开目录" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button>
+  </aside>
+  <header class="mobile-header">
+    <button class="hamburger-btn" id="mobileMenuButton" type="button" aria-label="打开导航菜单"
+            aria-controls="mobileNavOverlay" aria-expanded="false">
+      <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <span class="mobile-header-title">Zenger's Temp Pages</span>
+    <div class="mobile-header-avatar" aria-label="Zenger 的头像"></div>
+  </header>
+  <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true">
+    <nav class="mobile-nav-drawer" aria-label="网站目录">
+      <button class="mobile-nav-close" id="mobileNavClose" type="button" aria-label="关闭目录">×</button>
+      <div class="mobile-nav-profile">
+        <div class="mobile-header-avatar" aria-hidden="true"></div>
+        <div><strong>Zenger</strong><span>Zenger's temp pages</span></div>
+      </div>
+      <div class="mobile-category" data-category="exhibition">
+        <button class="mobile-category-header" type="button" aria-expanded="false">
+          <svg class="mobile-category-icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <span class="mobile-category-title">展会评估</span>
+          <svg class="mobile-category-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+        <div class="mobile-category-list">
+          <a class="mobile-nav-link" href="article.html?id=apsmi-bali-2026">APSMI/Self-CARER/GPFI Bali Summit 2026 参会价值评估报告</a>
+          <a class="mobile-nav-link" href="article.html?id=interzoo-2026">2026年德国纽伦堡宠物用品展（Interzoo 2026）评估报告</a>
+          <a class="mobile-nav-link" href="article.html?id=gdic-asia-2026">第9届亚洲乳业创新峰会（9th GDIC Asia）评估报告</a>
+          <a class="mobile-nav-link" href="article.html?id=allpack-indonesia-2026">ALLPACK Indonesia 2026 参展价值评估报告</a>
+          <a class="mobile-nav-link" href="article.html?id=fachpack-joyea">FACHPACK 参展价值评估报告</a>
+          <a class="mobile-nav-link" href="article.html?id=interpack-joyea">Interpack 参展价值评估报告</a>
+          <a class="mobile-nav-link" href="article.html?id=propak-asia-2026-eval">ProPak Asia 2026 参展价值评估报告</a>
+          <a class="mobile-nav-link" href="article.html?id=scanpack-joyea">SPACK 参展价值评估报告</a>
+        </div>
+      </div>
+      <div class="mobile-category" data-category="market-research">
+        <button class="mobile-category-header" type="button" aria-expanded="false">
+          <svg class="mobile-category-icon" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          <span class="mobile-category-title">市场调研</span>
+          <svg class="mobile-category-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+        <div class="mobile-category-list">
+          <a class="mobile-nav-link" href="article.html?id=coating-drums">滚筒调味机（Coating Drums）投资可行性分析报告</a>
+        </div>
+      </div>
+      <div class="mobile-category" data-category="other">
+        <button class="mobile-category-header" type="button" aria-expanded="false">
+          <svg class="mobile-category-icon" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+          <span class="mobile-category-title">其他报告</span>
+          <svg class="mobile-category-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+        <div class="mobile-category-list">
+          <a class="mobile-nav-link" href="article.html?id=propak-asia-2026-summary">ProPak Asia 2026 参展总结报告</a>
+          <a class="mobile-nav-link" href="propak-clients.html">ProPak Asia 2026 拟邀请客户清单</a>
+          <a class="mobile-nav-link" href="article.html?id=tdd-audit">跨国企业设备供应商审核体系</a>
+          <a class="mobile-nav-link" href="article.html?id=propak-asia-2026-travel">ProPak Asia 2026 出行方案报告</a>
+          <a class="mobile-nav-link" href="article.html?id=thailand-potential-customers">泰国市场仅一潜在客户清单</a>
+        </div>
+      </div>
+      <div class="mobile-category open" data-category="three-dimensional-assets">
+        <button class="mobile-category-header" type="button" aria-expanded="true">
+          <svg class="mobile-category-icon" viewBox="0 0 24 24"><path d="M12 2 3 7l9 5 9-5-9-5Z"/><path d="m3 12 9 5 9-5"/><path d="m3 17 9 5 9-5"/></svg>
+          <span class="mobile-category-title">三维素材</span>
+          <svg class="mobile-category-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+        <div class="mobile-category-list">
+          <a class="mobile-nav-link current" href="metering-box-dust-collection.html">计量盒主机除尘系统</a>
+        </div>
+      </div>
+      <div class="desktop-nav-footer">
+        <button class="desktop-nav-collapse" id="desktopNavCollapse" type="button"><svg viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg> 折叠目录</button>
+      </div>
+    </nav>
+  </div>
+  <main class="page-shell">
     <section class="viewer" aria-labelledby="pageTitle">
       <div class="viewer-header">
         <div>
           <h1 id="pageTitle">计量盒主机除尘系统</h1>
-          <p class="view-label" id="viewLabel">将鼠标移至橙色区域，查看系统组成；点击进入对应视图。</p>
+          <div class="asset-meta-line">
+            <span class="asset-category-tag">三维素材</span>
+            <span class="asset-meta-item"><svg class="asset-meta-icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>2026-07-23</span>
+            <span class="view-label"><svg class="asset-meta-icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="m16 16 4 4"/></svg><span id="viewLabel">悬停预览，点击查看详情</span></span>
+          </div>
         </div>
       </div>
 
@@ -89,10 +327,19 @@
           <section class="scene detail-scene" data-scene="detail9" aria-label="充填管除尘详情">
             <img class="base-image" src="image/three-dimensional-assets/metering-box-dust-collection/计量盒主机除尘系统_图9.jpg" alt="充填管除尘详情">
           </section>
-          <button class="back-button" id="backButton" type="button">← 返回三维素材</button>
+          <button class="back-button" id="backButton" type="button">← 返回主页</button>
         </div>
+        <div class="mobile-controls" data-controls-for="main">
+          <button class="mobile-control" type="button" data-target="detail8" data-overlay="overlay2" data-label="计量盒除尘">计量盒除尘</button>
+          <button class="mobile-control" type="button" data-target="detail9" data-overlay="overlay3" data-label="充填管除尘">充填管除尘</button>
+          <button class="mobile-control" type="button" data-target="subsystem" data-overlay="overlay4" data-label="计量盒主机除尘系统">计量盒主机除尘系统</button>
+        </div>
+        <div class="mobile-controls" data-controls-for="subsystem">
+          <button class="mobile-control" type="button" data-target="detail8" data-overlay="overlay6" data-label="计量盒除尘">计量盒除尘</button>
+          <button class="mobile-control" type="button" data-target="detail9" data-overlay="overlay7" data-label="充填管除尘">充填管除尘</button>
+        </div>
+        <button class="mobile-back-button" id="mobileBackButton" type="button">← 返回主页</button>
       </div>
-      <div class="viewer-footer">提示：在橙色部件上悬停可预览，点击可进入对应的独立查看页面。</div>
     </section>
   </main>
 
@@ -101,9 +348,20 @@
       requestAnimationFrame(function () { document.body.classList.add('page-ready'); });
       var scenes = document.querySelectorAll('.scene');
       var backButton = document.getElementById('backButton');
+      var mobileBackButton = document.getElementById('mobileBackButton');
+      var mobileMenuButton = document.getElementById('mobileMenuButton');
+      var mobileNavOverlay = document.getElementById('mobileNavOverlay');
+      var mobileNavClose = document.getElementById('mobileNavClose');
+      var desktopNavToggle = document.getElementById('desktopNavToggle');
+      var desktopNavCollapse = document.getElementById('desktopNavCollapse');
       var viewLabel = document.getElementById('viewLabel');
+      var mobileControls = document.querySelectorAll('.mobile-controls');
       var currentScene = 'main';
       var trail = [];
+      var desktopSlimNav = document.getElementById('desktopSlimNav');
+      var pageShell = document.querySelector('.page-shell');
+      var pendingDesktopFocus = null;
+      mobileNavOverlay.inert = true;
       var labels = {
         main: '将鼠标移至橙色区域，查看系统组成；点击进入对应视图。',
         subsystem: '将鼠标移至橙色区域，查看局部除尘结构；点击进入对应视图。',
@@ -112,18 +370,38 @@
       };
 
       function updateBackButton() {
-        backButton.textContent = currentScene === 'main' ? '← 返回三维素材' : '← 返回上一步';
+        var backText = currentScene === 'main' ? '← 返回三维素材' : '← 返回上一步';
+        backButton.textContent = backText;
+        mobileBackButton.textContent = backText;
+      }
+
+      function clearMobileSelection() {
+        document.querySelectorAll('.mobile-control.is-selected').forEach(function (control) {
+          control.classList.remove('is-selected');
+        });
+      }
+
+      function updateMobileControls() {
+        mobileControls.forEach(function (controls) {
+          controls.classList.toggle('is-visible', controls.dataset.controlsFor === currentScene);
+        });
+        if (window.matchMedia('(max-width: 768px)').matches && (currentScene === 'main' || currentScene === 'subsystem')) {
+          viewLabel.textContent = '点按下方部件查看高亮，再点一次进入详情。';
+        }
       }
 
       function showScene(nextScene, remember) {
         if (nextScene === currentScene) return;
         if (remember) trail.push(currentScene);
+        document.querySelectorAll('.overlay-image.preview').forEach(function (overlay) { overlay.classList.remove('preview'); });
+        clearMobileSelection();
         scenes.forEach(function (scene) {
           scene.classList.toggle('active', scene.dataset.scene === nextScene);
         });
         currentScene = nextScene;
         viewLabel.textContent = labels[nextScene];
         updateBackButton();
+        updateMobileControls();
       }
 
       document.querySelectorAll('.hotspot, .hotspot-label').forEach(function (hotspot) {
@@ -135,13 +413,131 @@
         hotspot.addEventListener('click', function () { showScene(hotspot.dataset.target, true); });
       });
 
-      backButton.addEventListener('click', function () {
-        if (currentScene === 'main') {
-          window.location.href = 'index.html';
-          return;
-        }
-        showScene(trail.pop() || 'main', false);
+      document.querySelectorAll('.mobile-control').forEach(function (control) {
+        var mobileOverlay = document.querySelector('.overlay-image[data-overlay="' + control.dataset.overlay + '"]');
+        control.addEventListener('click', function () {
+          if (control.classList.contains('is-selected')) {
+            showScene(control.dataset.target, true);
+            return;
+          }
+          document.querySelectorAll('.overlay-image.preview').forEach(function (overlay) { overlay.classList.remove('preview'); });
+          clearMobileSelection();
+          control.classList.add('is-selected');
+          if (mobileOverlay) mobileOverlay.classList.add('preview');
+          viewLabel.textContent = control.dataset.label + '已高亮，再次点按进入详情。';
+        });
       });
+
+      function returnHome() {
+        if (document.body.classList.contains('is-leaving')) return;
+        document.body.classList.add('is-leaving');
+        window.setTimeout(function () {
+          window.location.href = 'index.html';
+        }, 220);
+      }
+
+      backButton.addEventListener('click', returnHome);
+      mobileBackButton.addEventListener('click', returnHome);
+
+      window.addEventListener('pageshow', function (event) {
+        if (!event.persisted) return;
+        document.body.classList.remove('is-leaving');
+      });
+
+      function setMobileNav(isOpen) {
+        mobileNavOverlay.classList.toggle('is-open', isOpen);
+        mobileNavOverlay.setAttribute('aria-hidden', String(!isOpen));
+        mobileNavOverlay.inert = !isOpen;
+        mobileMenuButton.setAttribute('aria-expanded', String(isOpen));
+        pageShell.inert = isOpen;
+        if (isOpen) {
+          requestAnimationFrame(function () { mobileNavClose.focus(); });
+        } else {
+          mobileMenuButton.focus();
+        }
+      }
+
+      mobileMenuButton.addEventListener('click', function () { setMobileNav(true); });
+
+      function setDesktopNav(isOpen, focusTarget) {
+        if (isOpen) {
+          document.body.classList.remove('desktop-nav-closing');
+          document.body.classList.add('desktop-nav-open');
+          mobileNavOverlay.setAttribute('aria-hidden', 'false');
+          mobileNavOverlay.inert = false;
+          pendingDesktopFocus = focusTarget || document.querySelector('.mobile-category.open .mobile-category-header');
+        } else if (document.body.classList.contains('desktop-nav-open')) {
+          document.body.classList.add('desktop-nav-closing');
+          document.body.classList.remove('desktop-nav-open');
+          mobileNavOverlay.setAttribute('aria-hidden', 'true');
+          mobileNavOverlay.inert = true;
+          pendingDesktopFocus = focusTarget || desktopNavToggle;
+        }
+        desktopNavToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        desktopNavToggle.setAttribute('aria-label', isOpen ? '折叠网站目录' : '展开网站目录');
+      }
+
+      desktopSlimNav.addEventListener('transitionend', function (event) {
+        if (event.propertyName !== 'width') return;
+        var isOpen = document.body.classList.contains('desktop-nav-open');
+        if (!isOpen) document.body.classList.remove('desktop-nav-closing');
+        if (pendingDesktopFocus && pendingDesktopFocus.offsetParent !== null) pendingDesktopFocus.focus();
+        pendingDesktopFocus = null;
+      });
+
+      mobileNavClose.addEventListener('click', function () {
+        if (window.innerWidth <= 768) setMobileNav(false);
+        else setDesktopNav(false, desktopNavToggle);
+      });
+      mobileNavOverlay.addEventListener('click', function (event) {
+        if (event.target === mobileNavOverlay && window.innerWidth <= 768) setMobileNav(false);
+      });
+      desktopNavToggle.addEventListener('click', function () {
+        setDesktopNav(!document.body.classList.contains('desktop-nav-open'));
+      });
+      desktopNavCollapse.addEventListener('click', function () { setDesktopNav(false, desktopNavToggle); });
+      document.querySelectorAll('[data-desktop-category]').forEach(function (item) {
+        item.addEventListener('click', function () {
+          var category = document.querySelector('.mobile-category[data-category="' + item.getAttribute('data-desktop-category') + '"]');
+          if (!category) return;
+          category.classList.add('open');
+          var categoryHeader = category.querySelector('.mobile-category-header');
+          categoryHeader.setAttribute('aria-expanded', 'true');
+          setDesktopNav(true, categoryHeader);
+        });
+      });
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+          if (window.innerWidth <= 768 && mobileNavOverlay.classList.contains('is-open')) {
+            event.preventDefault();
+            setMobileNav(false);
+          } else if (document.body.classList.contains('desktop-nav-open')) {
+            event.preventDefault();
+            setDesktopNav(false, desktopNavToggle);
+          }
+        }
+        if (event.key === 'Tab' && window.innerWidth <= 768 && mobileNavOverlay.classList.contains('is-open')) {
+          var focusable = Array.from(mobileNavOverlay.querySelectorAll('a[href], button:not([disabled])'))
+            .filter(function (el) { return el.offsetParent !== null; });
+          if (!focusable.length) return;
+          var first = focusable[0];
+          var last = focusable[focusable.length - 1];
+          if (event.shiftKey && document.activeElement === first) {
+            event.preventDefault(); last.focus();
+          } else if (!event.shiftKey && document.activeElement === last) {
+            event.preventDefault(); first.focus();
+          }
+        }
+      });
+      document.querySelectorAll('.mobile-category-header').forEach(function (header) {
+        header.addEventListener('click', function () {
+          var category = header.parentElement;
+          var isOpen = category.classList.toggle('open');
+          header.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+      });
+
+      updateMobileControls();
     }());
   </script>
 </body>

@@ -32,11 +32,83 @@
 /* ── Touch-friendly utilities ── */
 .card { -webkit-tap-highlight-color: transparent; }
 
+/* ── Shared site directory ── */
+.site-mobile-header { display:none; }
+.site-sidebar {
+  position:fixed; inset:0 auto 0 0; z-index:10001;
+  width:300px; display:flex; flex-direction:column;
+  background:rgba(255,255,255,.94);
+  border-right:1px solid rgba(0,0,0,.06);
+  box-shadow:3px 0 14px rgba(15,23,42,.05);
+  overflow-y:auto; overflow-x:hidden;
+}
+.site-sidebar-close { display:none; }
+.site-profile {
+  display:flex; align-items:center; gap:14px;
+  min-height:116px; padding:28px 24px 16px;
+}
+.site-avatar {
+  width:52px; height:52px; flex:0 0 52px; border-radius:50%;
+  background:url('image/shared/头像.png') center/cover no-repeat;
+  box-shadow:0 3px 12px rgba(22,119,255,.24);
+}
+.site-profile strong,.site-profile span { display:block; }
+.site-profile strong { font-size:17px; font-weight:650; }
+.site-profile span { margin-top:2px; color:#8b949e; font-size:12.5px; }
+.site-divider { height:1px; margin:0 12px 10px; background:#f0f0f0; }
+.site-nav { padding:0 12px 24px; }
+.site-category { margin:0 0 4px; }
+.site-category-header {
+  width:100%; display:flex; align-items:center; gap:9px;
+  padding:11px 13px; border:0; border-radius:6px; background:none;
+  color:rgba(0,0,0,.88); font-size:15px; font-weight:600;
+  text-align:left; cursor:pointer;
+}
+.site-category-header:hover,.site-category.open .site-category-header {
+  color:var(--color-primary); background:var(--color-primary-bg);
+}
+.site-category-header:focus-visible,.site-nav-link:focus-visible {
+  outline:2px solid var(--color-primary); outline-offset:2px;
+}
+.site-category-icon,.site-category-chevron {
+  fill:none; stroke:currentColor; stroke-width:1.8;
+  stroke-linecap:round; stroke-linejoin:round;
+}
+.site-category-icon { width:19px; height:19px; flex:0 0 19px; opacity:.72; }
+.site-category-chevron {
+  width:17px; height:17px; margin-left:auto; flex:0 0 17px;
+  color:#8b949e; transition:transform .24s ease;
+}
+.site-category.open .site-category-chevron { transform:rotate(90deg); }
+.site-category-list {
+  max-height:0; overflow:hidden; padding-left:30px;
+  transition:max-height .28s ease;
+}
+.site-category.open .site-category-list { max-height:920px; }
+.site-nav-link {
+  position:relative; display:block; margin:0 0 4px; padding:9px 13px;
+  border-radius:6px; color:rgba(0,0,0,.75); font-size:15px;
+  line-height:1.6; white-space:nowrap; overflow:hidden;
+  text-overflow:ellipsis; text-decoration:none;
+}
+.site-nav-link:hover,.site-nav-link.current {
+  color:var(--color-primary); background:var(--color-primary-bg);
+}
+.site-nav-link.current { font-weight:550; }
+.site-nav-link.current::before {
+  content:''; position:absolute; left:0; top:50%; width:3px; height:18px;
+  border-radius:0 2px 2px 0; background:var(--color-primary);
+  transform:translateY(-50%);
+}
+.site-backdrop { display:none; }
+.tool-shell { min-width:0; margin-left:300px; }
+
 /* ── Password Gate ── */
 .pwd-overlay {
-  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  position: fixed; top: 0; left: 300px; width: calc(100% - 300px); height: 100%;
   background: #f5f5f5; z-index: 9999;
   display: flex; align-items: center; justify-content: center;
+  padding:24px;
 }
 .pwd-box {
   background: #fff; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.12);
@@ -56,6 +128,7 @@
 }
 .pwd-box button:hover { background: #4096ff; }
 .pwd-box .pwd-error { color: #cf1322; font-size: 13px; margin-top: 12px; display: none; }
+.pwd-note { margin-top:12px; color:#777; font-size:12px; line-height:1.55; }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -64,6 +137,7 @@ body {
   background: var(--color-bg);
   color: var(--color-text);
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /* ── Header ── */
@@ -124,7 +198,7 @@ body {
 }
 .toolbar-inner .search-box input {
   width: 100%;
-  padding: 8px 12px 8px 36px;
+  padding: 8px 12px;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   font-size: 16px;
@@ -443,7 +517,7 @@ body {
   }
 
   .toolbar-inner .search-box input {
-    padding: 10px 12px 10px 36px;
+    padding: 10px 12px;
     font-size: 16px;
   }
   .toolbar-inner select {
@@ -467,6 +541,52 @@ body {
     font-weight: 500;
   }
 }
+@media (max-width: 768px) {
+  .site-mobile-header {
+    position:fixed; inset:0 0 auto 0; z-index:10004;
+    height:56px; display:flex; align-items:center; gap:12px;
+    padding:0 16px; background:rgba(255,255,255,.96);
+    border-bottom:1px solid var(--color-border);
+  }
+  .site-menu-button,.site-sidebar-close {
+    width:40px; height:40px; display:flex; align-items:center; justify-content:center;
+    border:0; border-radius:6px; background:none; color:#39424e;
+    font-size:22px; cursor:pointer;
+  }
+  .site-menu-button svg,.site-sidebar-close svg {
+    width:22px; height:22px; fill:none; stroke:currentColor;
+    stroke-width:2; stroke-linecap:round; stroke-linejoin:round;
+  }
+  .site-mobile-title {
+    flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis;
+    white-space:nowrap; font-size:16px; font-weight:600;
+  }
+  .site-mobile-avatar {
+    width:32px; height:32px; border-radius:50%;
+    background:url('image/shared/头像.png') center/cover no-repeat;
+  }
+  .site-sidebar {
+    z-index:10003; width:min(300px,84vw);
+    transform:translateX(-100%);
+    transition:transform .3s cubic-bezier(.4,0,.2,1);
+  }
+  .site-sidebar.open { transform:translateX(0); }
+  .site-sidebar-close { flex:0 0 40px; align-self:flex-end; margin:8px 8px 0 0; }
+  .site-profile { min-height:auto; padding:8px 20px 18px; }
+  .site-backdrop {
+    position:fixed; inset:56px 0 0; z-index:10002;
+    display:block; background:rgba(0,0,0,.4);
+    opacity:0; pointer-events:none; transition:opacity .3s ease;
+  }
+  .site-backdrop.active { opacity:1; pointer-events:auto; }
+  .tool-shell { margin-left:0; padding-top:56px; }
+  .pwd-overlay {
+    top:56px; left:0; width:100%; height:calc(100% - 56px);
+    padding:16px;
+  }
+  .pwd-box { padding:32px 24px; }
+  .header { top:56px; }
+}
 @media (max-width: 380px) {
   .card-grid { gap: 8px; }
   .content { padding: 10px; }
@@ -484,17 +604,95 @@ body {
 </head>
 <body>
 
+<header class="site-mobile-header">
+  <button class="site-menu-button" id="siteMenuButton" type="button"
+          aria-label="打开网站目录" aria-controls="siteSidebar" aria-expanded="false">
+    <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+  <span class="site-mobile-title">Zenger's Temp Pages</span>
+  <span class="site-mobile-avatar" aria-label="Zenger 的头像"></span>
+</header>
+
+<div class="site-backdrop" id="siteBackdrop"></div>
+
+<aside class="site-sidebar" id="siteSidebar" aria-label="网站目录">
+  <button class="site-sidebar-close" id="siteSidebarClose" type="button" aria-label="关闭网站目录">
+    <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <div class="site-profile">
+    <span class="site-avatar" aria-label="Zenger 的头像"></span>
+    <div><strong>Zenger</strong><span>Zenger's temp pages</span></div>
+  </div>
+  <div class="site-divider"></div>
+  <nav class="site-nav" aria-label="文章分类目录">
+    <div class="site-category" data-category="exhibition">
+      <button class="site-category-header" type="button" aria-expanded="false">
+        <svg class="site-category-icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <span>展会评估</span>
+        <svg class="site-category-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+      </button>
+      <div class="site-category-list">
+        <a class="site-nav-link" href="article.html?id=apsmi-bali-2026">APSMI/Self-CARER/GPFI Bali Summit 2026 参会价值评估报告</a>
+        <a class="site-nav-link" href="article.html?id=interzoo-2026">2026年德国纽伦堡宠物用品展（Interzoo 2026）评估报告</a>
+        <a class="site-nav-link" href="article.html?id=gdic-asia-2026">第9届亚洲乳业创新峰会（9th GDIC Asia）评估报告</a>
+        <a class="site-nav-link" href="article.html?id=allpack-indonesia-2026">ALLPACK Indonesia 2026 参展价值评估报告</a>
+        <a class="site-nav-link" href="article.html?id=fachpack-joyea">FACHPACK 参展价值评估报告</a>
+        <a class="site-nav-link" href="article.html?id=interpack-joyea">Interpack 参展价值评估报告</a>
+        <a class="site-nav-link" href="article.html?id=propak-asia-2026-eval">ProPak Asia 2026 参展价值评估报告</a>
+        <a class="site-nav-link" href="article.html?id=scanpack-joyea">SPACK 参展价值评估报告</a>
+      </div>
+    </div>
+    <div class="site-category" data-category="market-research">
+      <button class="site-category-header" type="button" aria-expanded="false">
+        <svg class="site-category-icon" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        <span>市场调研</span>
+        <svg class="site-category-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+      </button>
+      <div class="site-category-list">
+        <a class="site-nav-link" href="article.html?id=coating-drums">滚筒调味机（Coating Drums）投资可行性分析报告</a>
+      </div>
+    </div>
+    <div class="site-category open" data-category="other">
+      <button class="site-category-header" type="button" aria-expanded="true">
+        <svg class="site-category-icon" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+        <span>其他报告</span>
+        <svg class="site-category-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+      </button>
+      <div class="site-category-list">
+        <a class="site-nav-link" href="article.html?id=propak-asia-2026-summary">ProPak Asia 2026 参展总结报告</a>
+        <a class="site-nav-link current" href="propak-clients.html" aria-current="page">ProPak Asia 2026 拟邀请客户清单</a>
+        <a class="site-nav-link" href="article.html?id=tdd-audit">跨国企业设备供应商审核体系</a>
+        <a class="site-nav-link" href="article.html?id=propak-asia-2026-travel">ProPak Asia 2026 出行方案报告</a>
+        <a class="site-nav-link" href="article.html?id=thailand-potential-customers">泰国市场仅一潜在客户清单</a>
+      </div>
+    </div>
+    <div class="site-category" data-category="three-dimensional-assets">
+      <button class="site-category-header" type="button" aria-expanded="false">
+        <svg class="site-category-icon" viewBox="0 0 24 24"><path d="M12 2 3 7l9 5 9-5-9-5Z"/><path d="m3 12 9 5 9-5"/><path d="m3 17 9 5 9-5"/></svg>
+        <span>三维素材</span>
+        <svg class="site-category-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+      </button>
+      <div class="site-category-list">
+        <a class="site-nav-link" href="metering-box-dust-collection.html">计量盒主机除尘系统</a>
+      </div>
+    </div>
+  </nav>
+</aside>
+
 <!-- Password Gate -->
 <div class="pwd-overlay" id="pwdOverlay">
-  <div class="pwd-box">
-    <h2>🔒 访问验证</h2>
-    <p>请输入访问密码</p>
-    <input type="password" id="pwdInput" placeholder="请输入密码" onkeydown="if(event.key==='Enter')checkPwd()">
-    <button onclick="checkPwd()">确认</button>
-    <div class="pwd-error" id="pwdError">密码错误，请重试</div>
+  <div class="pwd-box" role="dialog" aria-labelledby="pwdTitle" aria-describedby="pwdDescription">
+    <h2 id="pwdTitle">访问验证</h2>
+    <p id="pwdDescription">请输入访问密码以查看客户清单</p>
+    <input type="password" id="pwdInput" placeholder="请输入密码" autocomplete="current-password"
+           aria-describedby="pwdError pwdNote" oninput="clearPwdError()" onkeydown="if(event.key==='Enter')checkPwd()">
+    <button type="button" onclick="checkPwd()">确认</button>
+    <div class="pwd-error" id="pwdError" role="alert" aria-live="polite">密码错误，请重试</div>
+    <div class="pwd-note" id="pwdNote">网站目录仍可使用，可随时返回文章列表或打开其他页面。</div>
   </div>
 </div>
 
+<div class="tool-shell" id="protectedContent" inert aria-hidden="true">
 <div class="header">
   <div class="header-inner">
     <h1>2026 泰国 ProPak 拟邀请客户</h1>
@@ -505,7 +703,6 @@ body {
 <div class="toolbar">
   <div class="toolbar-inner">
     <div class="search-box">
-      <span class="search-icon">🔍</span>
       <input type="text" id="searchInput" placeholder="搜索客户名称..." oninput="renderCards()">
     </div>
     <select id="personFilter" onchange="renderCards()">
@@ -515,24 +712,86 @@ body {
 </div>
 
 <div class="tabs">
-  <div class="tabs-inner">
-    <button class="tab-btn active" data-tab="visited" onclick="switchTab('visited')">
+  <div class="tabs-inner" role="tablist" aria-label="客户类型">
+    <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="cardGrid"
+            data-tab="visited" onclick="switchTab('visited')">
       已来访<span class="count" id="countVisited"></span>
     </button>
-    <button class="tab-btn" data-tab="potential" onclick="switchTab('potential')">
+    <button class="tab-btn" role="tab" aria-selected="false" aria-controls="cardGrid"
+            data-tab="potential" onclick="switchTab('potential')">
       潜在客户<span class="count" id="countPotential"></span>
     </button>
   </div>
 </div>
 
 <div class="content">
-  <div class="card-grid" id="cardGrid"></div>
+  <div class="card-grid" id="cardGrid" role="tabpanel"></div>
+</div>
 </div>
 
 <script>
+// ── Site directory ──
+const siteSidebar = document.getElementById('siteSidebar');
+const siteMenuButton = document.getElementById('siteMenuButton');
+const siteSidebarClose = document.getElementById('siteSidebarClose');
+const siteBackdrop = document.getElementById('siteBackdrop');
+let siteMenuLastFocus = null;
+
+function setSiteSidebar(open) {
+  if (window.innerWidth > 768) {
+    siteSidebar.classList.remove('open');
+    siteSidebar.inert = false;
+    siteSidebar.removeAttribute('aria-hidden');
+    siteBackdrop.classList.remove('active');
+    siteMenuButton.setAttribute('aria-expanded', 'false');
+    return;
+  }
+  siteSidebar.classList.toggle('open', open);
+  siteBackdrop.classList.toggle('active', open);
+  siteMenuButton.setAttribute('aria-expanded', String(open));
+  siteSidebar.inert = !open;
+  siteSidebar.setAttribute('aria-hidden', String(!open));
+  if (open) {
+    siteMenuLastFocus = document.activeElement;
+    window.setTimeout(() => siteSidebarClose.focus(), 50);
+  } else if (siteMenuLastFocus) {
+    siteMenuLastFocus.focus();
+  }
+}
+
+siteMenuButton.addEventListener('click', () => setSiteSidebar(true));
+siteSidebarClose.addEventListener('click', () => setSiteSidebar(false));
+siteBackdrop.addEventListener('click', () => setSiteSidebar(false));
+document.querySelectorAll('.site-category-header').forEach(header => {
+  header.addEventListener('click', () => {
+    const category = header.closest('.site-category');
+    const open = category.classList.toggle('open');
+    header.setAttribute('aria-expanded', String(open));
+  });
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && siteSidebar.classList.contains('open')) {
+    event.preventDefault();
+    setSiteSidebar(false);
+    return;
+  }
+  if (event.key !== 'Tab' || !siteSidebar.classList.contains('open') || window.innerWidth > 768) return;
+  const focusable = Array.from(siteSidebar.querySelectorAll('a[href],button:not([disabled])'))
+    .filter(el => el.offsetParent !== null);
+  if (!focusable.length) return;
+  const first = focusable[0];
+  const last = focusable[focusable.length - 1];
+  if (event.shiftKey && document.activeElement === first) {
+    event.preventDefault(); last.focus();
+  } else if (!event.shiftKey && document.activeElement === last) {
+    event.preventDefault(); first.focus();
+  }
+});
+setSiteSidebar(false);
+
 // ── Password Gate ──
 const PWD_KEY = 'propak_authed';
-const PWD_HASH = '32ccd313'; // JOYEA88031111
+const PWD_HASH = '32ccd313';
 
 function hashSimple(s) { var h = 0; for (var i = 0; i < s.length; i++) { h = ((h << 5) - h) + s.charCodeAt(i); h |= 0; } return Math.abs(h).toString(16); }
 
@@ -540,16 +799,35 @@ function checkPwd() {
   var input = document.getElementById('pwdInput').value;
   if (hashSimple(input) === PWD_HASH) {
     sessionStorage.setItem(PWD_KEY, '1');
-    document.getElementById('pwdOverlay').style.display = 'none';
+    setProtectedState(true);
   } else {
     document.getElementById('pwdError').style.display = 'block';
     document.getElementById('pwdInput').value = '';
+    document.getElementById('pwdInput').setAttribute('aria-invalid', 'true');
+    document.getElementById('pwdInput').focus();
   }
 }
 
-if (sessionStorage.getItem(PWD_KEY) === '1') {
-  document.getElementById('pwdOverlay').style.display = 'none';
+function clearPwdError() {
+  document.getElementById('pwdError').style.display = 'none';
+  document.getElementById('pwdInput').removeAttribute('aria-invalid');
 }
+
+function setProtectedState(unlocked) {
+  const overlay = document.getElementById('pwdOverlay');
+  const protectedContent = document.getElementById('protectedContent');
+  overlay.style.display = unlocked ? 'none' : 'flex';
+  protectedContent.inert = !unlocked;
+  if (unlocked) {
+    protectedContent.removeAttribute('aria-hidden');
+    requestAnimationFrame(() => document.getElementById('searchInput').focus());
+  } else {
+    protectedContent.setAttribute('aria-hidden', 'true');
+    requestAnimationFrame(() => document.getElementById('pwdInput').focus());
+  }
+}
+
+setProtectedState(sessionStorage.getItem(PWD_KEY) === '1');
 
 let allData = { visited: [], potential: [] };
 let currentTab = 'visited';
@@ -560,10 +838,13 @@ function adjustStickyTops() {
   const toolbar = document.querySelector('.toolbar');
   const tabs = document.querySelector('.tabs');
   if (!header || !toolbar || !tabs) return;
+  const base = window.innerWidth <= 768 ? 56 : 0;
   const h = header.offsetHeight;
   const t = toolbar.offsetHeight;
-  toolbar.style.top = h + 'px';
-  tabs.style.top = (h + t) + 'px';
+  header.style.top = base + 'px';
+  toolbar.style.top = (base + h) + 'px';
+  tabs.style.top = (base + h + t) + 'px';
+  setSiteSidebar(siteSidebar.classList.contains('open'));
 }
 window.addEventListener('load', adjustStickyTops);
 window.addEventListener('resize', adjustStickyTops);
@@ -599,7 +880,11 @@ function initFilters() {
 
 function switchTab(tab) {
   currentTab = tab;
-  document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
+  document.querySelectorAll('.tab-btn').forEach(b => {
+    const active = b.dataset.tab === tab;
+    b.classList.toggle('active', active);
+    b.setAttribute('aria-selected', String(active));
+  });
   document.getElementById('searchInput').value = '';
   document.getElementById('personFilter').value = '';
   renderCards();
