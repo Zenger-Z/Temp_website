@@ -429,6 +429,10 @@
       });
 
       function returnHome() {
+        if (currentScene !== 'main') {
+          showScene(trail.pop() || 'main', false);
+          return;
+        }
         if (document.body.classList.contains('is-leaving')) return;
         document.body.classList.add('is-leaving');
         window.setTimeout(function () {
