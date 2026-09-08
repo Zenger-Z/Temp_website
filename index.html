@@ -906,6 +906,29 @@
       });
     });
 
+    /* 主页文章按发布日期从新到旧排列；同一天保持原有顺序。 */
+    (function sortArticleCardsByPublishedDate() {
+      var grid = document.querySelector('.articles-grid');
+      if (!grid) return;
+
+      Array.from(grid.querySelectorAll('.article-card'))
+        .map(function(card, originalIndex) {
+          var dateText = card.querySelector('.meta-date');
+          var match = dateText && dateText.textContent.match(/\d{4}-\d{2}-\d{2}/);
+          return {
+            card: card,
+            publishedAt: match ? Date.parse(match[0] + 'T00:00:00') : -Infinity,
+            originalIndex: originalIndex
+          };
+        })
+        .sort(function(a, b) {
+          return b.publishedAt - a.publishedAt || a.originalIndex - b.originalIndex;
+        })
+        .forEach(function(item) {
+          grid.appendChild(item.card);
+        });
+    })();
+
     (function initAnimations() {
       var sidebar = document.getElementById('sidebar');
       if (window.innerWidth <= 768) sidebar.setAttribute('aria-hidden', 'true');
