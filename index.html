@@ -629,7 +629,7 @@
           </div>
         </div>
 
-        <!-- 分类4: 三维素材（暂未添加页面） -->
+        <!-- 分类4: 三维素材 -->
         <div class="category-item" data-category="three-dimensional-assets">
           <div class="category-header" role="button" tabindex="0"
                aria-expanded="false" aria-controls="cat-three-dimensional-assets"
@@ -640,7 +640,9 @@
           </div>
           <div class="article-list" id="cat-three-dimensional-assets">
             <a class="article-nav-item" href="metering-box-dust-collection.html" onclick="navigateToAssetPage(event)">计量盒主机除尘系统</a>
+            <a class="article-nav-item" href="metering-box-dust-collection-en.html" onclick="navigateToEnglishMeteringBoxAssetPage(event)">Metering Box Dust Collection System</a>
             <a class="article-nav-item" href="long-screw-dust-collection.html" onclick="navigateToLongScrewAssetPage(event)">长螺杆主机除尘系统</a>
+            <a class="article-nav-item" href="long-screw-dust-collection-en.html" onclick="navigateToEnglishLongScrewAssetPage(event)">Long Screw Dust Collection System</a>
           </div>
         </div>
 
@@ -680,11 +682,25 @@
           <div class="card-meta-row"><span class="meta-date"><svg class="icon-svg" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> 2026-09-08</span><span class="meta-read-time"><svg class="icon-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 交互展示</span></div>
         </article>
 
+        <!-- Card: Long Screw Dust Collection System - English (2026-09-08) -->
+        <article class="article-card" tabindex="0" onclick="navigateToEnglishLongScrewAssetPage(event)" onkeydown="if(event.key==='Enter')navigateToEnglishLongScrewAssetPage(event)">
+          <div class="card-top-row"><h2 class="article-title">Long Screw Dust Collection System</h2><span class="article-tag">3D Assets · EN</span></div>
+          <p class="article-summary">Interactively explore filling tube dust collection, forming collar dust collection, and the complete long screw dust collection system.</p>
+          <div class="card-meta-row"><span class="meta-date"><svg class="icon-svg" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> 2026-09-08</span><span class="meta-read-time"><svg class="icon-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Interactive View</span></div>
+        </article>
+
         <!-- Card: 计量盒主机除尘系统 (2026-07-23) -->
         <article class="article-card" tabindex="0" onclick="navigateToAssetPage(event)" onkeydown="if(event.key==='Enter')navigateToAssetPage(event)">
           <div class="card-top-row"><h2 class="article-title">计量盒主机除尘系统</h2><span class="article-tag">三维素材</span></div>
           <p class="article-summary">交互式查看计量盒除尘、充填管除尘与主机除尘系统组成；悬停部件可查看高亮，点击进入对应视图。</p>
           <div class="card-meta-row"><span class="meta-date"><svg class="icon-svg" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> 2026-07-23</span><span class="meta-read-time"><svg class="icon-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 交互展示</span></div>
+        </article>
+
+        <!-- Card: Metering Box Dust Collection System - English (2026-09-08) -->
+        <article class="article-card" tabindex="0" onclick="navigateToEnglishMeteringBoxAssetPage(event)" onkeydown="if(event.key==='Enter')navigateToEnglishMeteringBoxAssetPage(event)">
+          <div class="card-top-row"><h2 class="article-title">Metering Box Dust Collection System</h2><span class="article-tag">3D Assets · EN</span></div>
+          <p class="article-summary">Interactively explore metering box dust collection, filling tube dust collection, and the complete machine dust collection system.</p>
+          <div class="card-meta-row"><span class="meta-date"><svg class="icon-svg" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> 2026-09-08</span><span class="meta-read-time"><svg class="icon-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Interactive View</span></div>
         </article>
 
         <!-- Card: APSMI/Self-CARER/GPFI Bali Summit 2026 (2026-07-08) -->
@@ -957,6 +973,22 @@
       document.body.classList.add('is-navigating', 'is-navigating-to-asset');
       setTimeout(function() {
         window.location.href = 'long-screw-dust-collection.html';
+      }, 280);
+    }
+
+    function navigateToEnglishMeteringBoxAssetPage(e) {
+      if (e && e.preventDefault) e.preventDefault();
+      document.body.classList.add('is-navigating', 'is-navigating-to-asset');
+      setTimeout(function() {
+        window.location.href = 'metering-box-dust-collection-en.html';
+      }, 280);
+    }
+
+    function navigateToEnglishLongScrewAssetPage(e) {
+      if (e && e.preventDefault) e.preventDefault();
+      document.body.classList.add('is-navigating', 'is-navigating-to-asset');
+      setTimeout(function() {
+        window.location.href = 'long-screw-dust-collection-en.html';
       }, 280);
     }
   </script>
