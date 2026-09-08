@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>计量盒主机除尘系统 - 三维素材</title>
+  <title>长螺杆主机除尘系统 - 三维素材</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -33,7 +33,7 @@
     .asset-meta-item, .view-label { display:inline-flex; align-items:center; gap:5px; margin:0; min-height:0; color:var(--muted); font-size:13px; transition:opacity .15s ease; }
     .asset-meta-icon { width:15px; height:15px; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
     .canvas-wrap { padding:clamp(12px,2vw,28px); background:linear-gradient(180deg,#fafbfc 0%,#f5f7f9 100%); }
-    .canvas { position:relative; width:100%; aspect-ratio:16 / 10; overflow:hidden; background:#fff; border-radius:10px; box-shadow:inset 0 0 0 1px rgba(0,0,0,.03); }
+    .canvas { position:relative; width:100%; aspect-ratio:16 / 10; overflow:hidden; background:#fff; border-radius:10px;  }
     .scene { position:absolute; inset:0; opacity:0; pointer-events:none; transform:scale(.42); transition:opacity .5s ease, transform .5s ease; z-index:1; }
     .scene[data-scene="main"] { transform:scale(1.22); }
     .scene.active { opacity:1; pointer-events:auto; transform:scale(1); z-index:2; }
@@ -196,6 +196,13 @@
       .viewer-footer { display:none; }
     }
     @media (prefers-reduced-motion:reduce) { *,*::before,*::after { transition-duration:.01ms !important; } }
+
+    @media (min-width:769px) {
+      .hotspot-label { display:inline-flex; align-items:center; justify-content:center; gap:6px; padding-left:10px; padding-right:10px; }
+      .hotspot-label::before { position:static; flex:0 0 15px; width:15px; height:15px; border:0; border-radius:0; transform:none; background:center / contain no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='6' cy='6' r='4.5' fill='none' stroke='white' stroke-width='1.7'/%3E%3Cpath d='M9.5 9.5L14.5 14.5' stroke='white' stroke-width='1.7' stroke-linecap='round'/%3E%3C/svg%3E"); }
+      .hotspot-label::after { display:none; }
+      .hotspot-label[data-target="detail8"], .hotspot-label[data-target="detail9"] { width:128px; }
+    }
   </style>
 </head>
 <body>
@@ -274,8 +281,8 @@
           <svg class="mobile-category-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
         </button>
         <div class="mobile-category-list">
-          <a class="mobile-nav-link current" href="metering-box-dust-collection.html">计量盒主机除尘系统</a>
-          <a class="mobile-nav-link" href="long-screw-dust-collection.html">长螺杆主机除尘系统</a>
+          <a class="mobile-nav-link" href="metering-box-dust-collection.html">计量盒主机除尘系统</a>
+          <a class="mobile-nav-link current" href="long-screw-dust-collection.html">长螺杆主机除尘系统</a>
         </div>
       </div>
       <div class="desktop-nav-footer">
@@ -287,10 +294,10 @@
     <section class="viewer" aria-labelledby="pageTitle">
       <div class="viewer-header">
         <div>
-          <h1 id="pageTitle">计量盒主机除尘系统</h1>
+          <h1 id="pageTitle">长螺杆主机除尘系统</h1>
           <div class="asset-meta-line">
             <span class="asset-category-tag">三维素材</span>
-            <span class="asset-meta-item"><svg class="asset-meta-icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>2026-07-23</span>
+            <span class="asset-meta-item"><svg class="asset-meta-icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>2026-09-08</span>
             <span class="view-label"><svg class="asset-meta-icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="m16 16 4 4"/></svg><span id="viewLabel">悬停预览，点击查看详情</span></span>
           </div>
         </div>
@@ -299,45 +306,45 @@
       <div class="canvas-wrap">
         <div class="canvas">
           <section class="scene active" data-scene="main" aria-label="主机总览">
-            <img class="base-image" src="image/three-dimensional-assets/metering-box-dust-collection/计量盒主机除尘系统_图1.jpg" alt="计量盒主机除尘系统总览">
-            <button class="hotspot" type="button" data-target="detail8" data-overlay="overlay2" aria-label="计量盒除尘，点击查看详情" style="left:40%;top:32%;width:23%;height:6%;z-index:4;"></button>
-            <img class="overlay-image" data-overlay="overlay2" src="image/three-dimensional-assets/metering-box-dust-collection/计量盒主机除尘系统_图2.png" alt="">
-            <button class="hotspot-label" type="button" data-target="detail8" data-overlay="overlay2" style="left:78.5%;top:33%;">计量盒除尘</button>
-            <button class="hotspot" type="button" data-target="detail9" data-overlay="overlay3" aria-label="充填管除尘，点击查看详情" style="left:41%;top:38%;width:21%;height:13%;z-index:4;"></button>
-            <img class="overlay-image" data-overlay="overlay3" src="image/three-dimensional-assets/metering-box-dust-collection/计量盒主机除尘系统_图3.png" alt="">
-            <button class="hotspot-label" type="button" data-target="detail9" data-overlay="overlay3" style="left:78.5%;top:42%;">充填管除尘</button>
-            <button class="hotspot" type="button" data-target="subsystem" data-overlay="overlay4" aria-label="计量盒主机除尘系统，点击查看详情" style="left:0%;top:32%;width:54%;height:68%;z-index:2;"></button>
-            <img class="overlay-image" data-overlay="overlay4" src="image/three-dimensional-assets/metering-box-dust-collection/计量盒主机除尘系统_图4.png" alt="">
-            <button class="hotspot-label" type="button" data-target="subsystem" data-overlay="overlay4" style="left:15%;top:49%;">计量盒主机除尘系统</button>
+            <img class="base-image" src="image/three-dimensional-assets/long-screw-dust-collection/除尘系统素材_长螺杆主机_20260907.1.jpg" alt="长螺杆主机除尘系统总览">
+            <button class="hotspot" type="button" data-target="detail8" data-overlay="overlay2" aria-label="充填管除尘，点击查看详情" style="left:41%;top:10%;width:21%;height:41%;z-index:4;"></button>
+            <img class="overlay-image" data-overlay="overlay2" src="image/three-dimensional-assets/long-screw-dust-collection/除尘系统素材_长螺杆主机_20260907.3.png" alt="">
+            <button class="hotspot-label" type="button" data-target="detail8" data-overlay="overlay2" style="left:78.5%;top:25%;">充填管除尘</button>
+            <button class="hotspot" type="button" data-target="detail9" data-overlay="overlay3" aria-label="衣领部件除尘，点击查看详情" style="left:44%;top:35%;width:17%;height:7%;z-index:5;"></button>
+            <img class="overlay-image" data-overlay="overlay3" src="image/three-dimensional-assets/long-screw-dust-collection/除尘系统素材_长螺杆主机_20260907.2.png" alt="">
+            <button class="hotspot-label" type="button" data-target="detail9" data-overlay="overlay3" style="left:78.5%;top:42%;">衣领部件除尘</button>
+            <button class="hotspot" type="button" data-target="subsystem" data-overlay="overlay4" aria-label="长螺杆主机除尘系统，点击查看详情" style="left:21%;top:42%;width:23%;height:54%;z-index:2;"></button>
+            <img class="overlay-image" data-overlay="overlay4" src="image/three-dimensional-assets/long-screw-dust-collection/除尘系统素材_长螺杆主机_20260907.4.png" alt="">
+            <button class="hotspot-label" type="button" data-target="subsystem" data-overlay="overlay4" style="left:15%;top:49%;">长螺杆主机除尘系统</button>
           </section>
 
-          <section class="scene" data-scene="subsystem" aria-label="计量盒主机除尘系统局部总览">
-            <img class="base-image" src="image/three-dimensional-assets/metering-box-dust-collection/计量盒主机除尘系统_图5.jpg" alt="计量盒主机除尘系统局部总览">
-            <button class="hotspot" type="button" data-target="detail8" data-overlay="overlay6" aria-label="计量盒除尘，点击查看详情" style="left:43%;top:9%;width:42%;height:10%;"></button>
-            <img class="overlay-image" data-overlay="overlay6" src="image/three-dimensional-assets/metering-box-dust-collection/计量盒主机除尘系统_图6.png" alt="">
-            <button class="hotspot-label" type="button" data-target="detail8" data-overlay="overlay6" style="left:86%;top:20%;">计量盒除尘</button>
-            <button class="hotspot" type="button" data-target="detail9" data-overlay="overlay7" aria-label="充填管除尘，点击查看详情" style="left:45%;top:19%;width:36%;height:52%;"></button>
-            <img class="overlay-image" data-overlay="overlay7" src="image/three-dimensional-assets/metering-box-dust-collection/计量盒主机除尘系统_图7.png" alt="">
-            <button class="hotspot-label" type="button" data-target="detail9" data-overlay="overlay7" style="left:86%;top:31%;">充填管除尘</button>
+          <section inert class="scene" data-scene="subsystem" aria-label="长螺杆主机除尘系统局部总览">
+            <img class="base-image" src="image/three-dimensional-assets/long-screw-dust-collection/除尘系统素材_长螺杆主机_20260907.5.jpg" alt="长螺杆主机除尘系统局部总览">
+            <button class="hotspot" type="button" data-target="detail8" data-overlay="overlay6" aria-label="充填管除尘，点击查看详情" style="left:46%;top:9%;width:26%;height:58%;z-index:2;"></button>
+            <img class="overlay-image" data-overlay="overlay6" src="image/three-dimensional-assets/long-screw-dust-collection/除尘系统素材_长螺杆主机_20260907.7.png" alt="">
+            <button class="hotspot-label" type="button" data-target="detail8" data-overlay="overlay6" style="left:79%;top:20%;">充填管除尘</button>
+            <button class="hotspot" type="button" data-target="detail9" data-overlay="overlay7" aria-label="衣领部件除尘，点击查看详情" style="left:49%;top:39%;width:21%;height:22%;z-index:4;"></button>
+            <img class="overlay-image" data-overlay="overlay7" src="image/three-dimensional-assets/long-screw-dust-collection/除尘系统素材_长螺杆主机_20260907.6.png" alt="">
+            <button class="hotspot-label" type="button" data-target="detail9" data-overlay="overlay7" style="left:79%;top:45%;">衣领部件除尘</button>
           </section>
 
-          <section class="scene detail-scene" data-scene="detail8" aria-label="计量盒除尘详情">
-            <img class="base-image" src="image/three-dimensional-assets/metering-box-dust-collection/计量盒主机除尘系统_图8.jpg" alt="计量盒除尘详情">
+          <section inert class="scene detail-scene" data-scene="detail8" aria-label="充填管除尘详情">
+            <img class="base-image" src="image/three-dimensional-assets/long-screw-dust-collection/除尘系统素材_长螺杆主机_20260907.9.png" alt="充填管除尘详情">
           </section>
 
-          <section class="scene detail-scene" data-scene="detail9" aria-label="充填管除尘详情">
-            <img class="base-image" src="image/three-dimensional-assets/metering-box-dust-collection/计量盒主机除尘系统_图9.jpg" alt="充填管除尘详情">
+          <section inert class="scene detail-scene" data-scene="detail9" aria-label="衣领部件除尘详情">
+            <img class="base-image" src="image/three-dimensional-assets/long-screw-dust-collection/除尘系统素材_长螺杆主机_20260907.8.png" alt="衣领部件除尘详情">
           </section>
           <button class="back-button" id="backButton" type="button">← 返回主页</button>
         </div>
         <div class="mobile-controls" data-controls-for="main">
-          <button class="mobile-control" type="button" data-target="detail8" data-overlay="overlay2" data-label="计量盒除尘">计量盒除尘</button>
-          <button class="mobile-control" type="button" data-target="detail9" data-overlay="overlay3" data-label="充填管除尘">充填管除尘</button>
-          <button class="mobile-control" type="button" data-target="subsystem" data-overlay="overlay4" data-label="计量盒主机除尘系统">计量盒主机除尘系统</button>
+          <button class="mobile-control" type="button" data-target="detail8" data-overlay="overlay2" data-label="充填管除尘">充填管除尘</button>
+          <button class="mobile-control" type="button" data-target="detail9" data-overlay="overlay3" data-label="衣领部件除尘">衣领部件除尘</button>
+          <button class="mobile-control" type="button" data-target="subsystem" data-overlay="overlay4" data-label="长螺杆主机除尘系统">长螺杆主机除尘系统</button>
         </div>
         <div class="mobile-controls" data-controls-for="subsystem">
-          <button class="mobile-control" type="button" data-target="detail8" data-overlay="overlay6" data-label="计量盒除尘">计量盒除尘</button>
-          <button class="mobile-control" type="button" data-target="detail9" data-overlay="overlay7" data-label="充填管除尘">充填管除尘</button>
+          <button class="mobile-control" type="button" data-target="detail8" data-overlay="overlay6" data-label="充填管除尘">充填管除尘</button>
+          <button class="mobile-control" type="button" data-target="detail9" data-overlay="overlay7" data-label="衣领部件除尘">衣领部件除尘</button>
         </div>
         <button class="mobile-back-button" id="mobileBackButton" type="button">← 返回主页</button>
       </div>
@@ -366,8 +373,8 @@
       var labels = {
         main: '将鼠标移至橙色区域，查看系统组成；点击进入对应视图。',
         subsystem: '将鼠标移至橙色区域，查看局部除尘结构；点击进入对应视图。',
-        detail8: '计量盒除尘详情。',
-        detail9: '充填管除尘详情。'
+        detail8: '充填管除尘详情。',
+        detail9: '衣领部件除尘详情。'
       };
 
       function updateBackButton() {
@@ -398,6 +405,7 @@
         clearMobileSelection();
         scenes.forEach(function (scene) {
           scene.classList.toggle('active', scene.dataset.scene === nextScene);
+          scene.inert = scene.dataset.scene !== nextScene;
         });
         currentScene = nextScene;
         viewLabel.textContent = labels[nextScene];

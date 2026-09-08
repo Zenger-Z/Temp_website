@@ -640,6 +640,7 @@
           </div>
           <div class="article-list" id="cat-three-dimensional-assets">
             <a class="article-nav-item" href="metering-box-dust-collection.html" onclick="navigateToAssetPage(event)">计量盒主机除尘系统</a>
+            <a class="article-nav-item" href="long-screw-dust-collection.html" onclick="navigateToLongScrewAssetPage(event)">长螺杆主机除尘系统</a>
           </div>
         </div>
 
@@ -670,6 +671,13 @@
           <div class="card-top-row"><h2 class="article-title">AI Agent 工作台：一种新的工作方式</h2><span class="article-tag">其他报告</span></div>
           <p class="article-summary">从网页聊天 AI 到能够完成任务的数字同事：以“仅一每日市场情报推送”为贯穿案例，说明任务 URS、需求澄清、能力边界、人机分工、风险控制、成果验收和公司上下文。</p>
           <div class="card-meta-row"><span class="meta-date"><svg class="icon-svg" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> 2026-08-03</span><span class="meta-read-time"><svg class="icon-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 12 分钟阅读</span></div>
+        </article>
+
+        <!-- Card: 长螺杆主机除尘系统 (2026-09-08) -->
+        <article class="article-card" tabindex="0" onclick="navigateToLongScrewAssetPage(event)" onkeydown="if(event.key==='Enter')navigateToLongScrewAssetPage(event)">
+          <div class="card-top-row"><h2 class="article-title">长螺杆主机除尘系统</h2><span class="article-tag">三维素材</span></div>
+          <p class="article-summary">交互式查看充填管除尘、衣领部件除尘与长螺杆主机除尘系统组成；悬停部件可查看高亮，点击进入对应视图。</p>
+          <div class="card-meta-row"><span class="meta-date"><svg class="icon-svg" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> 2026-09-08</span><span class="meta-read-time"><svg class="icon-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 交互展示</span></div>
         </article>
 
         <!-- Card: 计量盒主机除尘系统 (2026-07-23) -->
@@ -941,6 +949,14 @@
       document.body.classList.add('is-navigating', 'is-navigating-to-asset');
       setTimeout(function() {
         window.location.href = 'metering-box-dust-collection.html';
+      }, 280);
+    }
+
+    function navigateToLongScrewAssetPage(e) {
+      if (e && e.preventDefault) e.preventDefault();
+      document.body.classList.add('is-navigating', 'is-navigating-to-asset');
+      setTimeout(function() {
+        window.location.href = 'long-screw-dust-collection.html';
       }, 280);
     }
   </script>
