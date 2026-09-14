@@ -123,6 +123,15 @@
     "date": "2026-08-03",
     "readTime": 12,
     "prevId": "apsmi-bali-2026",
+    "nextId": "cphi-europe-2026"
+  },
+  {
+    "id": "cphi-europe-2026",
+    "title": "CPHI Europe 2026 参展价值评估报告",
+    "category": "展会评估",
+    "date": "2026-09-14",
+    "readTime": 18,
+    "prevId": "ai-agent-workbench-sharing",
     "nextId": null
   }
 ]
