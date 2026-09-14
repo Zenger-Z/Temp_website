@@ -1,0 +1,51 @@
+{
+  "title": "WorldFood Istanbul 2026 参展价值评估报告",
+  "category": "展会评估",
+  "date": "2026-09-14",
+  "readTime": 16,
+  "prevId": "cphi-europe-2026",
+  "nextId": null,
+  "content": [
+    {"type":"h2","text":"一、决策摘要"},
+    {"type":"html","html":"<div class=\"data-card data-card--score\"><div style=\"font-size:48px;color:#d48806;\">68</div><div class=\"section-label\" style=\"color:#d48806;\">值得参加，但建议控制投入或先验证</div></div>"},
+    {"type":"p","text":"展会名称：WorldFood Istanbul 2026｜时间：2026年12月15—18日｜地点：土耳其伊斯坦布尔 Istanbul Expo Center（IFM）"},
+    {"type":"blockquote","text":"一句话判断：WorldFood Istanbul 是进入土耳其食品产业和渠道网络的有效窗口，2026年新增 FoodTech 加工包装专区后与仅一的匹配度明显提高；但其核心观众仍偏食品采购、经销和零售，设备赛道头部同行密度不足，暂不适合作为仅一在土耳其的重点设备展重投入。"},
+    {"type":"html","html":"<table><thead><tr><th>维度</th><th>权重</th><th>得分</th><th>判断</th></tr></thead><tbody><tr><td>区域入口价值</td><td>20</td><td>13</td><td>土耳其食品市场入口较强，但设备属性有限</td></tr><tr><td>业务与产品相关性</td><td>30</td><td>20</td><td>食品条包和软袋相关，听装整线证据不足</td></tr><tr><td>赛道展商信号</td><td>30</td><td>18</td><td>有本地设备商，缺少全球头部同行集群</td></tr><tr><td>展会可信度与影响力</td><td>20</td><td>17</td><td>34届、UFI认证、规模和组织稳定</td></tr><tr><td><strong>总分</strong></td><td><strong>100</strong></td><td><strong>68</strong></td><td><strong>值得参加，但建议控制投入或先验证</strong></td></tr></tbody></table>"},
+    {"type":"p","text":"结论上限说明：业务与产品相关性、赛道展商信号均低于24/30。展会整体规模和知名度不能替代与仅一产品形态及同赛道设备商的直接证据，因此最高结论为“值得参加，但建议控制投入或先验证”。"},
+    {"type":"html","html":"<div class=\"data-card data-card--success\"><h4>最关键的正面证据</h4><ol><li>2026年强化 FoodTech 食品加工与包装专区，明确包含灌装包装、食品加工、自动化和输送系统</li><li>当前2026展商名录已出现 HİPOMAK、PackPlus、DC Pack、Kulp 等设备企业，DC Pack明确展示粉剂/颗粒Sachet及Stick Pack设备</li><li>2025届有1,345家展商、78,341名观众和20,182名国际观众，展会规模、国际性和连续性较强</li></ol></div>"},
+    {"type":"html","html":"<div class=\"data-card data-card--danger\"><h4>最关键的不确定因素</h4><ol><li>FoodTech是2026年新增或强化专区，尚无独立展后数据，设备采购观众密度未得到验证</li><li>官方观众画像仍主要是进口商、经销商、超市采购、HoReCa和食品采购商</li><li>当前未形成 Syntegon、IMA、Universal Pack、Omag、Mespack 等全球头部同行的强参展信号</li></ol></div>"},
+    {"type":"h3","text":"最终建议"},
+    {"type":"p","text":"建议仅一参加，但2026年优先采用“1—2人专业观展并提前约访”或“小型轻展位试水”两种方式。重点拜访土耳其食品集团、粉末饮料、咖啡、营养品生产商、本地包装设备商及代理商；展位以产线视频、包装样品、案例和技术洽谈为主，不建议运输完整设备重装参展。"},
+    {"type":"p","text":"在主办方提供 FoodTech 独立展商数量、面积和馆位，食品制造企业中生产/工程/设备采购岗位占比，以及仅一提前锁定一批生产企业会面以前，不建议升级为重点展位。如果只能在土耳其选择一个重投入设备展，优先级应放在 Eurasia Packaging Istanbul。"},
+
+    {"type":"h2","text":"二、评分明细"},
+    {"type":"h3","text":"1. 区域入口价值：13/20"},
+    {"type":"html","html":"<table><thead><tr><th>子项</th><th>得分</th><th>证据摘要</th><th>置信度</th></tr></thead><tbody><tr><td>区域代表性</td><td>4/4</td><td>土耳其长期运营的大型国际食品展，覆盖土耳其、欧洲、中东和中亚观众</td><td>高</td></tr><tr><td>仅一相关行业入口属性</td><td>3/4</td><td>覆盖食品、乳品、健康营养品和婴幼儿食品，不覆盖仅一的制药核心业务</td><td>高</td></tr><tr><td>本地适配产业覆盖</td><td>3/4</td><td>咖啡、粉末饮料、零食、乳品、营养品等产业均有覆盖</td><td>中</td></tr><tr><td>生产端场景明确度</td><td>2/4</td><td>新增FoodTech，但全展整体仍以食品产品和贸易对接为主</td><td>高</td></tr><tr><td>同区域替代性</td><td>1/4</td><td>同城Eurasia Packaging的设备属性和同行密度明显更强</td><td>高</td></tr></tbody></table>"},
+    {"type":"p","text":"展会能帮助仅一接触土耳其及周边食品产业，但它首先是食品商业贸易平台。官方重点展示进口商、经销商、零售连锁和HoReCa买家，说明大量流量并不天然等于包装设备采购流量。"},
+    {"type":"p","text":"其区域入口价值主要在于建立当地食品企业、经销网络和市场认知，而不是一次性集中接触大量产线决策者。同城的Eurasia Packaging Istanbul明确围绕灌装、包装机械、自动化及食品加工设备组织，作为设备市场入口更直接。"},
+
+    {"type":"h3","text":"2. 业务与产品相关性：20/30"},
+    {"type":"html","html":"<table><thead><tr><th>子项</th><th>得分</th><th>证据摘要</th><th>置信度</th></tr></thead><tbody><tr><td>核心应用行业匹配</td><td>5/6</td><td>食品、乳品、健康食品、营养补充剂和婴幼儿食品均在分类中</td><td>高</td></tr><tr><td>包装设备场景</td><td>4/6</td><td>FoodTech明确包含灌装包装、加工、自动化和输送技术</td><td>高</td></tr><tr><td>Stick条包信号</td><td>5/6</td><td>DC Pack展示粉剂/颗粒Sachet及Stick Pack；HİPOMAK覆盖粉末饮料Stick Pack</td><td>中高</td></tr><tr><td>听装/粉体信号</td><td>2/6</td><td>存在粉末饮料和螺杆供料设备，未发现奶粉听装整线的明确展品</td><td>中</td></tr><tr><td>软袋/整线信号</td><td>4/6</td><td>HİPOMAK、PackPlus覆盖VFFS、Doypack、HFFS及部分后道包装</td><td>中高</td></tr></tbody></table>"},
+    {"type":"p","text":"与仅一最吻合的是食品Stick条包和软袋方向，尤其是咖啡、固体饮料、运动营养粉、调味粉及休闲食品。当前展商证据已经超过泛“Packaging”分类层面，能确认多列小袋、Stick Pack、粉体螺杆供料和软袋设备。"},
+    {"type":"p","text":"主要扣分来自听装奶粉和交钥匙整线。目前没有看到足够明确的粉体听装、清罐—灌装—封罐—装箱整线证据；Kulp等液体灌装企业主要面向瓶、罐、酱料及黏稠液体，与仅一液体条包并不完全相同。"},
+
+    {"type":"h3","text":"3. 赛道展商信号：18/30"},
+    {"type":"html","html":"<table><thead><tr><th>子项</th><th>得分</th><th>证据摘要</th><th>置信度</th></tr></thead><tbody><tr><td>区域同行/本地设备商信号</td><td>6/6</td><td>已确认多家土耳其及周边食品加工、包装设备企业</td><td>高</td></tr><tr><td>全球头部同行信号</td><td>0/6</td><td>当前公开渠道未确认仅一全球头部同行参展</td><td>中</td></tr><tr><td>重叠产品展示证据</td><td>5/6</td><td>Stick/Sachet、粉剂包装、VFFS、Doypack和后道包装均有明确证据</td><td>中高</td></tr><tr><td>相关设备商数量</td><td>4/6</td><td>名录已有一批设备商，但在全展规模中仍属少数</td><td>中</td></tr><tr><td>展商信息可验证性</td><td>3/6</td><td>官方名录可查，但不少设备商档案尚未填写具体展品</td><td>中</td></tr></tbody></table>"},
+    {"type":"html","html":"<table><thead><tr><th>确认设备商</th><th>公开重叠点</th><th>判断</th></tr></thead><tbody><tr><td>DC Pack</td><td>粉剂/颗粒高速Sachet、多列Stick Pack</td><td>与仅一Stick条包直接重叠</td></tr><tr><td>HİPOMAK</td><td>粉末饮料、螺杆供料、VFFS和多种软袋</td><td>条包/软袋相关</td></tr><tr><td>PackPlus</td><td>VFFS、HFFS、Doypack、粉末产品和后道装箱</td><td>软袋和后道相关</td></tr><tr><td>Kulp</td><td>液体、黏稠物料灌装及容器包装线</td><td>灌装相关但非条包核心</td></tr><tr><td>Behkar</td><td>感应封口设备</td><td>包装线配套</td></tr><tr><td>Ceselsan</td><td>坚果、巧克力和食品加工线</td><td>加工端相关</td></tr></tbody></table>"},
+    {"type":"p","text":"这些企业说明FoodTech并非空泛概念，但尚未形成“全球头部设备商集中出现”的成熟专业设备展格局。尤其是Eurasia Packaging 2026已经确认土耳其直接Stick/Sachet同行Turpack及HİPOMAK等设备商参展，赛道信号更直接。"},
+
+    {"type":"h3","text":"4. 展会可信度与影响力：17/20"},
+    {"type":"html","html":"<table><thead><tr><th>子项</th><th>得分</th><th>证据摘要</th><th>置信度</th></tr></thead><tbody><tr><td>主办方可信度</td><td>4/4</td><td>ICA Events长期运营多个土耳其国际展会</td><td>高</td></tr><tr><td>展会历史稳定性</td><td>4/4</td><td>2026年为第34届</td><td>高</td></tr><tr><td>规模与趋势</td><td>4/4</td><td>2025年78,341名观众、1,345家展商，观众同比增长7.5%</td><td>高</td></tr><tr><td>认证与背书</td><td>4/4</td><td>UFI Approved Event，并获土耳其相关部门及KOSGEB支持</td><td>高</td></tr><tr><td>媒体与口碑</td><td>1/4</td><td>可查信息主要来自主办方及食品参展商证言，独立设备行业评价有限</td><td>低</td></tr></tbody></table>"},
+    {"type":"p","text":"展会真实性、连续性和组织稳定性没有明显问题。2026年虽然更换时间和场馆，官方已明确公布新日期和Istanbul Expo Center新地址。"},
+    {"type":"p","text":"扣分不是因为展会不可靠，而是公开口碑主要来自食品品牌和主办方，尚缺少设备商对FoodTech专区线索质量的独立反馈。因此应把“展会可信”与“适合仅一重投入”分开判断。"},
+
+    {"type":"h2","text":"三、关键证据来源"},
+    {"type":"ul","items":["WorldFood Istanbul 2026官网：<a href=\"https://worldfood-istanbul.com/\" target=\"_blank\" rel=\"noopener\">时间、地点及观众画像</a>","FoodTech产品分类：<a href=\"https://worldfood-istanbul.com/en/urun-gruplari/gida-teknolojileri--ambalaj-ve-ekipmanlari\" target=\"_blank\" rel=\"noopener\">灌装、加工、自动化及输送系统</a>","WorldFood Istanbul 2026展商名录：<a href=\"https://worldfood-istanbul.com/en/exhibitor-list\" target=\"_blank\" rel=\"noopener\">当前参展企业</a>","WorldFood Istanbul 2025展后数据：<a href=\"https://worldfood-istanbul.com/en/worldfood-istanbul-infographic\" target=\"_blank\" rel=\"noopener\">展商与观众规模</a>","WorldFood Istanbul 2025官方总结：<a href=\"https://worldfood-istanbul.com/en/market-insights/worldfood-istanbul-33rd-edition-achieves-record-breaking-success-with-historic-participation\" target=\"_blank\" rel=\"noopener\">增长及2026场馆变化</a>","HİPOMAK：<a href=\"https://hipomak.com.tr/en/industry/19/powdered-beverages\" target=\"_blank\" rel=\"noopener\">粉末饮料、Stick Pack及螺杆供料</a>","PackPlus：<a href=\"https://packplus.com.tr/\" target=\"_blank\" rel=\"noopener\">VFFS、HFFS、Doypack及后道包装</a>","Kulp：<a href=\"https://kulp.com.tr/en/products/\" target=\"_blank\" rel=\"noopener\">灌装设备和包装线</a>","Eurasia Packaging Istanbul 2026：<a href=\"https://packagingfair.com/en\" target=\"_blank\" rel=\"noopener\">土耳其同区域替代展</a>","Eurasia Packaging—Turpack：<a href=\"https://packagingfair.com/en/exhibitor-list/turpack-makine-san-ve-tic-ltd-sti-137691-3095\" target=\"_blank\" rel=\"noopener\">Stick/Sachet设备参展证据</a>"]},
+
+    {"type":"h2","text":"四、判断边界"},
+    {"type":"p","text":"本评估不能从公开信息可靠判断："},
+    {"type":"ul","items":["到场食品企业中真正负责生产、工程和设备采购的人员比例","仅一现有或潜在土耳其客户是否会到场","FoodTech专区最终面积及实际设备展商数量","展位、搭建、设备运输和现场通电成本","参展ROI、订单概率及代理商转化能力"]},
+    {"type":"blockquote","text":"68分代表“值得进入验证阶段”，不是已经证明适合重投入参展。"},
+    {"type":"p","text":"报告日期：2026年9月14日｜制表人：市场部"}
+  ]
+}

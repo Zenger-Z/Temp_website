@@ -132,6 +132,15 @@
     "date": "2026-09-14",
     "readTime": 18,
     "prevId": "ai-agent-workbench-sharing",
+    "nextId": "worldfood-istanbul-2026"
+  },
+  {
+    "id": "worldfood-istanbul-2026",
+    "title": "WorldFood Istanbul 2026 参展价值评估报告",
+    "category": "展会评估",
+    "date": "2026-09-14",
+    "readTime": 16,
+    "prevId": "cphi-europe-2026",
     "nextId": null
   }
 ]
