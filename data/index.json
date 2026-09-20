@@ -141,6 +141,15 @@
     "date": "2026-09-14",
     "readTime": 16,
     "prevId": "cphi-europe-2026",
+    "nextId": "joyea-ai-source-publishing-2026"
+  },
+  {
+    "id": "joyea-ai-source-publishing-2026",
+    "title": "仅一AI信源建设与新闻发布渠道分级报告",
+    "category": "其他报告",
+    "date": "2026-09-20",
+    "readTime": 20,
+    "prevId": "worldfood-istanbul-2026",
     "nextId": null
   }
 ]
