@@ -1,0 +1,36 @@
+{
+  "title": "AYUMI目标客户与包装潜力评估报告",
+  "category": "市场调研",
+  "date": "2026-10-08",
+  "readTime": 12,
+  "prevId": "joyea-ai-source-publishing-2026",
+  "nextId": null,
+  "content": [
+    {"type":"h2","text":"一、结论"},
+    {"type":"blockquote","text":"AYUMI是仅一的目标客户，但更准确的定位是“单点突破型、中高潜力客户”，不是全产品线高度适配。公司真正的拳头是整个Calonal（カロナール，对乙酰氨基酚）品牌；其中商业大头是片剂，而仅一最有价值的切入口是Calonal细颗粒20%和50%的分包整线。"},
+    {"type":"p","text":"AYUMI控股2026年3月期营收为385.43亿日元。GNI披露，市场领先产品合计占销售额79%；若按同一营收口径粗算，对应约304.5亿日元，但这不是公司正式披露的分产品销售额。Calonal是公司明确命名的旗舰产品，Etanercept BS“MA”则是风湿领域的第二个核心产品。"},
+    {"type":"html","html":"<table><thead><tr><th>综合判断</th><th>结论</th></tr></thead><tbody><tr><td>客户等级</td><td><strong>B+，中高潜力</strong></td></tr><tr><td>首要切入口</td><td>Calonal细颗粒20%/50%的高速多列Stick、后道装盒及码垛</td></tr><tr><td>第二机会</td><td>Calonal糖浆儿童单次定量液体Stick创新</td></tr><tr><td>主要限制</td><td>公司销售和处方量主体为片剂及注射剂，与仅一核心一次包装线错位</td></tr><tr><td>采购确定性</td><td>尚未确认；需要核实现有设备、产能、设备寿命、扩产计划及实际包装工厂</td></tr></tbody></table>"},
+
+    {"type":"h2","text":"二、销量与市占率口径"},
+    {"type":"p","text":"AYUMI没有公开完整的单品销售额或出厂销量。本报告采用厚生劳动省第11次NDB开放数据，将2024年4月至2025年3月的外来院外、外来院内和住院处方数量相加，作为Calonal各剂型的公开销量代理。NDB处方量不等于AYUMI出厂销量，也不等于销售收入；部分仅由公费负担的处方和小数量数据可能不在本次汇总中。"},
+    {"type":"p","text":"GNI披露的83%是Calonal在日本口服对乙酰氨基酚市场中的药价金额份额，不是细颗粒单独份额；91%是Etanercept在日本类风湿适应症依那西普生物类似药中的数量份额。两者统计期均为2024年4月至2025年3月。"},
+
+    {"type":"h2","text":"三、适配或可引导适配仅一的产品"},
+    {"type":"html","html":"<table><thead><tr><th>产品</th><th>公开处方量</th><th>市占率</th><th>是否拳头</th><th>仅一适配判断</th></tr></thead><tbody><tr><td>Calonal细颗粒20%</td><td>约4,594万克/年</td><td>剂型份额未披露；属于Calonal口服83%口径的一部分</td><td>旗舰品牌子剂型，但不是主力SKU</td><td><strong>高适配</strong>：颗粒剂已有0.5g、1.0g分包规格，可评估高速多列Stick、装盒、装箱与码垛</td></tr><tr><td>Calonal细颗粒50%</td><td>约856万克/年</td><td>剂型份额未披露</td><td>同上</td><td><strong>高适配</strong>：已有0.6g、1.0g分包规格</td></tr><tr><td>两种细颗粒合计</td><td><strong>约5,449万克/年</strong></td><td>无独立公开份额</td><td>不是单独拳头，但依附公司第一品牌</td><td>按现有单袋克重，若全部采用分包，理论对应约5,450万—1.06亿袋；实际分包与瓶装比例未知</td></tr><tr><td>Calonal糖浆2%</td><td>约5,601万毫升/年</td><td>未披露</td><td>否</td><td><strong>中等潜力</strong>：可探索儿童单次定量液体Stick，但需验证剂量、阻隔、稳定性及日本注册变更</td></tr><tr><td>Calonal原末</td><td>约11.9万克/年</td><td>未披露</td><td>否</td><td><strong>低潜力</strong>：粉体形态可包装，但公开处方规模较小</td></tr></tbody></table>"},
+    {"type":"p","text":"PMDA资料确认，细颗粒20%现有100g/500g瓶装及0.5g、1.0g分包，细颗粒50%现有100g/500g瓶装及0.6g、1.0g分包。“分包”只能证明存在小袋包装，不能直接证明现有包装形式就是Stick，也不能证明设备需要立即更新。"},
+
+    {"type":"h2","text":"四、暂不适配仅一核心一次包装线的产品"},
+    {"type":"html","html":"<table><thead><tr><th>产品</th><th>销量或销售规模</th><th>市占率</th><th>是否拳头</th><th>判断</th></tr></thead><tbody><tr><td>Calonal片200mg</td><td>约7.748亿片/年</td><td>片剂单独份额未披露</td><td><strong>是</strong></td><td>片剂是实际商业主力；不适配仅一药品Stick一次包装线，可关注后道装盒、装箱、码垛</td></tr><tr><td>Calonal片300mg</td><td>约3.093亿片/年</td><td>同上</td><td><strong>是</strong></td><td>同上</td></tr><tr><td>Calonal片500mg</td><td>约5.626亿片/年</td><td>同上</td><td><strong>是</strong></td><td>同上</td></tr><tr><td>三种Calonal片剂合计</td><td><strong>约16.47亿片/年</strong></td><td>Calonal口服对乙酰氨基酚市场金额份额83%</td><td><strong>公司第一拳头产品</strong></td><td>规模最大，但与仅一核心一次包装方案错位</td></tr><tr><td>Calonal栓剂</td><td>公开处方量约146万枚以上/年</td><td>未披露；不属于“口服83%”统计口径</td><td>否</td><td>剂型不适配</td></tr><tr><td>Etanercept BS“MA”</td><td>单品销售额未披露；销售构成中为第二大板块</td><td><strong>依那西普生物类似药数量份额91%</strong></td><td>风湿领域拳头产品</td><td>注射剂，不适配</td></tr><tr><td>Methotrexate片</td><td>未披露；销售构成中约为第三大板块</td><td>GNI标示市场No.1，未披露比例</td><td>重要产品，非公司总旗舰</td><td>片剂，不适配核心Stick线</td></tr><tr><td>Rimatil片</td><td>未披露</td><td>GNI标示市场No.1，未披露比例</td><td>细分领先品种</td><td>片剂，不适配核心Stick线</td></tr><tr><td>Tacrolimus、Azulfidine EN、Iguratimod及骨质疏松口服片</td><td>均未披露</td><td>未披露</td><td>非拳头产品</td><td>片剂，不适配核心Stick线</td></tr><tr><td>Adalimumab、Infliximab、Tocilizumab BS、Hyalos、Ostabalo</td><td>均未披露</td><td>未披露</td><td>风湿及骨科扩充产品</td><td>注射剂，不适配</td></tr><tr><td>青霉素固体制剂受托制造</td><td>业务收入未单列</td><td>日本国内唯一专用CMO；阿莫西林生产领先，未给比例</td><td>重要业务板块，不是自有拳头产品</td><td>主要为片剂/胶囊；只能另行评估后道包装机会</td></tr></tbody></table>"},
+
+    {"type":"h2","text":"五、为什么仍值得开发"},
+    {"type":"p","text":"虽然仅一最适配的细颗粒不是AYUMI最大的剂型，但它依附于日本口服对乙酰氨基酚市场的绝对头部品牌，拥有稳定处方基础和较大公开用量。细颗粒现有多种小剂量分包规格，天然存在高速计量、封装、检测、装盒和后道自动化需求，因此比从零教育一个新剂型更具有现实开发价值。"},
+    {"type":"p","text":"另一方面，AYUMI官方明确多摩川工厂和厚木工厂是Calonal片剂主力生产基地，却没有公开细颗粒的实际制造和包装地点。设备机会必须先落到具体工厂或委外生产商，不能只把AYUMI总部或GNI集团视为直接采购主体。"},
+
+    {"type":"h2","text":"六、建议的客户开发顺序"},
+    {"type":"html","html":"<table><thead><tr><th>优先级</th><th>动作</th><th>需要取得的信息</th></tr></thead><tbody><tr><td>1</td><td>锁定Calonal细颗粒的实际生产及包装工厂</td><td>自制或委外、工厂地址、包装线负责人、设备品牌</td></tr><tr><td>2</td><td>调查20%/50%细颗粒现有分包线</td><td>袋型、列数、速度、设备年份、OEE、换型频率、装盒方式</td></tr><tr><td>3</td><td>识别扩产或更新触发点</td><td>需求增长、设备老化、稳定供应要求、人工与质量问题</td></tr><tr><td>4</td><td>提出颗粒Stick整线方案</td><td>计量精度、密封、防潮、在线检测、装盒装箱和追溯要求</td></tr><tr><td>5</td><td>糖浆液体Stick概念沟通</td><td>单次剂量、包材相容性、稳定性、注册与商业立项条件</td></tr></tbody></table>"},
+    {"type":"blockquote","text":"最终判断：AYUMI值得进入仅一目标客户池，但应围绕Calonal细颗粒进行定向开发。若确认其分包线存在扩产、替换或自动化升级计划，可提升为A级项目；在采购信号出现前，维持B+级重点孵化。"},
+
+    {"type":"h2","text":"七、主要公开来源"},
+    {"type":"html","html":"<ul><li><a href='https://mp.weixin.qq.com/s/rFyD81aFTKoHZwjZjY5KNA' target='_blank' rel='noopener'>原始微信文章：GNI收购AYUMI</a></li><li><a href='https://www.daiwair.co.jp/td_download.cgi?c=2160&amp;i=3234807' target='_blank' rel='noopener'>GNI Group：AYUMI收购及产品组合说明</a></li><li><a href='https://www.globenewswire.com/news-release/2026/07/02/3321062/0/en/GNI-Group-Completes-Acquisition-of-AYUMI-Pharmaceutical.html' target='_blank' rel='noopener'>GNI Group：收购完成公告</a></li><li><a href='https://www.ayumi-pharma.com/company/greeting.html' target='_blank' rel='noopener'>AYUMI：公司业绩与主力产品说明</a></li><li><a href='https://www.ayumi-pharma.com/company/activities-03.html' target='_blank' rel='noopener'>AYUMI：工厂与供应体系</a></li><li><a href='https://www.pmda.go.jp/PmdaSearch/iyakuDetail/ResultDataSetPDF/172190_1141007C1075_5_06' target='_blank' rel='noopener'>PMDA：Calonal细颗粒说明书及包装规格</a></li><li><a href='https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000177221_00017.html' target='_blank' rel='noopener'>日本厚生劳动省：第11次NDB开放数据</a></li><li><a href='https://www.mhlw.go.jp/content/12400000/001711787.pdf' target='_blank' rel='noopener'>第11次NDB数据范围与统计说明</a></li></ul>"}
+  ]
+}

@@ -150,6 +150,15 @@
     "date": "2026-09-20",
     "readTime": 22,
     "prevId": "worldfood-istanbul-2026",
+    "nextId": "ayumi-target-customer-evaluation-2026"
+  },
+  {
+    "id": "ayumi-target-customer-evaluation-2026",
+    "title": "AYUMI目标客户与包装潜力评估报告",
+    "category": "市场调研",
+    "date": "2026-10-08",
+    "readTime": 12,
+    "prevId": "joyea-ai-source-publishing-2026",
     "nextId": null
   }
 ]
