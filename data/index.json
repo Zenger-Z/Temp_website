@@ -159,6 +159,15 @@
     "date": "2026-10-08",
     "readTime": 22,
     "prevId": "joyea-ai-source-publishing-2026",
+    "nextId": "natural-products-expo-west-2027"
+  },
+  {
+    "id": "natural-products-expo-west-2027",
+    "title": "Natural Products Expo West 参展价值评估报告",
+    "category": "展会评估",
+    "date": "2026-10-13",
+    "readTime": 10,
+    "prevId": "ayumi-target-customer-evaluation-2026",
     "nextId": null
   }
 ]
