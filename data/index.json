@@ -172,11 +172,29 @@
   },
   {
     "id": "joyea-us-exhibitions-recommendation",
-    "title": "仅一美国市场展会推荐与参展优先级报告",
+    "title": "美国展会独立评分报告入口",
     "category": "展会评估",
     "date": "2026-10-13",
-    "readTime": 12,
+    "readTime": 2,
     "prevId": "natural-products-expo-west-2027",
+    "nextId": "pack-expo-international-2026-evaluation"
+  },
+  {
+    "id": "pack-expo-international-2026-evaluation",
+    "title": "PACK EXPO International 2026 参展价值评估报告",
+    "category": "展会评估",
+    "date": "2026-10-13",
+    "readTime": 10,
+    "prevId": "joyea-us-exhibitions-recommendation",
+    "nextId": "supplyside-global-2026-evaluation"
+  },
+  {
+    "id": "supplyside-global-2026-evaluation",
+    "title": "SupplySide Global 2026 参展价值评估报告",
+    "category": "展会评估",
+    "date": "2026-10-13",
+    "readTime": 10,
+    "prevId": "pack-expo-international-2026-evaluation",
     "nextId": null
   }
 ]

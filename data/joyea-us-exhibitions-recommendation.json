@@ -1,228 +1,38 @@
 {
-  "title": "仅一美国市场展会推荐与参展优先级报告",
+  "title": "美国展会独立评分报告入口",
   "category": "展会评估",
   "date": "2026-10-13",
-  "readTime": 12,
+  "readTime": 2,
   "prevId": "natural-products-expo-west-2027",
-  "nextId": null,
+  "nextId": "pack-expo-international-2026-evaluation",
   "content": [
     {
       "type": "h2",
-      "text": "一、决策摘要"
-    },
-    {
-      "type": "html",
-      "html": "<div class=\"data-card data-card--success\"><h4>美国市场展会投入顺序</h4><p><strong>PACK EXPO → SupplySide Global → Natural Products Expo West</strong></p><p>The Powder Show作为粉体项目专项补充。</p></div>"
-    },
-    {
-      "type": "blockquote",
-      "text": "仅一在美国应采用“一个重点设备展＋一个营养保健品客户开发展”的组合。PACK EXPO承担设备与整线展示，SupplySide Global开发营养粉、条包和代工客户；Expo West补充健康品牌与包装创新交流，The Powder Show服务粉体处理和工厂项目。"
-    },
-    {
-      "type": "html",
-      "html": "<table><thead><tr><th>优先级</th><th>展会</th><th>最适合仅一的目标</th><th>建议参与方式</th></tr></thead><tbody><tr><td>第一优先</td><td>PACK EXPO International／Las Vegas</td><td>条包、粉体灌装、软袋、自动化整线；美国设备业务和本地合作网络</td><td>重点参展，作为美国市场主力设备展</td></tr><tr><td>第二优先</td><td>SupplySide Global（原SupplySide West）</td><td>营养粉、运动营养、功能固体饮料、Stick条包；品牌和代工厂开发</td><td>优先观展约访，可采用专业小展位</td></tr><tr><td>第三优先</td><td>Natural Products Expo West</td><td>健康食品与营养品牌开发、新品及便携包装创新</td><td>观展和客户会面为主，轻量试水</td></tr><tr><td>专项补充</td><td>International Powder & Bulk Solids（The Powder Show）</td><td>粉体处理、输送、混合、灌装及工厂项目</td><td>围绕食品、乳品、营养品和制药项目专项参加</td></tr></tbody></table>"
+      "text": "独立报告"
     },
     {
       "type": "p",
-      "text": "优先级依据是仅一业务与展会场景的匹配：设备展示看包装形式、整线方案与同行参与；行业开发看适配产品、制造企业和品牌覆盖。三类主力展会分别承担不同任务，预算随任务分配。"
+      "text": "每个展会均有独立结论、四维评分、20个子项、具体展商证据和主要扣分点。点击报告名称查看全文，按业务目标与评分自行比较。"
     },
     {
-      "type": "h3",
-      "text": "预算配置建议"
-    },
-    {
-      "type": "ul",
-      "items": [
-        "<strong>只安排一个重点展位：</strong>选PACK EXPO，集中展示美国市场主推的包装应用和自动化方案。",
-        "<strong>安排两个展会：</strong>PACK EXPO重点参展＋SupplySide Global观展约访或专业小展位。",
-        "<strong>安排三个展会：</strong>在上述组合中增加Expo West，侧重品牌与代工客户会面。",
-        "<strong>推进粉体或工厂项目：</strong>增加The Powder Show专项拜访，接触工程与生产团队。"
-      ]
+      "type": "html",
+      "html": "<table><thead><tr><th>展会报告</th><th>总分</th><th>结论档位</th><th>展会侧重与扣分</th></tr></thead><tbody><tr><td><a href=\"article.html?id=pack-expo-international-2026-evaluation\" target=\"_blank\" rel=\"noopener\">PACK EXPO International 2026 参展价值评估报告</a></td><td>91/100</td><td>值得作为区域重点展会参加</td><td>包装设备与整线主展；听装现场线和行业聚焦仍有扣分</td></tr><tr><td><a href=\"article.html?id=supplyside-global-2026-evaluation\" target=\"_blank\" rel=\"noopener\">SupplySide Global 2026 参展价值评估报告</a></td><td>77/100</td><td>值得参加，但建议控制投入或先验证</td><td>营养粉与条包客户开发；原料、配方及部分制剂工艺为主</td></tr><tr><td><a href=\"article.html?id=natural-products-expo-west-2027\" target=\"_blank\" rel=\"noopener\">Natural Products Expo West 参展价值评估报告</a></td><td>69/100</td><td>谨慎，适合观展或小规模试水</td><td>成品、零售选品和渠道合作；同赛道设备较分散</td></tr></tbody></table>"
     },
     {
       "type": "h2",
-      "text": "二、PACK EXPO：美国市场的主力设备展"
-    },
-    {
-      "type": "p",
-      "text": "PACK EXPO由PMMI组织，覆盖包装机械、加工设备和自动化方案。芝加哥International与Las Vegas是仅一应优先关注的主力场次，可覆盖食品、乳品、营养保健品、制药及宠物食品等应用。<a href=\"https://www.packexpo.com/attendee-interest\" target=\"_blank\" rel=\"noopener\">[1]</a> <a href=\"https://www.packexpolasvegas.com/\" target=\"_blank\" rel=\"noopener\">[2]</a>"
+      "text": "统一评分口径"
     },
     {
       "type": "html",
-      "html": "<table><thead><tr><th>仅一业务</th><th>参展切入点</th><th>展示重点</th></tr></thead><tbody><tr><td>Stick条包</td><td>粉剂、颗粒及液体的单次包装</td><td>条包设备、计量、理料装盒及后道联线</td></tr><tr><td>听装与粉体灌装</td><td>奶粉、蛋白粉及营养粉包装</td><td>灌装、容器处理、封口与整线自动化</td></tr><tr><td>软袋</td><td>粉体食品、营养品与休闲食品</td><td>制袋包装、计量及后道装箱</td></tr><tr><td>交钥匙整线</td><td>新线建设、升级和减少人工操作</td><td>产线衔接、整体布局与项目交付案例</td></tr></tbody></table>"
-    },
-    {
-      "type": "h3",
-      "text": "为什么排第一"
+      "html": "<table><thead><tr><th>维度</th><th>权重</th></tr></thead><tbody><tr><td>区域入口价值</td><td>20</td></tr><tr><td>业务与产品相关性</td><td>30</td></tr><tr><td>赛道展商信号</td><td>30</td></tr><tr><td>展会可信度与影响力</td><td>20</td></tr></tbody></table>"
     },
     {
       "type": "p",
-      "text": "同行参与与展示内容直接对应仅一业务。Universal Pack确认参加2026年芝加哥展，其展会业务围绕单剂量包装、计量与完整产线；Syntegon确认展示SVX立式制袋包装及自动化方案；VTOPS确认展示粉体灌装设备，并开展奶粉听装线方案交流。<a href=\"https://www.universalpack.it/events/\" target=\"_blank\" rel=\"noopener\">[3]</a> <a href=\"https://www.syntegon.com/pack-expo-2026/\" target=\"_blank\" rel=\"noopener\">[4]</a> <a href=\"https://www.vtops.com/expo/vtops-to-exhibit-at-the-2026-pack-expo-international-chicago/\" target=\"_blank\" rel=\"noopener\">[5]</a>"
+      "text": "总分用于比较公开证据中的业务适配。业务与产品相关性或赛道展商信号低于18/30，参与建议最高为观展或小规模试水；任一低于24/30，最高为控制投入。Expo West为69分，但赛道展商信号为16/30，因此仍采用观展或小规模试水建议。"
     },
     {
       "type": "p",
-      "text": "包装设备、粉体灌装和后道自动化集中在同一展会体系中，适合仅一从具体包装应用切入，再扩展到整线项目。对美国市场的设备品牌建设、现场方案交流和本地合作伙伴开发，PACK EXPO应承担主要任务。"
-    },
-    {
-      "type": "h3",
-      "text": "时间与参与建议"
-    },
-    {
-      "type": "html",
-      "html": "<table><thead><tr><th>场次</th><th>时间</th><th>地点</th><th>规划用途</th></tr></thead><tbody><tr><td>PACK EXPO International 2026</td><td>2026年10月18—21日 <a href=\"https://www.packexpo.com/attendee-interest\" target=\"_blank\" rel=\"noopener\">[1]</a></td><td>芝加哥</td><td>近期专业观展、客户与同行交流</td></tr><tr><td>PACK EXPO Las Vegas 2027</td><td>2027年9月27—29日 <a href=\"https://www.packexpo.com/attendee-interest\" target=\"_blank\" rel=\"noopener\">[1]</a> <a href=\"https://www.packexpolasvegas.com/\" target=\"_blank\" rel=\"noopener\">[2]</a></td><td>拉斯维加斯</td><td>下一轮重点设备参展筹备</td></tr><tr><td>PACK EXPO Southeast 2027</td><td>2027年4月12—14日 <a href=\"https://www.packexpo.com/attendee-interest\" target=\"_blank\" rel=\"noopener\">[1]</a></td><td>亚特兰大</td><td>已有美国东南部客户或项目时补充参加</td></tr></tbody></table>"
-    },
-    {
-      "type": "p",
-      "text": "截至报告日期，芝加哥2026年展会距离开幕仅五天，适合利用现有出行安排开展观展和会面。下一轮完整参展筹备优先放在拉斯维加斯2027年展会；美国东南部区域展根据客户分布补充安排。"
-    },
-    {
-      "type": "p",
-      "text": "重点展位应围绕美国市场最有应用证据的一至两条产品线组织展示，形成“具体产品—包装样品—运行设备或产线视频—整线案例”的完整交流路径。"
-    },
-    {
-      "type": "h2",
-      "text": "三、SupplySide Global：优先开发营养保健品条包客户"
-    },
-    {
-      "type": "p",
-      "text": "SupplySide Global围绕营养产品的原料、配方、制造和包装供应链展开。它适合仅一接触营养粉、运动营养、功能固体饮料品牌与合同制造商，并把产品开发话题延伸到条包制造和包装自动化。"
-    },
-    {
-      "type": "h3",
-      "text": "与仅一直接相关的参展证据"
-    },
-    {
-      "type": "html",
-      "html": "<table><thead><tr><th>企业</th><th>参展与产品证据</th><th>对仅一的价值</th></tr></thead><tbody><tr><td>SMK Global</td><td>2026年官方展商档案列有粉剂制造及六条包装线，包装形式包含Stick、软袋、桶罐、瓶装等 <a href=\"https://exhibitor.supplysideglobal.com/supplysideglobal26/Public/eBooth.aspx?BoothID=151642&Nav=False\" target=\"_blank\" rel=\"noopener\">[7]</a></td><td>条包与营养粉包装，代工厂产线交流</td></tr><tr><td>Ourvita</td><td>2026年参展产品包含BiomeBoost Stick Pack Powder条包粉剂 <a href=\"https://www.ourvita.com/supplyside-global-2026/\" target=\"_blank\" rel=\"noopener\">[8]</a></td><td>功能营养粉与单次条包产品开发</td></tr><tr><td>IMA Group</td><td>官方日程确认参加2026年SupplySide，列出6089号展位 <a href=\"https://imagroup.com/exhibitions/\" target=\"_blank\" rel=\"noopener\">[9]</a></td><td>生产技术供应商参与该营养产业平台</td></tr></tbody></table>"
-    },
-    {
-      "type": "p",
-      "text": "SMK的制造和包装业务，以及Ourvita的具体条包产品，说明本展具有从配方到包装制造的连续业务场景。仅一可围绕营养粉系列化、条包新品、包装升级和代工产能展开交流。"
-    },
-    {
-      "type": "h3",
-      "text": "建议参与方式"
-    },
-    {
-      "type": "ul",
-      "items": [
-        "<strong>主推方向：</strong>营养粉、运动营养、功能固体饮料和Stick条包。",
-        "<strong>重点企业：</strong>具有粉体、条包和软袋业务的合同制造商，以及相应产品品牌。",
-        "<strong>展示内容：</strong>包装样品、营养粉应用案例、条包及后道自动化视频。",
-        "<strong>投入方式：</strong>优先观展约访；小展位围绕条包与营养粉制造主题组织。"
-      ]
-    },
-    {
-      "type": "p",
-      "text": "最近一届为2026年10月26—30日，展厅开放10月28—30日，地点为拉斯维加斯Mandalay Bay。<a href=\"https://www.supplysideglobal.com/attend/attendee-resources/attendee-faq/\" target=\"_blank\" rel=\"noopener\">[6]</a>"
-    },
-    {
-      "type": "p",
-      "text": "美国营养保健品业务开发预算应优先覆盖SupplySide Global。它与PACK EXPO形成互补：前者围绕营养产品与制造企业开发，后者承担设备与整线展示。"
-    },
-    {
-      "type": "h2",
-      "text": "四、Natural Products Expo West：补充品牌与包装创新开发"
-    },
-    {
-      "type": "p",
-      "text": "Expo West连接天然、有机和健康消费品品牌、渠道、原料、代工及生产技术企业。仅一适合利用这一平台接触品牌，讨论新品、便携包装和产品系列化。<a href=\"https://www.expowest.com/\" target=\"_blank\" rel=\"noopener\">[10]</a> <a href=\"https://exhibitor.expowest.com/ew26/Public/eventmap.aspx?EventId=1085&MapID=1000781\" target=\"_blank\" rel=\"noopener\">[13]</a>"
-    },
-    {
-      "type": "h3",
-      "text": "为什么值得安排观展"
-    },
-    {
-      "type": "html",
-      "html": "<table><thead><tr><th>业务信号</th><th>具体证据</th><th>适合交流的方向</th></tr></thead><tbody><tr><td>条包新品</td><td>Intermountain Nutrition明确列出2026年Expo West四类条包：补水＋纤维、肌酸＋咖啡因、运动前营养、清蛋白 <a href=\"https://intermountainnutrition.com/samples-of-our-stock-formulations/\" target=\"_blank\" rel=\"noopener\">[11]</a></td><td>功能固体饮料与营养粉Stick包装</td></tr><tr><td>代工企业</td><td>GreenSeed官网确认2026年参展，服务健康产品与功能营养粉 <a href=\"https://greenseedcp.com/category/news/\" target=\"_blank\" rel=\"noopener\">[12]</a></td><td>包装制造与规模化生产</td></tr><tr><td>营养品牌</td><td>官方2026名录列有Orgain、Glanbia Performance Nutrition及Garden of Life／Nuun／Solgar／Vital Proteins <a href=\"https://exhibitor.expowest.com/ew26/Public/eventmap.aspx?EventId=1085&MapID=1000781\" target=\"_blank\" rel=\"noopener\">[13]</a></td><td>品牌新品及包装升级交流</td></tr></tbody></table>"
-    },
-    {
-      "type": "p",
-      "text": "Expo West的主要任务是发现产品机会和接触品牌，将包装创新介绍给业务与产品团队。条包样品、不同包装形式对比及实际应用案例，比宽泛的设备介绍更适合这一交流场景。"
-    },
-    {
-      "type": "h3",
-      "text": "时间与参与建议"
-    },
-    {
-      "type": "p",
-      "text": "下一届为2027年3月2—5日，展厅开放3月3—5日，地点为加州阿纳海姆会展中心。建议专业观展并提前预约品牌、代工企业；有明确会面安排时采用轻量展位。<a href=\"https://www.expowest.com/\" target=\"_blank\" rel=\"noopener\">[10]</a>"
-    },
-    {
-      "type": "html",
-      "html": "<p><a href=\"article.html?id=natural-products-expo-west-2027\" target=\"_blank\" rel=\"noopener\">阅读：Natural Products Expo West参展价值评估报告</a>，查看69分评估、具体企业与产品证据。</p>"
-    },
-    {
-      "type": "h2",
-      "text": "五、The Powder Show：粉体与工厂项目专项补充"
-    },
-    {
-      "type": "p",
-      "text": "International Powder & Bulk Solids（The Powder Show）集中覆盖粉体和散料处理、干法加工及相关技术。官方列出的观众岗位包括工厂负责人、生产工程师、工艺工程师及工厂运维人员，行业覆盖食品、制药、宠物食品，以及化工、塑料等领域。<a href=\"https://www.powderandbulkshow.com/\" target=\"_blank\" rel=\"noopener\">[14]</a>"
-    },
-    {
-      "type": "h3",
-      "text": "适合仅一的参与目标"
-    },
-    {
-      "type": "html",
-      "html": "<table><thead><tr><th>方向</th><th>重点交流内容</th></tr></thead><tbody><tr><td>粉体处理</td><td>输送、混合、储存与灌装之间的衔接</td></tr><tr><td>粉体灌装</td><td>食品、乳品、营养粉与制药粉体包装项目</td></tr><tr><td>工厂与整线</td><td>新线布局、流程优化和自动化接口</td></tr><tr><td>本地技术合作</td><td>粉体处理设备、工程与生产服务伙伴</td></tr></tbody></table>"
-    },
-    {
-      "type": "p",
-      "text": "该展的优势是工程与生产交流场景较明确。它适合带着粉体或工厂项目目标参加，并集中筛选食品、乳品、保健品和制药企业。"
-    },
-    {
-      "type": "p",
-      "text": "下一届为2027年4月27—29日，地点为芝加哥地区Rosemont的Donald E. Stephens Convention Center。建议作为专项观展和工程拜访安排。<a href=\"https://www.powderandbulkshow.com/\" target=\"_blank\" rel=\"noopener\">[14]</a>"
-    },
-    {
-      "type": "h2",
-      "text": "六、按业务目标选择展会"
-    },
-    {
-      "type": "html",
-      "html": "<table><thead><tr><th>仅一当前目标</th><th>首选</th><th>补充</th><th>主要任务</th></tr></thead><tbody><tr><td>美国设备市场整体进入</td><td>PACK EXPO</td><td>SupplySide Global</td><td>设备与整线展示＋营养品制造客户开发</td></tr><tr><td>营养保健品Stick条包</td><td>SupplySide Global</td><td>PACK EXPO、Expo West</td><td>制造企业、品牌、条包应用和规模化生产</td></tr><tr><td>听装与粉体灌装整线</td><td>PACK EXPO</td><td>The Powder Show</td><td>包装线交流＋粉体工艺与工程对接</td></tr><tr><td>食品和营养品软袋</td><td>PACK EXPO</td><td>SupplySide Global</td><td>制袋包装、计量、后道及代工企业开发</td></tr><tr><td>健康品牌与包装创新</td><td>Expo West</td><td>SupplySide Global</td><td>新品、单次便携包装和产品系列延伸</td></tr></tbody></table>"
-    },
-    {
-      "type": "p",
-      "text": "总体推荐顺序仍是PACK EXPO、SupplySide Global、Expo West；具体项目推进时按上表调整。美国展会组合应由业务目标驱动：重点展位集中投入设备平台，行业展侧重预约与客户交流，专项展围绕工程问题组织拜访。"
-    },
-    {
-      "type": "h2",
-      "text": "七、已公布展期与近期安排"
-    },
-    {
-      "type": "html",
-      "html": "<table><thead><tr><th>时间</th><th>展会</th><th>城市</th><th>建议安排</th></tr></thead><tbody><tr><td>2026年10月18—21日</td><td>PACK EXPO International <a href=\"https://www.packexpo.com/attendee-interest\" target=\"_blank\" rel=\"noopener\">[1]</a></td><td>芝加哥</td><td>近期专业观展和会面</td></tr><tr><td>2026年10月28—30日（展厅）</td><td>SupplySide Global <a href=\"https://www.supplysideglobal.com/attend/attendee-resources/attendee-faq/\" target=\"_blank\" rel=\"noopener\">[6]</a></td><td>拉斯维加斯</td><td>营养品制造与条包客户开发</td></tr><tr><td>2027年3月3—5日（展厅）</td><td>Expo West <a href=\"https://www.expowest.com/\" target=\"_blank\" rel=\"noopener\">[10]</a></td><td>阿纳海姆</td><td>品牌与包装创新约访</td></tr><tr><td>2027年4月12—14日</td><td>PACK EXPO Southeast <a href=\"https://www.packexpo.com/attendee-interest\" target=\"_blank\" rel=\"noopener\">[1]</a></td><td>亚特兰大</td><td>按东南部客户分布补充</td></tr><tr><td>2027年4月27—29日</td><td>The Powder Show <a href=\"https://www.powderandbulkshow.com/\" target=\"_blank\" rel=\"noopener\">[14]</a></td><td>Rosemont／芝加哥地区</td><td>粉体与工厂项目专项拜访</td></tr><tr><td>2027年9月27—29日</td><td>PACK EXPO Las Vegas <a href=\"https://www.packexpo.com/attendee-interest\" target=\"_blank\" rel=\"noopener\">[1]</a> <a href=\"https://www.packexpolasvegas.com/\" target=\"_blank\" rel=\"noopener\">[2]</a></td><td>拉斯维加斯</td><td>下一轮重点设备参展</td></tr></tbody></table>"
-    },
-    {
-      "type": "p",
-      "text": "2027年参展规划建议先锁定PACK EXPO Las Vegas重点展位，并提前安排Expo West品牌约访；SupplySide Global列入年度营养保健品客户开发计划，随官方新一届排期落实。"
-    },
-    {
-      "type": "h2",
-      "text": "八、关键证据来源"
-    },
-    {
-      "type": "ol",
-      "items": [
-        "<a href=\"https://www.packexpo.com/attendee-interest\" target=\"_blank\" rel=\"noopener\">PMMI官方展会排期：芝加哥、拉斯维加斯及区域展</a>",
-        "<a href=\"https://www.packexpolasvegas.com/\" target=\"_blank\" rel=\"noopener\">PACK EXPO Las Vegas：展会定位、设备与加工业务</a>",
-        "<a href=\"https://www.universalpack.it/events/\" target=\"_blank\" rel=\"noopener\">Universal Pack：2026年芝加哥及历届拉斯维加斯参展</a>",
-        "<a href=\"https://www.syntegon.com/pack-expo-2026/\" target=\"_blank\" rel=\"noopener\">Syntegon：2026年PACK EXPO立式包装与自动化展示</a>",
-        "<a href=\"https://www.vtops.com/expo/vtops-to-exhibit-at-the-2026-pack-expo-international-chicago/\" target=\"_blank\" rel=\"noopener\">VTOPS：2026年粉体灌装展示及奶粉听装线交流</a>",
-        "<a href=\"https://www.supplysideglobal.com/attend/attendee-resources/attendee-faq/\" target=\"_blank\" rel=\"noopener\">SupplySide Global官方FAQ：2026年展期与场馆</a>",
-        "<a href=\"https://exhibitor.supplysideglobal.com/supplysideglobal26/Public/eBooth.aspx?BoothID=151642&Nav=False\" target=\"_blank\" rel=\"noopener\">SupplySide Global—SMK Global：条包、软袋和桶罐制造业务</a>",
-        "<a href=\"https://www.ourvita.com/supplyside-global-2026/\" target=\"_blank\" rel=\"noopener\">Ourvita：SupplySide Global 2026条包粉剂展示</a>",
-        "<a href=\"https://imagroup.com/exhibitions/\" target=\"_blank\" rel=\"noopener\">IMA官方展会日程：SupplySide及PACK EXPO参展</a>",
-        "<a href=\"https://www.expowest.com/\" target=\"_blank\" rel=\"noopener\">Natural Products Expo West官网：2027年时间与定位</a>",
-        "<a href=\"https://intermountainnutrition.com/samples-of-our-stock-formulations/\" target=\"_blank\" rel=\"noopener\">Intermountain Nutrition：Expo West 2026四类条包产品</a>",
-        "<a href=\"https://greenseedcp.com/category/news/\" target=\"_blank\" rel=\"noopener\">GreenSeed：Expo West 2026参展公告</a>",
-        "<a href=\"https://exhibitor.expowest.com/ew26/Public/eventmap.aspx?EventId=1085&MapID=1000781\" target=\"_blank\" rel=\"noopener\">Expo West官方2026展商名录</a>",
-        "<a href=\"https://www.powderandbulkshow.com/\" target=\"_blank\" rel=\"noopener\">The Powder Show官网：2027年时间、行业与参会岗位</a>",
-        "<a href=\"https://www.powderandbulkshow.com/content/dam/Informa/amg/rosemont/2025/docs/PBS_ROS25_EventSnapshot.pdf\" target=\"_blank\" rel=\"noopener\">The Powder Show官方2025展会资料：企业与观众岗位</a>"
-      ]
+      "text": "PACK EXPO按2026年芝加哥届已公布设备证据评分；SupplySide按2026年当届证据；Expo West面向2027年规划并结合2026年具体展示。"
     },
     {
       "type": "p",
