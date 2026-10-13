@@ -168,6 +168,15 @@
     "date": "2026-10-13",
     "readTime": 10,
     "prevId": "ayumi-target-customer-evaluation-2026",
+    "nextId": "joyea-us-exhibitions-recommendation"
+  },
+  {
+    "id": "joyea-us-exhibitions-recommendation",
+    "title": "仅一美国市场展会推荐与参展优先级报告",
+    "category": "展会评估",
+    "date": "2026-10-13",
+    "readTime": 12,
+    "prevId": "natural-products-expo-west-2027",
     "nextId": null
   }
 ]
