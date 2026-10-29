@@ -196,5 +196,15 @@
     "readTime": 10,
     "prevId": "pack-expo-international-2026-evaluation",
     "nextId": null
+  },
+  {
+    "id": "allpack-clients-2026",
+    "title": "ALLPacK 2026 客户分级与跟进（加密）",
+    "category": "展会客户",
+    "date": "2026-10-30",
+    "url": "allpack-clients-2026.html",
+    "protected": true,
+    "prevId": null,
+    "nextId": null
   }
 ]
