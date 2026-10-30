@@ -206,5 +206,15 @@
     "protected": true,
     "prevId": null,
     "nextId": null
+  },
+  {
+    "id": "allpack-clients-2026-en",
+    "title": "ALLPacK 2026 Customer Follow-up (English, encrypted)",
+    "category": "展会客户",
+    "date": "2026-10-30",
+    "url": "allpack-clients-2026-en.html",
+    "protected": true,
+    "prevId": null,
+    "nextId": null
   }
 ]
