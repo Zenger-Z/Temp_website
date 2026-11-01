@@ -216,5 +216,27 @@
     "protected": true,
     "prevId": null,
     "nextId": null
+  },
+  {
+    "id": "apsmi-bali-clients-2026",
+    "title": "APSMI Bali Summit 2026 接待客户总结",
+    "category": "客户跟进",
+    "date": "2026-11-01",
+    "readTime": 15,
+    "url": "apsmi-bali-clients-2026.html",
+    "encrypted": true,
+    "prevId": null,
+    "nextId": null
+  },
+  {
+    "id": "apsmi-bali-clients-2026-en",
+    "title": "APSMI Bali Summit 2026 Customer Follow-up · English",
+    "category": "客户跟进",
+    "date": "2026-11-01",
+    "readTime": 15,
+    "url": "apsmi-bali-clients-2026-en.html",
+    "encrypted": true,
+    "prevId": null,
+    "nextId": null
   }
 ]
