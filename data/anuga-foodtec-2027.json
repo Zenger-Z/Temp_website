@@ -15,12 +15,16 @@
       "text": "评估日期：2026年11月3日｜展期：2027年2月23—26日｜地点：德国科隆 Koelnmesse。评估对象是进入或加强德国及欧洲食品、乳品生产端市场的展会入口。"
     },
     {
+      "type": "html",
+      "html": "<div class=\"data-card data-card--score\"><div style=\"font-size:48px;color:#d48806;font-weight:700\">77<span style=\"font-size:20px\">/100</span></div><div class=\"section-label\" style=\"color:#d48806\">值得参加，但建议控制投入或先验证</div></div>"
+    },
+    {
       "type": "blockquote",
-      "text": "综合评分：77/100。值得参加，但建议控制投入或先验证。食品与乳品生产端入口强，适合展示粉体、软袋及整线能力；2027条包、奶粉听装的具体展品证据仍不足，暂不建议直接按欧洲重点展重投入。"
+      "text": "食品与乳品生产端入口强，适合展示粉体、软袋及整线能力；2027条包、奶粉听装的具体展品证据仍不足，暂不建议直接按欧洲重点展重投入。"
     },
     {
       "type": "html",
-      "html": "<table><thead><tr><th>维度</th><th>得分</th></tr></thead><tbody><tr><td>区域入口价值</td><td>18/20</td></tr><tr><td>业务与产品相关性</td><td>22/30</td></tr><tr><td>赛道展商信号</td><td>20/30</td></tr><tr><td>展会可信度与影响力</td><td>17/20</td></tr><tr><td>合计</td><td>77/100</td></tr></tbody></table>"
+      "html": "<table><thead><tr><th>维度</th><th>权重</th><th>得分</th><th>判断</th></tr></thead><tbody><tr><td>区域入口价值</td><td>20</td><td>18</td><td>食品乳品生产端入口强</td></tr><tr><td>业务与产品相关性</td><td>30</td><td>22</td><td>具体条包、听装展品待确认</td></tr><tr><td>赛道展商信号</td><td>30</td><td>20</td><td>集团参与明确，机型展示证据不足</td></tr><tr><td>展会可信度与影响力</td><td>20</td><td>17</td><td>长期专业展，2027最终规模待定</td></tr><tr><td>合计</td><td>100</td><td>77</td><td>值得参加，但建议控制投入或先验证</td></tr></tbody></table>"
     },
     {
       "type": "p",
@@ -31,16 +35,24 @@
       "text": "最关键的正面证据"
     },
     {
-      "type": "p",
-      "text": "①官方2027早期预订公告已列出IMA、GEA、ULMA、Duravant及MULTIVAC等企业。②展会以食品饮料全流程技术为核心，生产、灌装包装、自动化衔接明确。③2024届官方销售资料列出1,307家展商，62%来自德国以外；AUMA标注FKM，展会自1996年运营。"
+      "type": "ol",
+      "items": [
+        "官方2027早期预订公告已列出IMA、GEA、ULMA、Duravant及MULTIVAC等企业。",
+        "展会以食品饮料全流程技术为核心，生产、灌装包装、自动化衔接明确。",
+        "2024届官方销售资料列出1,307家展商，62%来自德国以外；AUMA标注FKM，展会自1996年运营。"
+      ]
     },
     {
       "type": "h3",
       "text": "最关键的不确定因素"
     },
     {
-      "type": "p",
-      "text": "2027集团参与不等于旗下条包或奶粉听装品牌参展；具体机型和现场展品未充分确认。2024粉体与软袋证据只能说明历史基础。公开资料不能证明仅一目标客户及其设备决策者会到场。"
+      "type": "ul",
+      "items": [
+        "2027集团参与不等于旗下条包或奶粉听装品牌参展；具体机型和现场展品未充分确认。",
+        "2024粉体与软袋证据只能说明历史基础。",
+        "公开资料不能证明仅一目标客户及其设备决策者会到场。"
+      ]
     },
     {
       "type": "h3",
@@ -56,11 +68,11 @@
     },
     {
       "type": "h3",
-      "text": "区域入口价值：18/20"
+      "text": "1. 区域入口价值：18/20"
     },
     {
       "type": "html",
-      "html": "<table><thead><tr><th>子项</th><th>得分</th><th>证据摘要</th><th>置信度</th></tr></thead><tbody><tr><td>区域代表性</td><td>4/4</td><td>科隆长期国际食品技术展，德国及欧洲入口明确</td><td>高</td></tr><tr><td>相关行业入口</td><td>4/4</td><td>食品、乳品生产端直接相关，非食品贸易展</td><td>高</td></tr><tr><td>本地适配产业覆盖</td><td>4/4</td><td>加工、包装及自动化形成多环节覆盖</td><td>中</td></tr><tr><td>生产端场景</td><td>4/4</td><td>官方明确从原料到交付的全流程技术</td><td>高</td></tr><tr><td>同区域替代性</td><td>2/4</td><td>interpack同在德国，包装机械覆盖更广</td><td>高</td></tr></tbody></table>"
+      "html": "<table><thead><tr><th>维度</th><th>子项</th><th>得分</th><th>证据摘要</th><th>置信度</th></tr></thead><tbody><tr><td>1. 区域入口价值</td><td>区域代表性</td><td>4/4</td><td>科隆长期国际食品技术展，德国及欧洲入口明确</td><td>高</td></tr><tr><td>1. 区域入口价值</td><td>相关行业入口</td><td>4/4</td><td>食品、乳品生产端直接相关，非食品贸易展</td><td>高</td></tr><tr><td>1. 区域入口价值</td><td>本地适配产业覆盖</td><td>4/4</td><td>加工、包装及自动化形成多环节覆盖</td><td>中</td></tr><tr><td>1. 区域入口价值</td><td>生产端场景</td><td>4/4</td><td>官方明确从原料到交付的全流程技术</td><td>高</td></tr><tr><td>1. 区域入口价值</td><td>同区域替代性</td><td>2/4</td><td>interpack同在德国，包装机械覆盖更广</td><td>高</td></tr></tbody></table>"
     },
     {
       "type": "p",
@@ -72,11 +84,11 @@
     },
     {
       "type": "h3",
-      "text": "业务与产品相关性：22/30"
+      "text": "2. 业务与产品相关性：22/30"
     },
     {
       "type": "html",
-      "html": "<table><thead><tr><th>子项</th><th>得分</th><th>证据摘要</th><th>置信度</th></tr></thead><tbody><tr><td>核心行业匹配</td><td>6/6</td><td>食品及乳品明确；AZO历史展品涉及奶粉、替代蛋白</td><td>高</td></tr><tr><td>包装设备场景</td><td>6/6</td><td>灌装包装、设备及自动化为展会核心内容</td><td>高</td></tr><tr><td>Stick条包信号</td><td>2/6</td><td>2027 IMA参与已确认，具体Stick展示未确认；不可由集团产品线推定</td><td>低</td></tr><tr><td>听装/粉体信号</td><td>4/6</td><td>AZO 2024明确粉体原料自动化，非奶粉听装整线证明</td><td>中</td></tr><tr><td>软袋/整线信号</td><td>4/6</td><td>Hastamat 2024有包装设备预告；2027相关集团参与，具体软袋机型未确认</td><td>中</td></tr></tbody></table>"
+      "html": "<table><thead><tr><th>维度</th><th>子项</th><th>得分</th><th>证据摘要</th><th>置信度</th></tr></thead><tbody><tr><td>2. 业务与产品相关性</td><td>核心行业匹配</td><td>6/6</td><td>食品及乳品明确；AZO历史展品涉及奶粉、替代蛋白</td><td>高</td></tr><tr><td>2. 业务与产品相关性</td><td>包装设备场景</td><td>6/6</td><td>灌装包装、设备及自动化为展会核心内容</td><td>高</td></tr><tr><td>2. 业务与产品相关性</td><td>Stick条包信号</td><td>2/6</td><td>2027 IMA参与已确认，具体Stick展示未确认；不可由集团产品线推定</td><td>低</td></tr><tr><td>2. 业务与产品相关性</td><td>听装/粉体信号</td><td>4/6</td><td>AZO 2024明确粉体原料自动化，非奶粉听装整线证明</td><td>中</td></tr><tr><td>2. 业务与产品相关性</td><td>软袋/整线信号</td><td>4/6</td><td>Hastamat 2024有包装设备预告；2027相关集团参与，具体软袋机型未确认</td><td>中</td></tr></tbody></table>"
     },
     {
       "type": "p",
@@ -88,11 +100,11 @@
     },
     {
       "type": "h3",
-      "text": "赛道展商信号：20/30"
+      "text": "3. 赛道展商信号：20/30"
     },
     {
       "type": "html",
-      "html": "<table><thead><tr><th>子项</th><th>得分</th><th>证据摘要</th><th>置信度</th></tr></thead><tbody><tr><td>区域同行/设备商</td><td>5/6</td><td>2027官方列出德国GEA、意大利IMA、欧洲ULMA等</td><td>高</td></tr><tr><td>全球头部同行</td><td>5/6</td><td>同行参考表内IMA与GEA已确认；GEA包装非核心</td><td>中</td></tr><tr><td>重叠产品展示</td><td>2/6</td><td>当前2027具体条包、听装机型未确认，历史粉体设备有据</td><td>低</td></tr><tr><td>相关设备商数量</td><td>5/6</td><td>官方确认多家加工、包装、自动化企业</td><td>高</td></tr><tr><td>展商可验证性</td><td>3/6</td><td>官方名单可核验企业；产品和现场展示仍缺细目</td><td>中</td></tr></tbody></table>"
+      "html": "<table><thead><tr><th>维度</th><th>子项</th><th>得分</th><th>证据摘要</th><th>置信度</th></tr></thead><tbody><tr><td>3. 赛道展商信号</td><td>区域同行/设备商</td><td>5/6</td><td>2027官方列出德国GEA、意大利IMA、欧洲ULMA等</td><td>高</td></tr><tr><td>3. 赛道展商信号</td><td>全球头部同行</td><td>5/6</td><td>同行参考表内IMA与GEA已确认；GEA包装非核心</td><td>中</td></tr><tr><td>3. 赛道展商信号</td><td>重叠产品展示</td><td>2/6</td><td>当前2027具体条包、听装机型未确认，历史粉体设备有据</td><td>低</td></tr><tr><td>3. 赛道展商信号</td><td>相关设备商数量</td><td>5/6</td><td>官方确认多家加工、包装、自动化企业</td><td>高</td></tr><tr><td>3. 赛道展商信号</td><td>展商可验证性</td><td>3/6</td><td>官方名单可核验企业；产品和现场展示仍缺细目</td><td>中</td></tr></tbody></table>"
     },
     {
       "type": "p",
@@ -104,11 +116,11 @@
     },
     {
       "type": "h3",
-      "text": "展会可信度与影响力：17/20"
+      "text": "4. 展会可信度与影响力：17/20"
     },
     {
       "type": "html",
-      "html": "<table><thead><tr><th>子项</th><th>得分</th><th>证据摘要</th><th>置信度</th></tr></thead><tbody><tr><td>主办方可信度</td><td>4/4</td><td>Koelnmesse长期运营，AUMA确认主办主体</td><td>高</td></tr><tr><td>历史稳定性</td><td>4/4</td><td>AUMA记载1996年创办、三年一届</td><td>高</td></tr><tr><td>规模与趋势</td><td>3/4</td><td>2024为1,307家展商；2027预订强，最终规模待定</td><td>中</td></tr><tr><td>认证与背书</td><td>4/4</td><td>AUMA标注FKM；DLG FoodTec Award形成行业背书</td><td>高</td></tr><tr><td>媒体与口碑</td><td>2/4</td><td>有企业展后反馈，但设备线索质量独立证据有限</td><td>中</td></tr></tbody></table>"
+      "html": "<table><thead><tr><th>维度</th><th>子项</th><th>得分</th><th>证据摘要</th><th>置信度</th></tr></thead><tbody><tr><td>4. 展会可信度与影响力</td><td>主办方可信度</td><td>4/4</td><td>Koelnmesse长期运营，AUMA确认主办主体</td><td>高</td></tr><tr><td>4. 展会可信度与影响力</td><td>历史稳定性</td><td>4/4</td><td>AUMA记载1996年创办、三年一届</td><td>高</td></tr><tr><td>4. 展会可信度与影响力</td><td>规模与趋势</td><td>3/4</td><td>2024为1,307家展商；2027预订强，最终规模待定</td><td>中</td></tr><tr><td>4. 展会可信度与影响力</td><td>认证与背书</td><td>4/4</td><td>AUMA标注FKM；DLG FoodTec Award形成行业背书</td><td>高</td></tr><tr><td>4. 展会可信度与影响力</td><td>媒体与口碑</td><td>2/4</td><td>有企业展后反馈，但设备线索质量独立证据有限</td><td>中</td></tr></tbody></table>"
     },
     {
       "type": "p",
