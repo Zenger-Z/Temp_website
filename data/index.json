@@ -195,7 +195,7 @@
     "date": "2026-10-13",
     "readTime": 10,
     "prevId": "pack-expo-international-2026-evaluation",
-    "nextId": null
+    "nextId": "anuga-foodtec-2027"
   },
   {
     "id": "allpack-clients-2026",
@@ -237,6 +237,15 @@
     "url": "apsmi-bali-clients-2026-en.html",
     "encrypted": true,
     "prevId": null,
+    "nextId": null
+  },
+  {
+    "id": "anuga-foodtec-2027",
+    "title": "Anuga FoodTec 2027 参展价值评估报告",
+    "category": "展会评估",
+    "date": "2026-11-03",
+    "readTime": 12,
+    "prevId": "supplyside-global-2026-evaluation",
     "nextId": null
   }
 ]
